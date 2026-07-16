@@ -1,0 +1,36 @@
+name: Fetch Reading & Watching
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # daily at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  fetch-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch books from Goodreads
+        run: python scripts/fetch_books.py
+
+      - name: Fetch films from Letterboxd
+        run: python scripts/fetch_films.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "Update reading & watching data"
+          git push

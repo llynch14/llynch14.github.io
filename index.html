@@ -126,6 +126,106 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
+
+    /* Reading & watching stats */
+    :root { --chart: #b7410e; }
+    @media (prefers-color-scheme: dark) {
+      :root { --chart: #d96f3d; }
+    }
+
+    section.stats {
+      margin-top: 3.5rem;
+    }
+
+    .stats-unavailable { display: none; }
+
+    .media-list {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    .media-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .media-list a {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .media-meta {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      flex: 1;
+    }
+
+    .media-stars {
+      color: var(--orange);
+      white-space: nowrap;
+    }
+
+    .fun-line {
+      font-size: 0.9rem !important;
+      color: var(--text-muted) !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .chart {
+      margin-bottom: 1.5rem;
+    }
+
+    .chart h3 {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      margin-bottom: 0.25rem;
+    }
+
+    .chart svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .chart .bar {
+      fill: var(--chart);
+    }
+
+    .chart .axis {
+      stroke: var(--border);
+      stroke-width: 1;
+    }
+
+    .chart .cap,
+    .chart .tick {
+      fill: var(--text-muted);
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+      font-size: 11px;
+    }
+
+    .chart-tip {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.35rem 0.6rem;
+      font-size: 0.85rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      pointer-events: none;
+      max-width: 240px;
+    }
+
+    .see-more {
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
@@ -147,7 +247,37 @@
     <p>I'm a data scientist at Nexus Brands Group, where I build dashboards, pipelines, and machine learning models as part of a small global data team supporting 18 businesses.</p>
     <p>Before that I did a PhD in material physics at Queen's University Belfast, imaging nanoscale heating in ferroelectric domain walls.</p>
     <p>I'm based in Northern Ireland. You can read my <a href="/cv/">CV</a> or find me on <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>.</p>
+
+    <section class="stats" id="reading">
+      <h2>Reading</h2>
+      <p>What I've been reading lately:</p>
+      <ul class="media-list" id="book-list"></ul>
+      <p class="fun-line" id="book-fun"></p>
+      <div class="chart" id="books-year">
+        <h3>Books read per year</h3>
+        <div class="chart-body"></div>
+      </div>
+      <p class="see-more"><a href="https://www.goodreads.com/user/show/70728365-lindsey">More on Goodreads →</a></p>
+    </section>
+
+    <section class="stats" id="watching">
+      <h2>Watching</h2>
+      <p>And what I've been watching:</p>
+      <ul class="media-list" id="film-list"></ul>
+      <p class="fun-line" id="film-fun"></p>
+      <div class="chart" id="films-year">
+        <h3>Films watched per year</h3>
+        <div class="chart-body"></div>
+      </div>
+      <div class="chart" id="film-ratings">
+        <h3>How I rate them (½–5 stars)</h3>
+        <div class="chart-body"></div>
+      </div>
+      <p class="see-more"><a href="https://letterboxd.com/whiteth0rn/">More on Letterboxd →</a></p>
+    </section>
   </main>
+
+  <script src="/assets/charts.js" defer></script>
 
   <footer>
     © 2026 Lindsey Lynch
