@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV — Lindsey Lynch</title>
   <meta name="description" content="CV of Dr. Lindsey Lynch — data scientist and physicist.">
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Jersey+15&display=swap');
 
     :root {
+      /* CV document colors — fixed in every theme so the on-screen CV and its
+         generated PDF always stay light and professional */
       --bg: #ffffff;
       --text: #1a1a1a;
       --text-dim: #4a4a4a;
@@ -16,6 +22,39 @@
       --orange: #b7410e;
       --navy: #1f3a5f;
       --border: #e0e0e0;
+
+      /* Page chrome (background + nav) follows the site theme */
+      --page-bg: #fdf6f0;
+      --nav-box: #fffdfa;
+      --nav-ink: #46536b;
+      --nav-blue: #7fb5d9;
+      --nav-peach: #f4a259;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page-bg: #20242e;
+        --nav-box: #2a2f3d;
+        --nav-ink: #dfe5f0;
+        --nav-blue: #6f9fc4;
+        --nav-peach: #dd9a5f;
+      }
+    }
+
+    :root[data-theme="light"] {
+      --page-bg: #fdf6f0;
+      --nav-box: #fffdfa;
+      --nav-ink: #46536b;
+      --nav-blue: #7fb5d9;
+      --nav-peach: #f4a259;
+    }
+
+    :root[data-theme="dark"] {
+      --page-bg: #20242e;
+      --nav-box: #2a2f3d;
+      --nav-ink: #dfe5f0;
+      --nav-blue: #6f9fc4;
+      --nav-peach: #dd9a5f;
     }
 
     @media print {
@@ -57,7 +96,7 @@
 
     body {
       font-family: 'IBM Plex Sans', -apple-system, sans-serif;
-      background: var(--bg);
+      background: var(--page-bg);
       color: var(--text);
       line-height: 1.5;
       max-width: 210mm;
@@ -65,10 +104,30 @@
       padding: 1.5rem;
     }
 
+    /* The CV sits on the themed page like a sheet of paper */
+    .cv-layout {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+      padding: 1.75rem;
+    }
+
     @media print {
       body {
         padding: 0;
+        background: #ffffff;
       }
+      .cv-layout {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+    }
+
+    html.pdf-export .cv-layout {
+      border: none;
+      box-shadow: none;
+      padding: 0;
     }
 
     /* Site nav — pixel style shared with the homepage; hidden from print/PDF.
@@ -80,30 +139,43 @@
       align-items: center;
       font-family: 'Jersey 15', monospace;
       font-size: 24px;
-      background: #fffdfa;
-      border: 3px solid #46536b;
-      box-shadow: 5px 5px 0 #7fb5d9;
+      background: var(--nav-box);
+      border: 3px solid var(--nav-ink);
+      box-shadow: 5px 5px 0 var(--nav-blue);
       padding: 8px 17.6px;
       max-width: 632px; /* homepage: 680px body minus 2 × 1.5rem padding */
       margin: 12.5px auto 2.5rem; /* aligns nav top with homepage's 32px body padding */
-      color: #46536b;
+      color: var(--nav-ink);
     }
 
     .site-nav .site-name {
-      color: #46536b;
+      color: var(--nav-ink);
       text-decoration: none;
     }
 
-    .site-nav .site-name::before { content: '♥ '; color: #7fb5d9; }
+    .site-nav .site-name::before { content: '♥ '; color: var(--nav-blue); }
 
     .site-nav .links a {
-      color: #46536b;
+      color: var(--nav-ink);
       text-decoration: none;
       margin-left: 20px;
     }
 
-    .site-nav .links a.active { color: #7fb5d9; }
-    .site-nav .links a:hover { color: #f4a259; }
+    .site-nav .links a.active { color: var(--nav-blue); }
+    .site-nav .links a:hover { color: var(--nav-peach); }
+
+    .theme-toggle {
+      font-family: inherit;
+      font-size: 22px;
+      color: var(--nav-ink);
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 20px;
+      padding: 0;
+      line-height: 1;
+    }
+    .theme-toggle:hover { color: var(--nav-peach); }
 
     /* Download button */
     .download-btn {
@@ -376,8 +448,10 @@
       <a href="/">Home</a>
       <a href="/cv/" class="active">CV</a>
       <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
     </span>
   </nav>
+  <script src="/assets/theme.js" defer></script>
 
   <button class="download-btn no-print" onclick="downloadPDF()">Download PDF</button>
   <script>

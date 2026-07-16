@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lindsey Lynch</title>
   <meta name="description" content="Dr. Lindsey Lynch — data scientist and physicist based in Northern Ireland.">
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=VT323&family=DotGothic16&display=swap');
 
@@ -33,6 +37,33 @@
         --peach: #dd9a5f;
         --muted: #949dae;
       }
+    }
+
+    /* Manual toggle overrides (win over the system preference above) */
+    :root[data-theme="light"] {
+      color-scheme: light;
+      --cream: #fdf6f0;
+      --box: #fffdfa;
+      --ink: #46536b;
+      --blue: #7fb5d9;
+      --link: #5b8bb8;
+      --mint: #b8e0d2;
+      --sage: #c7dcb9;
+      --peach: #f4a259;
+      --muted: #8a94a8;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --cream: #20242e;
+      --box: #2a2f3d;
+      --ink: #dfe5f0;
+      --blue: #6f9fc4;
+      --link: #8fb8dc;
+      --mint: #79a996;
+      --sage: #93ab84;
+      --peach: #dd9a5f;
+      --muted: #949dae;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -70,6 +101,19 @@
     }
     nav .links a.active { color: var(--blue); }
     nav .links a:hover { color: var(--peach); }
+
+    .theme-toggle {
+      font-family: inherit;
+      font-size: 22px;
+      color: var(--ink);
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 1.25rem;
+      padding: 0;
+      line-height: 1;
+    }
+    .theme-toggle:hover { color: var(--peach); }
 
     .about-head {
       display: flex;
@@ -230,6 +274,7 @@
       <a href="/" class="active">Home</a>
       <a href="/cv/">CV</a>
       <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
     </span>
   </nav>
 
@@ -295,5 +340,6 @@
   <footer>Made with <span class="heart">♥</span> in Northern Ireland · © 2026</footer>
 
   <script src="/assets/charts.js" defer></script>
+  <script src="/assets/theme.js" defer></script>
 </body>
 </html>
