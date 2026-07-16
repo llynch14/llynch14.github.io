@@ -4,48 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lindsey Lynch</title>
+  <meta name="description" content="Dr. Lindsey Lynch — data scientist and physicist based in Northern Ireland.">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
     :root {
       color-scheme: light dark;
-      --bg: #fafafa;
-      --fg: #1a1a1a;
-      --muted: #666;
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --text-dim: #4a4a4a;
+      --text-muted: #6a6a6a;
+      --orange: #b7410e;
+      --navy: #1f3a5f;
+      --border: #e0e0e0;
     }
+
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #111;
-        --fg: #eee;
-        --muted: #999;
+        --bg: #131417;
+        --text: #ececec;
+        --text-dim: #c0c0c0;
+        --text-muted: #9a9a9a;
+        --orange: #e07a4a;
+        --navy: #9db8dd;
+        --border: #2e3138;
       }
     }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      min-height: 100vh;
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    nav {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 4rem;
     }
-    main { padding: 2rem; }
-    h1 {
-      font-size: 2.5rem;
+
+    nav .site-name {
       font-weight: 600;
-      letter-spacing: -0.02em;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 1.05rem;
     }
-    p {
-      margin-top: 0.75rem;
-      font-size: 1.1rem;
-      color: var(--muted);
+
+    nav .links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    nav .links a:hover,
+    nav .links a.active {
+      color: var(--orange);
+    }
+
+    main h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    main a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    main a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a class="site-name" href="/">Lindsey Lynch</a>
+    <span class="links">
+      <a href="/" class="active">Home</a>
+      <a href="/cv/">CV</a>
+      <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>
+    </span>
+  </nav>
+
   <main>
-    <h1>Lindsey Lynch</h1>
-    <p>Something's coming soon.</p>
+    <h1>Hi, I'm Lindsey 👋</h1>
+    <p>I'm a data scientist at Nexus Brands Group, where I build dashboards, pipelines, and machine learning models as part of a small global data team supporting 18 businesses.</p>
+    <p>Before that I did a PhD in material physics at Queen's University Belfast, imaging nanoscale heating in ferroelectric domain walls.</p>
+    <p>I'm based in Northern Ireland. You can read my <a href="/cv/">CV</a> or find me on <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>.</p>
   </main>
+
+  <footer>
+    © 2026 Lindsey Lynch
+  </footer>
 </body>
 </html>

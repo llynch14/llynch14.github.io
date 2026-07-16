@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Lindsey Lynch</title>
+  <meta name="description" content="CV of Dr. Lindsey Lynch — data scientist and physicist.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --text-dim: #4a4a4a;
+      --text-muted: #6a6a6a;
+      --orange: #b7410e;
+      --navy: #1f3a5f;
+      --border: #e0e0e0;
+    }
+
+    @media print {
+      :root {
+        --border: #cccccc;
+      }
+      body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+      .no-print {
+        display: none !important;
+      }
+      @page {
+        margin: 0.5in;
+        size: A4;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 13px;
+    }
+
+    @media print {
+      html {
+        font-size: 11px;
+      }
+    }
+
+    html.pdf-export {
+      font-size: 11.5px;
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+    }
+
+    /* Site nav */
+    .site-nav {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    .site-nav .site-name {
+      font-weight: 600;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .site-nav .links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav .links a:hover,
+    .site-nav .links a.active {
+      color: var(--orange);
+    }
+
+    /* Download button */
+    .download-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: var(--orange);
+      color: white;
+      padding: 0.7rem 1.2rem;
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .download-btn:hover {
+      background: #93340b;
+    }
+
+    /* Two-column layout */
+    .cv-layout {
+      display: grid;
+      grid-template-columns: 1fr 160px;
+      gap: 1.5rem;
+    }
+
+    @media print {
+      .cv-layout {
+        grid-template-columns: 1fr 150px;
+        gap: 1.25rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cv-layout {
+        grid-template-columns: 1fr;
+      }
+      .cv-sidebar {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding-left: 0;
+        padding-top: 1rem;
+      }
+    }
+
+    .cv-main {
+      min-width: 0;
+    }
+
+    .cv-sidebar {
+      border-left: 1px solid var(--border);
+      padding-left: 1rem;
+    }
+
+    .cv-sidebar .cv-section-label {
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-sidebar .cv-skill-group {
+      margin-bottom: 0.75rem;
+    }
+
+    .cv-sidebar .cv-skill-group h4 {
+      margin-bottom: 0.2rem;
+    }
+
+    .cv-sidebar .cv-skill-group li {
+      font-size: 0.8rem;
+      margin-bottom: 0.1rem;
+    }
+
+    /* Header */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.25rem;
+    }
+
+    .cv-header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 0.15rem;
+    }
+
+    .cv-header .title {
+      font-size: 1rem;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-header .contact-info {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .cv-header .contact-info a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .cv-header .contact-info div {
+      margin-bottom: 0.2rem;
+    }
+
+    /* Section */
+    .cv-section {
+      margin-bottom: 1.25rem;
+    }
+
+    .cv-section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Experience */
+    .cv-item {
+      margin-bottom: 1rem;
+      page-break-inside: avoid;
+    }
+
+    .cv-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.1rem;
+    }
+
+    .cv-role {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .cv-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .cv-company {
+      font-size: 0.9rem;
+      color: var(--orange);
+      margin-bottom: 0.35rem;
+    }
+
+    .cv-description {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.55;
+      margin-bottom: 0.35rem;
+    }
+
+    .cv-list {
+      list-style: none;
+      margin: 0.35rem 0;
+    }
+
+    .cv-list li {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+      padding-left: 0.75rem;
+      position: relative;
+      margin-bottom: 0.2rem;
+    }
+
+    .cv-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 3px;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .metric {
+      color: var(--orange);
+      font-weight: 500;
+    }
+
+    .cv-pub-highlight {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.6rem;
+      border-left: 3px solid var(--orange);
+      background: #faf4ef;
+      page-break-inside: avoid;
+    }
+
+    /* Publications */
+    .cv-pub {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      page-break-inside: avoid;
+    }
+
+    .cv-pub-year {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .cv-pub-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .cv-pub-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Skills */
+    .cv-skill-group h4 {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .cv-skill-group ul {
+      list-style: none;
+    }
+
+    .cv-skill-group li {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-bottom: 0.1rem;
+    }
+
+    /* Links */
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="site-nav no-print">
+    <a class="site-name" href="/">Lindsey Lynch</a>
+    <span class="links">
+      <a href="/">Home</a>
+      <a href="/cv/" class="active">CV</a>
+      <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>
+    </span>
+  </nav>
+
+  <button class="download-btn no-print" onclick="downloadPDF()">Download PDF</button>
+  <script>
+    function downloadPDF() {
+      const btn = document.querySelector('.download-btn');
+      btn.textContent = 'Generating PDF...';
+      btn.disabled = true;
+      document.documentElement.classList.add('pdf-export');
+      const element = document.querySelector('.cv-layout');
+      html2pdf()
+        .set({
+          margin: [10, 10, 10, 10],
+          filename: 'Dr_Lindsey_Lynch_CV.pdf',
+          image: { type: 'png' },
+          html2canvas: { scale: 3, useCORS: true },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        })
+        .from(element)
+        .save()
+        .then(() => {
+          document.documentElement.classList.remove('pdf-export');
+          btn.textContent = 'Download PDF';
+          btn.disabled = false;
+        });
+    }
+  </script>
+
+  <div class="cv-layout">
+    <!-- Left Column: Main Content -->
+    <div class="cv-main">
+      <header class="cv-header">
+        <div>
+          <h1>Dr. Lindsey Lynch</h1>
+          <div class="title">Data Scientist</div>
+        </div>
+        <div class="contact-info">
+          <div><a href="https://linkedin.com/in/lindseylynch1">linkedin.com/in/lindseylynch1</a></div>
+          <div>Northern Ireland</div>
+        </div>
+      </header>
+
+      <section class="cv-section">
+        <div class="cv-section-label">Experience</div>
+
+        <article class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-role">Data Scientist</span>
+            <span class="cv-date">Oct 2025 - Present</span>
+          </div>
+          <div class="cv-company">Nexus Brands Group</div>
+          <p class="cv-description">One of a <span class="metric">three-person global data team</span> supporting <span class="metric">18 businesses</span> across the group. Lead day-to-day reporting functions and single-handedly maintain the majority of dashboarding across finance, operations, and marketing, with hands-on involvement across the full data stack — from warehouse and pipelines through to end-user dashboards that underpin strategic decision-making.</p>
+          <ul class="cv-list">
+            <li><strong>Platform:</strong> Contributing to the maintenance and development of the group's centralised data warehouse and Streamlit dashboard reporting solution, syncing data from multiple NetSuite instances, Shopify, and Google.</li>
+            <li><strong>AI:</strong> Working AI-assisted daily, using agentic coding tools and prompt engineering to accelerate the build-out of reports, dashboards, and analyses while maintaining rigorous review and quality standards; integrated AI into automated workflows for sentiment analysis of customer feedback.</li>
+            <li><strong>Analytics:</strong> Applying strong analytical and strategic thinking to workstreams including customer lifetime value and acquisition cost modelling, discount dependency analysis, pricing and shipping margin analysis, and vendor spend reporting — navigating ambiguity and converting changing business requirements into effective plans and solutions.</li>
+            <li><strong>Machine Learning:</strong> Built a gradient boosting model predicting customer loyalty from first-order baskets, scoring new customers so marketing can target likely repeat buyers; validated with ROC/PR AUC and cross-validation.</li>
+            <li><strong>Automation:</strong> Building and maintaining automated data pipelines and reporting workflows using Python and SQL.</li>
+            <li><strong>Communication:</strong> Communicating technical analysis and model results to teams across finance, operations, and marketing in clear, concise presentations, and training teams across the group to use the dashboards themselves.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-role">Material Physics PhD</span>
+            <span class="cv-date">Sep 2022 - Oct 2025</span>
+          </div>
+          <div class="cv-company">Queen's University Belfast</div>
+          <p class="cv-description">Led research into nanoscale heating of domain walls in ferroelectrics within the Centre for Quantum Materials and Technologies (CQMT). Developed expertise in AFM-based characterisation, nanofabrication, and computational analysis of large datasets. Self-motivated and independent, carrying projects end-to-end from initial idea through experiment design and analysis to published conclusions.</p>
+          <ul class="cv-list">
+            <li><strong>Research:</strong> Developed new methods for direct thermal imaging of domain walls, combining AFM techniques with advanced signal processing. Standardised the integration of external hardware into the transmission electron microscope, enabling new research applications.</li>
+            <li><strong>Computation:</strong> Analysed large datasets including sensitive temperature and electrical measurements using MATLAB, Python (NumPy, pandas), and finite element modelling (COMSOL Multiphysics). Applied regression, signal processing, and image analysis.</li>
+            <li><strong>Nanofabrication:</strong> Designed and fabricated custom device geometries to solve experimental problems and advance projects investigating nanoscale thermal properties.</li>
+            <li><strong>Conferences:</strong> Presented research at <span class="metric">7 international conferences</span> across Europe, USA, and Asia. Awarded <span class="metric">best poster prize</span> at ECEXII 2023.</li>
+          </ul>
+          <p class="cv-pub-highlight"><strong>Publication:</strong> <a href="https://doi.org/10.1002/smll.202508603"><em>Direct Thermal Imaging of Domain Wall Hot Spots in LiNbO<sub>3</sub></em></a> — Lynch et al. <span class="metric">Small</span>, Vol. 22, Issue 1, 2025. doi.org/10.1002/smll.202508603</p>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-role">Lab Demonstrator</span>
+            <span class="cv-date">Sep 2022 - Oct 2025</span>
+          </div>
+          <div class="cv-company">Queen's University Belfast</div>
+          <p class="cv-description">Supervised undergraduate students during practical coding sessions, explaining physics problems and debugging Python scripts. Prepared maths assignment solutions for tutorial sessions and responsible for marking and grading.</p>
+        </article>
+
+      </section>
+
+      <section class="cv-section">
+        <div class="cv-section-label">Education</div>
+        <article class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-role">MSci Physics, First Class Honours</span>
+            <span class="cv-date">Sep 2018 - Jun 2022</span>
+          </div>
+          <div class="cv-company">Queen's University Belfast</div>
+          <p class="cv-description">Recipient of <span class="metric">9 scholarships and awards</span> based on top-of-year performance, including Seagate Technology Prize for solid-state physics and Karl George Emeleus Physics Prize for distinction in final Honours examinations. Lead peer mentor (2019–2021). MSci project: <em>Tuning the Spatiotemporal Evolution of Dose due to Protons in Water</em>.</p>
+        </article>
+        <article class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-role">Secondary Education</span>
+            <span class="cv-date">2016 - 2018</span>
+          </div>
+          <div class="cv-company">Limavady Grammar School</div>
+          <p class="cv-description"><span class="metric">3 A*s</span> at A-Level (Physics, Chemistry, Maths).</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Right Column: Skills Sidebar -->
+    <aside class="cv-sidebar">
+      <div class="cv-section-label">Skills</div>
+
+      <div class="cv-skill-group">
+        <h4>Build</h4>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>DuckDB</li>
+          <li>AI-assisted development</li>
+          <li>MATLAB</li>
+          <li>C</li>
+          <li>Streamlit</li>
+          <li>Git</li>
+          <li>LaTeX</li>
+        </ul>
+      </div>
+
+      <div class="cv-skill-group">
+        <h4>Analyse</h4>
+        <ul>
+          <li>Machine learning (scikit-learn)</li>
+          <li>Statistical modelling</li>
+          <li>Image processing</li>
+          <li>Data visualisation</li>
+          <li>COMSOL Multiphysics</li>
+        </ul>
+      </div>
+
+      <div class="cv-skill-group">
+        <h4>Research</h4>
+        <ul>
+          <li>AFM characterisation</li>
+          <li>Nanofabrication</li>
+          <li>Electronics &amp; hardware</li>
+          <li>Technical writing</li>
+          <li>Conference presenting</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+</body>
+</html>
