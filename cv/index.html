@@ -6,7 +6,7 @@
   <title>CV — Lindsey Lynch</title>
   <meta name="description" content="CV of Dr. Lindsey Lynch — data scientist and physicist.">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Jersey+15&display=swap');
 
     :root {
       --bg: #ffffff;
@@ -71,34 +71,39 @@
       }
     }
 
-    /* Site nav */
+    /* Site nav — pixel style shared with the homepage; hidden from print/PDF.
+       Sized in px (not rem) and width-capped at 680px so it sits in exactly
+       the same place as on the homepage despite this page's smaller rem base. */
     .site-nav {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2.5rem;
-      font-size: 1.05rem;
+      align-items: center;
+      font-family: 'Jersey 15', monospace;
+      font-size: 24px;
+      background: #fffdfa;
+      border: 3px solid #46536b;
+      box-shadow: 5px 5px 0 #7fb5d9;
+      padding: 8px 17.6px;
+      max-width: 632px; /* homepage: 680px body minus 2 × 1.5rem padding */
+      margin: 12.5px auto 2.5rem; /* aligns nav top with homepage's 32px body padding */
+      color: #46536b;
     }
 
     .site-nav .site-name {
-      font-weight: 600;
-      color: var(--navy);
+      color: #46536b;
       text-decoration: none;
     }
+
+    .site-nav .site-name::before { content: '♥ '; color: #7fb5d9; }
 
     .site-nav .links a {
-      color: var(--text-muted);
+      color: #46536b;
       text-decoration: none;
-      margin-left: 1.25rem;
-      font-size: 0.95rem;
+      margin-left: 20px;
     }
 
-    .site-nav .links a:hover,
-    .site-nav .links a.active {
-      color: var(--orange);
-    }
+    .site-nav .links a.active { color: #7fb5d9; }
+    .site-nav .links a:hover { color: #f4a259; }
 
     /* Download button */
     .download-btn {
@@ -366,7 +371,7 @@
 </head>
 <body>
   <nav class="site-nav no-print">
-    <a class="site-name" href="/">Lindsey Lynch</a>
+    <a class="site-name" href="/">Lindsey.exe</a>
     <span class="links">
       <a href="/">Home</a>
       <a href="/cv/" class="active">CV</a>

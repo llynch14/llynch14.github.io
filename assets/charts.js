@@ -34,16 +34,16 @@
   }
   const hideTip = () => { tip.style.display = 'none'; };
 
-  /* --- single-series column chart --- */
+  /* --- single-series column chart (pixel style) --- */
   function columnChart(el, points, opts) {
-    // points: [{label, count, tip}] — bars ≤24px wide, 4px rounded caps,
-    // value labeled on each cap, hairline baseline, hover tooltip.
-    const W = 560, H = 180, padX = 8, padBottom = 22, padTop = 18;
+    // points: [{label, count, tip}] — wide square bars with chunky outlines,
+    // value labeled on each cap, solid baseline, hover tooltip.
+    const W = 560, H = 180, padX = 8, padBottom = 24, padTop = 18;
     const n = points.length;
     if (!n) { el.remove(); return; }
     const max = Math.max(...points.map(p => p.count));
     const band = (W - padX * 2) / n;
-    const barW = Math.min(24, band * 0.6);
+    const barW = Math.min(56, band * 0.75);
     const plotH = H - padTop - padBottom;
     const yFor = c => padTop + plotH * (1 - c / max);
 
@@ -53,12 +53,9 @@
       const x = padX + band * i + (band - barW) / 2;
       const y = yFor(p.count);
       const h = H - padBottom - y;
-      const rr = Math.min(4, h);
       if (h > 0) {
-        svg += `<path class="bar" data-i="${i}" d="M${x},${H - padBottom}
-          v${-(h - rr)} q0,${-rr} ${rr},${-rr} h${barW - 2 * rr} q${rr},0 ${rr},${rr}
-          v${h - rr} z"/>`;
-        svg += `<text class="cap" x="${x + barW / 2}" y="${y - 5}" text-anchor="middle">${fmt(p.count)}</text>`;
+        svg += `<rect class="bar" data-i="${i}" x="${x}" y="${y}" width="${barW}" height="${h}"/>`;
+        svg += `<text class="cap" x="${x + barW / 2}" y="${y - 6}" text-anchor="middle">${fmt(p.count)}</text>`;
       }
       svg += `<text class="tick" x="${x + barW / 2}" y="${H - 6}" text-anchor="middle">${esc(p.label)}</text>`;
     });

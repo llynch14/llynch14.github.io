@@ -6,265 +6,226 @@
   <title>Lindsey Lynch</title>
   <meta name="description" content="Dr. Lindsey Lynch — data scientist and physicist based in Northern Ireland.">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=VT323&family=DotGothic16&display=swap');
 
     :root {
       color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #1a1a1a;
-      --text-dim: #4a4a4a;
-      --text-muted: #6a6a6a;
-      --orange: #b7410e;
-      --navy: #1f3a5f;
-      --border: #e0e0e0;
+      --cream: #fdf6f0;
+      --box: #fffdfa;
+      --ink: #46536b;
+      --blue: #7fb5d9;
+      --link: #5b8bb8;
+      --mint: #b8e0d2;
+      --sage: #c7dcb9;
+      --peach: #f4a259;
+      --muted: #8a94a8;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #131417;
-        --text: #ececec;
-        --text-dim: #c0c0c0;
-        --text-muted: #9a9a9a;
-        --orange: #e07a4a;
-        --navy: #9db8dd;
-        --border: #2e3138;
+        --cream: #20242e;
+        --box: #2a2f3d;
+        --ink: #dfe5f0;
+        --blue: #6f9fc4;
+        --link: #8fb8dc;
+        --mint: #79a996;
+        --sage: #93ab84;
+        --peach: #dd9a5f;
+        --muted: #949dae;
       }
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      max-width: 640px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'VT323', monospace;
+      font-size: 22px;
+      line-height: 1.4;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.5rem 4rem;
     }
 
     nav {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 4rem;
+      align-items: center;
+      font-family: 'Jersey 15', monospace;
+      font-size: 24px;
+      background: var(--box);
+      border: 3px solid var(--ink);
+      box-shadow: 5px 5px 0 var(--blue);
+      padding: 0.5rem 1.1rem;
+      margin-bottom: 3rem;
     }
 
-    nav .site-name {
-      font-weight: 600;
-      color: var(--navy);
-      text-decoration: none;
-      font-size: 1.05rem;
-    }
-
+    nav .brand { color: var(--ink); text-decoration: none; }
+    nav .brand::before { content: '♥ '; color: var(--blue); }
     nav .links a {
-      color: var(--text-muted);
+      color: var(--ink);
       text-decoration: none;
       margin-left: 1.25rem;
-      font-size: 0.95rem;
     }
+    nav .links a.active { color: var(--blue); }
+    nav .links a:hover { color: var(--peach); }
 
-    nav .links a:hover,
-    nav .links a.active {
-      color: var(--orange);
-    }
-
-    .intro {
+    .about-head {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.25rem;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     .portrait {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
+      width: 112px;
+      height: 112px;
       object-fit: cover;
+      border: 4px solid var(--ink);
+      box-shadow: 6px 6px 0 var(--mint);
+      image-rendering: pixelated;
     }
 
-    main h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--navy);
-      letter-spacing: -0.02em;
+    h1 {
+      font-family: 'Jersey 15', monospace;
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 1;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    h1 .accent { color: var(--blue); }
+
+    .sparkles {
+      font-size: 22px;
+      color: var(--peach);
+      letter-spacing: 8px;
+      margin-top: 8px;
     }
 
-    main h2 {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--navy);
+    h2 {
+      font-family: 'Jersey 15', monospace;
+      font-size: 30px;
+      font-weight: 400;
+      color: var(--ink);
       margin-bottom: 0.75rem;
-      padding-bottom: 0.25rem;
-      border-bottom: 1px solid var(--border);
     }
+    h2::before { content: '▸ '; color: var(--blue); }
 
-    main p {
-      color: var(--text-dim);
-      margin-bottom: 1rem;
-      font-size: 1.05rem;
+    .list-title, .chart h3, .four-title {
+      font-family: 'Jersey 15', monospace;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--muted);
     }
+    .list-title { margin: 1rem 0 0.35rem; }
+    .chart h3 { margin: 1.25rem 0 0.5rem; }
+    .four-title { margin: 0.25rem 0 0.5rem; }
 
-    main a {
-      color: var(--orange);
-      text-decoration: none;
+    section, .about-box {
+      background: var(--box);
+      border: 3px solid var(--ink);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
     }
+    .about-box { box-shadow: 6px 6px 0 var(--sage); }
+    section.reading { box-shadow: 6px 6px 0 var(--mint); }
+    section.watching { box-shadow: 6px 6px 0 var(--blue); }
 
-    main a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 5rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    /* Reading & watching stats */
-    :root { --chart: #b7410e; }
-    @media (prefers-color-scheme: dark) {
-      :root { --chart: #d96f3d; }
-    }
-
-    section.stats {
-      margin-top: 3.5rem;
-    }
+    p { margin-bottom: 0.75rem; }
+    a { color: var(--link); }
+    a:hover { background: var(--blue); color: var(--box); text-decoration: none; }
 
     .stats-unavailable { display: none; }
 
-    .media-list {
-      list-style: none;
-      margin-bottom: 1rem;
-    }
-
+    .media-list { list-style: none; margin-bottom: 1rem; }
     .media-list li {
       display: flex;
       align-items: baseline;
-      gap: 0.6rem;
-      padding: 0.35rem 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.95rem;
+      gap: 0.75rem;
+      padding: 0.3rem 0;
+      border-bottom: 2px dotted var(--sage);
     }
-
-    .media-list a {
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .media-meta {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      flex: 1;
-    }
-
+    .media-list a { color: var(--ink); text-decoration: none; }
+    .media-list a:hover { background: var(--mint); color: #46536b; }
+    .media-meta { color: var(--muted); flex: 1; font-size: 19px; }
     .media-stars {
-      color: var(--orange);
+      color: var(--peach);
       white-space: nowrap;
+      font-family: 'DotGothic16', monospace;
+      font-size: 17px;
     }
 
-    .fun-line {
-      font-size: 0.9rem !important;
-      color: var(--text-muted) !important;
-      margin-bottom: 1.5rem !important;
-    }
+    .fun-line { color: var(--muted); font-size: 19px; }
 
-    .chart {
-      margin-bottom: 1.5rem;
-    }
-
-    .chart h3 {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text-dim);
-      margin-bottom: 0.25rem;
-    }
-
-    .chart svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
+    .chart svg { width: 100%; height: auto; display: block; }
     .chart .bar {
-      fill: var(--chart);
+      fill: var(--mint);
+      stroke: var(--ink);
+      stroke-width: 3;
     }
-
-    .chart .axis {
-      stroke: var(--border);
-      stroke-width: 1;
-    }
-
-    .chart .cap,
-    .chart .tick {
-      fill: var(--text-muted);
-      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
-      font-size: 11px;
+    .chart .axis { stroke: var(--ink); stroke-width: 3; }
+    .chart .cap, .chart .tick {
+      fill: var(--muted);
+      font-family: 'VT323', monospace;
+      font-size: 17px;
     }
 
     .chart-tip {
       display: none;
       position: absolute;
       z-index: 10;
-      background: var(--bg);
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 6px;
+      background: var(--box);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--blue);
       padding: 0.35rem 0.6rem;
-      font-size: 0.85rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      font-family: 'VT323', monospace;
+      font-size: 19px;
       pointer-events: none;
-      max-width: 240px;
-    }
-
-    .see-more {
-      font-size: 0.85rem;
-    }
-
-    .four-title {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text-dim);
-      margin-bottom: 0.5rem;
+      max-width: 260px;
     }
 
     .four-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
+      gap: 0.9rem;
+      margin-bottom: 1rem;
     }
-
-    .four-grid figure {
-      margin: 0;
-      text-align: center;
-    }
-
+    .four-grid figure { text-align: center; margin: 0; }
     .four-grid img {
       width: 100%;
       aspect-ratio: 2 / 3;
       object-fit: cover;
-      border-radius: 6px;
+      border: 3px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--sage);
       display: block;
     }
-
     .four-grid figcaption {
-      color: var(--orange);
-      font-size: 0.85rem;
-      margin-top: 0.35rem;
-      letter-spacing: 0.05em;
+      color: var(--peach);
+      margin-top: 0.5rem;
+      font-size: 15px;
+      letter-spacing: 2px;
+      font-family: 'DotGothic16', monospace;
     }
+
+    .see-more { margin-top: 1rem; }
+
+    footer {
+      text-align: center;
+      font-family: 'Jersey 15', monospace;
+      font-size: 20px;
+      color: var(--muted);
+      margin-top: 3rem;
+    }
+    footer .heart { color: var(--blue); }
   </style>
 </head>
 <body>
   <nav>
-    <a class="site-name" href="/">Lindsey Lynch</a>
+    <a class="brand" href="/">Lindsey.exe</a>
     <span class="links">
       <a href="/" class="active">Home</a>
       <a href="/cv/">CV</a>
@@ -273,18 +234,23 @@
   </nav>
 
   <main>
-    <div class="intro">
-      <img class="portrait" src="/photo.jpg" alt="Portrait of Lindsey Lynch">
-      <h1>Dr. Lindsey Lynch</h1>
+    <div class="about-box">
+      <h2>About me</h2>
+      <div class="about-head">
+        <img class="portrait" src="/photo.jpg" alt="Portrait of Lindsey Lynch">
+        <div>
+          <h1>Dr. Lindsey <span class="accent">Lynch</span></h1>
+          <div class="sparkles">✦ ✧ ✦</div>
+        </div>
+      </div>
+      <p>I'm a data scientist at Nexus Brands Group, where I build dashboards, pipelines, and machine learning models as part of a small global data team supporting 18 businesses.</p>
+      <p>Before that I did a PhD in material physics at Queen's University Belfast, imaging nanoscale heating in ferroelectric domain walls.</p>
+      <p>I'm based in Northern Ireland. You can read my <a href="/cv/">CV</a> or find me on <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>.</p>
     </div>
-    <h2>About me</h2>
-    <p>I'm a data scientist at Nexus Brands Group, where I build dashboards, pipelines, and machine learning models as part of a small global data team supporting 18 businesses.</p>
-    <p>Before that I did a PhD in material physics at Queen's University Belfast, imaging nanoscale heating in ferroelectric domain walls.</p>
-    <p>I'm based in Northern Ireland. You can read my <a href="/cv/">CV</a> or find me on <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>.</p>
 
-    <section class="stats" id="reading">
+    <section class="reading stats" id="reading">
       <h2>Reading</h2>
-      <p>What I've been reading lately:</p>
+      <div class="list-title">Recently Read:</div>
       <ul class="media-list" id="book-list"></ul>
       <p class="fun-line" id="book-fun"></p>
       <div class="chart" id="books-year">
@@ -294,9 +260,9 @@
       <p class="see-more"><a href="https://www.goodreads.com/user/show/70728365-lindsey">More on Goodreads →</a></p>
     </section>
 
-    <section class="stats" id="watching">
+    <section class="watching stats" id="watching">
       <h2>Watching</h2>
-      <h3 class="four-title">My Letterboxd Four</h3>
+      <div class="four-title">My Letterboxd Four</div>
       <div class="four-grid">
         <figure>
           <img src="/assets/four/paddington-2.jpg" alt="Paddington 2 poster">
@@ -315,7 +281,7 @@
           <figcaption>★★★★★</figcaption>
         </figure>
       </div>
-      <p>And what I've been watching:</p>
+      <div class="list-title">Recently Watched:</div>
       <ul class="media-list" id="film-list"></ul>
       <p class="fun-line" id="film-fun"></p>
       <div class="chart" id="film-ratings">
@@ -326,10 +292,8 @@
     </section>
   </main>
 
-  <script src="/assets/charts.js" defer></script>
+  <footer>Made with <span class="heart">♥</span> in Northern Ireland · © 2026</footer>
 
-  <footer>
-    © 2026 Lindsey Lynch
-  </footer>
+  <script src="/assets/charts.js" defer></script>
 </body>
 </html>
