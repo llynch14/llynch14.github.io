@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lindsey Lynch</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --fg: #1a1a1a;
+      --muted: #666;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --fg: #eee;
+        --muted: #999;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    main { padding: 2rem; }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin-top: 0.75rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Lindsey Lynch</h1>
+    <p>Something's coming soon.</p>
+  </main>
+</body>
+</html>
