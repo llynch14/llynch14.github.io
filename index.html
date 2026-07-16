@@ -71,12 +71,37 @@
       color: var(--orange);
     }
 
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .portrait {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     main h1 {
       font-size: 2rem;
       font-weight: 600;
       color: var(--navy);
       letter-spacing: -0.02em;
-      margin-bottom: 1rem;
+    }
+
+    main h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
     }
 
     main p {
@@ -114,7 +139,11 @@
   </nav>
 
   <main>
-    <h1>Hi, I'm Lindsey 👋</h1>
+    <div class="intro">
+      <img class="portrait" src="/photo.jpg" alt="Portrait of Lindsey Lynch">
+      <h1>Dr. Lindsey Lynch</h1>
+    </div>
+    <h2>About me</h2>
     <p>I'm a data scientist at Nexus Brands Group, where I build dashboards, pipelines, and machine learning models as part of a small global data team supporting 18 businesses.</p>
     <p>Before that I did a PhD in material physics at Queen's University Belfast, imaging nanoscale heating in ferroelectric domain walls.</p>
     <p>I'm based in Northern Ireland. You can read my <a href="/cv/">CV</a> or find me on <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>.</p>
