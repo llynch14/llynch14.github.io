@@ -16,6 +16,7 @@ DATA = Path(__file__).resolve().parent.parent / "data"
 OUT = DATA / "books.json"
 STATS_OUT = DATA / "reading_stats.json"
 N_BOOKS = 5
+MIN_YEAR = 2020  # per-year chart cutoff; earlier reads still count in totals
 
 
 def clean(text):
@@ -81,7 +82,7 @@ def build(books):
         for b in dated[:N_BOOKS]
     ]
 
-    years = Counter(int(b["read_at"][:4]) for b in dated)
+    years = Counter(y for b in dated if (y := int(b["read_at"][:4])) >= MIN_YEAR)
     per_year = [{"year": y, "count": years[y]} for y in sorted(years)]
 
     timeline = [

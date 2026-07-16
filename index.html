@@ -226,6 +226,40 @@
     .see-more {
       font-size: 0.85rem;
     }
+
+    .four-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    .four-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .four-grid figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .four-grid img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .four-grid figcaption {
+      color: var(--orange);
+      font-size: 0.85rem;
+      margin-top: 0.35rem;
+      letter-spacing: 0.05em;
+    }
   </style>
 </head>
 <body>
@@ -262,6 +296,25 @@
 
     <section class="stats" id="watching">
       <h2>Watching</h2>
+      <h3 class="four-title">My Letterboxd Four</h3>
+      <div class="four-grid">
+        <figure>
+          <img src="/assets/four/paddington-2.jpg" alt="Paddington 2 poster">
+          <figcaption>★★★★★</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/four/logan.jpg" alt="Logan poster">
+          <figcaption>★★★★★</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/four/twilight.jpg" alt="Twilight poster">
+          <figcaption>★★★★★</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/four/lilo-and-stitch.jpg" alt="Lilo &amp; Stitch poster">
+          <figcaption>★★★★★</figcaption>
+        </figure>
+      </div>
       <p>And what I've been watching:</p>
       <ul class="media-list" id="film-list"></ul>
       <p class="fun-line" id="film-fun"></p>
