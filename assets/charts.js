@@ -116,12 +116,6 @@
       document.getElementById('film-fun').textContent =
         `${fmt(f.total_films)} films logged, rated ${f.avg_rating} ★ on average.` +
         (f.highest_rated ? ` Five stars went to ${f.highest_rated.title}.` : '');
-      columnChart(document.getElementById('films-year'),
-        stats.per_year.map(d => ({
-          label: d.year, count: d.count,
-          tip: `<strong>${d.year}</strong> · ${fmt(d.count)} film${d.count === 1 ? '' : 's'}`
-        })), { label: 'Films watched per year' });
-
       // Rating distribution: fixed half-star bins 0.5–5
       const bins = new Map();
       for (let r = 0.5; r <= 5; r += 0.5) bins.set(r, 0);
