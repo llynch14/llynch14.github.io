@@ -1,5 +1,12 @@
 [
   {
+    "title": "Secret History",
+    "author": "Brandon Sanderson",
+    "rating": 4,
+    "read_at": "2026-07-17",
+    "url": "https://www.goodreads.com/book/show/28698036"
+  },
+  {
     "title": "One Yellow Eye",
     "author": "Leigh  Radford",
     "rating": 3,
@@ -26,12 +33,5 @@
     "rating": 2,
     "read_at": "2026-05-19",
     "url": "https://www.goodreads.com/book/show/60701439"
-  },
-  {
-    "title": "Seasons of War",
-    "author": "Derek Landy",
-    "rating": 4,
-    "read_at": "2026-05-15",
-    "url": "https://www.goodreads.com/book/show/52331179"
   }
 ]

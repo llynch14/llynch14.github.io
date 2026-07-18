@@ -26,13 +26,13 @@
     },
     {
       "year": 2026,
-      "count": 21
+      "count": 22
     }
   ],
   "fun": {
-    "total_books": 184,
-    "total_pages": 80704,
-    "avg_pages": 438,
+    "total_books": 185,
+    "total_pages": 80859,
+    "avg_pages": 437,
     "shortest": {
       "title": "This Winter",
       "pages": 120
@@ -1022,6 +1022,13 @@
       "pages": 352,
       "read_at": "2026-07-16",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1729011609l/220160134._SY475_.jpg"
+    },
+    {
+      "title": "Secret History",
+      "author": "Brandon Sanderson",
+      "pages": 155,
+      "read_at": "2026-07-17",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659766387l/28698036._SX318_.jpg"
     }
   ]
 }
