@@ -1,5 +1,13 @@
 [
   {
+    "title": "Evil Dead Burn",
+    "year": 2026,
+    "rating": 1.5,
+    "watched_at": "2026-07-18",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/9/7/0/2/2/1097022-evil-dead-burn-0-600-0-900-crop.jpg?v=398ff82d46",
+    "url": "https://letterboxd.com/whiteth0rn/film/evil-dead-burn/"
+  },
+  {
     "title": "The Invite",
     "year": 2026,
     "rating": 3.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-06-26",
     "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/4/2/8/6/974286-supergirl-2026-0-600-0-900-crop.jpg?v=e85ddf39db",
     "url": "https://letterboxd.com/whiteth0rn/film/supergirl-2026/"
-  },
-  {
-    "title": "Toy Story 5",
-    "year": 2026,
-    "rating": 4.5,
-    "watched_at": "2026-06-21",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/7/1/8/6/977186-toy-story-5-0-600-0-900-crop.jpg?v=d0ac6a7d01",
-    "url": "https://letterboxd.com/whiteth0rn/film/toy-story-5/"
   }
 ]
