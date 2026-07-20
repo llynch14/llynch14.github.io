@@ -236,7 +236,8 @@
 
     .four-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      /* minmax(0,) lets columns shrink below the caption's min width on phones */
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 0.9rem;
       margin-bottom: 1rem;
     }
@@ -255,6 +256,11 @@
       font-size: 15px;
       letter-spacing: 2px;
       font-family: 'DotGothic16', monospace;
+    }
+    @media (max-width: 480px) {
+      .four-grid { gap: 0.5rem; }
+      .four-grid img { border-width: 2px; box-shadow: 3px 3px 0 var(--sage); }
+      .four-grid figcaption { font-size: 11px; letter-spacing: 1px; }
     }
 
     .see-more { margin-top: 1rem; }
