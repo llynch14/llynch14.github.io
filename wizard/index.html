@@ -232,6 +232,16 @@
   .tip .sw { width: 9px; height: 9px; border-radius: 2px; flex: none; }
   .tip .val { font-family: var(--num); }
 
+  /* ---- chronicle stats ---- */
+  .statlist { display: grid; gap: 10px; }
+  .stat { border-bottom: 1px dashed var(--line-soft); padding-bottom: 9px; }
+  .stat .sk {
+    display: block; font-family: var(--display); font-size: 12px;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--wax); margin: 0 0 2px;
+  }
+  .stat .sv { font-size: 15px; }
+  .stat .sv b { color: var(--gold-hi); font-weight: 600; }
+
   .footnote { color: var(--muted); font-size: 13px; font-style: italic; text-align: center; margin: 22px 0 0; line-height: 1.7; }
   .inline-link { color: var(--wax); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
   .removeplayer { background: transparent; border: none; color: var(--miss); cursor: pointer; font-size: 18px; padding: 0 4px; }
@@ -720,6 +730,93 @@ function wireChart() {
   });
 }
 
+// ---- rendering: chronicle stats -------------------------------------
+function statsPanel() {
+  const R = state.rounds.length;
+  const P = state.players.length;
+  if (R < 3) return "";
+  const names = state.players;
+
+  const perRound = state.rounds.map(r => names.map((_, i) => roundScore(r.bids[i], r.tricks[i])));
+  const cum = names.map(() => []);
+  const run = names.map(() => 0);
+  state.rounds.forEach((r, ri) => {
+    for (let i = 0; i < P; i++) { run[i] += perRound[ri][i]; cum[i].push(run[i]); }
+  });
+  const finals = cum.map(c => c[R - 1]);
+  const rankOf = i => finals.filter(v => v > finals[i]).length + 1;
+  const ordinal = k => k + (["st","nd","rd"][((k + 90) % 100 - 10) % 10 - 1] || "th");
+
+  const hits   = names.map((_, i) => state.rounds.filter(r => r.bids[i] === r.tricks[i]).length);
+  const overs  = names.map((_, i) => state.rounds.filter(r => r.bids[i] > r.tricks[i]).length);
+  const unders = names.map((_, i) => state.rounds.filter(r => r.bids[i] < r.tricks[i]).length);
+  const zeros  = names.map((_, i) => state.rounds.filter(r => r.bids[i] === 0).length);
+  const avgBid = names.map((_, i) => state.rounds.reduce((a, r) => a + r.bids[i], 0) / R);
+  const medBid = names.map((_, i) => {
+    const s = state.rounds.map(r => r.bids[i]).sort((a, b) => a - b);
+    return R % 2 ? s[(R - 1) / 2] : (s[R / 2 - 1] + s[R / 2]) / 2;
+  });
+  const streaks = names.map((_, i) => {
+    let best = 0, cur = 0;
+    for (const r of state.rounds) { cur = r.bids[i] === r.tricks[i] ? cur + 1 : 0; best = Math.max(best, cur); }
+    return best;
+  });
+
+  const fmt = v => (Math.round(v * 10) / 10).toString();
+  const tops = arr => {
+    const m = Math.max(...arr);
+    return { m, who: arr.flatMap((v, i) => v === m ? [i] : []) };
+  };
+  const lows = arr => tops(arr.map(v => -v)).who;
+  const nameList = idx => idx.map(i => escapeHtml(names[i])).join(" & ");
+
+  const lines = [];
+  const seer = tops(hits);
+  lines.push(["Truest seer", `<b>${nameList(seer.who)}</b> made their bid ${seer.m} of ${R} rounds (${Math.round(100 * seer.m / R)}%)`]);
+  const opt = tops(overs);
+  if (opt.m > 0) lines.push(["The optimist", `<b>${nameList(opt.who)}</b> overbid ${opt.m} of ${R} rounds`]);
+  const pes = tops(unders);
+  if (pes.m > 0) lines.push(["The pessimist", `<b>${nameList(pes.who)}</b> underbid ${pes.m} of ${R} rounds`]);
+  const meek = lows(avgBid);
+  lines.push(["The cautious hand", `<b>${nameList(meek)}</b> bid lowest — averaging ${fmt(avgBid[meek[0]])}, median ${fmt(medBid[meek[0]])}`]);
+  const bold = tops(avgBid);
+  if (bold.who.join() !== meek.join())
+    lines.push(["The bold hand", `<b>${nameList(bold.who)}</b> bid highest — averaging ${fmt(bold.m)}, median ${fmt(medBid[bold.who[0]])}`]);
+
+  // comeback: farthest behind the leader at any point, measured against where they ended
+  let cb = null;
+  for (let i = 0; i < P; i++) {
+    let maxDef = 0, defRound = 0;
+    for (let r = 0; r < R; r++) {
+      const def = Math.max(...cum.map(c => c[r])) - cum[i][r];
+      if (def > maxDef) { maxDef = def; defRound = r + 1; }
+    }
+    const gain = maxDef - (Math.max(...finals) - finals[i]);
+    if (maxDef >= 30 && gain >= 30 && (!cb || gain > cb.gain)) cb = { i, maxDef, defRound, gain };
+  }
+  if (cb) lines.push(["Comeback of the age", `<b>${escapeHtml(names[cb.i])}</b> sat ${cb.maxDef} points adrift after round ${cb.defRound}, yet finished ${ordinal(rankOf(cb.i))}`]);
+
+  const strk = tops(streaks);
+  if (strk.m >= 3) lines.push(["Streak of prophecy", `<b>${nameList(strk.who)}</b> made ${strk.m} bids in a row`]);
+  const zr = tops(zeros);
+  if (zr.m >= 3) lines.push(["Zero merchant", `<b>${nameList(zr.who)}</b> bid nought ${zr.m} times`]);
+  let grand = { v: -Infinity, i: 0, r: 0 };
+  perRound.forEach((row, ri) => row.forEach((v, i) => { if (v > grand.v) grand = { v, i, r: ri + 1 }; }));
+  lines.push(["Grandest round", `<b>${escapeHtml(names[grand.i])}</b> took +${grand.v} in round ${grand.r}`]);
+
+  const statRows = lines.map(([k, v]) =>
+    `<div class="stat"><span class="sk">${k}</span><span class="sv">${v}</span></div>`).join("");
+  const tblRows = names.map((p, i) =>
+    `<tr><td style="text-align:left">${escapeHtml(p)}</td><td>${hits[i]} / ${R}</td><td>${fmt(avgBid[i])}</td><td>${fmt(medBid[i])}</td></tr>`).join("");
+
+  return `<div class="panel"><h2>The chronicle</h2>
+    <div class="statlist">${statRows}</div>
+    <div class="scroll" style="margin-top:16px"><table class="hist">
+      <thead><tr><th style="text-align:left">Player</th><th>Bids hit</th><th>Avg bid</th><th>Median bid</th></tr></thead>
+      <tbody>${tblRows}</tbody>
+    </table></div></div>`;
+}
+
 // ---- rendering: game over ------------------------------------------
 function renderEnd() {
   const app = document.getElementById("app");
@@ -735,6 +832,7 @@ function renderEnd() {
       <div class="champ-pts">${totals[champ]} points over ${totalRounds()} rounds</div>
     </div>
     ${chartPanel()}
+    ${statsPanel()}
     ${standingsPanel(totals, order, champ)}
     ${historyPanel(totals)}
     <div class="panel">
