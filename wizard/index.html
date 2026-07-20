@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Wizard — Scorekeeper</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+
+  :root {
+    --bg:      #e6d5ae;
+    --bg2:     #f2e7cb;
+    --bg3:     #f8f0da;
+    --ink:     #2f2414;
+    --muted:   #7d6a4a;
+    --gold:    #8a6a25;
+    --gold-hi: #6d4f14;
+    --wax:     #7d2a23;
+    --wax-hi:  #96352c;
+    --hit:     #4c6b3c;
+    --miss:    #96352c;
+    --line:    rgba(90, 66, 30, 0.45);
+    --line-soft: rgba(90, 66, 30, 0.25);
+    --display: "IM Fell English SC","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --body:    "IM Fell English","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --num:     "IM Fell English","Iowan Old Style",Palatino,Georgia,serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background:
+      radial-gradient(90% 60% at 15% 8%, rgba(122, 92, 40, 0.12), transparent 60%),
+      radial-gradient(80% 60% at 88% 92%, rgba(122, 92, 40, 0.16), transparent 55%),
+      radial-gradient(60% 40% at 70% 20%, rgba(255, 250, 235, 0.35), transparent 60%),
+      radial-gradient(130% 110% at 50% 40%, #f0e2c0 0%, var(--bg) 60%, #d8c290 100%) fixed;
+    color: var(--ink);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    padding: max(20px, env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom));
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+
+  /* ---- masthead ---- */
+  .masthead {
+    text-align: center; padding: 14px 0 20px; position: relative;
+    border-bottom: 4px double var(--line);
+    margin: 0 0 22px;
+  }
+  .eyebrow {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.42em;
+    text-transform: uppercase; color: var(--wax);
+    margin: 0 0 8px;
+  }
+  .eyebrow::before { content: "❦  "; letter-spacing: 0; }
+  .eyebrow::after  { content: "  ❦"; letter-spacing: 0; }
+  .title {
+    font-family: var(--display); font-weight: 500;
+    font-size: clamp(38px, 9vw, 66px); line-height: 0.95;
+    margin: 0; letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .title em { font-style: italic; color: var(--gold-hi); }
+  .subtitle { color: var(--muted); font-style: italic; font-size: 16px; margin: 10px 0 0; }
+
+  /* ---- panels ---- */
+  .panel {
+    background: linear-gradient(180deg, var(--bg2), #ecdfbe);
+    border: 3px double var(--line);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 0 18px;
+    box-shadow: 0 2px 10px rgba(80, 55, 15, 0.14), inset 0 0 30px rgba(122, 92, 40, 0.06);
+  }
+  .panel h2 {
+    font-family: var(--display); font-weight: 500; font-size: 21px;
+    letter-spacing: 0.04em;
+    margin: 0 0 14px; color: var(--ink);
+    border-bottom: 1px solid var(--line-soft); padding-bottom: 8px;
+  }
+
+  label.fld { display: block; margin: 0 0 12px; }
+  label.fld span {
+    display: block; font-family: var(--display); font-size: 13px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 6px;
+  }
+  input[type="text"], input[type="number"], select {
+    width: 100%; font-family: var(--body); font-size: 17px;
+    color: var(--ink); background: var(--bg3);
+    border: 1px solid var(--line); border-radius: 3px;
+    padding: 11px 12px; outline: none;
+  }
+  input:focus, select:focus { border-color: var(--wax); box-shadow: 0 0 0 3px rgba(125, 42, 35, 0.18); }
+
+  .btn {
+    font-family: var(--display); font-size: 16px; letter-spacing: 0.04em;
+    border: 1px solid var(--line); border-radius: 3px;
+    padding: 12px 18px; cursor: pointer; color: var(--ink);
+    background: var(--bg3); transition: transform .05s ease, background .15s ease, opacity .15s ease;
+    box-shadow: 0 1px 3px rgba(80, 55, 15, 0.18);
+  }
+  .btn:hover { background: #fff7e2; }
+  .btn:active { transform: translateY(1px); }
+  .btn.primary {
+    background: linear-gradient(180deg, var(--wax-hi), #6a2019);
+    color: #f6ecd2; border-color: #571a14;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+  }
+  .btn.primary:hover { background: linear-gradient(180deg, #a53f34, var(--wax)); }
+  .btn.primary:disabled { opacity: 0.4; cursor: not-allowed; filter: grayscale(0.4); }
+  .btn.ghost { background: transparent; box-shadow: none; }
+  .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .seg { display: flex; gap: 8px; flex-wrap: wrap; }
+  .seg button {
+    flex: 1 1 auto; min-width: 54px; padding: 12px 0;
+    font-size: 19px; font-family: var(--num);
+    background: var(--bg3); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 3px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] {
+    background: var(--wax); border-color: #571a14; color: #f6ecd2; font-weight: 700;
+  }
+
+  /* ---- round card (signature element) ---- */
+  .rounddeck { display: flex; gap: 18px; align-items: stretch; margin: 0 0 18px; flex-wrap: wrap; }
+  .roundcard {
+    position: relative; flex: 0 0 160px; min-height: 210px;
+    background: linear-gradient(160deg, #f8f0da, #ecdcb4);
+    border: 1px solid var(--wax); border-radius: 8px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(80, 55, 15, 0.25),
+      inset 0 0 0 4px #f8f0da, inset 0 0 0 6px rgba(138, 106, 37, 0.55);
+  }
+  .roundcard .sigil { position: absolute; inset: 0; display: grid; place-items: center; opacity: 0.16; }
+  .roundcard .sigil svg { width: 130px; height: 130px; }
+  .roundcard .rc-kicker {
+    font-family: var(--display); font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold-hi); z-index: 1;
+  }
+  .roundcard .rc-num {
+    font-family: var(--display); font-size: 82px; line-height: 1;
+    color: var(--wax); z-index: 1;
+  }
+  .roundcard .rc-cards { font-size: 13px; font-style: italic; color: var(--muted); z-index: 1; margin-top: 4px; }
+  .roundmeta { flex: 1 1 220px; min-width: 200px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+  .roundmeta .line { display: flex; justify-content: space-between; font-size: 15px; border-bottom: 1px dashed var(--line-soft); padding-bottom: 8px; }
+  .roundmeta .line b { color: var(--wax); font-weight: 600; }
+  .roundmeta .k { color: var(--muted); font-style: italic; }
+
+  /* ---- entry grid ---- */
+  .entry { display: grid; grid-template-columns: 1fr auto auto; gap: 10px 12px; align-items: center; }
+  .entry .head { font-family: var(--display); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .entry .pname { font-weight: 600; font-size: 17px; }
+  .step { display: flex; align-items: center; gap: 6px; }
+  .step button {
+    width: 34px; height: 40px; border-radius: 3px; border: 1px solid var(--line);
+    background: var(--bg3); color: var(--ink); font-size: 20px; cursor: pointer; line-height: 1;
+  }
+  .step input {
+    width: 52px; text-align: center; font-family: var(--num); font-size: 19px;
+    -moz-appearance: textfield;
+  }
+  .step input::-webkit-outer-spin-button, .step input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+  .hints { display: flex; gap: 18px; flex-wrap: wrap; margin: 16px 0; font-size: 14px; font-style: italic; color: var(--muted); }
+  .hints .ok { color: var(--hit); }
+  .hints .bad { color: var(--miss); }
+  .hints b { color: var(--ink); font-family: var(--num); font-style: normal; }
+
+  /* ---- standings ---- */
+  .standings { display: flex; flex-direction: column; gap: 8px; }
+  .srow {
+    display: grid; grid-template-columns: 30px 1fr auto; align-items: center; gap: 12px;
+    background: var(--bg3); border: 1px solid var(--line-soft); border-radius: 3px; padding: 10px 14px;
+  }
+  .srow.lead { border-color: var(--gold); background: linear-gradient(90deg, rgba(138, 106, 37, 0.16), var(--bg3) 45%); }
+  .srow .rank { font-family: var(--display); font-size: 20px; color: var(--muted); text-align: center; }
+  .srow.lead .rank { color: var(--gold-hi); }
+  .srow .who { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .srow .crown { color: var(--gold-hi); }
+  .srow .pts { font-family: var(--num); font-size: 20px; color: var(--gold-hi); }
+
+  /* ---- history ---- */
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -4px; }
+  table.hist { border-collapse: collapse; width: 100%; font-size: 14px; }
+  table.hist th, table.hist td { padding: 8px 10px; text-align: center; white-space: nowrap; border-bottom: 1px solid var(--line-soft); }
+  table.hist th { font-family: var(--display); color: var(--muted); font-weight: 500; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; position: sticky; }
+  table.hist td.rn { color: var(--gold-hi); font-family: var(--num); }
+  table.hist .made { color: var(--hit); }
+  table.hist .missed { color: var(--miss); }
+  table.hist .cell small { color: var(--muted); font-family: var(--num); }
+  table.hist .cell b { font-family: var(--num); }
+  table.hist tfoot td { font-family: var(--num); color: var(--wax); font-weight: 700; border-top: 3px double var(--line); border-bottom: none; padding-top: 10px; }
+
+  /* ---- winner banner ---- */
+  .banner { text-align: center; padding: 26px 20px; border: 3px double var(--gold); border-radius: 4px;
+    background: radial-gradient(120% 120% at 50% 0%, rgba(138, 106, 37, 0.18), var(--bg2)); margin: 0 0 18px; }
+  .banner .champ-kick { font-family: var(--display); font-size: 13px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--wax); }
+  .banner .champ { font-family: var(--display); font-size: clamp(30px,7vw,48px); color: var(--gold-hi); margin: 6px 0 2px; }
+  .banner .champ-pts { font-family: var(--num); color: var(--ink); font-style: italic; }
+
+  .footnote { color: var(--muted); font-size: 13px; font-style: italic; text-align: center; margin: 22px 0 0; line-height: 1.7; }
+  .inline-link { color: var(--wax); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+  .removeplayer { background: transparent; border: none; color: var(--miss); cursor: pointer; font-size: 18px; padding: 0 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <p class="eyebrow">The Trick-Taking Reckoning</p>
+    <h1 class="title">Wizard <em>Scorekeeper</em></h1>
+    <p class="subtitle" id="subtitle">Bid true, or pay the toll.</p>
+  </div>
+  <div id="app"></div>
+  <p class="footnote">
+    Scoring: hit your bid exactly for <b>20 + 10 per trick bid</b> · miss by any for <b>−10 per trick over or under</b> · a correct bid of zero still scores 20.<br>
+    Your game saves automatically on this device.
+  </p>
+</div>
+
+<script>
+"use strict";
+
+const STORAGE_KEY = "wizard:v1";
+const SIGIL = `<svg viewBox="0 0 100 100" fill="none" stroke="#6d4f14" stroke-width="1.4">
+  <circle cx="50" cy="50" r="46"/>
+  <circle cx="50" cy="50" r="34"/>
+  <path d="M50 6 L82 74 L18 74 Z"/>
+  <path d="M50 94 L82 26 L18 26 Z"/>
+  <circle cx="50" cy="50" r="8"/>
+</svg>`;
+
+let state = null;
+let saveTimer = null;
+
+// ---- storage helpers ------------------------------------------------
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {
+    // no saved game yet, or storage unavailable — start clean
+  }
+  return null;
+}
+
+function saveState() {
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {
+      // best-effort persistence; a failed save shouldn't break play
+    }
+  }, 120);
+}
+
+function clearSaved() {
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch (e) {
+    // nothing saved to remove
+  }
+}
+
+// ---- game math ------------------------------------------------------
+function totalRounds() {
+  return Math.floor(60 / state.players.length);
+}
+
+function currentRoundNumber() {
+  // 1-based; equals cards dealt this round
+  return state.rounds.length + 1;
+}
+
+function dealerIndex(roundNumber) {
+  return (state.dealerStart + roundNumber - 1) % state.players.length;
+}
+
+function roundScore(bid, won) {
+  if (bid === won) return 20 + 10 * bid;
+  return -10 * Math.abs(bid - won);
+}
+
+function cumulativeTotals() {
+  const totals = state.players.map(() => 0);
+  for (const r of state.rounds) {
+    for (let i = 0; i < state.players.length; i++) {
+      totals[i] += roundScore(r.bids[i], r.tricks[i]);
+    }
+  }
+  return totals;
+}
+
+function gameOver() {
+  return state.rounds.length >= totalRounds();
+}
+
+// ---- state transitions ---------------------------------------------
+function startGame(names, dealerStart) {
+  state = {
+    players: names,
+    dealerStart: dealerStart,
+    rounds: [],
+    draft: { bids: names.map(() => null), tricks: names.map(() => null) }
+  };
+  saveState();
+  render();
+}
+
+function scoreCurrentRound() {
+  readDraftFromDOM();
+  const n = currentRoundNumber();
+  const { bids, tricks } = state.draft;
+  const allIn = bids.every(v => v !== null) && tricks.every(v => v !== null);
+  const trickSum = tricks.reduce((a, b) => a + (b || 0), 0);
+  if (!allIn || trickSum !== n) return; // guarded by disabled button too
+  state.rounds.push({ bids: bids.slice(), tricks: tricks.slice() });
+  state.draft = { bids: state.players.map(() => null), tricks: state.players.map(() => null) };
+  saveState();
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function undoLastRound() {
+  if (state.rounds.length === 0) return;
+  const last = state.rounds.pop();
+  state.draft = { bids: last.bids.slice(), tricks: last.tricks.slice() };
+  saveState();
+  render();
+}
+
+function rematch() {
+  const names = state.players.slice();
+  const nextDealer = (state.dealerStart + 1) % names.length;
+  startGame(names, nextDealer);
+}
+
+function newGame() {
+  state = null;
+  clearSaved();
+  render();
+}
+
+// ---- rendering: setup ----------------------------------------------
+function renderSetup() {
+  const app = document.getElementById("app");
+  const saved = window.__setupCount || 4;
+  app.innerHTML = `
+    <div class="panel">
+      <h2>Gather the table</h2>
+      <label class="fld">
+        <span>How many players</span>
+        <div class="seg" id="countSeg">
+          ${[3,4,5,6].map(c => `<button data-count="${c}" aria-pressed="${c===saved}">${c}</button>`).join("")}
+        </div>
+      </label>
+      <div id="nameFields"></div>
+      <label class="fld">
+        <span>Who deals round one</span>
+        <select id="dealerSel"></select>
+      </label>
+      <div class="btn-row">
+        <button class="btn primary" id="startBtn">Deal the first hand</button>
+      </div>
+      <p class="footnote" style="text-align:left;margin-top:14px">
+        ${saved} players &rarr; <b>${Math.floor(60/saved)} rounds</b>, dealing 1 card up to ${Math.floor(60/saved)}.
+      </p>
+    </div>`;
+
+  window.__setupCount = saved;
+  const seg = document.getElementById("countSeg");
+  seg.querySelectorAll("button").forEach(b => {
+    b.addEventListener("click", () => {
+      window.__setupCount = parseInt(b.dataset.count, 10);
+      renderSetup();
+    });
+  });
+  buildNameFields(saved);
+  document.getElementById("startBtn").addEventListener("click", () => {
+    const names = [];
+    document.querySelectorAll(".pnameInput").forEach((inp, i) => {
+      const v = inp.value.trim();
+      names.push(v || `Player ${i + 1}`);
+    });
+    const dealerStart = parseInt(document.getElementById("dealerSel").value, 10);
+    startGame(names, dealerStart);
+  });
+}
+
+function buildNameFields(count) {
+  const box = document.getElementById("nameFields");
+  const prior = window.__names || [];
+  let html = "";
+  for (let i = 0; i < count; i++) {
+    const val = prior[i] || "";
+    html += `<label class="fld"><span>Player ${i + 1}</span>
+      <input type="text" class="pnameInput" placeholder="Name" value="${escapeHtml(val)}" maxlength="18" /></label>`;
+  }
+  box.innerHTML = html;
+  const sel = document.getElementById("dealerSel");
+  const syncDealer = () => {
+    const names = Array.from(document.querySelectorAll(".pnameInput")).map((inp, i) => inp.value.trim() || `Player ${i + 1}`);
+    window.__names = names;
+    sel.innerHTML = names.map((n, i) => `<option value="${i}">${escapeHtml(n)}</option>`).join("");
+  };
+  box.querySelectorAll(".pnameInput").forEach(inp => inp.addEventListener("input", syncDealer));
+  syncDealer();
+}
+
+// ---- rendering: active game ----------------------------------------
+function renderGame() {
+  const app = document.getElementById("app");
+  const n = currentRoundNumber();
+  const Y = totalRounds();
+  const dealer = state.players[dealerIndex(n)];
+  const totals = cumulativeTotals();
+  const order = totals.map((t, i) => i).sort((a, b) => totals[b] - totals[a]);
+  const leader = state.rounds.length > 0 ? order[0] : -1;
+
+  app.innerHTML = `
+    <div class="rounddeck">
+      <div class="roundcard">
+        <div class="sigil">${SIGIL}</div>
+        <div class="rc-kicker">Round ${n} / ${Y}</div>
+        <div class="rc-num">${n}</div>
+        <div class="rc-cards">card${n === 1 ? "" : "s"} dealt</div>
+      </div>
+      <div class="roundmeta panel" style="margin:0">
+        <div class="line"><span class="k">Dealer</span><b>${escapeHtml(dealer)}</b></div>
+        <div class="line"><span class="k">Leader</span><b>${leader >= 0 ? escapeHtml(state.players[leader]) + " · " + totals[leader] : "—"}</b></div>
+        <div class="line"><span class="k">Rounds left</span><b>${Y - n + 1}</b></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Bids &amp; tricks</h2>
+      <div class="entry" id="entryGrid">
+        <div class="head">Player</div><div class="head" style="text-align:center">Bid</div><div class="head" style="text-align:center">Won</div>
+        ${state.players.map((p, i) => rowHtml(p, i, n)).join("")}
+      </div>
+      <div class="hints">
+        <div>Bids on the table: <b id="bidSum">0</b> / ${n}<span id="bidNote"></span></div>
+        <div>Tricks played: <b id="trickSum">0</b> / ${n}<span id="trickNote"></span></div>
+      </div>
+      <div class="btn-row">
+        <button class="btn primary" id="scoreBtn">Score round ${n}</button>
+        <button class="btn ghost" id="undoBtn" ${state.rounds.length === 0 ? "disabled style=opacity:.4" : ""}>Undo last round</button>
+        <button class="btn ghost" id="newBtn">New game</button>
+      </div>
+    </div>
+
+    ${standingsPanel(totals, order, leader)}
+    ${historyPanel(totals)}
+  `;
+
+  document.getElementById("subtitle").textContent = `Round ${n} of ${Y} — ${dealer} deals ${n}.`;
+  wireEntry(n);
+  document.getElementById("scoreBtn").addEventListener("click", scoreCurrentRound);
+  document.getElementById("undoBtn").addEventListener("click", undoLastRound);
+  document.getElementById("newBtn").addEventListener("click", confirmNewGame);
+  updateHints(n);
+}
+
+function rowHtml(name, i, n) {
+  const b = state.draft.bids[i];
+  const w = state.draft.tricks[i];
+  return `
+    <div class="pname">${escapeHtml(name)}</div>
+    ${stepper("bid", i, b, n)}
+    ${stepper("won", i, w, n)}
+  `;
+}
+
+function stepper(kind, i, val, n) {
+  const v = val === null || val === undefined ? "" : val;
+  return `<div class="step">
+    <button type="button" data-act="dec" data-kind="${kind}" data-i="${i}">–</button>
+    <input type="number" inputmode="numeric" min="0" max="${n}" data-kind="${kind}" data-i="${i}" value="${v}" placeholder="·" />
+    <button type="button" data-act="inc" data-kind="${kind}" data-i="${i}">+</button>
+  </div>`;
+}
+
+function wireEntry(n) {
+  const grid = document.getElementById("entryGrid");
+  grid.querySelectorAll("button[data-act]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const inp = grid.querySelector(`input[data-kind="${btn.dataset.kind}"][data-i="${btn.dataset.i}"]`);
+      let cur = inp.value === "" ? 0 : parseInt(inp.value, 10);
+      cur += btn.dataset.act === "inc" ? 1 : -1;
+      cur = Math.max(0, Math.min(n, cur));
+      inp.value = cur;
+      onDraftChange(n);
+    });
+  });
+  grid.querySelectorAll("input").forEach(inp => {
+    inp.addEventListener("input", () => {
+      if (inp.value === "") { onDraftChange(n); return; }
+      let cur = parseInt(inp.value, 10);
+      if (isNaN(cur)) cur = 0;
+      cur = Math.max(0, Math.min(n, cur));
+      inp.value = cur;
+      onDraftChange(n);
+    });
+  });
+}
+
+function readDraftFromDOM() {
+  const grid = document.getElementById("entryGrid");
+  if (!grid) return;
+  grid.querySelectorAll("input").forEach(inp => {
+    const i = parseInt(inp.dataset.i, 10);
+    const val = inp.value === "" ? null : parseInt(inp.value, 10);
+    if (inp.dataset.kind === "bid") state.draft.bids[i] = val;
+    else state.draft.tricks[i] = val;
+  });
+}
+
+function onDraftChange(n) {
+  readDraftFromDOM();
+  saveState();
+  updateHints(n);
+}
+
+function updateHints(n) {
+  const bids = state.draft.bids;
+  const tricks = state.draft.tricks;
+  const bidSum = bids.reduce((a, b) => a + (b || 0), 0);
+  const trickSum = tricks.reduce((a, b) => a + (b || 0), 0);
+  const bidSumEl = document.getElementById("bidSum");
+  const trickSumEl = document.getElementById("trickSum");
+  if (!bidSumEl) return;
+  bidSumEl.textContent = bidSum;
+  trickSumEl.textContent = trickSum;
+  const bidNote = document.getElementById("bidNote");
+  bidNote.textContent = bidSum === n ? "  · dead even, someone's going down" : "";
+  bidNote.className = bidSum === n ? "bad" : "";
+  const trickNote = document.getElementById("trickNote");
+  const allTricksIn = tricks.every(v => v !== null);
+  if (allTricksIn && trickSum === n) { trickNote.textContent = "  · balances"; trickNote.className = "ok"; }
+  else if (allTricksIn && trickSum !== n) { trickNote.textContent = `  · must total ${n}`; trickNote.className = "bad"; }
+  else { trickNote.textContent = ""; trickNote.className = ""; }
+  const allBidsIn = bids.every(v => v !== null);
+  const ready = allBidsIn && allTricksIn && trickSum === n;
+  document.getElementById("scoreBtn").disabled = !ready;
+}
+
+// ---- rendering: standings + history --------------------------------
+function standingsPanel(totals, order, leader) {
+  const rows = order.map((pi, rank) => {
+    const isLead = pi === leader && state.rounds.length > 0;
+    return `<div class="srow ${isLead ? "lead" : ""}">
+      <div class="rank">${rank + 1}</div>
+      <div class="who">${isLead ? '<span class="crown">♛</span>' : ""}${escapeHtml(state.players[pi])}</div>
+      <div class="pts">${totals[pi]}</div>
+    </div>`;
+  }).join("");
+  return `<div class="panel"><h2>Standings</h2><div class="standings">${rows}</div></div>`;
+}
+
+function historyPanel(totals) {
+  if (state.rounds.length === 0) return "";
+  const head = `<tr><th>R</th>${state.players.map(p => `<th>${escapeHtml(p)}</th>`).join("")}</tr>`;
+  const body = state.rounds.map((r, ri) => {
+    const cells = state.players.map((_, i) => {
+      const d = roundScore(r.bids[i], r.tricks[i]);
+      const made = r.bids[i] === r.tricks[i];
+      return `<td class="cell"><small>${r.bids[i]}&rarr;${r.tricks[i]}</small><br>
+        <b class="${made ? "made" : "missed"}">${d > 0 ? "+" + d : d}</b></td>`;
+    }).join("");
+    return `<tr><td class="rn">${ri + 1}</td>${cells}</tr>`;
+  }).join("");
+  const foot = `<tr><td>Σ</td>${totals.map(t => `<td>${t}</td>`).join("")}</tr>`;
+  return `<div class="panel"><h2>Round by round</h2>
+    <div class="scroll"><table class="hist"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table></div></div>`;
+}
+
+// ---- rendering: game over ------------------------------------------
+function renderEnd() {
+  const app = document.getElementById("app");
+  const totals = cumulativeTotals();
+  const order = totals.map((t, i) => i).sort((a, b) => totals[b] - totals[a]);
+  const champ = order[0];
+  const tie = totals.filter(t => t === totals[champ]).length > 1;
+
+  app.innerHTML = `
+    <div class="banner">
+      <div class="champ-kick">${tie ? "A tie of titans" : "Champion"}</div>
+      <div class="champ">${tie ? "Shared victory" : escapeHtml(state.players[champ])}</div>
+      <div class="champ-pts">${totals[champ]} points over ${totalRounds()} rounds</div>
+    </div>
+    ${standingsPanel(totals, order, champ)}
+    ${historyPanel(totals)}
+    <div class="panel">
+      <div class="btn-row">
+        <button class="btn primary" id="rematchBtn">Rematch (dealer moves on)</button>
+        <button class="btn ghost" id="undoBtn">Undo last round</button>
+        <button class="btn ghost" id="newBtn">New game</button>
+      </div>
+    </div>`;
+  document.getElementById("subtitle").textContent = tie ? "The spellbook records a draw." : `${state.players[champ]} bid truest.`;
+  document.getElementById("rematchBtn").addEventListener("click", rematch);
+  document.getElementById("undoBtn").addEventListener("click", undoLastRound);
+  document.getElementById("newBtn").addEventListener("click", confirmNewGame);
+}
+
+// ---- misc -----------------------------------------------------------
+function confirmNewGame() {
+  const app = document.getElementById("app");
+  const bar = document.createElement("div");
+  bar.className = "panel";
+  bar.innerHTML = `<h2>Abandon this game?</h2>
+    <p style="color:var(--muted);margin:0 0 14px">This clears the current scores from this device.</p>
+    <div class="btn-row">
+      <button class="btn primary" id="yesNew">Yes, new game</button>
+      <button class="btn ghost" id="noNew">Keep playing</button>
+    </div>`;
+  app.prepend(bar);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  document.getElementById("yesNew").addEventListener("click", newGame);
+  document.getElementById("noNew").addEventListener("click", () => bar.remove());
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function render() {
+  if (!state) { renderSetup(); return; }
+  if (gameOver()) { renderEnd(); return; }
+  renderGame();
+}
+
+// ---- boot -----------------------------------------------------------
+state = loadState();
+render();
+</script>
+</body>
+</html>
