@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#e6d5ae" />
 <title>Wizard — Scorekeeper</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
@@ -27,17 +28,24 @@
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
+  /* solid color on html so iOS overscroll and the status/home bars stay parchment */
+  html { background: var(--bg); }
   body {
-    background:
-      radial-gradient(90% 60% at 15% 8%, rgba(122, 92, 40, 0.12), transparent 60%),
-      radial-gradient(80% 60% at 88% 92%, rgba(122, 92, 40, 0.16), transparent 55%),
-      radial-gradient(60% 40% at 70% 20%, rgba(255, 250, 235, 0.35), transparent 60%),
-      radial-gradient(130% 110% at 50% 40%, #f0e2c0 0%, var(--bg) 60%, #d8c290 100%) fixed;
+    background: var(--bg);
     color: var(--ink);
     font-family: var(--body);
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
     padding: max(20px, env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom));
+  }
+  /* gradient lives on a fixed layer: background-attachment:fixed is broken on iOS */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1;
+    background:
+      radial-gradient(90% 60% at 15% 8%, rgba(122, 92, 40, 0.12), transparent 60%),
+      radial-gradient(80% 60% at 88% 92%, rgba(122, 92, 40, 0.16), transparent 55%),
+      radial-gradient(60% 40% at 70% 20%, rgba(255, 250, 235, 0.35), transparent 60%),
+      radial-gradient(130% 110% at 50% 40%, #f0e2c0 0%, var(--bg) 60%, #d8c290 100%);
   }
   .wrap { max-width: 860px; margin: 0 auto; }
 
