@@ -1,8 +1,9 @@
 """Fetch watched films from Letterboxd RSS and accumulate them.
 
 Letterboxd's RSS only exposes the ~50 most-recent diary entries, so each run
-merges the current window into data/films_archive.json (keyed by guid) and
-stats are computed from that growing archive.
+merges the current window into data/films_archive.json (keyed by guid).
+Stats union that growing archive with data/letterboxd_baseline.json, the
+all-time snapshot from a full account export (import_letterboxd_export.py).
 
 Pattern adapted from ChristopherJohnDillon/christopherjohndillon.github.io.
 Stdlib only.
@@ -19,6 +20,7 @@ DATA = Path(__file__).resolve().parent.parent / "data"
 OUT = DATA / "films.json"
 STATS_OUT = DATA / "watching_stats.json"
 ARCHIVE = DATA / "films_archive.json"
+BASELINE = DATA / "letterboxd_baseline.json"  # from import_letterboxd_export.py
 NS = {"letterboxd": "https://letterboxd.com", "tmdb": "https://themoviedb.org"}
 N_FILMS = 5
 ENTRY_KEYS = ("title", "year", "rating", "watched_at", "poster", "url")
@@ -77,29 +79,53 @@ def recent_films(archive, n=N_FILMS):
     return [{k: e.get(k) for k in ENTRY_KEYS} for e in valid[:n]]
 
 
-def watching_stats(archive):
+def film_key(name, year):
+    return f"{str(name or '').strip().lower()}|{str(year or '').strip()}"
+
+
+def load_baseline():
+    if BASELINE.exists():
+        try:
+            return json.loads(BASELINE.read_text())
+        except (ValueError, OSError):
+            pass
+    return {"watched": [], "ratings": [], "diary": []}
+
+
+def watching_stats(archive, baseline):
+    dated = [e for e in archive if e.get("title") and re.match(r"\d{4}", e.get("watched_at") or "")]
+
+    # films watched per year: baseline diary + RSS entries not already in it
     years = Counter()
-    timeline = []
-    rated = []
-    for e in archive:
-        m = re.match(r"(\d{4})", e.get("watched_at") or "")
-        if not m:
-            continue
-        years[int(m.group(1))] += 1
-        if e.get("rating") is not None:
-            timeline.append({
-                "title": e["title"],
-                "year": e.get("year"),
-                "rating": e["rating"],
-                "watched_at": e["watched_at"],
-                "poster": e.get("poster", ""),
-            })
-            rated.append(e["rating"])
+    diary_seen = set()
+    for d in baseline["diary"]:
+        years[int(d["watched_at"][:4])] += 1
+        diary_seen.add((d["key"], d["watched_at"]))
+    for e in dated:
+        if (film_key(e["title"], e.get("year")), e["watched_at"]) not in diary_seen:
+            years[int(e["watched_at"][:4])] += 1
     per_year = [{"year": y, "count": years[y]} for y in sorted(years)]
-    timeline.sort(key=lambda x: x["watched_at"])
+
+    # one current rating per film: export snapshot, RSS entries override (newer)
+    by_film = {}
+    for r in baseline["ratings"]:
+        by_film[r["key"]] = {
+            "title": r["title"], "year": r["year"], "rating": r["rating"],
+            "watched_at": r["rated_at"], "poster": "",
+        }
+    for e in dated:
+        if e.get("rating") is not None:
+            by_film[film_key(e["title"], e.get("year"))] = {
+                "title": e["title"], "year": e.get("year"), "rating": e["rating"],
+                "watched_at": e["watched_at"], "poster": e.get("poster", ""),
+            }
+    timeline = sorted(by_film.values(), key=lambda x: x["watched_at"])
+
+    total = set(baseline["watched"]) | {film_key(e["title"], e.get("year")) for e in dated}
+    rated = [t["rating"] for t in timeline]
     highest = max(timeline, key=lambda x: x["rating"], default=None)
     fun = {
-        "total_films": sum(years.values()),
+        "total_films": len(total),
         "avg_rating": round(sum(rated) / len(rated), 2) if rated else 0.0,
         "highest_rated": {"title": highest["title"], "rating": highest["rating"]} if highest else None,
     }
@@ -117,7 +143,7 @@ if __name__ == "__main__":
     items = root.findall(".//item")
     archive = merge_archive(load_archive(), [parse_item(it) for it in items])
     films = recent_films(archive)
-    per_year, fun, timeline = watching_stats(archive)
+    per_year, fun, timeline = watching_stats(archive, load_baseline())
     DATA.mkdir(exist_ok=True)
     ARCHIVE.write_text(json.dumps(archive, indent=2) + "\n")
     OUT.write_text(json.dumps(films, indent=2) + "\n")

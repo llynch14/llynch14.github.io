@@ -1,25 +1,2669 @@
 {
   "per_year": [
     {
+      "year": 2022,
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "count": 75
+    },
+    {
+      "year": 2025,
+      "count": 98
+    },
+    {
       "year": 2026,
-      "count": 51
+      "count": 53
     }
   ],
   "fun": {
-    "total_films": 51,
-    "avg_rating": 3.2,
+    "total_films": 591,
+    "avg_rating": 3.3,
     "highest_rated": {
-      "title": "Twilight",
+      "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
     }
   },
   "timeline": [
+    {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "year": 2018,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Dark Knight",
+      "year": 2008,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Lady Bird",
+      "year": 2017,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Jojo Rabbit",
+      "year": 2019,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Little Women",
+      "year": 2019,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Godfather",
+      "year": 1972,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Marriage Story",
+      "year": 2019,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Spider-Man: No Way Home",
+      "year": 2021,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Ratatouille",
+      "year": 2007,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Empire Strikes Back",
+      "year": 1980,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Booksmart",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "year": 2018,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Logan",
+      "year": 2017,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Captain America: The First Avenger",
+      "year": 2011,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Monsters, Inc.",
+      "year": 2001,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Lion King",
+      "year": 1994,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Jaws",
+      "year": 1975,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "10 Things I Hate About You",
+      "year": 1999,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "A Star Is Born",
+      "year": 2018,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The French Dispatch of the Liberty, Kansas Evening Sun",
+      "year": 2021,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Luca",
+      "year": 2021,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+      "year": 2020,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Thor",
+      "year": 2011,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Zootopia",
+      "year": 2016,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Godfather Part II",
+      "year": 1974,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Raiders of the Lost Ark",
+      "year": 1981,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Toy Story 2",
+      "year": 1999,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Thor: The Dark World",
+      "year": 2013,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "It Chapter Two",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Last Night in Soho",
+      "year": 2021,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "V for Vendetta",
+      "year": 2005,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Cabin in the Woods",
+      "year": 2011,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Squid Game",
+      "year": 2021,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Terminator 2: Judgment Day",
+      "year": 1991,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Mamma Mia!",
+      "year": 2008,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Mulan",
+      "year": 1998,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Eternals",
+      "year": 2021,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "tick, tick... BOOM!",
+      "year": 2021,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Love Actually",
+      "year": 2003,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Venom: Let There Be Carnage",
+      "year": 2021,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Pok\u00e9mon Detective Pikachu",
+      "year": 2019,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Doctor Sleep",
+      "year": 2019,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Indiana Jones and the Temple of Doom",
+      "year": 1984,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Lilo & Stitch",
+      "year": 2002,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Raya and the Last Dragon",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Hamilton",
+      "year": 2020,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "El Camino: A Breaking Bad Movie",
+      "year": 2019,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Paddington 2",
+      "year": 2017,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Paddington",
+      "year": 2014,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "In the Heights",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Encanto",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Godfather Part III",
+      "year": 1990,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "A Silent Voice: The Movie",
+      "year": 2016,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Words Bubble Up Like Soda Pop",
+      "year": 2020,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Indiana Jones and the Last Crusade",
+      "year": 1989,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+      "year": 2020,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Black Widow",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Soul",
+      "year": 2020,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Devil All the Time",
+      "year": 2020,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Onward",
+      "year": 2020,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Star Wars: The Rise of Skywalker",
+      "year": 2019,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Bombshell",
+      "year": 2019,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Frozen II",
+      "year": 2019,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Knives Out",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Joker",
+      "year": 2019,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Spider-Man: Far From Home",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Midsommar",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Toy Story 4",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Rocketman",
+      "year": 2019,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Aladdin",
+      "year": 2019,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Peanut Butter Falcon",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Extremely Wicked, Shockingly Evil and Vile",
+      "year": 2019,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Ralph Breaks the Internet",
+      "year": 2018,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Venom",
+      "year": 2018,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Crazy Rich Asians",
+      "year": 2018,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Incredibles 2",
+      "year": 2018,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Star Wars: The Last Jedi",
+      "year": 2017,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Greatest Showman",
+      "year": 2017,
+      "rating": 2.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Jumanji: Welcome to the Jungle",
+      "year": 2017,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Coco",
+      "year": 2017,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Thor: Ragnarok",
+      "year": 2017,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Spider-Man: Homecoming",
+      "year": 2017,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Wonder Woman",
+      "year": 2017,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Big Hero 6",
+      "year": 2014,
+      "rating": 1.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Guardians of the Galaxy",
+      "year": 2014,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Captain America: The Winter Soldier",
+      "year": 2014,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "year": 2013,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Hunger Games: Catching Fire",
+      "year": 2013,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Wolverine",
+      "year": 2013,
+      "rating": 3.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Avengers",
+      "year": 2012,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Inception",
+      "year": 2010,
+      "rating": 4.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Enchanted",
+      "year": 2007,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Finding Nemo",
+      "year": 2003,
+      "rating": 5.0,
+      "watched_at": "2022-01-02",
+      "poster": ""
+    },
+    {
+      "title": "The Grand Budapest Hotel",
+      "year": 2014,
+      "rating": 5.0,
+      "watched_at": "2022-01-04",
+      "poster": ""
+    },
+    {
+      "title": "The Mitchells vs. the Machines",
+      "year": 2021,
+      "rating": 4.0,
+      "watched_at": "2022-01-13",
+      "poster": ""
+    },
+    {
+      "title": "Licorice Pizza",
+      "year": 2021,
+      "rating": 2.0,
+      "watched_at": "2022-01-14",
+      "poster": ""
+    },
+    {
+      "title": "Free Guy",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2022-01-17",
+      "poster": ""
+    },
+    {
+      "title": "Belfast",
+      "year": 2021,
+      "rating": 4.0,
+      "watched_at": "2022-01-30",
+      "poster": ""
+    },
+    {
+      "title": "The Hating Game",
+      "year": 2021,
+      "rating": 1.0,
+      "watched_at": "2022-02-15",
+      "poster": ""
+    },
+    {
+      "title": "Rent",
+      "year": 2005,
+      "rating": 3.0,
+      "watched_at": "2022-02-17",
+      "poster": ""
+    },
+    {
+      "title": "Uncharted",
+      "year": 2022,
+      "rating": 2.0,
+      "watched_at": "2022-02-19",
+      "poster": ""
+    },
+    {
+      "title": "The Batman",
+      "year": 2022,
+      "rating": 5.0,
+      "watched_at": "2022-03-06",
+      "poster": ""
+    },
+    {
+      "title": "Turning Red",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2022-03-16",
+      "poster": ""
+    },
+    {
+      "title": "Yesterday",
+      "year": 2019,
+      "rating": 0.5,
+      "watched_at": "2022-03-16",
+      "poster": ""
+    },
+    {
+      "title": "Who Framed Roger Rabbit",
+      "year": 1988,
+      "rating": 0.5,
+      "watched_at": "2022-03-16",
+      "poster": ""
+    },
+    {
+      "title": "Fresh",
+      "year": 2022,
+      "rating": 3.0,
+      "watched_at": "2022-03-20",
+      "poster": ""
+    },
+    {
+      "title": "Spree",
+      "year": 2020,
+      "rating": 3.5,
+      "watched_at": "2022-06-12",
+      "poster": ""
+    },
+    {
+      "title": "The Village",
+      "year": 2004,
+      "rating": 3.0,
+      "watched_at": "2022-09-26",
+      "poster": ""
+    },
+    {
+      "title": "Where the Crawdads Sing",
+      "year": 2022,
+      "rating": 3.0,
+      "watched_at": "2022-09-26",
+      "poster": ""
+    },
+    {
+      "title": "Thor: Love and Thunder",
+      "year": 2022,
+      "rating": 1.5,
+      "watched_at": "2022-09-26",
+      "poster": ""
+    },
+    {
+      "title": "Do Revenge",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2022-09-26",
+      "poster": ""
+    },
+    {
+      "title": "Don't Worry Darling",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2022-09-29",
+      "poster": ""
+    },
+    {
+      "title": "See How They Run",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2022-09-29",
+      "poster": ""
+    },
+    {
+      "title": "Everything Everywhere All at Once",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2022-10-03",
+      "poster": ""
+    },
+    {
+      "title": "Bones and All",
+      "year": 2022,
+      "rating": 4.0,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "Aftersun",
+      "year": 2022,
+      "rating": 5.0,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "Guns Akimbo",
+      "year": 2019,
+      "rating": 3.0,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "Klaus",
+      "year": 2019,
+      "rating": 5.0,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "The Twilight Saga: New Moon",
+      "year": 2009,
+      "rating": 3.0,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "The Twilight Saga: Eclipse",
+      "year": 2010,
+      "rating": 1.5,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "The Twilight Saga: Breaking Dawn \u2013 Part 1",
+      "year": 2011,
+      "rating": 0.5,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "The Twilight Saga: Breaking Dawn \u2013 Part 2",
+      "year": 2012,
+      "rating": 1.0,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "A Castle for Christmas",
+      "year": 2021,
+      "rating": 0.5,
+      "watched_at": "2022-12-09",
+      "poster": ""
+    },
+    {
+      "title": "Glass Onion",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2022-12-27",
+      "poster": ""
+    },
+    {
+      "title": "Strange World",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2022-12-27",
+      "poster": ""
+    },
+    {
+      "title": "White Noise",
+      "year": 2022,
+      "rating": 4.0,
+      "watched_at": "2023-01-03",
+      "poster": ""
+    },
+    {
+      "title": "Top Gun: Maverick",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2023-01-03",
+      "poster": ""
+    },
+    {
+      "title": "Empire of Light",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2023-01-12",
+      "poster": ""
+    },
+    {
+      "title": "The Menu",
+      "year": 2022,
+      "rating": 4.5,
+      "watched_at": "2023-01-12",
+      "poster": ""
+    },
+    {
+      "title": "The Sea Beast",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2023-01-13",
+      "poster": ""
+    },
+    {
+      "title": "Till",
+      "year": 2022,
+      "rating": 4.0,
+      "watched_at": "2023-01-14",
+      "poster": ""
+    },
+    {
+      "title": "Meet Cute",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2023-01-18",
+      "poster": ""
+    },
+    {
+      "title": "Scream",
+      "year": 1996,
+      "rating": 4.0,
+      "watched_at": "2023-01-23",
+      "poster": ""
+    },
+    {
+      "title": "Puss in Boots: The Last Wish",
+      "year": 2022,
+      "rating": 4.5,
+      "watched_at": "2023-02-06",
+      "poster": ""
+    },
+    {
+      "title": "Zoolander 2",
+      "year": 2016,
+      "rating": 3.5,
+      "watched_at": "2023-02-12",
+      "poster": ""
+    },
+    {
+      "title": "Broker",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2023-02-24",
+      "poster": ""
+    },
+    {
+      "title": "Elvis",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2023-03-11",
+      "poster": ""
+    },
+    {
+      "title": "Scream VI",
+      "year": 2023,
+      "rating": 3.0,
+      "watched_at": "2023-03-16",
+      "poster": ""
+    },
+    {
+      "title": "Heathers",
+      "year": 1989,
+      "rating": 3.5,
+      "watched_at": "2023-03-17",
+      "poster": ""
+    },
+    {
+      "title": "Minari",
+      "year": 2020,
+      "rating": 3.5,
+      "watched_at": "2023-03-26",
+      "poster": ""
+    },
+    {
+      "title": "A Good Person",
+      "year": 2023,
+      "rating": 5.0,
+      "watched_at": "2023-03-27",
+      "poster": ""
+    },
+    {
+      "title": "God's Creatures",
+      "year": 2022,
+      "rating": 3.0,
+      "watched_at": "2023-04-05",
+      "poster": ""
+    },
+    {
+      "title": "Suzume",
+      "year": 2022,
+      "rating": 4.0,
+      "watched_at": "2023-04-23",
+      "poster": ""
+    },
+    {
+      "title": "Guardians of the Galaxy Vol. 3",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2023-05-22",
+      "poster": ""
+    },
+    {
+      "title": "Scrooge: A Christmas Carol",
+      "year": 2022,
+      "rating": 0.5,
+      "watched_at": "2023-06-18",
+      "poster": ""
+    },
+    {
+      "title": "Asteroid City",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2023-06-30",
+      "poster": ""
+    },
+    {
+      "title": "Spirited Away",
+      "year": 2001,
+      "rating": 2.5,
+      "watched_at": "2023-07-02",
+      "poster": ""
+    },
+    {
+      "title": "Elemental",
+      "year": 2023,
+      "rating": 2.5,
+      "watched_at": "2023-07-13",
+      "poster": ""
+    },
+    {
+      "title": "Nimona",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2023-07-15",
+      "poster": ""
+    },
+    {
+      "title": "Oppenheimer",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2023-08-31",
+      "poster": ""
+    },
+    {
+      "title": "The Darjeeling Limited",
+      "year": 2007,
+      "rating": 3.5,
+      "watched_at": "2023-09-11",
+      "poster": ""
+    },
+    {
+      "title": "(500) Days of Summer",
+      "year": 2009,
+      "rating": 2.0,
+      "watched_at": "2023-09-12",
+      "poster": ""
+    },
+    {
+      "title": "Taylor Swift: The Eras Tour",
+      "year": 2023,
+      "rating": 5.0,
+      "watched_at": "2023-10-16",
+      "poster": ""
+    },
+    {
+      "title": "Halloween",
+      "year": 1978,
+      "rating": 2.5,
+      "watched_at": "2023-10-23",
+      "poster": ""
+    },
+    {
+      "title": "Five Nights at Freddy's",
+      "year": 2023,
+      "rating": 2.5,
+      "watched_at": "2023-11-10",
+      "poster": ""
+    },
+    {
+      "title": "The Fabelmans",
+      "year": 2022,
+      "rating": 4.0,
+      "watched_at": "2023-11-13",
+      "poster": ""
+    },
+    {
+      "title": "Saltburn",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2023-11-19",
+      "poster": ""
+    },
+    {
+      "title": "1917",
+      "year": 2019,
+      "rating": 4.0,
+      "watched_at": "2023-12-01",
+      "poster": ""
+    },
+    {
+      "title": "Wonka",
+      "year": 2023,
+      "rating": 2.5,
+      "watched_at": "2023-12-12",
+      "poster": ""
+    },
+    {
+      "title": "The Muppet Christmas Carol",
+      "year": 1992,
+      "rating": 5.0,
+      "watched_at": "2023-12-25",
+      "poster": ""
+    },
+    {
+      "title": "Planes, Trains and Automobiles",
+      "year": 1987,
+      "rating": 2.5,
+      "watched_at": "2023-12-25",
+      "poster": ""
+    },
+    {
+      "title": "The Boy and the Heron",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2024-01-15",
+      "poster": ""
+    },
+    {
+      "title": "Scott Pilgrim vs. the World",
+      "year": 2010,
+      "rating": 4.0,
+      "watched_at": "2024-01-23",
+      "poster": ""
+    },
+    {
+      "title": "M3GAN",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2024-02-04",
+      "poster": ""
+    },
+    {
+      "title": "All of Us Strangers",
+      "year": 2023,
+      "rating": 1.0,
+      "watched_at": "2024-02-07",
+      "poster": ""
+    },
+    {
+      "title": "Upgraded",
+      "year": 2024,
+      "rating": 1.0,
+      "watched_at": "2024-02-12",
+      "poster": ""
+    },
+    {
+      "title": "Man Up",
+      "year": 2015,
+      "rating": 2.5,
+      "watched_at": "2024-02-14",
+      "poster": ""
+    },
+    {
+      "title": "Orion and the Dark",
+      "year": 2024,
+      "rating": 3.5,
+      "watched_at": "2024-02-16",
+      "poster": ""
+    },
+    {
+      "title": "Monkeybone",
+      "year": 2001,
+      "rating": 2.0,
+      "watched_at": "2024-02-16",
+      "poster": ""
+    },
+    {
+      "title": "The Zone of Interest",
+      "year": 2023,
+      "rating": 3.0,
+      "watched_at": "2024-02-25",
+      "poster": ""
+    },
+    {
+      "title": "Dune",
+      "year": 2021,
+      "rating": 3.5,
+      "watched_at": "2024-03-08",
+      "poster": ""
+    },
+    {
+      "title": "Dune: Part Two",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2024-03-08",
+      "poster": ""
+    },
+    {
+      "title": "Talk to Me",
+      "year": 2022,
+      "rating": 3.0,
+      "watched_at": "2024-03-10",
+      "poster": ""
+    },
+    {
+      "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+      "year": 2023,
+      "rating": 1.5,
+      "watched_at": "2024-03-10",
+      "poster": ""
+    },
+    {
+      "title": "Pearl",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2024-03-17",
+      "poster": ""
+    },
+    {
+      "title": "Jingle All the Way",
+      "year": 1996,
+      "rating": 3.5,
+      "watched_at": "2024-03-19",
+      "poster": ""
+    },
+    {
+      "title": "Godzilla vs. Kong",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2024-03-26",
+      "poster": ""
+    },
+    {
+      "title": "Eurovision Song Contest: The Story of Fire Saga",
+      "year": 2020,
+      "rating": 4.0,
+      "watched_at": "2024-03-28",
+      "poster": ""
+    },
+    {
+      "title": "Immaculate",
+      "year": 2024,
+      "rating": 2.0,
+      "watched_at": "2024-03-29",
+      "poster": ""
+    },
+    {
+      "title": "Godzilla \u00d7 Kong: The New Empire",
+      "year": 2024,
+      "rating": 3.5,
+      "watched_at": "2024-03-30",
+      "poster": ""
+    },
+    {
+      "title": "Wish",
+      "year": 2023,
+      "rating": 3.0,
+      "watched_at": "2024-04-11",
+      "poster": ""
+    },
+    {
+      "title": "Fifty Shades of Grey",
+      "year": 2015,
+      "rating": 0.5,
+      "watched_at": "2024-04-13",
+      "poster": ""
+    },
+    {
+      "title": "Get Out",
+      "year": 2017,
+      "rating": 3.5,
+      "watched_at": "2024-04-13",
+      "poster": ""
+    },
+    {
+      "title": "The Cat in the Hat",
+      "year": 2003,
+      "rating": 3.5,
+      "watched_at": "2024-04-14",
+      "poster": ""
+    },
+    {
+      "title": "Civil War",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-04-14",
+      "poster": ""
+    },
+    {
+      "title": "The First Omen",
+      "year": 2024,
+      "rating": 1.0,
+      "watched_at": "2024-04-24",
+      "poster": ""
+    },
+    {
+      "title": "Fifty Shades Darker",
+      "year": 2017,
+      "rating": 0.5,
+      "watched_at": "2024-04-28",
+      "poster": ""
+    },
+    {
+      "title": "Se7en",
+      "year": 1995,
+      "rating": 4.0,
+      "watched_at": "2024-04-30",
+      "poster": ""
+    },
+    {
+      "title": "Past Lives",
+      "year": 2023,
+      "rating": 4.5,
+      "watched_at": "2024-04-30",
+      "poster": ""
+    },
+    {
+      "title": "Challengers",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-05-01",
+      "poster": ""
+    },
+    {
+      "title": "Tenacious D in The Pick of Destiny",
+      "year": 2006,
+      "rating": 3.5,
+      "watched_at": "2024-05-05",
+      "poster": ""
+    },
+    {
+      "title": "Aliens",
+      "year": 1986,
+      "rating": 4.0,
+      "watched_at": "2024-05-11",
+      "poster": ""
+    },
+    {
+      "title": "Alien",
+      "year": 1979,
+      "rating": 4.5,
+      "watched_at": "2024-05-11",
+      "poster": ""
+    },
+    {
+      "title": "Zoolander",
+      "year": 2001,
+      "rating": 4.0,
+      "watched_at": "2024-05-14",
+      "poster": ""
+    },
+    {
+      "title": "Spider-Man: Across the Spider-Verse",
+      "year": 2023,
+      "rating": 4.5,
+      "watched_at": "2024-05-14",
+      "poster": ""
+    },
+    {
+      "title": "The Super Mario Bros. Movie",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2024-05-14",
+      "poster": ""
+    },
+    {
+      "title": "High School Musical",
+      "year": 2006,
+      "rating": 3.5,
+      "watched_at": "2024-05-14",
+      "poster": ""
+    },
+    {
+      "title": "High School Musical 2",
+      "year": 2007,
+      "rating": 4.0,
+      "watched_at": "2024-05-14",
+      "poster": ""
+    },
+    {
+      "title": "Predator",
+      "year": 1987,
+      "rating": 3.5,
+      "watched_at": "2024-05-23",
+      "poster": ""
+    },
+    {
+      "title": "The Phantom of the Opera",
+      "year": 2004,
+      "rating": 4.0,
+      "watched_at": "2024-05-24",
+      "poster": ""
+    },
+    {
+      "title": "Mad Max: Fury Road",
+      "year": 2015,
+      "rating": 4.0,
+      "watched_at": "2024-05-26",
+      "poster": ""
+    },
+    {
+      "title": "Furiosa: A Mad Max Saga",
+      "year": 2024,
+      "rating": 2.5,
+      "watched_at": "2024-05-29",
+      "poster": ""
+    },
+    {
+      "title": "Barbie",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2024-05-31",
+      "poster": ""
+    },
+    {
+      "title": "The Fall Guy",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-05-31",
+      "poster": ""
+    },
+    {
+      "title": "HAIKYU!! The Dumpster Battle",
+      "year": 2024,
+      "rating": 5.0,
+      "watched_at": "2024-06-14",
+      "poster": ""
+    },
+    {
+      "title": "Godzilla Minus One",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2024-06-15",
+      "poster": ""
+    },
+    {
+      "title": "Hit Man",
+      "year": 2023,
+      "rating": 2.5,
+      "watched_at": "2024-06-17",
+      "poster": ""
+    },
+    {
+      "title": "The Black Phone",
+      "year": 2021,
+      "rating": 3.0,
+      "watched_at": "2024-06-17",
+      "poster": ""
+    },
+    {
+      "title": "Forrest Gump",
+      "year": 1994,
+      "rating": 3.5,
+      "watched_at": "2024-06-23",
+      "poster": ""
+    },
+    {
+      "title": "It",
+      "year": 2017,
+      "rating": 3.5,
+      "watched_at": "2024-06-25",
+      "poster": ""
+    },
+    {
+      "title": "A Quiet Place",
+      "year": 2018,
+      "rating": 4.0,
+      "watched_at": "2024-06-25",
+      "poster": ""
+    },
+    {
+      "title": "A Quiet Place: Day One",
+      "year": 2024,
+      "rating": 3.5,
+      "watched_at": "2024-06-28",
+      "poster": ""
+    },
+    {
+      "title": "Longlegs",
+      "year": 2024,
+      "rating": 2.5,
+      "watched_at": "2024-07-15",
+      "poster": ""
+    },
+    {
+      "title": "MaXXXine",
+      "year": 2024,
+      "rating": 2.0,
+      "watched_at": "2024-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Twisters",
+      "year": 2024,
+      "rating": 2.5,
+      "watched_at": "2024-07-20",
+      "poster": ""
+    },
+    {
+      "title": "High School Musical 3: Senior Year",
+      "year": 2008,
+      "rating": 1.0,
+      "watched_at": "2024-07-23",
+      "poster": ""
+    },
+    {
+      "title": "AVP: Alien vs. Predator",
+      "year": 2004,
+      "rating": 4.5,
+      "watched_at": "2024-07-25",
+      "poster": ""
+    },
+    {
+      "title": "Alien\u00b3",
+      "year": 1992,
+      "rating": 3.0,
+      "watched_at": "2024-07-25",
+      "poster": ""
+    },
+    {
+      "title": "Sleep",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2024-07-26",
+      "poster": ""
+    },
+    {
+      "title": "Anyone But You",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2024-07-27",
+      "poster": ""
+    },
+    {
+      "title": "About Time",
+      "year": 2013,
+      "rating": 5.0,
+      "watched_at": "2024-07-27",
+      "poster": ""
+    },
+    {
+      "title": "Howl's Moving Castle",
+      "year": 2004,
+      "rating": 3.0,
+      "watched_at": "2024-07-28",
+      "poster": ""
+    },
+    {
+      "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2024-07-28",
+      "poster": ""
+    },
+    {
+      "title": "The Proposal",
+      "year": 2009,
+      "rating": 1.5,
+      "watched_at": "2024-07-29",
+      "poster": ""
+    },
+    {
+      "title": "Deadpool & Wolverine",
+      "year": 2024,
+      "rating": 3.0,
+      "watched_at": "2024-08-03",
+      "poster": ""
+    },
+    {
+      "title": "Alien Resurrection",
+      "year": 1997,
+      "rating": 2.0,
+      "watched_at": "2024-08-03",
+      "poster": ""
+    },
+    {
+      "title": "I Saw the TV Glow",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2024-08-11",
+      "poster": ""
+    },
+    {
+      "title": "Prometheus",
+      "year": 2012,
+      "rating": 4.0,
+      "watched_at": "2024-08-15",
+      "poster": ""
+    },
+    {
+      "title": "Alien: Covenant",
+      "year": 2017,
+      "rating": 1.5,
+      "watched_at": "2024-08-17",
+      "poster": ""
+    },
+    {
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-08-18",
+      "poster": ""
+    },
+    {
+      "title": "Point Break",
+      "year": 1991,
+      "rating": 4.0,
+      "watched_at": "2024-08-20",
+      "poster": ""
+    },
+    {
+      "title": "The Help",
+      "year": 2011,
+      "rating": 4.5,
+      "watched_at": "2024-08-24",
+      "poster": ""
+    },
+    {
+      "title": "Guillermo del Toro's Pinocchio",
+      "year": 2022,
+      "rating": 4.0,
+      "watched_at": "2024-08-26",
+      "poster": ""
+    },
+    {
+      "title": "Prey",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2024-08-28",
+      "poster": ""
+    },
+    {
+      "title": "My Neighbor Totoro",
+      "year": 1988,
+      "rating": 4.0,
+      "watched_at": "2024-09-02",
+      "poster": ""
+    },
+    {
+      "title": "Shanghai Knights",
+      "year": 2003,
+      "rating": 3.5,
+      "watched_at": "2024-09-04",
+      "poster": ""
+    },
+    {
+      "title": "Cuckoo",
+      "year": 2024,
+      "rating": 2.0,
+      "watched_at": "2024-09-07",
+      "poster": ""
+    },
+    {
+      "title": "Smile",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2024-09-09",
+      "poster": ""
+    },
+    {
+      "title": "Frozen",
+      "year": 2013,
+      "rating": 3.5,
+      "watched_at": "2024-10-01",
+      "poster": ""
+    },
+    {
+      "title": "Lisa Frankenstein",
+      "year": 2024,
+      "rating": 2.5,
+      "watched_at": "2024-10-07",
+      "poster": ""
+    },
+    {
+      "title": "Abigail",
+      "year": 2024,
+      "rating": 0.5,
+      "watched_at": "2024-10-07",
+      "poster": ""
+    },
+    {
+      "title": "Teen Titans Go! To the Movies",
+      "year": 2018,
+      "rating": 4.0,
+      "watched_at": "2024-10-07",
+      "poster": ""
+    },
+    {
+      "title": "Migration",
+      "year": 2023,
+      "rating": 3.0,
+      "watched_at": "2024-10-07",
+      "poster": ""
+    },
+    {
+      "title": "Terrifier",
+      "year": 2016,
+      "rating": 2.5,
+      "watched_at": "2024-10-14",
+      "poster": ""
+    },
+    {
+      "title": "Good Boy",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2024-10-15",
+      "poster": ""
+    },
+    {
+      "title": "Terrifier 2",
+      "year": 2022,
+      "rating": 1.5,
+      "watched_at": "2024-10-15",
+      "poster": ""
+    },
+    {
+      "title": "Speak No Evil",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-10-20",
+      "poster": ""
+    },
+    {
+      "title": "Woman of the Hour",
+      "year": 2023,
+      "rating": 3.0,
+      "watched_at": "2024-10-21",
+      "poster": ""
+    },
+    {
+      "title": "Smile 2",
+      "year": 2024,
+      "rating": 3.5,
+      "watched_at": "2024-10-23",
+      "poster": ""
+    },
+    {
+      "title": "Ready or Not",
+      "year": 2019,
+      "rating": 3.5,
+      "watched_at": "2024-10-27",
+      "poster": ""
+    },
+    {
+      "title": "It's What's Inside",
+      "year": 2024,
+      "rating": 2.5,
+      "watched_at": "2024-10-27",
+      "poster": ""
+    },
+    {
+      "title": "The Exorcist",
+      "year": 1973,
+      "rating": 1.0,
+      "watched_at": "2024-10-27",
+      "poster": ""
+    },
+    {
+      "title": "The Wild Robot",
+      "year": 2024,
+      "rating": 5.0,
+      "watched_at": "2024-10-31",
+      "poster": ""
+    },
+    {
+      "title": "The Substance",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-11-02",
+      "poster": ""
+    },
+    {
+      "title": "Heretic",
+      "year": 2024,
+      "rating": 3.0,
+      "watched_at": "2024-11-08",
+      "poster": ""
+    },
+    {
+      "title": "Paddington in Peru",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-11-11",
+      "poster": ""
+    },
+    {
+      "title": "Inside Out 2",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2024-11-12",
+      "poster": ""
+    },
+    {
+      "title": "Gladiator",
+      "year": 2000,
+      "rating": 4.5,
+      "watched_at": "2024-11-20",
+      "poster": ""
+    },
+    {
+      "title": "Wicked",
+      "year": 2024,
+      "rating": 3.0,
+      "watched_at": "2024-11-23",
+      "poster": ""
+    },
+    {
+      "title": "We Live in Time",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2024-12-04",
+      "poster": ""
+    },
+    {
+      "title": "How the Grinch Stole Christmas",
+      "year": 2000,
+      "rating": 2.0,
+      "watched_at": "2024-12-13",
+      "poster": ""
+    },
+    {
+      "title": "That Christmas",
+      "year": 2024,
+      "rating": 2.5,
+      "watched_at": "2024-12-17",
+      "poster": ""
+    },
+    {
+      "title": "The Holdovers",
+      "year": 2023,
+      "rating": 4.0,
+      "watched_at": "2024-12-24",
+      "poster": ""
+    },
+    {
+      "title": "Wallace & Gromit: Vengeance Most Fowl",
+      "year": 2024,
+      "rating": 5.0,
+      "watched_at": "2024-12-26",
+      "poster": ""
+    },
+    {
+      "title": "Conclave",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2024-12-27",
+      "poster": ""
+    },
+    {
+      "title": "28 Weeks Later",
+      "year": 2007,
+      "rating": 3.0,
+      "watched_at": "2024-12-30",
+      "poster": ""
+    },
+    {
+      "title": "Total Recall",
+      "year": 1990,
+      "rating": 4.0,
+      "watched_at": "2024-12-31",
+      "poster": ""
+    },
+    {
+      "title": "Thanksgiving",
+      "year": 2023,
+      "rating": 3.0,
+      "watched_at": "2024-12-31",
+      "poster": ""
+    },
+    {
+      "title": "Nosferatu",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2025-01-03",
+      "poster": ""
+    },
+    {
+      "title": "Babygirl",
+      "year": 2024,
+      "rating": 2.0,
+      "watched_at": "2025-01-16",
+      "poster": ""
+    },
+    {
+      "title": "Wolf Man",
+      "year": 2025,
+      "rating": 1.0,
+      "watched_at": "2025-01-18",
+      "poster": ""
+    },
+    {
+      "title": "The Witch",
+      "year": 2015,
+      "rating": 3.5,
+      "watched_at": "2025-01-19",
+      "poster": ""
+    },
+    {
+      "title": "The Lighthouse",
+      "year": 2019,
+      "rating": 4.5,
+      "watched_at": "2025-01-19",
+      "poster": ""
+    },
+    {
+      "title": "A Real Pain",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2025-01-20",
+      "poster": ""
+    },
+    {
+      "title": "Good Time",
+      "year": 2017,
+      "rating": 4.0,
+      "watched_at": "2025-01-22",
+      "poster": ""
+    },
+    {
+      "title": "A Complete Unknown",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2025-01-25",
+      "poster": ""
+    },
+    {
+      "title": "Presence",
+      "year": 2024,
+      "rating": 0.5,
+      "watched_at": "2025-01-29",
+      "poster": ""
+    },
+    {
+      "title": "Late Night with the Devil",
+      "year": 2023,
+      "rating": 3.5,
+      "watched_at": "2025-02-03",
+      "poster": ""
+    },
+    {
+      "title": "Companion",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-02-10",
+      "poster": ""
+    },
+    {
+      "title": "Bring Them Down",
+      "year": 2024,
+      "rating": 3.5,
+      "watched_at": "2025-02-15",
+      "poster": ""
+    },
+    {
+      "title": "The Monkey",
+      "year": 2025,
+      "rating": 4.5,
+      "watched_at": "2025-02-23",
+      "poster": ""
+    },
+    {
+      "title": "The Gorge",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-02-23",
+      "poster": ""
+    },
+    {
+      "title": "Barbarian",
+      "year": 2022,
+      "rating": 3.5,
+      "watched_at": "2025-02-23",
+      "poster": ""
+    },
+    {
+      "title": "Anora",
+      "year": 2024,
+      "rating": 4.5,
+      "watched_at": "2025-02-27",
+      "poster": ""
+    },
+    {
+      "title": "Mickey 17",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-03-09",
+      "poster": ""
+    },
+    {
+      "title": "Black Swan",
+      "year": 2010,
+      "rating": 4.5,
+      "watched_at": "2025-03-13",
+      "poster": ""
+    },
+    {
+      "title": "Opus",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-03-13",
+      "poster": ""
+    },
+    {
+      "title": "Final Destination",
+      "year": 2000,
+      "rating": 2.5,
+      "watched_at": "2025-03-24",
+      "poster": ""
+    },
+    {
+      "title": "Whiplash",
+      "year": 2014,
+      "rating": 4.5,
+      "watched_at": "2025-03-24",
+      "poster": ""
+    },
+    {
+      "title": "Flow",
+      "year": 2024,
+      "rating": 4.0,
+      "watched_at": "2025-03-27",
+      "poster": ""
+    },
+    {
+      "title": "Adolescence",
+      "year": 2025,
+      "rating": 5.0,
+      "watched_at": "2025-03-30",
+      "poster": ""
+    },
+    {
+      "title": "Ne Zha",
+      "year": 2019,
+      "rating": 2.5,
+      "watched_at": "2025-04-01",
+      "poster": ""
+    },
+    {
+      "title": "Ne Zha 2",
+      "year": 2025,
+      "rating": 5.0,
+      "watched_at": "2025-04-01",
+      "poster": ""
+    },
+    {
+      "title": "The Northman",
+      "year": 2022,
+      "rating": 2.5,
+      "watched_at": "2025-04-14",
+      "poster": ""
+    },
+    {
+      "title": "Forgetting Sarah Marshall",
+      "year": 2008,
+      "rating": 2.5,
+      "watched_at": "2025-04-14",
+      "poster": ""
+    },
+    {
+      "title": "Sinners",
+      "year": 2025,
+      "rating": 2.0,
+      "watched_at": "2025-04-22",
+      "poster": ""
+    },
+    {
+      "title": "SIX: The Musical Live!",
+      "year": 2025,
+      "rating": 5.0,
+      "watched_at": "2025-04-22",
+      "poster": ""
+    },
+    {
+      "title": "Let the Right One In",
+      "year": 2008,
+      "rating": 2.5,
+      "watched_at": "2025-04-26",
+      "poster": ""
+    },
+    {
+      "title": "Until Dawn",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-05-15",
+      "poster": ""
+    },
+    {
+      "title": "Thunderbolts*",
+      "year": 2025,
+      "rating": 2.0,
+      "watched_at": "2025-05-15",
+      "poster": ""
+    },
+    {
+      "title": "Lilo & Stitch",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2025-05-25",
+      "poster": ""
+    },
+    {
+      "title": "Mission: Impossible \u2013 The Final Reckoning",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2025-05-27",
+      "poster": ""
+    },
+    {
+      "title": "The Phoenician Scheme",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-06-01",
+      "poster": ""
+    },
+    {
+      "title": "Lilo & Stitch 2: Stitch Has a Glitch",
+      "year": 2005,
+      "rating": 4.5,
+      "watched_at": "2025-06-01",
+      "poster": ""
+    },
+    {
+      "title": "Final Destination Bloodlines",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-06-02",
+      "poster": ""
+    },
+    {
+      "title": "Karate Kid: Legends",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-06-08",
+      "poster": ""
+    },
+    {
+      "title": "Terminator: Dark Fate",
+      "year": 2019,
+      "rating": 2.0,
+      "watched_at": "2025-06-08",
+      "poster": ""
+    },
+    {
+      "title": "How to Train Your Dragon",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-06-13",
+      "poster": ""
+    },
+    {
+      "title": "Camp Rock",
+      "year": 2008,
+      "rating": 4.0,
+      "watched_at": "2025-06-14",
+      "poster": ""
+    },
+    {
+      "title": "28 Days Later",
+      "year": 2002,
+      "rating": 3.5,
+      "watched_at": "2025-06-17",
+      "poster": ""
+    },
+    {
+      "title": "Clown in a Cornfield",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-06-19",
+      "poster": ""
+    },
+    {
+      "title": "Predator: Killer of Killers",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-06-21",
+      "poster": ""
+    },
+    {
+      "title": "Warfare",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2025-06-23",
+      "poster": ""
+    },
+    {
+      "title": "28 Years Later",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-07-02",
+      "poster": ""
+    },
+    {
+      "title": "F1",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-07-08",
+      "poster": ""
+    },
+    {
+      "title": "KPop Demon Hunters",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-07-08",
+      "poster": ""
+    },
+    {
+      "title": "Jurassic World Rebirth",
+      "year": 2025,
+      "rating": 1.0,
+      "watched_at": "2025-07-10",
+      "poster": ""
+    },
+    {
+      "title": "M3GAN 2.0",
+      "year": 2025,
+      "rating": 2.0,
+      "watched_at": "2025-07-11",
+      "poster": ""
+    },
+    {
+      "title": "Superman",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Parasite",
+      "year": 2019,
+      "rating": 4.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Fantastic Mr. Fox",
+      "year": 2009,
+      "rating": 4.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "The Hunger Games",
+      "year": 2012,
+      "rating": 4.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Your Name.",
+      "year": 2016,
+      "rating": 4.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "BlacKkKlansman",
+      "year": 2018,
+      "rating": 4.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Beauty and the Beast",
+      "year": 1991,
+      "rating": 4.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Gladiator II",
+      "year": 2024,
+      "rating": 3.5,
+      "watched_at": "2025-07-18",
+      "poster": ""
+    },
+    {
+      "title": "Bram Stoker's Dracula",
+      "year": 1992,
+      "rating": 3.0,
+      "watched_at": "2025-07-23",
+      "poster": ""
+    },
+    {
+      "title": "Bring Her Back",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-08-06",
+      "poster": ""
+    },
+    {
+      "title": "Freaky Friday",
+      "year": 2003,
+      "rating": 4.0,
+      "watched_at": "2025-08-06",
+      "poster": ""
+    },
+    {
+      "title": "John Tucker Must Die",
+      "year": 2006,
+      "rating": 3.5,
+      "watched_at": "2025-08-11",
+      "poster": ""
+    },
+    {
+      "title": "Weapons",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-08-11",
+      "poster": ""
+    },
+    {
+      "title": "Materialists",
+      "year": 2025,
+      "rating": 1.0,
+      "watched_at": "2025-08-15",
+      "poster": ""
+    },
+    {
+      "title": "Together",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-08-23",
+      "poster": ""
+    },
+    {
+      "title": "Never Been Kissed",
+      "year": 1999,
+      "rating": 1.0,
+      "watched_at": "2025-08-23",
+      "poster": ""
+    },
+    {
+      "title": "Rush Hour",
+      "year": 1998,
+      "rating": 3.0,
+      "watched_at": "2025-08-23",
+      "poster": ""
+    },
+    {
+      "title": "Minority Report",
+      "year": 2002,
+      "rating": 4.5,
+      "watched_at": "2025-08-25",
+      "poster": ""
+    },
+    {
+      "title": "Freakier Friday",
+      "year": 2025,
+      "rating": 1.5,
+      "watched_at": "2025-08-25",
+      "poster": ""
+    },
+    {
+      "title": "Mean Girls",
+      "year": 2004,
+      "rating": 1.5,
+      "watched_at": "2025-09-06",
+      "poster": ""
+    },
+    {
+      "title": "The Roses",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2025-09-15",
+      "poster": ""
+    },
+    {
+      "title": "White Chicks",
+      "year": 2004,
+      "rating": 3.5,
+      "watched_at": "2025-09-15",
+      "poster": ""
+    },
+    {
+      "title": "Spin the Bottle",
+      "year": 2024,
+      "rating": 0.5,
+      "watched_at": "2025-09-15",
+      "poster": ""
+    },
+    {
+      "title": "The Long Walk",
+      "year": 2025,
+      "rating": 4.5,
+      "watched_at": "2025-09-15",
+      "poster": ""
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "year": 2025,
+      "rating": 4.0,
+      "watched_at": "2025-09-20",
+      "poster": ""
+    },
+    {
+      "title": "Elio",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2025-09-28",
+      "poster": ""
+    },
+    {
+      "title": "Heart Eyes",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-10-02",
+      "poster": ""
+    },
+    {
+      "title": "One Battle After Another",
+      "year": 2025,
+      "rating": 4.5,
+      "watched_at": "2025-10-02",
+      "poster": ""
+    },
+    {
+      "title": "Jeepers Creepers",
+      "year": 2001,
+      "rating": 2.5,
+      "watched_at": "2025-10-15",
+      "poster": ""
+    },
+    {
+      "title": "Saw",
+      "year": 2004,
+      "rating": 4.0,
+      "watched_at": "2025-10-15",
+      "poster": ""
+    },
+    {
+      "title": "Black Phone 2",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-10-18",
+      "poster": ""
+    },
+    {
+      "title": "Saw II",
+      "year": 2005,
+      "rating": 3.5,
+      "watched_at": "2025-10-20",
+      "poster": ""
+    },
+    {
+      "title": "Saw III",
+      "year": 2006,
+      "rating": 2.5,
+      "watched_at": "2025-10-20",
+      "poster": ""
+    },
+    {
+      "title": "Drag Me to Hell",
+      "year": 2009,
+      "rating": 1.5,
+      "watched_at": "2025-10-28",
+      "poster": ""
+    },
+    {
+      "title": "Friday the 13th",
+      "year": 1980,
+      "rating": 3.5,
+      "watched_at": "2025-10-28",
+      "poster": ""
+    },
+    {
+      "title": "Scream 2",
+      "year": 1997,
+      "rating": 2.0,
+      "watched_at": "2025-11-10",
+      "poster": ""
+    },
+    {
+      "title": "Predator: Badlands",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2025-11-10",
+      "poster": ""
+    },
+    {
+      "title": "Keeper",
+      "year": 2025,
+      "rating": 1.5,
+      "watched_at": "2025-11-27",
+      "poster": ""
+    },
+    {
+      "title": "Wicked: For Good",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-11-27",
+      "poster": ""
+    },
+    {
+      "title": "Robin Robin",
+      "year": 2021,
+      "rating": 3.5,
+      "watched_at": "2025-12-05",
+      "poster": ""
+    },
+    {
+      "title": "The Running Man",
+      "year": 1987,
+      "rating": 3.5,
+      "watched_at": "2025-12-05",
+      "poster": ""
+    },
+    {
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "year": 2004,
+      "rating": 5.0,
+      "watched_at": "2025-12-10",
+      "poster": ""
+    },
+    {
+      "title": "Zootopia 2",
+      "year": 2025,
+      "rating": 4.5,
+      "watched_at": "2025-12-12",
+      "poster": ""
+    },
+    {
+      "title": "Frankenstein",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-12-12",
+      "poster": ""
+    },
+    {
+      "title": "Taylor Swift | The Eras Tour | The Final Show",
+      "year": 2025,
+      "rating": 5.0,
+      "watched_at": "2025-12-16",
+      "poster": ""
+    },
+    {
+      "title": "Silent Night, Deadly Night",
+      "year": 2025,
+      "rating": 2.5,
+      "watched_at": "2025-12-16",
+      "poster": ""
+    },
+    {
+      "title": "Wake Up Dead Man",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-12-18",
+      "poster": ""
+    },
+    {
+      "title": "The Shining",
+      "year": 1980,
+      "rating": 4.5,
+      "watched_at": "2025-12-19",
+      "poster": ""
+    },
+    {
+      "title": "Falling for Christmas",
+      "year": 2022,
+      "rating": 2.0,
+      "watched_at": "2025-12-24",
+      "poster": ""
+    },
+    {
+      "title": "A Very Jonas Christmas Movie",
+      "year": 2025,
+      "rating": 3.5,
+      "watched_at": "2025-12-24",
+      "poster": ""
+    },
+    {
+      "title": "Stranger Things 5: The Finale",
+      "year": 2025,
+      "rating": 3.0,
+      "watched_at": "2026-01-02",
+      "poster": ""
+    },
+    {
+      "title": "Marty Supreme",
+      "year": 2025,
+      "rating": 4.5,
+      "watched_at": "2026-01-02",
+      "poster": ""
+    },
     {
       "title": "100 METERS",
       "year": 2025,
       "rating": 4.0,
       "watched_at": "2026-01-03",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/7/7/4/8/9/1177489-100-meters-2025-0-600-0-900-crop.jpg?v=8624aa1018"
+    },
+    {
+      "title": "Mission: Impossible",
+      "year": 1996,
+      "rating": 3.0,
+      "watched_at": "2026-01-04",
+      "poster": ""
     },
     {
       "title": "Sentimental Value",
@@ -225,18 +2869,18 @@
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/8/6/3/1/8/1186318-lee-cronins-the-mummy-0-600-0-900-crop.jpg?v=75239f90de"
     },
     {
-      "title": "Resident Evil",
-      "year": 2002,
-      "rating": 1.5,
-      "watched_at": "2026-04-25",
-      "poster": "https://a.ltrbxd.com/resized/sm/upload/be/up/oa/mj/4IuJ58S6jSQ4z7KoIPweX4HDx0n-0-600-0-900-crop.jpg?v=fa13fd465a"
-    },
-    {
       "title": "The Devil Wears Prada",
       "year": 2006,
       "rating": 3.5,
       "watched_at": "2026-04-25",
       "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330"
+    },
+    {
+      "title": "Resident Evil",
+      "year": 2002,
+      "rating": 1.5,
+      "watched_at": "2026-04-25",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/be/up/oa/mj/4IuJ58S6jSQ4z7KoIPweX4HDx0n-0-600-0-900-crop.jpg?v=fa13fd465a"
     },
     {
       "title": "Exit 8",
@@ -295,18 +2939,18 @@
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6"
     },
     {
-      "title": "[REC]",
-      "year": 2007,
-      "rating": 2.5,
-      "watched_at": "2026-05-23",
-      "poster": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405"
-    },
-    {
       "title": "Remarkably Bright Creatures",
       "year": 2026,
       "rating": 3.5,
       "watched_at": "2026-05-23",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/1/5/3/7/0/1215370-remarkably-bright-creatures-0-600-0-900-crop.jpg?v=32466d1508"
+    },
+    {
+      "title": "[REC]",
+      "year": 2007,
+      "rating": 2.5,
+      "watched_at": "2026-05-23",
+      "poster": "https://a.ltrbxd.com/resized/sm/upload/wc/8v/37/hl/cOW5Oc3vnjD2QgK68BUvm6GGLZ4-0-600-0-900-crop.jpg?v=afc2876405"
     },
     {
       "title": "Backrooms",
