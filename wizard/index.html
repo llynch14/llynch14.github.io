@@ -153,6 +153,9 @@
   .entry { display: grid; grid-template-columns: 1fr auto auto; gap: 10px 12px; align-items: center; }
   .entry .head { font-family: var(--display); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
   .entry .pname { font-weight: 600; font-size: 17px; }
+  .entry .pname small { display: block; color: var(--muted); font-style: italic; font-weight: 400; font-size: 12px; }
+  .entry .pname small b { color: var(--gold-hi); font-weight: 600; }
+  .entry .pname .crown { color: var(--gold-hi); }
   .step { display: flex; align-items: center; gap: 6px; }
   .step button {
     width: 34px; height: 40px; border-radius: 3px; border: 1px solid var(--line);
@@ -201,6 +204,26 @@
   .banner .champ { font-family: var(--display); font-size: clamp(30px,7vw,48px); color: var(--gold-hi); margin: 6px 0 2px; }
   .banner .champ-pts { font-family: var(--num); color: var(--ink); font-style: italic; }
 
+  /* ---- fortunes chart ---- */
+  .legend { display: flex; gap: 14px 18px; flex-wrap: wrap; margin: 0 0 12px; font-size: 14px; }
+  .legend .li { display: flex; align-items: center; gap: 7px; color: var(--ink); }
+  .legend .sw { width: 12px; height: 12px; border-radius: 3px; border: 1px solid rgba(47, 36, 20, 0.35); }
+  .chartwrap { position: relative; }
+  .chartwrap svg { display: block; width: 100%; height: auto; }
+  .chartwrap .axis { font-family: var(--num); font-size: 12px; fill: var(--muted); }
+  .chartwrap .endlab { font-family: var(--body); font-size: 13px; fill: var(--ink); }
+  .tip {
+    position: absolute; display: none; pointer-events: none; z-index: 2;
+    background: var(--bg3); border: 1px solid var(--line); border-radius: 3px;
+    box-shadow: 0 3px 12px rgba(80, 55, 15, 0.3);
+    padding: 8px 11px; font-size: 13px; min-width: 130px;
+  }
+  .tip .tr { font-family: var(--display); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 5px; }
+  .tip .row { display: flex; align-items: center; gap: 6px; justify-content: space-between; padding: 1px 0; }
+  .tip .row .nm { display: flex; align-items: center; gap: 6px; }
+  .tip .sw { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+  .tip .val { font-family: var(--num); }
+
   .footnote { color: var(--muted); font-size: 13px; font-style: italic; text-align: center; margin: 22px 0 0; line-height: 1.7; }
   .inline-link { color: var(--wax); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
   .removeplayer { background: transparent; border: none; color: var(--miss); cursor: pointer; font-size: 18px; padding: 0 4px; }
@@ -215,7 +238,7 @@
   </div>
   <div id="app"></div>
   <p class="footnote">
-    Scoring: hit your bid exactly for <b>20 + 10 per trick bid</b> · miss by any for <b>−10 per trick over or under</b> · a correct bid of zero still scores 20.<br>
+    Scoring: hit your bid exactly for <b>10 + 10 per trick bid</b> · any miss costs a flat <b>−10</b> · a correct bid of zero still scores 10.<br>
     Your game saves automatically on this device.
   </p>
 </div>
@@ -280,8 +303,8 @@ function dealerIndex(roundNumber) {
 }
 
 function roundScore(bid, won) {
-  if (bid === won) return 20 + 10 * bid;
-  return -10 * Math.abs(bid - won);
+  if (bid === won) return 10 + 10 * bid;
+  return -10;
 }
 
 function cumulativeTotals() {
@@ -439,7 +462,8 @@ function renderGame() {
       <h2>Bids &amp; tricks</h2>
       <div class="entry" id="entryGrid">
         <div class="head">Player</div><div class="head" style="text-align:center">Bid</div><div class="head" style="text-align:center">Won</div>
-        ${state.players.map((p, i) => rowHtml(p, i, n)).join("")}
+        ${state.players.map((_, k) => (dealerIndex(n) + k) % state.players.length)
+          .map(i => rowHtml(state.players[i], i, n, i === dealerIndex(n), totals[i], i === leader)).join("")}
       </div>
       <div class="hints">
         <div>Bids on the table: <b id="bidSum">0</b> / ${n}<span id="bidNote"></span></div>
@@ -452,7 +476,6 @@ function renderGame() {
       </div>
     </div>
 
-    ${standingsPanel(totals, order, leader)}
     ${historyPanel(totals)}
   `;
 
@@ -464,11 +487,12 @@ function renderGame() {
   updateHints(n);
 }
 
-function rowHtml(name, i, n) {
+function rowHtml(name, i, n, isDealer, score, isLead) {
   const b = state.draft.bids[i];
   const w = state.draft.tricks[i];
   return `
-    <div class="pname">${escapeHtml(name)}</div>
+    <div class="pname">${isLead ? '<span class="crown">♛</span> ' : ""}${escapeHtml(name)}
+      <small><b>${score}</b> pts${isDealer ? " · deals first" : ""}</small></div>
     ${stepper("bid", i, b, n)}
     ${stepper("won", i, w, n)}
   `;
@@ -577,6 +601,117 @@ function historyPanel(totals) {
     <div class="scroll"><table class="hist"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table></div></div>`;
 }
 
+// ---- rendering: fortunes chart --------------------------------------
+// Palette validated for CVD separation + contrast on the parchment surface;
+// two low-contrast slots are relieved by the legend, end labels, and table.
+const CHART_COLORS = ["#3558b8", "#c07d00", "#c0392b", "#178f52", "#8e44ad", "#d16587"];
+let __chart = null;
+
+function chartPanel() {
+  const R = state.rounds.length;
+  const P = state.players.length;
+  if (R < 2) return "";
+
+  const series = state.players.map(() => [0]);
+  for (const r of state.rounds) {
+    for (let i = 0; i < P; i++) {
+      series[i].push(series[i][series[i].length - 1] + roundScore(r.bids[i], r.tricks[i]));
+    }
+  }
+  const allVals = series.flat();
+  const span = Math.max(10, ...allVals) - Math.min(0, ...allVals);
+  const step = span <= 60 ? 10 : span <= 140 ? 20 : span <= 320 ? 50 : 100;
+  const lo = Math.floor(Math.min(0, ...allVals) / step) * step;
+  const hi = Math.ceil(Math.max(10, ...allVals) / step) * step;
+
+  const W = 800, H = 340, ml = 48, mr = 86, mt = 14, mb = 32;
+  const iw = W - ml - mr, ih = H - mt - mb;
+  const x = r => ml + (iw * r) / R;
+  const y = v => mt + ih * (1 - (v - lo) / (hi - lo));
+
+  let grid = "";
+  for (let v = lo; v <= hi; v += step) {
+    const zero = v === 0;
+    grid += `<line x1="${ml}" x2="${ml + iw}" y1="${y(v)}" y2="${y(v)}"
+      stroke="${zero ? "rgba(90,66,30,0.5)" : "rgba(90,66,30,0.16)"}" stroke-width="1"/>
+      <text class="axis" x="${ml - 7}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  }
+  const xEvery = Math.ceil(R / 10);
+  let xticks = "";
+  for (let r = xEvery; r <= R; r += xEvery) {
+    xticks += `<text class="axis" x="${x(r)}" y="${H - 10}" text-anchor="middle">${r}</text>`;
+  }
+
+  let lines = "";
+  for (let i = 0; i < P; i++) {
+    const c = CHART_COLORS[i];
+    const pts = series[i].map((v, r) => `${x(r)},${y(v)}`).join(" ");
+    lines += `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round"/>`;
+    for (let r = 0; r <= R; r++) {
+      lines += `<circle cx="${x(r)}" cy="${y(series[i][r])}" r="3.2" fill="${c}" stroke="#f2e7cb" stroke-width="1.6"/>`;
+    }
+  }
+
+  // end labels, nudged apart when final scores collide
+  const ends = series.map((s, i) => ({ i, ly: y(s[R]) })).sort((a, b) => a.ly - b.ly);
+  for (let k = 1; k < ends.length; k++) {
+    if (ends[k].ly - ends[k - 1].ly < 14) ends[k].ly = ends[k - 1].ly + 14;
+  }
+  let endlabs = "";
+  for (const e of ends) {
+    const nm = state.players[e.i];
+    endlabs += `<text class="endlab" x="${ml + iw + 8}" y="${Math.min(H - mb, Math.max(mt + 4, e.ly)) + 4}">${escapeHtml(nm.length > 9 ? nm.slice(0, 8) + "…" : nm)}</text>`;
+  }
+
+  const legend = state.players.map((p, i) =>
+    `<div class="li"><span class="sw" style="background:${CHART_COLORS[i]}"></span>${escapeHtml(p)}</div>`).join("");
+
+  __chart = { series, R, W, ml, iw };
+  return `<div class="panel"><h2>Fortunes over the rounds</h2>
+    <div class="legend">${legend}</div>
+    <div class="chartwrap" id="chartwrap">
+      <svg viewBox="0 0 ${W} ${H}" id="chartsvg" role="img" aria-label="Cumulative score per player by round">
+        ${grid}${xticks}${lines}
+        <line id="chx" y1="${mt}" y2="${mt + ih}" stroke="rgba(125,42,35,0.55)" stroke-width="1" visibility="hidden"/>
+        ${endlabs}
+        <text class="axis" x="${ml + iw / 2}" y="${H}" text-anchor="middle" font-style="italic">round</text>
+      </svg>
+      <div class="tip" id="charttip"></div>
+    </div></div>`;
+}
+
+function wireChart() {
+  const wrap = document.getElementById("chartwrap");
+  if (!wrap || !__chart) return;
+  const svg = document.getElementById("chartsvg");
+  const tip = document.getElementById("charttip");
+  const chx = document.getElementById("chx");
+  const { series, R, W, ml, iw } = __chart;
+
+  svg.addEventListener("pointermove", ev => {
+    const rect = svg.getBoundingClientRect();
+    const vx = ((ev.clientX - rect.left) / rect.width) * W;
+    const r = Math.max(0, Math.min(R, Math.round(((vx - ml) / iw) * R)));
+    const px = ml + (iw * r) / R;
+    chx.setAttribute("x1", px); chx.setAttribute("x2", px);
+    chx.setAttribute("visibility", "visible");
+    const rows = series.map((s, i) => ({ i, v: s[r] })).sort((a, b) => b.v - a.v)
+      .map(o => `<div class="row"><span class="nm"><span class="sw" style="background:${CHART_COLORS[o.i]}"></span>${escapeHtml(state.players[o.i])}</span><span class="val">${o.v}</span></div>`).join("");
+    tip.innerHTML = `<div class="tr">${r === 0 ? "Start" : "After round " + r}</div>${rows}`;
+    tip.style.display = "block";
+    const wr = wrap.getBoundingClientRect();
+    const cx = ev.clientX - wr.left, cy = ev.clientY - wr.top;
+    const flip = cx > wr.width - 170;
+    tip.style.left = flip ? "" : (cx + 16) + "px";
+    tip.style.right = flip ? (wr.width - cx + 16) + "px" : "";
+    tip.style.top = Math.max(0, cy - 20) + "px";
+  });
+  svg.addEventListener("pointerleave", () => {
+    tip.style.display = "none";
+    chx.setAttribute("visibility", "hidden");
+  });
+}
+
 // ---- rendering: game over ------------------------------------------
 function renderEnd() {
   const app = document.getElementById("app");
@@ -591,6 +726,7 @@ function renderEnd() {
       <div class="champ">${tie ? "Shared victory" : escapeHtml(state.players[champ])}</div>
       <div class="champ-pts">${totals[champ]} points over ${totalRounds()} rounds</div>
     </div>
+    ${chartPanel()}
     ${standingsPanel(totals, order, champ)}
     ${historyPanel(totals)}
     <div class="panel">
@@ -600,6 +736,7 @@ function renderEnd() {
         <button class="btn ghost" id="newBtn">New game</button>
       </div>
     </div>`;
+  wireChart();
   document.getElementById("subtitle").textContent = tie ? "The spellbook records a draw." : `${state.players[champ]} bid truest.`;
   document.getElementById("rematchBtn").addEventListener("click", rematch);
   document.getElementById("undoBtn").addEventListener("click", undoLastRound);
