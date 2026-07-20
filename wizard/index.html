@@ -461,7 +461,7 @@ function renderGame() {
     <div class="panel">
       <h2>Bids &amp; tricks</h2>
       <div class="entry" id="entryGrid">
-        <div class="head">Player</div><div class="head" style="text-align:center">Bid</div><div class="head" style="text-align:center">Won</div>
+        <div class="head">Player</div><div class="head" style="text-align:center">Bid</div><div class="head" style="text-align:center">Tricks won</div>
         ${state.players.map((_, k) => (dealerIndex(n) + k) % state.players.length)
           .map(i => rowHtml(state.players[i], i, n, i === dealerIndex(n), totals[i], i === leader)).join("")}
       </div>
