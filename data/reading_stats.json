@@ -26,13 +26,13 @@
     },
     {
       "year": 2026,
-      "count": 22
+      "count": 23
     }
   ],
   "fun": {
-    "total_books": 185,
-    "total_pages": 80859,
-    "avg_pages": 437,
+    "total_books": 186,
+    "total_pages": 81547,
+    "avg_pages": 438,
     "shortest": {
       "title": "This Winter",
       "pages": 120
@@ -1029,6 +1029,13 @@
       "pages": 155,
       "read_at": "2026-07-17",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659766387l/28698036._SX318_.jpg"
+    },
+    {
+      "title": "Warbreaker",
+      "author": "Brandon Sanderson",
+      "pages": 688,
+      "read_at": "2026-07-24",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1240256182l/1268479.jpg"
     }
   ]
 }

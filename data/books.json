@@ -1,5 +1,12 @@
 [
   {
+    "title": "Warbreaker",
+    "author": "Brandon Sanderson",
+    "rating": 5,
+    "read_at": "2026-07-24",
+    "url": "https://www.goodreads.com/book/show/1268479"
+  },
+  {
     "title": "Secret History",
     "author": "Brandon Sanderson",
     "rating": 4,
@@ -26,12 +33,5 @@
     "rating": 5,
     "read_at": "2026-06-08",
     "url": "https://www.goodreads.com/book/show/2767793"
-  },
-  {
-    "title": "Big Swiss",
-    "author": "Jen Beagin",
-    "rating": 2,
-    "read_at": "2026-05-19",
-    "url": "https://www.goodreads.com/book/show/60701439"
   }
 ]
