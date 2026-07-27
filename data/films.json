@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Odyssey",
+    "year": 2026,
+    "rating": 4.5,
+    "watched_at": "2026-07-26",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/9/4/1255394-the-odyssey-2026-0-600-0-900-crop.jpg?v=1eed046d0c",
+    "url": "https://letterboxd.com/whiteth0rn/film/the-odyssey-2026/"
+  },
+  {
     "title": "Evil Dead Burn",
     "year": 2026,
     "rating": 1.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-06-28",
     "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/7/8/2/51782-the-silence-of-the-lambs-0-600-0-900-crop.jpg?v=18d88bdff4",
     "url": "https://letterboxd.com/whiteth0rn/film/the-silence-of-the-lambs/"
-  },
-  {
-    "title": "Supergirl",
-    "year": 2026,
-    "rating": 3.0,
-    "watched_at": "2026-06-26",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/9/7/4/2/8/6/974286-supergirl-2026-0-600-0-900-crop.jpg?v=e85ddf39db",
-    "url": "https://letterboxd.com/whiteth0rn/film/supergirl-2026/"
   }
 ]
