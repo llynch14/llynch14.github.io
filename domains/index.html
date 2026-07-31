@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>domains.exe</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=VT323&display=swap');
+  :root{
+    --cream:#fdf6f0;
+    --box:#fffdfa;
+    --ink:#46536b;
+    --blue:#7fb5d9;
+    --mint:#b8e0d2;
+    --sage:#c7dcb9;
+    --peach:#f4a259;
+    --muted:#8a94a8;
+  }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body{ margin:0; }
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'VT323',monospace;
+    min-height:100dvh;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:16px; padding:22px 14px 34px;
+  }
+  .console{
+    width:min(94vw,540px);
+    background:var(--box);
+    border:3px solid var(--ink);
+    box-shadow:8px 8px 0 var(--blue);
+    padding:16px 16px 14px; position:relative;
+  }
+  .brand{
+    display:flex; align-items:center; justify-content:space-between;
+    font-family:'Jersey 15',monospace;
+    font-size:20px;
+    color:var(--ink); padding:0 4px 10px;
+  }
+  .brand .hrt{ color:var(--blue); }
+  .brand .r{ display:flex; align-items:center; gap:10px; }
+  .mute{
+    background:none; border:0; color:var(--muted); cursor:pointer;
+    font-family:'Jersey 15',monospace; font-size:16px; padding:2px 4px;
+  }
+  .mute:hover{ color:var(--peach); }
+  .brand .led{
+    width:9px; height:9px; background:var(--mint);
+    border:2px solid var(--ink);
+    animation:pulse 2.6s ease-in-out infinite;
+  }
+  @keyframes pulse{ 0%,100%{opacity:.45} 50%{opacity:1} }
+  .screen-frame{
+    background:var(--ink); border:3px solid var(--ink); padding:10px;
+  }
+  .screen{
+    position:relative; overflow:hidden; background:#000;
+    border:2px solid #000;
+  }
+  canvas{
+    display:block; width:100%; height:auto; aspect-ratio:3 / 2;
+    image-rendering:pixelated; image-rendering:crisp-edges; background:#0a0812; touch-action:none;
+  }
+  #nameform{
+    display:none; position:absolute; left:50%; top:50%;
+    transform:translate(-50%,-50%);
+    background:var(--cream); border:3px solid var(--ink);
+    box-shadow:5px 5px 0 var(--blue);
+    padding:12px 14px; text-align:center;
+    font-family:'VT323',monospace;
+  }
+  #nameform.open{ display:block; }
+  #nameform label{ display:block; font-family:'Jersey 15',monospace; font-size:16px; margin-bottom:6px; color:var(--ink); }
+  #nameform input{
+    width:130px; font-family:'VT323',monospace; font-size:20px; text-align:center;
+    background:var(--box); color:var(--ink);
+    border:3px solid var(--ink); padding:2px 4px; outline:none; text-transform:uppercase;
+  }
+  #nameform .nfrow{ display:flex; gap:8px; margin-top:8px; justify-content:center; }
+  #nameform button{
+    font-family:'Jersey 15',monospace; font-size:13px; cursor:pointer;
+    background:var(--mint); color:var(--ink); border:3px solid var(--ink);
+    box-shadow:2px 2px 0 var(--ink); padding:3px 8px;
+  }
+  #nameform button:active{ transform:translate(2px,2px); box-shadow:none; }
+  #nameform #nameskip{ background:var(--box); }
+  .screen-label{
+    text-align:center; font-family:'Jersey 15',monospace;
+    font-size:15px; color:var(--cream); padding-top:8px;
+  }
+  .screen-label b{ color:var(--peach); font-weight:400; }
+  .controls{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 8px 6px; gap:12px; user-select:none;
+  }
+  .dpad{ display:grid; grid-template-columns:repeat(3,40px); grid-template-rows:repeat(3,40px); gap:2px; }
+  .pad{
+    appearance:none; padding:0; font-family:inherit; cursor:pointer;
+    background:var(--mint); border:3px solid var(--ink);
+    color:var(--ink); width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    font-size:13px; box-shadow:3px 3px 0 var(--ink);
+  }
+  .pad:active{ transform:translate(3px,3px); box-shadow:none; background:var(--sage); }
+  .pu{ grid-area:1/2/2/3; }
+  .pl{ grid-area:2/1/3/2; }
+  .pc{ grid-area:2/2/3/3; background:var(--box); border:none; box-shadow:none; }
+  .pr{ grid-area:2/3/3/4; }
+  .pd{ grid-area:3/2/4/3; }
+  .ab{ display:flex; align-items:flex-end; gap:16px; }
+  .round{
+    width:54px; height:54px; border-radius:50%;
+    background:var(--peach);
+    border:3px solid var(--ink); color:var(--ink);
+    font-family:'Jersey 15',monospace; font-size:18px;
+    box-shadow:3px 4px 0 var(--ink); display:flex; align-items:center; justify-content:center;
+  }
+  .round.b{ background:var(--blue); }
+  .round:active{ transform:translate(2px,4px); box-shadow:none; }
+  .col{ display:flex; flex-direction:column; align-items:center; }
+  .col small{
+    font-size:15px; color:var(--muted); margin-top:5px;
+    font-family:'VT323',monospace;
+  }
+  .footer{
+    font-family:'VT323',monospace; font-size:18px;
+    color:var(--muted); text-align:center; max-width:520px; line-height:1.5;
+  }
+  .footer a{ color:var(--peach); text-decoration:none; border-bottom:2px dotted var(--sage); }
+  .footer a:hover{ border-bottom-color:var(--peach); }
+  .footer .keys{ color:var(--ink); }
+  @media (max-width:420px){
+    .dpad{ grid-template-columns:repeat(3,36px); grid-template-rows:repeat(3,36px); }
+    .round{ width:48px; height:48px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="console">
+    <div class="brand">
+      <span><span class="hrt">♥</span> domains.exe</span>
+      <span class="r">
+        <button class="mute" id="mute" aria-label="toggle sound">&#9834; on</button>
+        <span class="led" aria-hidden="true"></span>
+      </span>
+    </div>
+
+    <div class="screen-frame">
+      <div class="screen">
+        <canvas id="game" width="240" height="160" aria-label="domains.exe game screen"></canvas>
+        <form id="nameform" autocomplete="off">
+          <label for="nameinput">ENTER NAME</label>
+          <input id="nameinput" maxlength="12" placeholder="AAA" spellcheck="false">
+          <div class="nfrow">
+            <button type="submit">SAVE SCORE</button>
+            <button type="button" id="nameskip">SKIP</button>
+          </div>
+        </form>
+      </div>
+      <div class="screen-label">a wall-runner &mdash; <b>&#9654; press start</b></div>
+    </div>
+
+    <div class="controls">
+      <div class="dpad" role="group" aria-label="direction pad">
+        <button class="pad pu" data-btn="up" aria-label="up">&#9650;</button>
+        <button class="pad pl" data-btn="left" aria-label="left">&#9664;</button>
+        <span class="pad pc" aria-hidden="true"></span>
+        <button class="pad pr" data-btn="right" aria-label="right">&#9654;</button>
+        <button class="pad pd" data-btn="down" aria-label="down">&#9660;</button>
+      </div>
+      <div class="ab">
+        <div class="col">
+          <button class="round b" data-btn="discharge" aria-label="discharge">B</button>
+          <small>heat sunk</small>
+        </div>
+        <div class="col">
+          <button class="round a" data-btn="fire" aria-label="fire">A</button>
+          <small>fire</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="keys">arrows / WASD</span> run &middot; <span class="keys">space / Z</span> fire &middot; <span class="keys">X</span> heat sunk &middot; <span class="keys">M</span> mute &middot; <span class="keys">enter</span> start<br>
+    you're a charge carrier on a conducting domain wall &mdash; the physics behind
+    <a href="https://doi.org/10.1002/smll.202508603" target="_blank" rel="noopener">Lynch et al., Small</a><br>
+    <a href="/">♥ back to lindseylynch.me</a>
+  </div>
+
+<script>
+"use strict";
+const cv = document.getElementById("game");
+const ctx = cv.getContext("2d");
+ctx.imageSmoothingEnabled = false;
+
+// ---- world constants ----
+const T = 8, COLS = 30, ROWS = 20, W = COLS * T, H = ROWS * T;
+
+const COL = {
+  bulk:"#171327", bulkHi:"#20193a", floor:"#463c78", floorHi:"#5f52a0", edge:"#2c2450",
+  player:"#8ff0ff", playerHi:"#ffffff", bullet:"#ffe08a",
+  ink:"#d7d0ff", inkDim:"#8a7fc0", gold:"#ffe08a", hpGood:"#7be0a4", hpLow:"#ff5c8a"
+};
+
+// enemy defect types (sizes fit the 8px lanes)
+const ETYPE = {
+  pin:    { hp:2, spd:1.00, size:2.8, dmg:14, score:10, col:"#ff5c8a", hi:"#ffd0dc" },
+  spark:  { hp:1, spd:1.75, size:2.2, dmg:9,  score:16, col:"#9fe8ff", hi:"#ffffff" },
+  anchor: { hp:5, spd:0.55, size:3.2, dmg:22, score:28, col:"#ff9a3c", hi:"#ffd9a0" }
+};
+const PICK = {
+  cool:   { col:"#8ff0ff", label:"C" },
+  rapid:  { col:"#ffe08a", label:"R" },
+  spread: { col:"#c6b6ff", label:"S" }
+};
+
+// ---- levels: ferroelectrics with conducting domain walls ----
+const LEVELS = [
+  { f:"BaTiO3",      fact:"BaTiO3: the classic ferroelectric — conducting domain walls confirmed in 2013." },
+  { f:"LiNbO3",      fact:"LiNbO3: insulating bulk, conducting walls — the biggest contrast known. Our hero." },
+  { f:"BiFeO3",      fact:"BiFeO3: where conducting domain walls were first discovered, back in 2009." },
+  { f:"Pb(Zr,Ti)O3", fact:"PZT: the workhorse piezoelectric in your gas lighter — its walls conduct too." },
+  { f:"ErMnO3",      fact:"ErMnO3: a hexagonal manganite whose walls conduct or insulate depending on their charge." },
+  { f:"LiTaO3",      fact:"LiTaO3: lithium niobate's sister crystal — same insulating bulk, same conducting walls." },
+  { f:"KTiOPO4",     fact:"KTP: famous for turning laser light green; its domain walls carry current as well." },
+  { f:"Cu3B7O13Cl",  fact:"Copper boracite: conducting walls mapped in Belfast, where this game was born." }
+];
+function levelInfo(n){
+  const L = LEVELS[(n - 1) % LEVELS.length];
+  const loops = Math.floor((n - 1) / LEVELS.length);
+  return { f: L.f + "+".repeat(loops), fact: L.fact };
+}
+function doorDelay(n){ return Math.min(30 + (n - 1) * 10, 60); }
+const DOOR_TIME = 10;
+
+// ---- the wall mazes (connectivity verified offline) ----
+function carveTools(m){
+  const room = (c,r,w,h) => { for(let y=r;y<r+h;y++) for(let x=c;x<c+w;x++) if(x>0&&x<COLS-1&&y>0&&y<ROWS-1) m[y][x]=true; };
+  const carveH = (row,c1,c2) => { const a=Math.min(c1,c2), b=Math.max(c1,c2); for(let x=a;x<=b;x++) if(x>0&&x<COLS-1) m[row][x]=true; };
+  const carveV = (col,r1,r2) => { const a=Math.min(r1,r2), b=Math.max(r1,r2); for(let y=a;y<=b;y++) if(y>0&&y<ROWS-1) m[y][col]=true; };
+  return { room, carveH, carveV };
+}
+function blankMap(){ return Array.from({length:ROWS}, () => Array(COLS).fill(false)); }
+
+const VARIANTS = [
+  { // grid-ring: corner rooms + centre room, double ring
+    start:[15,10], spawns:[[3,3],[26,3],[3,16],[26,16]],
+    build(){
+      const m = blankMap(); const { room, carveH:H, carveV:V } = carveTools(m);
+      room(2,2,3,3); room(25,2,3,3); room(2,15,3,3); room(25,15,3,3); room(13,9,4,3);
+      H(3,4,25); H(16,4,25);
+      V(3,4,15); V(26,4,15);
+      H(10,3,13); H(10,16,26);
+      V(14,3,9); V(15,11,16);
+      V(8,3,10); V(21,10,16);
+      return m;
+    }
+  },
+  { // spiral: nested rings, staggered connectors
+    start:[14,10], spawns:[[2,2],[27,2],[2,17],[27,17],[6,6],[23,6],[6,13],[23,13]],
+    build(){
+      const m = blankMap(); const { room, carveH:H, carveV:V } = carveTools(m);
+      H(2,2,27); V(27,2,17); H(17,2,27); V(2,2,17);
+      H(6,6,23); V(23,6,13); H(13,6,23); V(6,6,13);
+      room(13,9,4,2);
+      V(14,2,6); V(15,13,17);
+      H(9,2,6); H(9,23,27);
+      V(14,6,9); V(15,10,13);
+      return m;
+    }
+  },
+  { // lattice: six small rooms, cross-linked
+    start:[14,9], spawns:[[4,4],[24,4],[4,14],[14,14],[24,14]],
+    build(){
+      const m = blankMap(); const { room, carveH:H, carveV:V } = carveTools(m);
+      room(3,3,3,3); room(13,3,3,3); room(23,3,3,3);
+      room(3,13,3,3); room(13,13,3,3); room(23,13,3,3);
+      H(4,6,13); H(4,16,23);
+      H(14,6,13); H(14,16,23);
+      V(4,6,13); V(14,6,13); V(24,6,13);
+      H(9,4,9); H(9,19,24);
+      V(9,9,14); V(19,4,9);
+      return m;
+    }
+  },
+  { // arteries: central spine, ribs, end rooms
+    start:[15,9], spawns:[[3,3],[26,3],[3,16],[26,16],[14,3],[14,16]],
+    build(){
+      const m = blankMap(); const { room, carveH:H, carveV:V } = carveTools(m);
+      H(9,3,26);
+      room(2,2,3,3); room(25,2,3,3); room(2,15,3,3); room(25,15,3,3);
+      room(13,2,4,2); room(13,16,4,2);
+      V(3,5,9); V(26,5,9); V(3,9,15); V(26,9,15);
+      V(9,3,9); V(20,3,9); H(3,9,14); H(3,16,20);
+      V(9,9,16); V(20,9,16); H(16,9,13); H(16,17,20);
+      return m;
+    }
+  }
+];
+
+let MAP = VARIANTS[0].build();
+let SPAWNS = VARIANTS[0].spawns;
+let START = VARIANTS[0].start;
+const CONF = Array.from({length:ROWS}, () => Array(COLS).fill(0));
+const HEAT = Array.from({length:ROWS}, () => new Float32Array(COLS));
+
+function computeConf(){
+  for(let y=0;y<ROWS;y++) for(let x=0;x<COLS;x++){
+    CONF[y][x] = 0;
+    if(!MAP[y][x]) continue;
+    let n = 0;
+    if(!MAP[y-1] || !MAP[y-1][x]) n++;
+    if(!MAP[y+1] || !MAP[y+1][x]) n++;
+    if(!MAP[y][x-1]) n++;
+    if(!MAP[y][x+1]) n++;
+    CONF[y][x] = n;
+  }
+}
+computeConf();
+
+function setMap(i){
+  const v = VARIANTS[i % VARIANTS.length];
+  MAP = v.build(); SPAWNS = v.spawns; START = v.start;
+  computeConf();
+}
+
+function solidAt(px,py){
+  const c = Math.floor(px / T), r = Math.floor(py / T);
+  if(c < 0 || c >= COLS || r < 0 || r >= ROWS) return true;
+  return !MAP[r][c];
+}
+function clearBox(px,py,h){
+  return !solidAt(px-h,py-h) && !solidAt(px+h,py-h) && !solidAt(px-h,py+h) && !solidAt(px+h,py+h);
+}
+// ease a coordinate toward its lane centre (keeps everyone aligned in 1-tile corridors)
+function snapLane(v, rate, dt){
+  const centre = (Math.floor(v / T) + 0.5) * T;
+  const d = centre - v;
+  const step = Math.sign(d) * Math.min(Math.abs(d), rate * dt);
+  return v + step;
+}
+
+// ---- flow field: BFS distance-to-player, so enemies path through the maze ----
+const FLOW = Array.from({length:ROWS}, () => Array(COLS).fill(-1));
+let flowT = 0;
+function computeFlow(){
+  for(let y=0;y<ROWS;y++) FLOW[y].fill(-1);
+  const pc = Math.floor(player.x / T), pr = Math.floor(player.y / T);
+  if(pc < 0 || pc >= COLS || pr < 0 || pr >= ROWS || !MAP[pr][pc]) return;
+  const q = [[pc, pr]]; FLOW[pr][pc] = 0;
+  let head = 0;
+  while(head < q.length){
+    const [x, y] = q[head++];
+    for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){
+      const nx = x + dx, ny = y + dy;
+      if(nx < 0 || nx >= COLS || ny < 0 || ny >= ROWS) continue;
+      if(!MAP[ny][nx] || FLOW[ny][nx] >= 0) continue;
+      FLOW[ny][nx] = FLOW[y][x] + 1;
+      q.push([nx, ny]);
+    }
+  }
+}
+// next tile centre an enemy should head for (null = sit / go straight at player)
+function flowTarget(e){
+  const ec = Math.floor(e.x / T), er = Math.floor(e.y / T);
+  if(ec < 0 || ec >= COLS || er < 0 || er >= ROWS) return null;
+  const here = FLOW[er] ? FLOW[er][ec] : -1;
+  if(here <= 0) return null;              // on the player's tile (or unreachable)
+  const opts = [];
+  for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){
+    const nx = ec + dx, ny = er + dy;
+    if(nx < 0 || nx >= COLS || ny < 0 || ny >= ROWS || !MAP[ny][nx]) continue;
+    const d = FLOW[ny][nx];
+    if(d >= 0 && d < here) opts.push([nx, ny]);
+  }
+  if(!opts.length) return null;
+  // sparks take erratic (but still descending) routes; others pick consistently
+  const pick = (e.type === "spark" && opts.length > 1 && Math.random() < 0.35)
+    ? opts[Math.floor(Math.random() * opts.length)]
+    : opts[(e.seed || 0) % opts.length];
+  return [(pick[0] + 0.5) * T, (pick[1] + 0.5) * T];
+}
+
+// ---- audio (Web Audio synth, no files; null-safe if unavailable) ----
+const audio = (function(){
+  let ac=null, master=null, muted=false, noiseBuf=null, schedTimer=null, step=0, nextTime=0, bpm=100, playing=false;
+  const AC = (typeof window !== "undefined") && (window.AudioContext || window.webkitAudioContext);
+  function init(){
+    if(ac || !AC) return;
+    ac = new AC();
+    master = ac.createGain(); master.gain.value = muted ? 0 : 0.22; master.connect(ac.destination);
+    noiseBuf = ac.createBuffer(1, Math.floor(ac.sampleRate * 0.4), ac.sampleRate);
+    const d = noiseBuf.getChannelData(0);
+    for(let i=0;i<d.length;i++) d[i] = Math.random() * 2 - 1;
+  }
+  function resume(){ if(ac && ac.state === "suspended") ac.resume(); }
+  function tone(type,freq,t0,dur,vol,glide){
+    if(!ac) return;
+    const o = ac.createOscillator(), g = ac.createGain();
+    o.type = type; o.frequency.setValueAtTime(freq, t0);
+    if(glide) o.frequency.exponentialRampToValueAtTime(glide, t0 + dur);
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(vol, t0 + 0.008);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g); g.connect(master); o.start(t0); o.stop(t0 + dur + 0.02);
+  }
+  function noise(t0,dur,vol,hp){
+    if(!ac) return;
+    const s = ac.createBufferSource(); s.buffer = noiseBuf;
+    const g = ac.createGain(); g.gain.setValueAtTime(vol, t0); g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    const f = ac.createBiquadFilter(); f.type = "highpass"; f.frequency.value = hp || 1000;
+    s.connect(f); f.connect(g); g.connect(master); s.start(t0); s.stop(t0 + dur + 0.02);
+  }
+  function sfx(name){
+    if(!ac) return;
+    const t = ac.currentTime;
+    if(name === "shoot"){ tone("square",700,t,0.06,0.16,320); }
+    else if(name === "hit"){ noise(t,0.05,0.22,2200); }
+    else if(name === "kill"){ tone("square",440,t,0.05,0.2,660); tone("square",680,t+0.05,0.09,0.18,990); }
+    else if(name === "hurt"){ tone("sawtooth",300,t,0.18,0.28,90); noise(t,0.1,0.2,600); }
+    else if(name === "discharge"){ noise(t,0.35,0.42,260); tone("sine",180,t,0.4,0.35,38); tone("square",520,t,0.18,0.16,120); }
+    else if(name === "pickup"){ tone("triangle",520,t,0.08,0.24,780); tone("triangle",820,t+0.08,0.12,0.22,1100); }
+    else if(name === "level"){ [523,659,784,1046].forEach((f,i)=>tone("square",f,t+i*0.09,0.13,0.18)); }
+    else if(name === "door"){ [784,988,1175].forEach((f,i)=>tone("triangle",f,t+i*0.07,0.12,0.22)); }
+    else if(name === "start"){ [392,523,659].forEach((f,i)=>tone("triangle",f,t+i*0.08,0.15,0.2)); }
+    else if(name === "over"){ [440,349,262].forEach((f,i)=>tone("sawtooth",f,t+i*0.16,0.26,0.24,f*0.6)); }
+    else if(name === "boom"){ noise(t,0.8,0.55,120); tone("sine",120,t,0.7,0.4,28); tone("sawtooth",90,t,0.6,0.3,20); }
+    else if(name === "alarm"){ tone("square",1200,t,0.07,0.12,900); }
+  }
+  const BASS = [110,0,164.81,0,196,0,146.83,0, 110,0,164.81,0,98,0,130.81,0];
+  const LEAD = [440,523,659,523,587,659,784,659, 440,392,523,587,659,784,880,659];
+  function schedule(){
+    if(!ac || !playing) return;
+    while(nextTime < ac.currentTime + 0.12){
+      const s = step % 16;
+      if(BASS[s]) tone("triangle", BASS[s]/2, nextTime, 0.22, 0.32, null);
+      if(LEAD[s]) tone("square", LEAD[s], nextTime, 0.11, 0.07, null);
+      if(s % 2 === 0) noise(nextTime, 0.028, 0.06, 6500);
+      nextTime += 60 / bpm / 2;
+      step++;
+    }
+  }
+  function startMusic(){ if(!ac) return; playing = true; step = 0; nextTime = ac.currentTime + 0.06; if(!schedTimer) schedTimer = setInterval(schedule, 25); }
+  function stopMusic(){ playing = false; }
+  function setLevelTempo(n){ bpm = Math.min(152, 100 + n * 5); }
+  function toggleMute(){ muted = !muted; if(master) master.gain.value = muted ? 0 : 0.22; return muted; }
+  function isMuted(){ return muted; }
+  return { init, resume, sfx, startMusic, stopMusic, setLevelTempo, toggleMute, isMuted };
+})();
+
+// ---- input ----
+const keys = new Set();
+const held = { up:false, down:false, left:false, right:false, fire:false };
+const START_KEYS = new Set(["Enter"," ","Spacebar"]);
+
+function keyDir(){
+  let x = 0, y = 0;
+  if(keys.has("ArrowLeft") || keys.has("a") || held.left)  x -= 1;
+  if(keys.has("ArrowRight")|| keys.has("d") || held.right) x += 1;
+  if(keys.has("ArrowUp")   || keys.has("w") || held.up)    y -= 1;
+  if(keys.has("ArrowDown") || keys.has("s") || held.down)  y += 1;
+  return { x, y };
+}
+function firing(){ return keys.has(" ") || keys.has("z") || keys.has("j") || held.fire; }
+
+function beginOrStart(){
+  audio.init(); audio.resume();
+  if(state !== "play") startGame();
+}
+addEventListener("keydown", (e) => {
+  if(nameOpen) return; // typing a name, not playing
+  const k = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+  if(["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"," "].includes(e.key)) e.preventDefault();
+  if(k === "m"){ syncMute(audio.toggleMute()); return; }
+  const wasDown = keys.has(k);
+  keys.add(k);
+  if(state !== "play"){ if(START_KEYS.has(e.key) || k === "z") beginOrStart(); return; }
+  if((k === "x") && !wasDown) discharge();  // edge-triggered vent
+});
+addEventListener("keyup", (e) => { keys.delete(e.key.length === 1 ? e.key.toLowerCase() : e.key); });
+addEventListener("blur", () => keys.clear());
+
+document.querySelectorAll("[data-btn]").forEach((el) => {
+  const name = el.dataset.btn;
+  const on = (e) => {
+    if(nameOpen) return;
+    e.preventDefault(); audio.init(); audio.resume();
+    if(state !== "play"){ startGame(); return; }
+    if(name === "discharge") discharge();
+    else held[name] = true;
+  };
+  const off = (e) => { e.preventDefault(); if(name !== "discharge") held[name] = false; };
+  el.addEventListener("pointerdown", on);
+  el.addEventListener("pointerup", off);
+  el.addEventListener("pointerleave", off);
+  el.addEventListener("pointercancel", off);
+});
+cv.addEventListener("pointerdown", (e) => { if(nameOpen) return; e.preventDefault(); beginOrStart(); });
+
+const muteBtn = document.getElementById("mute");
+function syncMute(m){ muteBtn.innerHTML = m ? "&#9834; off" : "&#9834; on"; muteBtn.style.color = m ? "var(--muted)" : "var(--ink)"; }
+muteBtn.addEventListener("click", () => { audio.init(); syncMute(audio.toggleMute()); });
+
+// ---- global leaderboard (Cloudflare Worker + D1; see worker/) ----
+const LB_URL = "https://domains-exe-lb.lindseylynch.workers.dev";
+const lbEnabled = LB_URL.startsWith("https://");
+let lbTop = null, lbSubmitted = false, nameOpen = false;
+
+async function lbFetch(){
+  if(!lbEnabled) return;
+  try{
+    const r = await fetch(LB_URL);
+    if(r.ok) lbTop = await r.json();
+  }catch(err){ /* board is optional; play on */ }
+}
+async function lbSubmit(name){
+  if(!lbEnabled || lbSubmitted) return;
+  lbSubmitted = true;
+  try{
+    await fetch(LB_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ name, score, level })
+    });
+  }catch(err){}
+  lbFetch();
+}
+
+const nameForm = document.getElementById("nameform");
+const nameInput = document.getElementById("nameinput");
+nameForm.addEventListener("submit", (e) => { e.preventDefault(); closeNameForm(true); });
+document.getElementById("nameskip").addEventListener("click", () => closeNameForm(false));
+function openNameForm(){
+  nameOpen = true;
+  try{ nameInput.value = localStorage.getItem("dexe-name") || ""; }catch(err){}
+  nameForm.classList.add("open");
+  setTimeout(() => nameInput.focus(), 50);
+}
+function closeNameForm(save){
+  nameOpen = false; nameForm.classList.remove("open");
+  const name = nameInput.value.trim().toUpperCase().slice(0, 12);
+  if(save && name){
+    try{ localStorage.setItem("dexe-name", name); }catch(err){}
+    lbSubmit(name);
+  }
+}
+lbFetch();
+
+// ---- game state ----
+let state = "title";
+let player = null, enemies = [], bullets = [], particles = [], pickups = [], floaters = [];
+let score = 0, spawnTimer = 0, enemySpeed = 26, maxAlive = 3;
+let level = 1, levelT = 0, door = null; // door: {c, r, t}
+let deathCause = "", shake = 0, banner = null, alarmT = 0;
+
+const DISCHARGE_MIN = 30;
+
+// ---- physics taught along the way ----
+const FACTS = [
+  "Ferroelectric: every unit cell is a tiny electric dipole you can flip with a field.",
+  "A domain is a patch where all those dipoles point the same way.",
+  "A domain wall is the boundary between two domains — just a few atoms wide.",
+  "The twist: those walls conduct, while the crystal around them insulates.",
+  "So each wall is a rewritable nanoscale wire threaded through the crystal.",
+  "Push current down a wall and it heats up — it behaves like a resistor.",
+  "Heat spikes where walls pinch: J = I/A, and dissipation grows as J squared.",
+  "Map that heat and the hot spots cluster where walls bunch. That's the real result."
+];
+let fact = null, titleT = 0.4, titleFact = -1;
+const seen = { overheat:false, discharge:false, anchor:false, cool:false };
+
+function wrapText(s, max){
+  const words = s.split(" ");
+  const lines = [];
+  let cur = "";
+  for(const w of words){
+    if((cur + " " + w).trim().length <= max) cur = (cur + " " + w).trim();
+    else { if(cur) lines.push(cur); cur = w; }
+  }
+  if(cur) lines.push(cur);
+  return lines;
+}
+
+function showFact(str, dur){ fact = { lines: wrapText(str, 44), t: dur || 4.2 }; }
+
+function resetHeatField(){ for(let y=0;y<ROWS;y++) HEAT[y].fill(0); }
+function comboMult(){ return Math.min(5, 1 + Math.floor(player.combo / 3)); }
+
+function setLevel(n){
+  level = n;
+  setMap(n - 1);
+  const info = levelInfo(n);
+  enemies = []; bullets = []; particles = []; pickups = []; floaters = [];
+  levelT = 0; door = null;
+  player.x = player.px = START[0]*T + T/2;
+  player.y = player.py = START[1]*T + T/2;
+  player.heat = 0;
+  enemySpeed = Math.min(46, 16 + (n - 1) * 4);  // gentle at first, ramps up per level
+  maxAlive = Math.min(10, 2 + n);
+  spawnTimer = 1;
+  resetHeatField();
+  computeFlow(); flowT = 0.2;
+  banner = { text: "L" + n + " · " + info.f, t: 1.8 };
+  showFact(info.fact, 4.5);
+  audio.setLevelTempo(n);
+}
+
+function startGame(){
+  player = { x:0, y:0, px:0, py:0, fx:1, fy:0, heat:0, critical:0, hp:100, cd:0, inv:0, dcd:0,
+             combo:0, comboT:0, rapid:0, spread:0, flash:0 };
+  score = 0; lbSubmitted = false;
+  deathCause = ""; shake = 0; alarmT = 0;
+  seen.overheat = seen.discharge = seen.anchor = seen.cool = false;
+  setLevel(1);
+  audio.startMusic(); audio.sfx("start");
+  state = "play";
+}
+
+// ---- door: opens far from the player; 10 s to reach it ----
+function openDoor(){
+  const pc = Math.floor(player.x / T), pr = Math.floor(player.y / T);
+  const dist = Array.from({length:ROWS}, () => Array(COLS).fill(-1));
+  const q = [[pc, pr]]; dist[pr][pc] = 0;
+  let maxD = 0;
+  while(q.length){
+    const [x, y] = q.shift();
+    for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){
+      const nx = x + dx, ny = y + dy;
+      if(nx < 0 || nx >= COLS || ny < 0 || ny >= ROWS) continue;
+      if(!MAP[ny][nx] || dist[ny][nx] >= 0) continue;
+      dist[ny][nx] = dist[y][x] + 1;
+      maxD = Math.max(maxD, dist[ny][nx]);
+      q.push([nx, ny]);
+    }
+  }
+  const far = [];
+  for(let y=0;y<ROWS;y++) for(let x=0;x<COLS;x++)
+    if(dist[y][x] >= maxD * 0.7) far.push([x, y]);
+  const pick = far.length ? far[Math.floor(Math.random() * far.length)] : [START[0], START[1]];
+  door = { c: pick[0], r: pick[1], t: DOOR_TIME };
+  banner = { text: "DOOR OPEN!", t: 1.4 };
+  audio.sfx("door");
+}
+
+function advanceLevel(){
+  score += 100 * level;
+  floaters.push({ x:player.x, y:player.y-4, text:"+" + (100 * level), col:COL.gold, life:1 });
+  player.hp = Math.min(100, player.hp + 20);
+  audio.sfx("level");
+  setLevel(level + 1);
+}
+
+function blowDevice(){
+  deathCause = "device blew";
+  shake = 16;
+  burst(player.x, player.y, COL.hpLow, 18);
+  burst(player.x, player.y, COL.gold, 18);
+  burst(player.x, player.y, COL.playerHi, 18);
+  audio.sfx("boom");
+  endGame();
+}
+
+function pickType(){
+  const r = Math.random();
+  if(level >= 4 && r < 0.16) return "anchor";
+  if(level >= 2 && r < 0.48) return "spark";
+  return "pin";
+}
+function spawnEnemy(){
+  // any spawn point far enough from the player; random among candidates
+  const far = SPAWNS.filter(([cx,cy]) => {
+    const ex = cx*T + T/2, ey = cy*T + T/2;
+    return (ex - player.x)**2 + (ey - player.y)**2 > 1600;
+  });
+  const pool = far.length ? far : SPAWNS;
+  const [cx, cy] = pool[Math.floor(Math.random() * pool.length)];
+  const type = pickType();
+  if(type === "anchor" && !seen.anchor){ seen.anchor = true; showFact("Charged defects pin domain walls in place — these heavies are hard to shift.", 4.5); }
+  enemies.push({ x:cx*T + T/2, y:cy*T + T/2, type, hp:ETYPE[type].hp, cd:Math.random()*0.4, seed:Math.floor(Math.random()*4) });
+}
+
+function fire(){
+  if(player.cd > 0) return;
+  player.cd = player.rapid > 0 ? 0.09 : 0.16;
+  const base = Math.atan2(player.fy, player.fx);
+  const angs = player.spread > 0 ? [base-0.35, base, base+0.35] : [base];
+  for(const a of angs) bullets.push({ x:player.x, y:player.y, vx:Math.cos(a)*152, vy:Math.sin(a)*152, life:1.4 });
+  // firing is a current pulse -> heat spike
+  player.heat = Math.min(100, player.heat + 5);
+  audio.sfx("shoot");
+}
+
+function discharge(){
+  if(player.dcd > 0 || player.heat < DISCHARGE_MIN) return;
+  const power = player.heat;                 // 30..100
+  const radius = 22 + power * 0.6;
+  const dmg = 1 + Math.floor(power / 22);    // 2..5
+  audio.sfx("discharge");
+  for(const e of enemies){
+    if(e.hp <= 0) continue;
+    const dx = e.x - player.x, dy = e.y - player.y;
+    if(dx*dx + dy*dy < radius*radius){
+      e.hp -= dmg;
+      const len = Math.max(1, Math.hypot(dx,dy)), nx = e.x + dx/len*4, ny = e.y + dy/len*4;
+      if(clearBox(nx, e.y, ETYPE[e.type].size)) e.x = nx;
+      if(clearBox(e.x, ny, ETYPE[e.type].size)) e.y = ny;
+      if(e.hp <= 0) killEnemy(e, false);
+    }
+  }
+  for(let i=0;i<22;i++){
+    const a = (i/22) * Math.PI * 2;
+    particles.push({ x:player.x, y:player.y, vx:Math.cos(a)*90, vy:Math.sin(a)*90, life:0.35, col:COL.player });
+  }
+  player.heat = 0; player.flash = 0.2; player.dcd = 0.4; shake = 6;
+  floaters.push({ x:player.x, y:player.y-5, text:"HEAT SUNK!", col:COL.player, life:0.9 });
+  if(!seen.discharge){ seen.discharge = true; showFact("Heat sunk: you dumped the wall's built-up energy into the bulk all at once.", 4.5); }
+}
+
+function killEnemy(e, chain){
+  e.hp = 0;
+  const def = ETYPE[e.type];
+  player.combo++; player.comboT = 2.5;
+  const gained = def.score * comboMult();
+  score += gained;
+  floaters.push({ x:e.x, y:e.y-2, text:"+"+gained, col: comboMult()>1 ? COL.gold : COL.ink, life:0.85 });
+  burst(e.x, e.y, def.hi, e.type === "anchor" ? 12 : 6);
+  burst(e.x, e.y, COL.gold, 5);
+  if(!chain) audio.sfx("kill");
+  const r = Math.random();
+  if(r < 0.10) pickups.push({ x:e.x, y:e.y, type:"cool", life:8 });
+  else if(r < 0.17) pickups.push({ x:e.x, y:e.y, type:"rapid", life:8 });
+  else if(r < 0.23) pickups.push({ x:e.x, y:e.y, type:"spread", life:8 });
+}
+
+function hurtPlayer(dmg, cause){
+  if(player.inv > 0) return;
+  player.hp -= dmg; player.inv = 0.7; player.combo = 0; player.comboT = 0; shake = 4;
+  audio.sfx("hurt");
+  if(player.hp <= 0){ player.hp = 0; deathCause = cause; endGame(); }
+}
+function endGame(){
+  state = "over"; audio.stopMusic(); audio.sfx("over");
+  if(lbEnabled){ lbFetch(); if(score > 0) openNameForm(); }
+}
+
+function burst(x,y,col,n){
+  for(let i=0;i<n;i++){
+    const a = Math.random()*Math.PI*2, sp = 20 + Math.random()*55;
+    particles.push({ x, y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp, life:0.4+Math.random()*0.3, col });
+  }
+}
+
+// ---- update ----
+const PSIZE = 3.0;        // player collision half-extent (fills the lane)
+const SNAP = 30;          // lane-centering speed, px/s
+const PLAYER_SPD = 54;
+const ENEMY_SPD_CAP = PLAYER_SPD * 0.9;  // you can ALWAYS outrun them
+
+function update(dt){
+  if(banner){ banner.t -= dt; if(banner.t <= 0) banner = null; }
+  if(fact){ fact.t -= dt; if(fact.t <= 0) fact = null; }
+  if(state === "title"){
+    titleT -= dt;
+    if(titleT <= 0){ titleFact = (titleFact + 1) % FACTS.length; showFact(FACTS[titleFact], 4); titleT = 4.4; }
+  }
+  if(state !== "play") return;
+
+  player.px = player.x; player.py = player.y;
+  const dir = keyDir();
+  const spd = PLAYER_SPD;
+  if(dir.x !== 0){ const nx = player.x + dir.x*spd*dt; if(clearBox(nx, player.y, PSIZE)) player.x = nx; }
+  if(dir.y !== 0){ const ny = player.y + dir.y*spd*dt; if(clearBox(player.x, ny, PSIZE)) player.y = ny; }
+  // lane-centering: while running along one axis, ease onto the lane centre
+  if(dir.x !== 0 && dir.y === 0){ const sy = snapLane(player.y, SNAP, dt); if(clearBox(player.x, sy, PSIZE)) player.y = sy; }
+  if(dir.y !== 0 && dir.x === 0){ const sx = snapLane(player.x, SNAP, dt); if(clearBox(sx, player.y, PSIZE)) player.x = sx; }
+  if(dir.x !== 0 && dir.y === 0){ player.fx = dir.x; player.fy = 0; }
+  else if(dir.y !== 0 && dir.x === 0){ player.fx = 0; player.fy = dir.y; }
+  else if(dir.x !== 0 && dir.y !== 0){ player.fx = dir.x; player.fy = 0; }
+
+  player.cd = Math.max(0, player.cd - dt);
+  player.inv = Math.max(0, player.inv - dt);
+  player.dcd = Math.max(0, player.dcd - dt);
+  player.flash = Math.max(0, player.flash - dt);
+  player.rapid = Math.max(0, player.rapid - dt);
+  player.spread = Math.max(0, player.spread - dt);
+  if(player.comboT > 0){ player.comboT -= dt; if(player.comboT <= 0) player.combo = 0; }
+  if(firing()) fire();
+
+  // ---- level clock and the door ----
+  levelT += dt;
+  if(!door && levelT >= doorDelay(level)) openDoor();
+  if(door){
+    door.t -= dt;
+    alarmT -= dt;
+    if(alarmT <= 0){ audio.sfx("alarm"); alarmT = door.t > 4 ? 1.0 : 0.45; }
+    const pc0 = Math.floor(player.x / T), pr0 = Math.floor(player.y / T);
+    if(pc0 === door.c && pr0 === door.r){ advanceLevel(); return; }
+    if(door.t <= 0){ blowDevice(); return; }
+  }
+
+  // ---- heat: you ARE the current. rise scales with speed x confinement ----
+  const moved = Math.hypot(player.x - player.px, player.y - player.py);
+  const moveFrac = Math.min(1, moved / (spd * dt + 1e-6));
+  const pc = Math.floor(player.x / T), pr = Math.floor(player.y / T);
+  const conf = (MAP[pr] && MAP[pr][pc]) ? CONF[pr][pc] : 0;
+  player.heat += conf * moveFrac * 40 * dt;   // Joule heating through the constriction
+  if(player.heat >= 100){
+    player.critical = 0.6;  // arm burn at the peak (thermal inertia)
+    if(!seen.overheat){ seen.overheat = true; showFact("Overheating: a pinched wall crams current into a tiny cross-section, so Joule heat runs away.", 5); }
+  }
+  player.heat -= 20 * dt;                       // conduction away to the bulk
+  player.heat = Math.max(0, Math.min(100, player.heat));
+  if(player.critical > 0){
+    player.critical -= dt;
+    player.hp -= 32 * dt; shake = Math.max(shake, 2.5);
+    if(player.hp <= 0){ player.hp = 0; deathCause = "overheated"; endGame(); }
+  }
+  if(MAP[pr] && MAP[pr][pc]) HEAT[pr][pc] = Math.min(1, HEAT[pr][pc] + conf * moveFrac * 1.1 * dt + (player.heat >= 100 ? 0.02 : 0));
+  for(let y=0;y<ROWS;y++) for(let x=0;x<COLS;x++) if(HEAT[y][x] > 0) HEAT[y][x] = Math.max(0, HEAT[y][x] - 0.35*dt);
+
+  // bullets, sub-stepped
+  for(const b of bullets){
+    const steps = Math.max(1, Math.ceil((Math.abs(b.vx)+Math.abs(b.vy)) * dt / 3));
+    const sx = b.vx*dt/steps, sy = b.vy*dt/steps;
+    for(let s=0;s<steps;s++){ b.x += sx; b.y += sy; if(solidAt(b.x, b.y)){ b.life = 0; break; } }
+    b.life -= dt;
+  }
+
+  // spawn
+  spawnTimer -= dt;
+  if(spawnTimer <= 0 && enemies.length < maxAlive){ spawnEnemy(); spawnTimer = Math.max(0.45, 1.5 - level*0.08); }
+
+  // enemies path toward the player via the flow field
+  flowT -= dt;
+  if(flowT <= 0){ computeFlow(); flowT = 0.2; }
+  for(const e of enemies){
+    const def = ETYPE[e.type];
+    const es = Math.min(enemySpeed * def.spd, ENEMY_SPD_CAP);
+    e.cd -= dt;
+    if(e.cd <= 0){ e.seed = Math.floor(Math.random()*4); e.cd = 0.6; }
+    const tgt = flowTarget(e);
+    const tx = tgt ? tgt[0] : player.x, ty = tgt ? tgt[1] : player.y;
+    const ddx = tx - e.x, ddy = ty - e.y;
+    let movedX = false, movedY = false;
+    if(Math.abs(ddx) > Math.abs(ddy)){
+      const step = Math.sign(ddx) * Math.min(Math.abs(ddx), es*dt);
+      if(step !== 0 && clearBox(e.x + step, e.y, def.size)){ e.x += step; movedX = true; }
+    } else if(ddy !== 0){
+      const step = Math.sign(ddy) * Math.min(Math.abs(ddy), es*dt);
+      if(step !== 0 && clearBox(e.x, e.y + step, def.size)){ e.y += step; movedY = true; }
+    }
+    if(!movedX && !movedY){ // dominant axis blocked — take the other one
+      if(ddx !== 0 && clearBox(e.x + Math.sign(ddx)*es*dt, e.y, def.size)){ e.x += Math.sign(ddx)*es*dt; movedX = true; }
+      else if(ddy !== 0 && clearBox(e.x, e.y + Math.sign(ddy)*es*dt, def.size)){ e.y += Math.sign(ddy)*es*dt; movedY = true; }
+    }
+    // enemies ride the lane centres too, so shots line up
+    if(movedX){ const sy = snapLane(e.y, SNAP, dt); if(clearBox(e.x, sy, def.size)) e.y = sy; }
+    if(movedY){ const sx = snapLane(e.x, SNAP, dt); if(clearBox(sx, e.y, def.size)) e.x = sx; }
+    const rr = (def.size + 2.6)**2;
+    if((e.x - player.x)**2 + (e.y - player.y)**2 < rr) hurtPlayer(def.dmg, "shorted out");
+  }
+
+  // bullet vs enemy
+  for(const b of bullets){
+    if(b.life <= 0) continue;
+    for(const e of enemies){
+      if(e.hp <= 0) continue;
+      const rr = (ETYPE[e.type].size + 1.4)**2;
+      if((e.x - b.x)**2 + (e.y - b.y)**2 < rr){
+        e.hp--; b.life = 0; audio.sfx("hit"); burst(e.x, e.y, ETYPE[e.type].hi, 3);
+        if(e.hp <= 0) killEnemy(e, false);
+        break;
+      }
+    }
+  }
+
+  // pickups
+  for(const p of pickups){
+    p.life -= dt;
+    if((p.x - player.x)**2 + (p.y - player.y)**2 < 25){
+      applyPickup(p.type); p.life = 0;
+    }
+  }
+
+  // cull
+  bullets = bullets.filter((b) => b.life > 0);
+  enemies = enemies.filter((e) => e.hp > 0);
+  pickups = pickups.filter((p) => p.life > 0);
+  for(const p of particles){ p.x += p.vx*dt; p.y += p.vy*dt; p.life -= dt; }
+  particles = particles.filter((p) => p.life > 0);
+  for(const f of floaters){ f.y -= 12*dt; f.life -= dt; }
+  floaters = floaters.filter((f) => f.life > 0);
+
+  shake = Math.max(0, shake - dt*24);
+}
+
+function applyPickup(type){
+  audio.sfx("pickup");
+  if(type === "cool"){ player.heat = 0; player.hp = Math.min(100, player.hp + 15); floaters.push({ x:player.x, y:player.y-4, text:"COOL", col:PICK.cool.col, life:0.9 });
+    if(!seen.cool){ seen.cool = true; showFact("Coolant: energy conducts away into the bulk crystal, like a heat sink.", 4.5); } }
+  else if(type === "rapid"){ player.rapid = 6; floaters.push({ x:player.x, y:player.y-4, text:"RAPID", col:PICK.rapid.col, life:0.9 }); }
+  else if(type === "spread"){ player.spread = 6; floaters.push({ x:player.x, y:player.y-4, text:"SPREAD", col:PICK.spread.col, life:0.9 }); }
+}
+
+// ---- render ----
+function px(v){ return Math.round(v); }
+
+function drawTiles(){
+  for(let y=0;y<ROWS;y++){
+    for(let x=0;x<COLS;x++){
+      const X = x*T, Y = y*T;
+      if(!MAP[y][x]){
+        ctx.fillStyle = COL.bulk; ctx.fillRect(X, Y, T, T);
+        if(((x*31 + y*17) % 7) === 0){ ctx.fillStyle = COL.bulkHi; ctx.fillRect(X+3, Y+2, 1, 1); }
+        continue;
+      }
+      ctx.fillStyle = COL.floor; ctx.fillRect(X, Y, T, T);
+      ctx.fillStyle = COL.floorHi; ctx.fillRect(X+3, Y+3, 2, 2);
+      const h = HEAT[y][x];
+      if(h > 0.02){
+        const r = Math.min(255, 120 + h*135), g = Math.max(40, 150 - h*150), bl = Math.max(30, 120 - h*120);
+        ctx.fillStyle = "rgba(" + px(r) + "," + px(g) + "," + px(bl) + "," + Math.min(0.85, h) + ")";
+        ctx.fillRect(X, Y, T, T);
+      }
+      ctx.fillStyle = COL.edge;
+      if(!MAP[y-1] || !MAP[y-1][x]) ctx.fillRect(X, Y, T, 1);
+      if(!MAP[y+1] || !MAP[y+1][x]) ctx.fillRect(X, Y+T-1, T, 1);
+      if(!MAP[y][x-1]) ctx.fillRect(X, Y, 1, T);
+      if(!MAP[y][x+1]) ctx.fillRect(X+T-1, Y, 1, T);
+    }
+  }
+}
+
+function drawDoor(){
+  if(!door) return;
+  const X = door.c*T, Y = door.r*T;
+  const blink = Math.floor(performance.now()/160) % 2 === 0;
+  ctx.fillStyle = "#05040a"; ctx.fillRect(X+1, Y+1, T-2, T-2);
+  ctx.fillStyle = blink ? COL.gold : "#a88820";
+  ctx.fillRect(X, Y, T, 1); ctx.fillRect(X, Y+T-1, T, 1);
+  ctx.fillRect(X, Y, 1, T); ctx.fillRect(X+T-1, Y, 1, T);
+  ctx.fillStyle = blink ? "#fff6d0" : COL.gold;
+  ctx.fillRect(X+3, Y+2, 2, 4);
+}
+
+function drawDoorArrow(){
+  if(!door) return;
+  const dx = (door.c*T + T/2) - player.x, dy = (door.r*T + T/2) - player.y;
+  const d = Math.hypot(dx, dy);
+  if(d < 14) return;
+  const nx = dx/d, ny = dy/d;
+  const ax = player.x + nx*9, ay = player.y + ny*9;
+  ctx.fillStyle = COL.gold;
+  ctx.fillRect(px(ax)-1, px(ay)-1, 2, 2);
+  ctx.fillRect(px(ax + nx*2)-1, px(ay + ny*2)-1, 1, 1);
+}
+
+function drawPlayer(){
+  if(player.inv > 0 && Math.floor(player.inv*20) % 2 === 0) return;
+  const X = px(player.x), Y = px(player.y);
+  if(player.flash > 0){ ctx.fillStyle = COL.playerHi; ctx.fillRect(X-4, Y-4, 8, 8); }
+  ctx.fillStyle = COL.player; ctx.fillRect(X-3, Y-3, 6, 6);
+  ctx.fillStyle = COL.playerHi; ctx.fillRect(X-2, Y-2, 2, 2);
+  ctx.fillStyle = COL.gold; ctx.fillRect(X + player.fx*3, Y + player.fy*3, 1, 1);
+}
+
+function drawEnemy(e){
+  const def = ETYPE[e.type], s = Math.round(def.size), X = px(e.x), Y = px(e.y);
+  ctx.fillStyle = def.col; ctx.fillRect(X-s, Y-s, s*2, s*2);
+  ctx.fillStyle = def.hi; ctx.fillRect(X-s, Y-s, 1, 1); ctx.fillRect(X+s-1, Y+s-1, 1, 1);
+  if(e.type === "anchor"){ ctx.fillStyle = "#000"; ctx.fillRect(X-1, Y-1, 2, 2); }
+}
+
+function drawPickup(p){
+  if(p.life < 2 && Math.floor(p.life*8) % 2 === 0) return;
+  const def = PICK[p.type], X = px(p.x), Y = px(p.y);
+  ctx.fillStyle = "#000"; ctx.fillRect(X-3, Y-3, 6, 6);
+  ctx.fillStyle = def.col; ctx.fillRect(X-2, Y-2, 4, 4);
+  ctx.fillStyle = "#000"; ctx.font = "5px ui-monospace, monospace"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillText(def.label, X, Y+0.5);
+  ctx.textAlign = "left"; ctx.textBaseline = "top";
+}
+
+function drawHUD(){
+  ctx.font = "7px ui-monospace, monospace"; ctx.textBaseline = "top";
+  ctx.fillStyle = COL.ink; ctx.textAlign = "left";
+  ctx.fillText("SCORE " + String(score).padStart(5, "0"), 3, 2);
+  ctx.textAlign = "right"; ctx.fillText("L" + level + " " + levelInfo(level).f, W-3, 2);
+  ctx.textAlign = "left";
+
+  // door countdown, else combo
+  if(door){
+    const blink = Math.floor(performance.now()/200) % 2 === 0;
+    ctx.fillStyle = door.t > 4 ? COL.gold : (blink ? COL.hpLow : COL.gold);
+    ctx.textAlign = "center";
+    ctx.fillText("DOOR " + Math.ceil(door.t) + "s", W/2, 2);
+    ctx.textAlign = "left";
+  } else {
+    const mult = comboMult();
+    if(mult > 1){
+      ctx.fillStyle = COL.gold; ctx.textAlign = "center";
+      ctx.fillText("x" + mult, W/2, 2); ctx.textAlign = "left";
+    }
+  }
+  // active powerups
+  let px0 = 3;
+  if(player.rapid > 0){ ctx.fillStyle = PICK.rapid.col; ctx.fillText("R" + Math.ceil(player.rapid), px0, 11); px0 += 22; }
+  if(player.spread > 0){ ctx.fillStyle = PICK.spread.col; ctx.fillText("S" + Math.ceil(player.spread), px0, 11); }
+
+  const barY = H-6, bw = 70;
+  // HP
+  ctx.fillStyle = "#000"; ctx.fillRect(3, barY-1, bw+2, 5);
+  ctx.fillStyle = player.hp < 34 ? COL.hpLow : COL.hpGood;
+  ctx.fillRect(4, barY, Math.round(bw*player.hp/100), 3);
+  // HEAT (with discharge-ready marker)
+  ctx.fillStyle = COL.inkDim; ctx.textAlign = "right"; ctx.fillText("HEAT", W-bw-7, barY-8); ctx.textAlign = "left";
+  ctx.fillStyle = "#000"; ctx.fillRect(W-bw-5, barY-1, bw+2, 5);
+  const ht = player.heat/100, hr = px(120 + ht*135), hg = px(Math.max(40, 170 - ht*170));
+  ctx.fillStyle = "rgb(" + hr + "," + hg + ",90)";
+  ctx.fillRect(W-bw-4, barY, Math.round(bw*ht), 3);
+  // vent-ready threshold tick + prompt
+  const tickX = W-bw-4 + Math.round(bw*DISCHARGE_MIN/100);
+  ctx.fillStyle = COL.player; ctx.fillRect(tickX, barY-1, 1, 5);
+  if(player.heat >= DISCHARGE_MIN && Math.floor(performance.now()/300) % 2 === 0){
+    ctx.fillStyle = COL.player; ctx.textAlign = "right"; ctx.fillText("HEAT SUNK ▲", W-bw-7, barY-1); ctx.textAlign = "left";
+  }
+  if(player.heat >= 100 && Math.floor(performance.now()/120) % 2 === 0){
+    ctx.fillStyle = COL.hpLow; ctx.textAlign = "center"; ctx.fillText("!! MELTING !!", W/2, barY-8); ctx.textAlign = "left";
+  }
+}
+
+function drawFloaters(){
+  ctx.font = "6px ui-monospace, monospace"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  for(const f of floaters){ ctx.globalAlpha = Math.max(0, Math.min(1, f.life*2)); ctx.fillStyle = f.col; ctx.fillText(f.text, px(f.x), px(f.y)); }
+  ctx.globalAlpha = 1; ctx.textAlign = "left"; ctx.textBaseline = "top";
+}
+
+function drawFact(){
+  if(!fact) return;
+  const a = Math.max(0, Math.min(1, fact.t * 1.2));
+  const lh = 7, top = 22, boxH = fact.lines.length * lh + 6;
+  ctx.globalAlpha = a * 0.8;
+  ctx.fillStyle = "#05040a"; ctx.fillRect(0, top - 3, W, boxH);
+  ctx.fillStyle = COL.player; ctx.fillRect(0, top - 3, W, 1); ctx.fillRect(0, top - 3 + boxH - 1, W, 1);
+  ctx.globalAlpha = a;
+  ctx.font = "6px ui-monospace, monospace"; ctx.textAlign = "center"; ctx.textBaseline = "top";
+  ctx.fillStyle = COL.ink;
+  for(let i=0;i<fact.lines.length;i++) ctx.fillText(fact.lines[i], W/2, top + i*lh);
+  ctx.globalAlpha = 1; ctx.textAlign = "left";
+}
+
+function drawBanner(){
+  if(!banner) return;
+  ctx.globalAlpha = Math.max(0, Math.min(1, banner.t*1.4));
+  ctx.font = "bold 13px ui-monospace, monospace"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillStyle = COL.player; ctx.fillText(banner.text, W/2, H/2 - 8);
+  ctx.globalAlpha = 1; ctx.textAlign = "left"; ctx.textBaseline = "top";
+}
+
+function centerText(lines){
+  ctx.fillStyle = "rgba(6,4,12,0.74)"; ctx.fillRect(0, 0, W, H);
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  let y = H/2 - (lines.length-1)*6.5;
+  for(const ln of lines){
+    ctx.font = ln.big ? "bold 15px ui-monospace, monospace" : (ln.small ? "6px ui-monospace, monospace" : "8px ui-monospace, monospace");
+    ctx.fillStyle = ln.col || COL.ink; ctx.fillText(ln.t, W/2, y); y += ln.gap || 12;
+  }
+  ctx.textAlign = "left"; ctx.textBaseline = "top";
+}
+
+function drawTitle(){
+  const blink = Math.floor(performance.now()/500) % 2 === 0;
+  centerText([
+    { t:"DOMAINS.EXE", big:true, col:COL.player, gap:19 },
+    { t:"run the wall. shoot the defects.", col:COL.ink, gap:11 },
+    { t:"reach the door before the device blows.", col:COL.gold, gap:20 },
+    { t: blink ? "▶ PRESS START" : " ", col:COL.ink, gap:15 },
+    { t:"levels are real ferroelectrics with conducting walls", small:true, col:COL.inkDim, gap:9 },
+    { t:"heat rises in pinches — press X: HEAT SUNK (an EMP)", small:true, col:COL.inkDim }
+  ]);
+}
+function drawOver(){
+  const blink = Math.floor(performance.now()/500) % 2 === 0;
+  const head = deathCause === "overheated" ? "OVERHEATED"
+             : deathCause === "device blew" ? "DEVICE BLEW"
+             : "SHORTED OUT";
+  const lines = [
+    { t:head, big:true, col:COL.hpLow, gap:16 },
+    { t:"SCORE " + String(score).padStart(5, "0"), col:COL.gold, gap:10 },
+    { t:"reached L" + level + " · " + levelInfo(level).f, col:COL.ink, gap:13 }
+  ];
+  if(lbTop && lbTop.length){
+    lines.push({ t:"— TOP CONDUCTORS —", small:true, col:COL.gold, gap:9 });
+    lbTop.forEach((r, i) => lines.push({
+      t: (i+1) + ". " + r.name + "  " + r.score + "  L" + r.level,
+      small:true, col: i === 0 ? COL.gold : COL.ink, gap:8
+    }));
+    lines.push({ t:" ", small:true, gap:6 });
+  }
+  lines.push({ t: blink ? "▶ PRESS START" : " ", col:COL.ink });
+  centerText(lines);
+}
+
+function render(){
+  ctx.save();
+  if(shake > 0.2) ctx.translate((Math.random()-0.5)*shake, (Math.random()-0.5)*shake);
+  ctx.fillStyle = "#0a0812"; ctx.fillRect(-6, -6, W+12, H+12);
+  drawTiles();
+  drawDoor();
+  for(const p of pickups) drawPickup(p);
+  for(const p of particles){ ctx.fillStyle = p.col; ctx.globalAlpha = Math.max(0, Math.min(1, p.life*3)); ctx.fillRect(px(p.x), px(p.y), 1, 1); }
+  ctx.globalAlpha = 1;
+  for(const b of bullets){ ctx.fillStyle = COL.bullet; ctx.fillRect(px(b.x)-1, px(b.y)-1, 2, 2); }
+  for(const e of enemies) drawEnemy(e);
+  if(state === "play"){ drawPlayer(); drawDoorArrow(); drawFloaters(); }
+  ctx.restore();
+
+  if(state === "play"){ drawHUD(); drawBanner(); drawFact(); }
+  else if(state === "title"){ drawTitle(); drawFact(); }
+  else if(state === "over") drawOver();
+}
+
+// ---- loop ----
+let last = performance.now();
+function frame(now){
+  let dt = (now - last) / 1000; last = now;
+  if(dt > 0.05) dt = 0.05;  // clamp after tab-switches
+  update(dt); render();
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

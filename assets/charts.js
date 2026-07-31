@@ -91,6 +91,18 @@
   /* --- data plumbing --- */
   const getJSON = url => fetch(url).then(r => { if (!r.ok) throw new Error(url); return r.json(); });
 
+  /* --- domains.exe current champion --- */
+  const hiscoreEl = document.getElementById('game-hiscore');
+  if (hiscoreEl) {
+    getJSON('https://domains-exe-lb.lindseylynch.workers.dev')
+      .then(top => {
+        hiscoreEl.textContent = top.length
+          ? `Current champion: ${top[0].name} — ${fmt(top[0].score)} points, level ${top[0].level}.`
+          : 'No scores yet — the leaderboard is yours for the taking.';
+      })
+      .catch(() => { hiscoreEl.remove(); });
+  }
+
   Promise.all([getJSON('/data/books.json'), getJSON('/data/reading_stats.json')])
     .then(([books, stats]) => {
       bookList(document.getElementById('book-list'), books);
