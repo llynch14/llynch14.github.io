@@ -81,9 +81,12 @@
       const hash = [...b.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
       a.style.background = SPINE_COLS[hash % SPINE_COLS.length];
       const pages = b.pages || 350;
-      a.style.height = Math.round(Math.max(76, Math.min(122, 76 + (pages - 120) * 0.05))) + 'px';
+      const h = Math.round(Math.max(76, Math.min(122, 76 + (pages - 120) * 0.05)));
+      a.style.height = h + 'px';
       a.style.width = (24 + (hash % 2) * 5) + 'px';
-      a.textContent = b.title;
+      // truncate in JS — Safari clips vertical text with CSS ellipsis
+      const maxChars = Math.floor((h - 16) / 8);
+      a.textContent = b.title.length > maxChars ? b.title.slice(0, maxChars - 1) + '…' : b.title;
       a.setAttribute('aria-label', `${b.title} by ${b.author}`);
       const tip = `<strong>${esc(b.title)}</strong><br>${esc(b.author)}<br>` +
                   `<span class="tipstars">${stars(b.rating) || 'unrated'}</span>`;
