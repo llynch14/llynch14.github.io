@@ -107,24 +107,27 @@ def main():
             break
         print(f"  {url}: response had no stats dict; top-level keys: {list(data)[:8]}")
 
-    # Mini + Midi crosswords: most recent solved time within the last week
-    ny_today = (datetime.now(timezone.utc) - timedelta(hours=5)).date()
+    # Mini + Midi crosswords: most recent solved time among the latest puzzles
     for kind in ("mini", "midi"):
         print(f"{kind.capitalize()}:")
-        for back in range(8):
-            day = (ny_today - timedelta(days=back)).isoformat()
-            puz = fetch(f"https://www.nytimes.com/svc/crosswords/v6/puzzle/{kind}/{day}.json", cookie)
-            pid = find_stats_dict(puz, ("id",)) if puz else None
+        meta = fetch("https://www.nytimes.com/svc/crosswords/v3/puzzles.json"
+                     f"?publish_type={kind}&sort_order=desc&sort_by=print_date&limit=8", cookie)
+        results = (meta or {}).get("results") or []
+        if not results:
+            print(f"  puzzle list empty; keys: {list(meta or {})}")
+            continue
+        for p in results:
+            pid = p.get("puzzle_id")
             if not pid:
                 continue
-            game = fetch(f"https://www.nytimes.com/svc/crosswords/v6/game/{pid['id']}.json", cookie)
+            game = fetch(f"https://www.nytimes.com/svc/crosswords/v6/game/{pid}.json", cookie)
             calcs = find_stats_dict(game, ("secondsSpentSolving",)) if game else None
             if calcs and calcs.get("solved", True) and calcs.get("secondsSpentSolving"):
-                out[kind] = {"seconds": int(calcs["secondsSpentSolving"]), "date": day}
-                print(f"  ok: {day} in {calcs['secondsSpentSolving']}s")
+                out[kind] = {"seconds": int(calcs["secondsSpentSolving"]), "date": p.get("print_date", "")}
+                print(f"  ok: {p.get('print_date')} in {calcs['secondsSpentSolving']}s")
                 break
         else:
-            print("  no solved puzzle found in the last week")
+            print("  no solved puzzle in the latest batch")
 
     if "wordle" not in out:
         print("FAILED: no Wordle stats found (cookie expired or endpoints changed?)")
