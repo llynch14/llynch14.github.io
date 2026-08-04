@@ -16,6 +16,8 @@ DATA = Path(__file__).resolve().parent.parent / "data"
 OUT = DATA / "books.json"
 STATS_OUT = DATA / "reading_stats.json"
 ALL_OUT = DATA / "books_all.json"  # full shelf for the /reading/ deep-dive page
+CURRENT_OUT = DATA / "currently_reading.json"
+CURRENT_URL = "https://www.goodreads.com/review/list_rss/70728365?shelf=currently-reading"
 N_BOOKS = 10
 MIN_YEAR = 2020  # per-year chart cutoff; earlier reads still count in totals
 
@@ -114,6 +116,11 @@ if __name__ == "__main__":
         {k: b[k] for k in ("title", "author", "rating", "pages", "read_at")}
         for b in books
     ], indent=2) + "\n")
+    current = [parse_item(it) for it in fetch_feed(CURRENT_URL).findall(".//item")]
+    CURRENT_OUT.write_text(json.dumps([
+        {k: b[k] for k in ("title", "author", "pages", "url")} for b in current
+    ], indent=2) + "\n")
+    print(f"Wrote {len(current)} currently-reading to {CURRENT_OUT}")
     print(f"Parsed {len(books)} shelf items")
     print(f"Wrote {len(recent)} books to {OUT}")
     print(f"Wrote stats ({len(timeline)} timeline entries) to {STATS_OUT}")

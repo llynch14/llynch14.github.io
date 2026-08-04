@@ -149,6 +149,38 @@
 
     .fun-line { color: var(--muted); font-size: 19px; }
 
+    /* library wall */
+    .wall-shelf {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      border-bottom: 4px solid var(--ink);
+      padding: 0 4px;
+      margin-bottom: 14px;
+      min-height: 64px;
+    }
+    .wall-spine {
+      display: block;
+      border: 2px solid var(--ink);
+      transition: transform 0.06s steps(2);
+    }
+    .wall-spine:hover { transform: translateY(-4px); }
+    .wall-tip {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      background: var(--box);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--blue);
+      padding: 0.35rem 0.6rem;
+      font-size: 19px;
+      pointer-events: none;
+      max-width: 260px;
+    }
+    .wall-tip .tipstars { color: var(--peach); font-family: 'DotGothic16', monospace; font-size: 14px; }
+    .wall-tip .tipdate { color: var(--muted); font-size: 16px; }
+
     /* horizontal bars */
     .hrow {
       display: grid;
@@ -213,6 +245,13 @@
   <main>
     <h1>Reading <span class="accent">deep dive</span></h1>
     <p class="fun-line" id="intro-line" style="margin-bottom:2rem"></p>
+
+    <section>
+      <h2>The library wall</h2>
+      <p class="fun-line">every book, in the order I read them — hover for details</p>
+      <div id="library-wall"></div>
+      <p class="fun-line" id="wall-note"></p>
+    </section>
 
     <section>
       <h2>Most read authors</h2>
@@ -281,8 +320,56 @@
       el.querySelector('.chart-body').innerHTML = svg + '</svg>';
     }
 
+    // shared hover tip for the wall
+    const tip = document.createElement('div');
+    tip.className = 'wall-tip';
+    document.body.appendChild(tip);
+    function showTip(evt, html) {
+      tip.innerHTML = html;
+      tip.style.display = 'block';
+      let x = evt.clientX + 12, y = evt.clientY + 12;
+      const r = tip.getBoundingClientRect();
+      if (x + r.width > window.innerWidth - 8) x = evt.clientX - r.width - 12;
+      tip.style.left = x + 'px';
+      tip.style.top = (y + window.scrollY) + 'px';
+    }
+    const hideTip = () => { tip.style.display = 'none'; };
+
+    const SPINE_COLS = ['#b8e0d2', '#7fb5d9', '#c7dcb9', '#f4a259', '#8fa8c8', '#8fd0c6'];
+    function libraryWall(el, books) {
+      const perShelf = 42;
+      for (let s = 0; s < books.length; s += perShelf) {
+        const shelf = document.createElement('div');
+        shelf.className = 'wall-shelf';
+        books.slice(s, s + perShelf).forEach(b => {
+          const d = document.createElement('span');
+          d.className = 'wall-spine';
+          const hash = [...b.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+          d.style.background = SPINE_COLS[hash % SPINE_COLS.length];
+          d.style.width = (8 + (hash % 3) * 2) + 'px';
+          d.style.height = Math.round(Math.max(34, Math.min(60, 34 + ((b.pages || 300) - 120) * 0.026))) + 'px';
+          const html = `<strong>${esc(b.title)}</strong><br>${esc(b.author)}<br>` +
+            `<span class="tipstars">${b.rating ? stars(b.rating) : 'unrated'}</span> ` +
+            `<span class="tipdate">${b.read_at}</span>`;
+          d.addEventListener('mousemove', e => showTip(e, html));
+          d.addEventListener('mouseleave', hideTip);
+          shelf.appendChild(d);
+        });
+        el.appendChild(shelf);
+      }
+    }
+
     fetch('/data/books_all.json').then(r => r.json()).then(books => {
       const rated = books.filter(b => b.rating > 0);
+
+      // the wall: dated books in reading order
+      const dated = books.filter(b => b.read_at).sort((a, b) => a.read_at.localeCompare(b.read_at));
+      libraryWall(document.getElementById('library-wall'), dated);
+      const undated = books.length - dated.length;
+      if (undated > 0) {
+        document.getElementById('wall-note').textContent =
+          `(+ ${undated} more read before I tracked dates)`;
+      }
       const pages = books.reduce((s, b) => s + (b.pages || 0), 0);
       document.getElementById('intro-line').textContent =
         `${fmt(books.length)} books on the shelf, ${fmt(pages)} pages, ` +

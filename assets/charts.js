@@ -120,9 +120,41 @@
       .catch(() => { hiscoreEl.remove(); });
   }
 
+  const READING_GOAL = 30; // books per year
+
   Promise.all([getJSON('/data/books.json'), getJSON('/data/reading_stats.json')])
     .then(([books, stats]) => {
       bookshelf(document.getElementById('book-list'), books);
+
+      // currently-reading lies flat at the end of the shelf
+      getJSON('/data/currently_reading.json').then(current => {
+        const shelfEl = document.getElementById('book-list');
+        current.slice(0, 2).forEach(b => {
+          const a = document.createElement('a');
+          a.className = 'spine flat';
+          a.href = b.url;
+          const hash = [...b.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+          a.style.background = SPINE_COLS[hash % SPINE_COLS.length];
+          a.style.width = Math.round(Math.max(90, Math.min(140, 90 + ((b.pages || 300) - 150) * 0.08))) + 'px';
+          a.style.height = '27px';
+          a.textContent = b.title.length > 15 ? b.title.slice(0, 14) + '…' : b.title;
+          a.setAttribute('aria-label', `Currently reading: ${b.title} by ${b.author}`);
+          const tip = `<strong>currently reading</strong><br>${esc(b.title)}<br>${esc(b.author)}`;
+          a.addEventListener('mousemove', e => showTip(e, tip));
+          a.addEventListener('mouseleave', hideTip);
+          shelfEl.appendChild(a);
+        });
+      }).catch(() => {});
+
+      // yearly goal meter
+      const year = new Date().getFullYear();
+      const thisYear = (stats.per_year.find(d => d.year === year) || {}).count || 0;
+      const meter = document.getElementById('goal-meter');
+      const pct = Math.min(100, 100 * thisYear / READING_GOAL);
+      meter.innerHTML =
+        `<div class="glabel"><span>${year} reading goal</span>` +
+        `<span>${fmt(thisYear)} / ${READING_GOAL}${thisYear >= READING_GOAL ? ' ✦ done!' : ''}</span></div>` +
+        `<div class="track"><div class="fill${pct >= 100 ? ' done' : ''}" style="width:${pct}%"></div></div>`;
       const f = stats.fun;
       document.getElementById('book-fun').textContent =
         `${fmt(f.total_books)} books and ${fmt(f.total_pages)} pages so far — ` +
