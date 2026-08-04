@@ -107,29 +107,26 @@ def main():
             break
         print(f"  {url}: response had no stats dict; top-level keys: {list(data)[:8]}")
 
-    # Mini + Midi crosswords: most recent solved time among the latest puzzles
+    # Mini + Midi crosswords: own solve time via the leaderboard endpoints
     for kind in ("mini", "midi"):
         print(f"{kind.capitalize()}:")
-        meta = fetch("https://www.nytimes.com/svc/crosswords/v3/puzzles.json"
-                     f"?publish_type={kind}&sort_order=desc&sort_by=print_date&limit=8", cookie)
-        results = (meta or {}).get("results") or []
-        if not results:
-            print(f"  puzzle list empty; keys: {list(meta or {})}")
+        board = fetch(f"https://www.nytimes.com/svc/crosswords/v6/leaderboard/{kind}.json", cookie)
+        if not board:
             continue
-        for p in results:
-            pid = p.get("puzzle_id")
-            if not pid:
-                continue
-            print(f"  {p.get('print_date')}: pid={pid} solved={p.get('solved')} "
-                  f"star={p.get('star')} pct={p.get('percent_filled')}")
-            game = fetch(f"https://www.nytimes.com/svc/crosswords/v6/game/{pid}.json", cookie)
-            calcs = find_stats_dict(game, ("secondsSpentSolving",)) if game else None
-            if calcs and calcs.get("solved", True) and calcs.get("secondsSpentSolving"):
-                out[kind] = {"seconds": int(calcs["secondsSpentSolving"]), "date": p.get("print_date", "")}
-                print(f"  ok: {p.get('print_date')} in {calcs['secondsSpentSolving']}s")
-                break
+        entries = board.get("data") or []
+        print(f"  leaderboard: {len(entries)} entries; keys of first: {list(entries[0]) if entries else 'n/a'}")
+        me = next((e for e in entries if e.get("is_current_user") or e.get("isCurrentUser")), None)
+        if me is None and len(entries) == 1:
+            me = entries[0]
+        secs = None
+        if me:
+            score = me.get("score") or {}
+            secs = score.get("secondsSpentSolving") or me.get("secondsSpentSolving")
+        if secs:
+            out[kind] = {"seconds": int(secs), "date": board.get("printDate", "")}
+            print(f"  ok: {secs}s ({board.get('printDate', 'today')})")
         else:
-            print("  no solved puzzle in the latest batch")
+            print(f"  no own solve on today's board (me={None if me is None else list(me)})")
 
     if "wordle" not in out:
         print("FAILED: no Wordle stats found (cookie expired or endpoints changed?)")
