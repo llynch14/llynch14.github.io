@@ -81,7 +81,7 @@
       const hash = [...b.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
       a.style.background = SPINE_COLS[hash % SPINE_COLS.length];
       const pages = b.pages || 350;
-      const h = Math.round(Math.max(76, Math.min(122, 76 + (pages - 120) * 0.05)));
+      const h = Math.round(Math.max(100, Math.min(152, 100 + (pages - 120) * 0.055)));
       a.style.height = h + 'px';
       a.style.width = (24 + (hash % 2) * 5) + 'px';
       // truncate in JS — Safari clips vertical text with CSS ellipsis
