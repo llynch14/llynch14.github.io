@@ -27,7 +27,7 @@
     gap:16px; padding:22px 14px 34px;
   }
   .console{
-    width:min(94vw,540px);
+    width:min(96vw,660px);
     background:var(--box);
     border:3px solid var(--ink);
     box-shadow:8px 8px 0 var(--blue);
@@ -1118,7 +1118,8 @@ function render(){
   if(state === "play"){ drawPlayer(); drawDoorArrow(); drawFloaters(); }
   ctx.restore();
 
-  if(state === "play"){ drawHUD(); drawBanner(); drawFact(); }
+  // facts only show on the title screen — during play they covered enemies
+  if(state === "play"){ drawHUD(); drawBanner(); }
   else if(state === "title"){ drawTitle(); drawFact(); }
   else if(state === "over") drawOver();
 }
