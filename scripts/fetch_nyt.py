@@ -120,6 +120,8 @@ def main():
             pid = p.get("puzzle_id")
             if not pid:
                 continue
+            print(f"  {p.get('print_date')}: pid={pid} solved={p.get('solved')} "
+                  f"star={p.get('star')} pct={p.get('percent_filled')}")
             game = fetch(f"https://www.nytimes.com/svc/crosswords/v6/game/{pid}.json", cookie)
             calcs = find_stats_dict(game, ("secondsSpentSolving",)) if game else None
             if calcs and calcs.get("solved", True) and calcs.get("secondsSpentSolving"):
