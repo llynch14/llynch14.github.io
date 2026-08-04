@@ -14,12 +14,12 @@
     },
     {
       "year": 2026,
-      "count": 54
+      "count": 57
     }
   ],
   "fun": {
-    "total_films": 592,
-    "avg_rating": 3.3,
+    "total_films": 594,
+    "avg_rating": 3.31,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
@@ -3021,6 +3021,27 @@
       "rating": 4.5,
       "watched_at": "2026-07-26",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/9/4/1255394-the-odyssey-2026-0-600-0-900-crop.jpg?v=1eed046d0c"
+    },
+    {
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "rating": 4.5,
+      "watched_at": "2026-08-01",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/4/4/4/51444-pulp-fiction-0-600-0-900-crop.jpg?v=dee19a8077"
+    },
+    {
+      "title": "Star Wars",
+      "year": 1977,
+      "rating": 5.0,
+      "watched_at": "2026-08-01",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/2/7/0/6/2706-star-wars-0-600-0-900-crop.jpg?v=f1f1271bf5"
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "year": 2026,
+      "rating": 2.5,
+      "watched_at": "2026-08-02",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-600-0-900-crop.jpg?v=ebe6beb4fc"
     }
   ]
 }
