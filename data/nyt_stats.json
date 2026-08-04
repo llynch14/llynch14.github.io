@@ -1,0 +1,29 @@
+{
+  "wordle": {
+    "games_played": 624,
+    "games_won": 619,
+    "win_pct": 99,
+    "current_streak": 1,
+    "max_streak": 169,
+    "guesses": {
+      "1": 2,
+      "2": 32,
+      "3": 160,
+      "4": 240,
+      "5": 133,
+      "6": 52,
+      "fail": 5
+    }
+  },
+  "connections": {
+    "gamesPlayed": 624,
+    "gamesWon": 619,
+    "currentStreak": 1,
+    "maxStreak": 169,
+    "lastWonDayOffset": 1471,
+    "hasPlayed": true,
+    "autoOptInTimestamp": 0,
+    "hasMadeStatsChoice": false,
+    "timestamp": 1751207023
+  }
+}
