@@ -14,16 +14,5 @@
       "6": 52,
       "fail": 5
     }
-  },
-  "connections": {
-    "gamesPlayed": 624,
-    "gamesWon": 619,
-    "currentStreak": 1,
-    "maxStreak": 169,
-    "lastWonDayOffset": 1471,
-    "hasPlayed": true,
-    "autoOptInTimestamp": 0,
-    "hasMadeStatsChoice": false,
-    "timestamp": 1751207023
   }
 }
