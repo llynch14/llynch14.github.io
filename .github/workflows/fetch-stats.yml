@@ -26,6 +26,12 @@ jobs:
       - name: Fetch films from Letterboxd
         run: python scripts/fetch_films.py
 
+      - name: Fetch NYT games stats
+        continue-on-error: true  # cookie expiry shouldn't block book/film updates
+        env:
+          NYT_S: ${{ secrets.NYT_S }}
+        run: python scripts/fetch_nyt.py
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

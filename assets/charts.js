@@ -135,4 +135,27 @@
         })), { label: 'Film rating distribution' });
     })
     .catch(() => document.getElementById('watching').classList.add('stats-unavailable'));
+
+  getJSON('/data/nyt_stats.json')
+    .then(nyt => {
+      const w = nyt.wordle;
+      document.getElementById('wordle-fun').textContent =
+        `Wordle: ${fmt(w.games_played)} played, ${w.win_pct}% won — ` +
+        `current streak ${fmt(w.current_streak)}, best ${fmt(w.max_streak)}.`;
+      columnChart(document.getElementById('wordle-guesses'),
+        ['1','2','3','4','5','6'].map(k => ({
+          label: k, count: w.guesses[k] || 0,
+          tip: `<strong>${k} guess${k === '1' ? '' : 'es'}</strong> · ${fmt(w.guesses[k] || 0)} games`
+        })), { label: 'Wordle guess distribution' });
+      const c = nyt.connections, cEl = document.getElementById('connections-fun');
+      if (c && Object.keys(c).length) {
+        const bits = [];
+        if (c.puzzlesSolved != null) bits.push(`${fmt(c.puzzlesSolved)} solved`);
+        if (c.currentStreak != null) bits.push(`current streak ${fmt(c.currentStreak)}`);
+        if (c.maxStreak != null) bits.push(`best ${fmt(c.maxStreak)}`);
+        cEl.textContent = bits.length ? 'Connections: ' + bits.join(', ') + '.' : '';
+        if (!bits.length) cEl.remove();
+      } else cEl.remove();
+    })
+    .catch(() => document.getElementById('puzzles').classList.add('stats-unavailable'));
 })();
