@@ -150,12 +150,21 @@
       const c = nyt.connections, cEl = document.getElementById('connections-fun');
       if (c && Object.keys(c).length) {
         const bits = [];
+        if (c.gamesPlayed != null) bits.push(`${fmt(c.gamesPlayed)} played`);
         if (c.puzzlesSolved != null) bits.push(`${fmt(c.puzzlesSolved)} solved`);
+        if (c.gamesPlayed && c.gamesWon != null) bits.push(`${Math.round(100 * c.gamesWon / c.gamesPlayed)}% won`);
         if (c.currentStreak != null) bits.push(`current streak ${fmt(c.currentStreak)}`);
         if (c.maxStreak != null) bits.push(`best ${fmt(c.maxStreak)}`);
         cEl.textContent = bits.length ? 'Connections: ' + bits.join(', ') + '.' : '';
         if (!bits.length) cEl.remove();
       } else cEl.remove();
+      const xEl = document.getElementById('xword-fun');
+      const mmss = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+      const xbits = [];
+      if (nyt.mini) xbits.push(`Mini in ${mmss(nyt.mini.seconds)}`);
+      if (nyt.midi) xbits.push(`Midi in ${mmss(nyt.midi.seconds)}`);
+      if (xbits.length) xEl.textContent = `Latest crosswords: ${xbits.join(' · ')}.`;
+      else xEl.remove();
     })
     .catch(() => document.getElementById('puzzles').classList.add('stats-unavailable'));
 })();
