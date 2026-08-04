@@ -15,7 +15,8 @@ FEED_URL = "https://www.goodreads.com/review/list_rss/70728365?shelf=read&per_pa
 DATA = Path(__file__).resolve().parent.parent / "data"
 OUT = DATA / "books.json"
 STATS_OUT = DATA / "reading_stats.json"
-N_BOOKS = 5
+ALL_OUT = DATA / "books_all.json"  # full shelf for the /reading/ deep-dive page
+N_BOOKS = 10
 MIN_YEAR = 2020  # per-year chart cutoff; earlier reads still count in totals
 
 
@@ -78,7 +79,7 @@ def build(books):
     dated = [b for b in books if b["read_at"]]
     dated.sort(key=lambda b: b["read_at"], reverse=True)
     recent = [
-        {k: b[k] for k in ("title", "author", "rating", "read_at", "url")}
+        {k: b[k] for k in ("title", "author", "rating", "pages", "read_at", "url")}
         for b in dated[:N_BOOKS]
     ]
 
@@ -109,6 +110,10 @@ if __name__ == "__main__":
     DATA.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(recent, indent=2) + "\n")
     STATS_OUT.write_text(json.dumps({"per_year": per_year, "fun": fun, "timeline": timeline}, indent=2) + "\n")
+    ALL_OUT.write_text(json.dumps([
+        {k: b[k] for k in ("title", "author", "rating", "pages", "read_at")}
+        for b in books
+    ], indent=2) + "\n")
     print(f"Parsed {len(books)} shelf items")
     print(f"Wrote {len(recent)} books to {OUT}")
     print(f"Wrote stats ({len(timeline)} timeline entries) to {STATS_OUT}")

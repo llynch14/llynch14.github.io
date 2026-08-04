@@ -3,6 +3,7 @@
     "title": "Warbreaker",
     "author": "Brandon Sanderson",
     "rating": 5,
+    "pages": 688,
     "read_at": "2026-07-24",
     "url": "https://www.goodreads.com/book/show/1268479"
   },
@@ -10,6 +11,7 @@
     "title": "Secret History",
     "author": "Brandon Sanderson",
     "rating": 4,
+    "pages": 155,
     "read_at": "2026-07-17",
     "url": "https://www.goodreads.com/book/show/28698036"
   },
@@ -17,6 +19,7 @@
     "title": "One Yellow Eye",
     "author": "Leigh  Radford",
     "rating": 3,
+    "pages": 352,
     "read_at": "2026-07-16",
     "url": "https://www.goodreads.com/book/show/220160134"
   },
@@ -24,6 +27,7 @@
     "title": "Half His Age",
     "author": "Jennette McCurdy",
     "rating": 2,
+    "pages": 288,
     "read_at": "2026-06-14",
     "url": "https://www.goodreads.com/book/show/240424526"
   },
@@ -31,7 +35,48 @@
     "title": "The Hero of Ages",
     "author": "Brandon Sanderson",
     "rating": 5,
+    "pages": 572,
     "read_at": "2026-06-08",
     "url": "https://www.goodreads.com/book/show/2767793"
+  },
+  {
+    "title": "Big Swiss",
+    "author": "Jen Beagin",
+    "rating": 2,
+    "pages": 336,
+    "read_at": "2026-05-19",
+    "url": "https://www.goodreads.com/book/show/60701439"
+  },
+  {
+    "title": "Seasons of War",
+    "author": "Derek Landy",
+    "rating": 4,
+    "pages": 592,
+    "read_at": "2026-05-15",
+    "url": "https://www.goodreads.com/book/show/52331179"
+  },
+  {
+    "title": "Good Material",
+    "author": "Dolly Alderton",
+    "rating": 5,
+    "pages": 345,
+    "read_at": "2026-05-14",
+    "url": "https://www.goodreads.com/book/show/96177629"
+  },
+  {
+    "title": "Hooked",
+    "author": "Asako Yuzuki",
+    "rating": 3,
+    "pages": 400,
+    "read_at": "2026-05-14",
+    "url": "https://www.goodreads.com/book/show/238969853"
+  },
+  {
+    "title": "The Well of Ascension",
+    "author": "Brandon Sanderson",
+    "rating": 5,
+    "pages": 590,
+    "read_at": "2026-05-14",
+    "url": "https://www.goodreads.com/book/show/68429"
   }
 ]

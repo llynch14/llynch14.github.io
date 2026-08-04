@@ -188,6 +188,30 @@
 
     .stats-unavailable { display: none; }
 
+    .bookshelf {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      padding: 0 10px;
+      border-bottom: 5px solid var(--ink);
+      margin-bottom: 1.25rem;
+      min-height: 118px;
+    }
+    .spine {
+      display: block;
+      border: 3px solid var(--ink);
+      box-shadow: inset 2px 3px 0 rgba(255, 255, 255, 0.35);
+      transition: transform 0.08s steps(2);
+    }
+    .spine:hover { transform: translateY(-6px); }
+    .spine.lean {
+      transform: rotate(7deg);
+      transform-origin: bottom right;
+      margin-left: 8px;
+    }
+    .spine.lean:hover { transform: rotate(7deg) translateY(-6px); }
+    .tipstars { color: var(--peach); font-family: 'DotGothic16', monospace; font-size: 15px; }
+
     .media-list { list-style: none; margin-bottom: 1rem; }
     .media-list li {
       display: flex;
@@ -321,13 +345,13 @@
     <section class="reading stats" id="reading">
       <h2>Reading</h2>
       <div class="list-title">Recently Read:</div>
-      <ul class="media-list" id="book-list"></ul>
+      <div class="bookshelf" id="book-list"></div>
       <p class="fun-line" id="book-fun"></p>
       <div class="chart" id="books-year">
         <h3>Books read per year</h3>
         <div class="chart-body"></div>
       </div>
-      <p class="see-more"><a href="https://www.goodreads.com/user/show/70728365-lindsey">More on Goodreads →</a></p>
+      <p class="see-more"><a href="/reading/">Reading deep dive →</a> · <a href="https://www.goodreads.com/user/show/70728365-lindsey">More on Goodreads →</a></p>
     </section>
 
     <section class="watching stats" id="watching">

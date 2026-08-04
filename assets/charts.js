@@ -69,14 +69,27 @@
     });
   }
 
-  /* --- lists --- */
-  function bookList(el, books) {
-    el.innerHTML = books.map(b => `
-      <li>
-        <a href="${esc(b.url)}">${esc(b.title)}</a>
-        <span class="media-meta">${esc(b.author)}</span>
-        <span class="media-stars">${stars(b.rating)}</span>
-      </li>`).join('');
+  /* --- the bookshelf: recent reads as spines, hover for details --- */
+  const SPINE_COLS = ['#b8e0d2', '#7fb5d9', '#c7dcb9', '#f4a259', '#8fa8c8', '#8fd0c6'];
+  function bookshelf(el, books) {
+    el.innerHTML = '';
+    const shelf = [...books].reverse(); // oldest left, newest leaning at the right
+    shelf.forEach((b, i) => {
+      const a = document.createElement('a');
+      a.className = 'spine' + (i === shelf.length - 1 ? ' lean' : '');
+      a.href = b.url;
+      const hash = [...b.title].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+      a.style.background = SPINE_COLS[hash % SPINE_COLS.length];
+      const pages = b.pages || 350;
+      a.style.height = Math.round(Math.max(64, Math.min(112, 64 + (pages - 120) * 0.055))) + 'px';
+      a.style.width = (17 + (hash % 3) * 4) + 'px';
+      a.setAttribute('aria-label', `${b.title} by ${b.author}`);
+      const tip = `<strong>${esc(b.title)}</strong><br>${esc(b.author)}<br>` +
+                  `<span class="tipstars">${stars(b.rating) || 'unrated'}</span>`;
+      a.addEventListener('mousemove', e => showTip(e, tip));
+      a.addEventListener('mouseleave', hideTip);
+      el.appendChild(a);
+    });
   }
 
   function filmList(el, films) {
@@ -105,7 +118,7 @@
 
   Promise.all([getJSON('/data/books.json'), getJSON('/data/reading_stats.json')])
     .then(([books, stats]) => {
-      bookList(document.getElementById('book-list'), books);
+      bookshelf(document.getElementById('book-list'), books);
       const f = stats.fun;
       document.getElementById('book-fun').textContent =
         `${fmt(f.total_books)} books and ${fmt(f.total_pages)} pages so far — ` +
