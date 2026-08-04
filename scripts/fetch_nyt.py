@@ -1,4 +1,4 @@
-"""Fetch NYT Games stats (Wordle + Connections if available) and write data/nyt_stats.json.
+"""Fetch NYT Wordle stats and write data/nyt_stats.json.
 
 Auth: NYT_S env var — the NYT-S session cookie value (stored as a GitHub Actions
 secret; never committed). Only aggregate stats are written to the public file.
@@ -18,13 +18,6 @@ WORDLE_ENDPOINTS = [
     "https://www.nytimes.com/svc/games/state/wordleV2/latests",
     "https://www.nytimes.com/svc/games/state/wordle/latest",
 ]
-CONNECTIONS_ENDPOINTS = [
-    "https://www.nytimes.com/svc/games/state/connectionsV2/latests",
-    "https://www.nytimes.com/svc/games/state/connections/latests",
-    "https://www.nytimes.com/svc/games/state/connections/latest",
-]
-
-
 def fetch(url, cookie):
     req = urllib.request.Request(url, headers={
         "User-Agent": "Mozilla/5.0",
@@ -91,42 +84,8 @@ def main():
             break
         print(f"  {url}: response had no stats dict; top-level keys: {list(data)[:8]}")
 
-    print("Connections:")
-    for url in CONNECTIONS_ENDPOINTS:
-        data = fetch(url, cookie)
-        if not data:
-            continue
-        stats = find_stats_dict(data, ("currentStreak", "maxStreak"), under="connections") or \
-                find_stats_dict(data, ("puzzlesSolved",), under="connections")
-        if stats:
-            out["connections"] = {
-                k: v for k, v in stats.items()
-                if isinstance(v, (int, float)) and not k.startswith("_")
-            }
-            print(f"  ok via {url}")
-            break
-        print(f"  {url}: response had no stats dict; top-level keys: {list(data)[:8]}")
-
-    # Mini + Midi crosswords: own solve time via the leaderboard endpoints
-    for kind in ("mini", "midi"):
-        print(f"{kind.capitalize()}:")
-        board = fetch(f"https://www.nytimes.com/svc/crosswords/v6/leaderboard/{kind}.json", cookie)
-        if not board:
-            continue
-        entries = board.get("data") or []
-        print(f"  leaderboard: {len(entries)} entries; keys of first: {list(entries[0]) if entries else 'n/a'}")
-        me = next((e for e in entries if e.get("is_current_user") or e.get("isCurrentUser")), None)
-        if me is None and len(entries) == 1:
-            me = entries[0]
-        secs = None
-        if me:
-            score = me.get("score") or {}
-            secs = score.get("secondsSpentSolving") or me.get("secondsSpentSolving")
-        if secs:
-            out[kind] = {"seconds": int(secs), "date": board.get("printDate", "")}
-            print(f"  ok: {secs}s ({board.get('printDate', 'today')})")
-        else:
-            print(f"  no own solve on today's board (me={None if me is None else list(me)})")
+    # Connections aggregates and Mini/Midi solve times aren't exposed to web
+    # sessions (leaderboards went app-only) — Wordle is the one that syncs.
 
     if "wordle" not in out:
         print("FAILED: no Wordle stats found (cookie expired or endpoints changed?)")
