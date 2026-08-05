@@ -1,0 +1,56 @@
+{
+  "level": 308,
+  "trophies": {
+    "platinum": 22,
+    "gold": 175,
+    "silver": 460,
+    "bronze": 2117
+  },
+  "recent": [
+    {
+      "name": "LEGO\u00ae Batman\u2122: Legacy of the Dark Knight",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR46362_00/0eae9c21-b96e-4e78-802c-fc00e644608c.png",
+      "earned": 52,
+      "total": 52,
+      "progress": 100,
+      "last_played": "2026-08-04"
+    },
+    {
+      "name": "007 First Light",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR38314_00/151c73ce-c8bb-41a7-9979-f66ffcdd6110.png",
+      "earned": 25,
+      "total": 38,
+      "progress": 56,
+      "last_played": "2026-07-11"
+    },
+    {
+      "name": "Unravel Two",
+      "platform": "PS4",
+      "icon": "https://image.api.playstation.com/trophy/np/NPWR14847_00_009EEE97E1D83592E74292CA6AAA1AEABCCF3CA253/1A4F5AE09B6EE30E934396CBEF96ED0BCE221CDF.PNG",
+      "earned": 4,
+      "total": 29,
+      "progress": 5,
+      "last_played": "2026-06-07"
+    },
+    {
+      "name": "Mixtape",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51144_00/e6524e58-009d-4eba-97e5-6df02130b953.png",
+      "earned": 27,
+      "total": 27,
+      "progress": 100,
+      "last_played": "2026-05-16"
+    },
+    {
+      "name": "RESIDENT EVIL 6",
+      "platform": "PS4",
+      "icon": "https://image.api.playstation.com/trophy/np/NPWR10102_00_00793EB25E96D7CA5D14FFE7C74945C73EE481B445/9D80FC549EE275E52D227574A6258C4F8586EBA2.PNG",
+      "earned": 0,
+      "total": 71,
+      "progress": 0,
+      "last_played": "2026-03-28"
+    }
+  ]
+}
