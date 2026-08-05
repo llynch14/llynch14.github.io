@@ -199,9 +199,17 @@
     })
     .catch(() => document.getElementById('puzzles').classList.add('stats-unavailable'));
 
+  // hand-drawn pixel trophy (8x6 grid)
+  const TROPHY =
+    '<svg class="ptrophy" viewBox="0 0 8 6" aria-hidden="true"><g fill="currentColor" shape-rendering="crispEdges">' +
+    '<rect x="0" y="0" width="1" height="2"/><rect x="7" y="0" width="1" height="2"/>' +
+    '<rect x="1" y="0" width="6" height="2"/><rect x="2" y="2" width="4" height="1"/>' +
+    '<rect x="3" y="3" width="2" height="1"/><rect x="2" y="4" width="4" height="1"/>' +
+    '<rect x="1" y="5" width="6" height="1"/></g></svg>';
+
   getJSON('/data/psn_stats.json')
     .then(psn => {
-      document.getElementById('trophy-line').textContent = `Trophy level ${fmt(psn.level)}.`;
+      document.getElementById('trophy-line').innerHTML = `${TROPHY} Trophy level ${fmt(psn.level)}.`;
       const TCOL = { platinum: '#cfe4f0', gold: '#f4c95d', silver: '#c9ced6', bronze: '#c89b6d' };
       document.getElementById('trophy-row').innerHTML =
         Object.entries(psn.trophies).map(([kind, n]) =>
@@ -210,7 +218,7 @@
         <li>
           <img src="${esc(g.icon)}" alt="" loading="lazy">
           <span class="gname">${esc(g.name)}</span>
-          <span class="gmeta">${fmt(g.earned)}/${fmt(g.total)} 🏆</span>
+          <span class="gmeta">${fmt(g.earned)}/${fmt(g.total)} ${TROPHY}</span>
         </li>`).join('');
     })
     .catch(() => document.getElementById('playing').classList.add('stats-unavailable'));
