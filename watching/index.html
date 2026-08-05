@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watching — Lindsey Lynch</title>
+  <meta name="description" content="Lindsey Lynch's film stats: ratings, release decades, and the five-star club.">
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=VT323&family=DotGothic16&display=swap');
+
+    :root {
+      color-scheme: light dark;
+      --cream: #fdf6f0;
+      --box: #fffdfa;
+      --ink: #46536b;
+      --blue: #7fb5d9;
+      --link: #5b8bb8;
+      --mint: #b8e0d2;
+      --sage: #c7dcb9;
+      --peach: #f4a259;
+      --muted: #8a94a8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --cream: #20242e;
+        --box: #2a2f3d;
+        --ink: #dfe5f0;
+        --blue: #6f9fc4;
+        --link: #8fb8dc;
+        --mint: #79a996;
+        --sage: #93ab84;
+        --peach: #dd9a5f;
+        --muted: #949dae;
+      }
+    }
+
+    :root[data-theme="light"] {
+      color-scheme: light;
+      --cream: #fdf6f0;
+      --box: #fffdfa;
+      --ink: #46536b;
+      --blue: #7fb5d9;
+      --link: #5b8bb8;
+      --mint: #b8e0d2;
+      --sage: #c7dcb9;
+      --peach: #f4a259;
+      --muted: #8a94a8;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --cream: #20242e;
+      --box: #2a2f3d;
+      --ink: #dfe5f0;
+      --blue: #6f9fc4;
+      --link: #8fb8dc;
+      --mint: #79a996;
+      --sage: #93ab84;
+      --peach: #dd9a5f;
+      --muted: #949dae;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'VT323', monospace;
+      font-size: 22px;
+      line-height: 1.4;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Jersey 15', monospace;
+      font-size: 24px;
+      background: var(--box);
+      border: 3px solid var(--ink);
+      box-shadow: 5px 5px 0 var(--blue);
+      padding: 0.5rem 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    nav .brand { color: var(--ink); text-decoration: none; }
+    nav .brand::before { content: '♥ '; color: var(--blue); }
+    nav .links a {
+      color: var(--ink);
+      text-decoration: none;
+      margin-left: 1.25rem;
+    }
+    nav .links a.active { color: var(--blue); }
+    nav .links a:hover { color: var(--peach); }
+
+    .theme-toggle {
+      font-family: inherit;
+      font-size: 22px;
+      color: var(--ink);
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 1.25rem;
+      padding: 0;
+      line-height: 1;
+    }
+    .theme-toggle:hover { color: var(--peach); }
+
+    h1 {
+      font-family: 'Jersey 15', monospace;
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    h1 .accent { color: var(--blue); }
+
+    h2 {
+      font-family: 'Jersey 15', monospace;
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    h2::before { content: '▸ '; color: var(--blue); }
+
+    section {
+      background: var(--box);
+      border: 3px solid var(--ink);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    section:nth-of-type(4n+1) { box-shadow: 6px 6px 0 var(--mint); }
+    section:nth-of-type(4n+2) { box-shadow: 6px 6px 0 var(--blue); }
+    section:nth-of-type(4n+3) { box-shadow: 6px 6px 0 var(--sage); }
+    section:nth-of-type(4n+4) { box-shadow: 6px 6px 0 var(--peach); }
+
+    p { margin-bottom: 0.75rem; }
+    a { color: var(--link); }
+    main a:hover { background: var(--blue); color: var(--box); text-decoration: none; }
+
+    .fun-line { color: var(--muted); font-size: 19px; }
+
+    /* library wall */
+    .wall-shelf {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      border-bottom: 4px solid var(--ink);
+      padding: 0 4px;
+      margin-bottom: 14px;
+      min-height: 64px;
+    }
+    .wall-spine {
+      display: block;
+      border: 2px solid var(--ink);
+      transition: transform 0.06s steps(2);
+    }
+    .wall-spine:hover { transform: translateY(-4px); }
+    .wall-tip {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      background: var(--box);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--blue);
+      padding: 0.35rem 0.6rem;
+      font-size: 19px;
+      pointer-events: none;
+      max-width: 260px;
+    }
+    .wall-tip .tipstars { color: var(--peach); font-family: 'DotGothic16', monospace; font-size: 14px; }
+    .wall-tip .tipdate { color: var(--muted); font-size: 16px; }
+
+    /* horizontal bars */
+    .hrow {
+      display: grid;
+      grid-template-columns: 170px 1fr 52px;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .hlabel {
+      font-size: 19px;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .htrack { min-width: 0; }
+    .hbar {
+      height: 18px;
+      background: var(--mint);
+      border: 3px solid var(--ink);
+      min-width: 6px;
+    }
+    .hval { font-size: 18px; color: var(--muted); white-space: nowrap; }
+    .hval .tipstars { color: var(--peach); font-family: 'DotGothic16', monospace; font-size: 13px; }
+
+    /* column chart (matches homepage pixel charts) */
+    .chart svg { width: 100%; height: auto; display: block; }
+    .chart .bar { fill: var(--mint); stroke: var(--ink); stroke-width: 3; }
+    .chart .axis { stroke: var(--ink); stroke-width: 3; }
+    .chart .cap, .chart .tick {
+      fill: var(--muted);
+      font-family: 'VT323', monospace;
+      font-size: 17px;
+    }
+
+    .club {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 18px;
+    }
+    .club span { font-size: 19px; }
+    .club .cyear { color: var(--muted); font-size: 16px; }
+    @media (max-width: 520px) { .club { grid-template-columns: 1fr; } }
+
+    footer {
+      text-align: center;
+      font-family: 'Jersey 15', monospace;
+      font-size: 20px;
+      color: var(--muted);
+      margin-top: 3rem;
+    }
+    footer .heart { color: var(--blue); }
+
+    @media (max-width: 520px) {
+      .hrow { grid-template-columns: 110px 1fr 48px; }
+      .hlabel { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="brand" href="/">Lindsey.exe</a>
+    <span class="links">
+      <a href="/">Home</a>
+      <a href="/cv/">CV</a>
+      <a href="https://linkedin.com/in/lindseylynch1">LinkedIn</a>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+    </span>
+  </nav>
+
+  <main>
+    <h1>Watching <span class="accent">deep dive</span></h1>
+    <p class="fun-line" id="intro-line" style="margin-bottom:2rem"></p>
+
+    <section>
+      <h2>Films per year</h2>
+      <div class="chart" id="per-year"><div class="chart-body"></div></div>
+    </section>
+
+    <section>
+      <h2>How I rate films</h2>
+      <div class="chart" id="rating-dist"><div class="chart-body"></div></div>
+    </section>
+
+    <section>
+      <h2>By release decade</h2>
+      <div id="decades"></div>
+    </section>
+
+    <section>
+      <h2>The five-star club</h2>
+      <p class="fun-line" id="club-note"></p>
+      <div class="club" id="club"></div>
+    </section>
+
+    <p><a href="/">← back home</a> · <a href="https://letterboxd.com/whiteth0rn/">more on Letterboxd →</a></p>
+  </main>
+
+  <footer>Made with <span class="heart">♥</span> in Northern Ireland · © 2026</footer>
+
+  <script src="/assets/theme.js?v=2" defer></script>
+  <script>
+  (function () {
+    'use strict';
+    const esc = s => String(s ?? '').replace(/[&<>"]/g,
+      c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const fmt = n => Number(n).toLocaleString('en-GB');
+    const stars = r => '★'.repeat(Math.floor(r)) + (r - Math.floor(r) >= 0.5 ? '½' : '');
+
+    function hBars(el, items, valHtml) {
+      const max = Math.max(...items.map(i => i.value));
+      el.innerHTML = items.map(i => `
+        <div class="hrow">
+          <span class="hlabel" title="${esc(i.label)}">${esc(i.label)}</span>
+          <span class="htrack"><span class="hbar" style="display:block;width:${Math.max(6, 100 * i.value / max)}%"></span></span>
+          <span class="hval">${valHtml(i)}</span>
+        </div>`).join('');
+    }
+
+    function columnChart(el, points, label) {
+      const W = 560, H = 180, padX = 8, padBottom = 24, padTop = 18;
+      const max = Math.max(...points.map(p => p.count));
+      const band = (W - padX * 2) / points.length;
+      const barW = Math.min(56, band * 0.75);
+      const plotH = H - padTop - padBottom;
+      let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">`;
+      svg += `<line x1="${padX}" y1="${H - padBottom}" x2="${W - padX}" y2="${H - padBottom}" class="axis"/>`;
+      points.forEach((p, i) => {
+        const x = padX + band * i + (band - barW) / 2;
+        const h = plotH * p.count / max;
+        const y = H - padBottom - h;
+        if (h > 0) {
+          svg += `<rect class="bar" x="${x}" y="${y}" width="${barW}" height="${h}"/>`;
+          svg += `<text class="cap" x="${x + barW / 2}" y="${y - 6}" text-anchor="middle">${fmt(p.count)}</text>`;
+        }
+        svg += `<text class="tick" x="${x + barW / 2}" y="${H - 6}" text-anchor="middle">${esc(p.label)}</text>`;
+      });
+      el.querySelector('.chart-body').innerHTML = svg + '</svg>';
+    }
+
+    fetch('/data/watching_stats.json').then(r => r.json()).then(w => {
+      document.getElementById('intro-line').textContent =
+        `${fmt(w.fun.total_films)} films logged, rated ${w.fun.avg_rating} \u2605 on average.`;
+
+      columnChart(document.getElementById('per-year'),
+        w.per_year.map(d => ({ label: d.year, count: d.count })), 'Films per year');
+
+      const t = w.timeline;
+      const bins = [];
+      for (let r = 0.5; r <= 5; r += 0.5) {
+        bins.push({ label: Number.isInteger(r) ? '\u2605'.repeat(r) : '', count: t.filter(e => e.rating === r).length });
+      }
+      columnChart(document.getElementById('rating-dist'), bins, 'Rating distribution');
+
+      const dec = {};
+      t.forEach(e => { if (e.year) { const d = Math.floor(e.year / 10) * 10; dec[d] = (dec[d] || 0) + 1; } });
+      hBars(document.getElementById('decades'),
+        Object.keys(dec).sort().map(d => ({ label: d + 's', value: dec[d] })),
+        i => fmt(i.value));
+
+      const fives = t.filter(e => e.rating === 5)
+        .sort((a, b) => a.title.localeCompare(b.title));
+      document.getElementById('club-note').textContent =
+        `${fives.length} films earned all five stars`;
+      document.getElementById('club').innerHTML = fives.map(f =>
+        `<span>${esc(f.title)} <span class="cyear">${f.year || ''}</span></span>`).join('');
+    });
+  })();
+  </script>
+</body>
+</html>
