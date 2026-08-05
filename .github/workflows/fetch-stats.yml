@@ -32,6 +32,12 @@ jobs:
           NYT_S: ${{ secrets.NYT_S }}
         run: python scripts/fetch_nyt.py
 
+      - name: Fetch PlayStation trophies
+        continue-on-error: true  # token expiry shouldn't block other updates
+        env:
+          PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
+        run: python scripts/fetch_psn.py
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

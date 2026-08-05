@@ -198,4 +198,20 @@
         })), { label: 'Wordle guess distribution' });
     })
     .catch(() => document.getElementById('puzzles').classList.add('stats-unavailable'));
+
+  getJSON('/data/psn_stats.json')
+    .then(psn => {
+      document.getElementById('trophy-line').textContent = `Trophy level ${fmt(psn.level)}.`;
+      const TCOL = { platinum: '#cfe4f0', gold: '#f4c95d', silver: '#c9ced6', bronze: '#c89b6d' };
+      document.getElementById('trophy-row').innerHTML =
+        Object.entries(psn.trophies).map(([kind, n]) =>
+          `<span class="tchip"><i style="background:${TCOL[kind]}"></i>${fmt(n)} ${kind}</span>`).join('');
+      document.getElementById('psn-list').innerHTML = psn.recent.map(g => `
+        <li>
+          <img src="${esc(g.icon)}" alt="" loading="lazy">
+          <span class="gname">${esc(g.name)}</span>
+          <span class="gmeta">${fmt(g.earned)}/${fmt(g.total)} 🏆</span>
+        </li>`).join('');
+    })
+    .catch(() => document.getElementById('playing').classList.add('stats-unavailable'));
 })();
