@@ -217,13 +217,17 @@
     }
 
     .club {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px 18px;
+      columns: 2;
+      column-gap: 22px;
     }
-    .club span { font-size: 19px; }
+    .club > span {
+      display: block;
+      font-size: 19px;
+      break-inside: avoid;
+      margin-bottom: 2px;
+    }
     .club .cyear { color: var(--muted); font-size: 16px; }
-    @media (max-width: 520px) { .club { grid-template-columns: 1fr; } }
+    @media (max-width: 520px) { .club { columns: 1; } }
 
     footer {
       text-align: center;
@@ -268,6 +272,16 @@
     <section>
       <h2>By release decade</h2>
       <div id="decades"></div>
+    </section>
+
+    <section id="directors-sec" style="display:none">
+      <h2>Most watched directors</h2>
+      <div id="directors"></div>
+    </section>
+
+    <section id="actors-sec" style="display:none">
+      <h2>Most watched actors</h2>
+      <div id="actors"></div>
     </section>
 
     <section>
@@ -340,6 +354,26 @@
       hBars(document.getElementById('decades'),
         Object.keys(dec).sort().map(d => ({ label: d + 's', value: dec[d] })),
         i => fmt(i.value));
+
+      // top directors and actors (needs TMDB credits enrichment)
+      fetch('/data/film_credits.json').then(r => { if (!r.ok) throw 0; return r.json(); }).then(credits => {
+        const dirs = {}, actors = {};
+        Object.values(credits).forEach(c => {
+          (c.directors || []).forEach(d => { dirs[d] = (dirs[d] || 0) + 1; });
+          (c.cast || []).forEach(a => { actors[a] = (actors[a] || 0) + 1; });
+        });
+        const top = obj => Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, 8)
+          .map(([label, value]) => ({ label, value }));
+        const d = top(dirs), a = top(actors);
+        if (d.length) {
+          document.getElementById('directors-sec').style.display = '';
+          hBars(document.getElementById('directors'), d, i => fmt(i.value));
+        }
+        if (a.length) {
+          document.getElementById('actors-sec').style.display = '';
+          hBars(document.getElementById('actors'), a, i => fmt(i.value));
+        }
+      }).catch(() => {});
 
       const fives = t.filter(e => e.rating === 5)
         .sort((a, b) => a.title.localeCompare(b.title));
