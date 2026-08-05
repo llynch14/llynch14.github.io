@@ -199,13 +199,15 @@
     })
     .catch(() => document.getElementById('puzzles').classList.add('stats-unavailable'));
 
-  // hand-drawn pixel trophy (8x6 grid)
+  // hand-drawn pixel trophy (8x7 grid; gap between handles and cup)
   const TROPHY =
-    '<svg class="ptrophy" viewBox="0 0 8 6" aria-hidden="true"><g fill="currentColor" shape-rendering="crispEdges">' +
-    '<rect x="0" y="0" width="1" height="2"/><rect x="7" y="0" width="1" height="2"/>' +
-    '<rect x="1" y="0" width="6" height="2"/><rect x="2" y="2" width="4" height="1"/>' +
-    '<rect x="3" y="3" width="2" height="1"/><rect x="2" y="4" width="4" height="1"/>' +
-    '<rect x="1" y="5" width="6" height="1"/></g></svg>';
+    '<svg class="ptrophy" viewBox="0 0 8 7" aria-hidden="true"><g fill="currentColor" shape-rendering="crispEdges">' +
+    '<rect x="0" y="0" width="1" height="2"/><rect x="7" y="0" width="1" height="2"/>' + // handles
+    '<rect x="1" y="2" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/>' + // handle curls
+    '<rect x="2" y="0" width="4" height="3"/>' +                                          // cup
+    '<rect x="3" y="3" width="2" height="2"/>' +                                          // stem
+    '<rect x="2" y="5" width="4" height="1"/><rect x="1" y="6" width="6" height="1"/>' + // base
+    '</g></svg>';
 
   getJSON('/data/psn_stats.json')
     .then(psn => {
