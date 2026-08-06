@@ -32,10 +32,8 @@ jobs:
           NYT_S: ${{ secrets.NYT_S }}
         run: python scripts/fetch_nyt.py
 
-      - name: Enrich films with TMDB credits
-        continue-on-error: true
-        env:
-          TMDB_KEY: ${{ secrets.TMDB_KEY }}
+      - name: Enrich films with Wikidata credits
+        continue-on-error: true  # Wikimedia rate-limits cloud IPs; cache catches up
         run: python scripts/enrich_films.py
 
       - name: Fetch PlayStation trophies
