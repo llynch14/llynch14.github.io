@@ -1,0 +1,5465 @@
+{
+  "spider-man: into the spider-verse|2018": {
+    "qid": "Q29588607",
+    "directors": [
+      "Peter Ramsey",
+      "Rodney Rothman",
+      "Bob Persichetti"
+    ],
+    "cast": []
+  },
+  "the dark knight|2008": {
+    "qid": "Q163872",
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cast": [
+      "Christian Bale",
+      "Michael Caine",
+      "Heath Ledger",
+      "Gary Oldman",
+      "Aaron Eckhart",
+      "Maggie Gyllenhaal",
+      "Morgan Freeman",
+      "Eric Roberts"
+    ]
+  },
+  "lady bird|2017": {
+    "qid": "Q27480769",
+    "directors": [
+      "Greta Gerwig"
+    ],
+    "cast": [
+      "Saoirse Ronan",
+      "Laurie Metcalf",
+      "Odeya Rush",
+      "Kathryn Newton",
+      "Timoth\u00e9e Chalamet",
+      "Tracy Letts",
+      "Lucas Hedges",
+      "Jake McDorman"
+    ]
+  },
+  "jojo rabbit|2019": {
+    "qid": "Q54862508",
+    "directors": [
+      "Taika Waititi"
+    ],
+    "cast": [
+      "Scarlett Johansson",
+      "Taika Waititi",
+      "Rebel Wilson",
+      "Thomasin McKenzie",
+      "Sam Rockwell",
+      "Alfie Allen",
+      "Stephen Merchant",
+      "Roman Griffin Davis"
+    ]
+  },
+  "little women|2019": {
+    "qid": "Q56241200",
+    "directors": [
+      "Clare Niederpruem"
+    ],
+    "cast": [
+      "Sarah Davenport",
+      "Lucas Grabeel",
+      "Ian Bohen",
+      "Lea Thompson",
+      "Bart Johnson",
+      "Joel Michaely"
+    ]
+  },
+  "the godfather|1972": {
+    "qid": "Q47703",
+    "directors": [
+      "Francis Ford Coppola"
+    ],
+    "cast": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan",
+      "Richard S. Castellano",
+      "Robert Duvall",
+      "Sterling Hayden",
+      "John Cazale",
+      "Diane Keaton"
+    ]
+  },
+  "marriage story|2019": {
+    "qid": "Q48671199",
+    "directors": [
+      "Noah Baumbach"
+    ],
+    "cast": [
+      "Scarlett Johansson",
+      "Adam Driver",
+      "Laura Dern",
+      "Alan Alda",
+      "Ray Liotta",
+      "Azhy Robertson",
+      "Julie Hagerty",
+      "Merritt Wever"
+    ]
+  },
+  "the lord of the rings: the fellowship of the ring|2001": {
+    "qid": "Q127367",
+    "directors": [
+      "Peter Jackson"
+    ],
+    "cast": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Liv Tyler",
+      "Viggo Mortensen",
+      "Sean Astin",
+      "Cate Blanchett",
+      "John Rhys-Davies",
+      "Billy Boyd"
+    ]
+  },
+  "spider-man: no way home|2021": {
+    "qid": "Q68934496",
+    "directors": [
+      "Jon Watts"
+    ],
+    "cast": [
+      "Tom Holland",
+      "Zendaya",
+      "Marisa Tomei",
+      "Jacob Batalon",
+      "Tony Revolori",
+      "Benedict Cumberbatch",
+      "Alfred Molina",
+      "Jamie Foxx"
+    ]
+  },
+  "ratatouille|2007": {
+    "qid": "Q170035",
+    "directors": [
+      "Brad Bird",
+      "Jan Pinkava"
+    ],
+    "cast": []
+  },
+  "the empire strikes back|1980": {
+    "qid": "Q181795",
+    "directors": [
+      "Irvin Kershner"
+    ],
+    "cast": [
+      "Harrison Ford",
+      "Carrie Fisher",
+      "David Prowse",
+      "Mark Hamill",
+      "Billy Dee Williams",
+      "Anthony Daniels",
+      "Kenny Baker",
+      "Peter Mayhew"
+    ]
+  },
+  "booksmart|2019": {
+    "qid": "Q55605752",
+    "directors": [
+      "Olivia Wilde"
+    ],
+    "cast": [
+      "Kaitlyn Dever",
+      "Beanie Feldstein",
+      "Billie Lourd",
+      "Will Forte",
+      "Jason Sudeikis",
+      "Lisa Kudrow",
+      "Mike O'Brien"
+    ]
+  },
+  "bohemian rhapsody|2018": {
+    "qid": "Q27894574",
+    "directors": [
+      "Bryan Singer"
+    ],
+    "cast": [
+      "Rami Malek",
+      "Mike Myers",
+      "Lucy Boynton",
+      "Joseph Mazzello",
+      "Ben Hardy",
+      "Allen Leech",
+      "Gwilym Lee",
+      "Aidan Gillen"
+    ]
+  },
+  "the lord of the rings: the return of the king|2003": {
+    "qid": "Q131074",
+    "directors": [
+      "Peter Jackson"
+    ],
+    "cast": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Andy Serkis",
+      "Viggo Mortensen",
+      "Liv Tyler",
+      "Sean Astin",
+      "Cate Blanchett",
+      "Christopher Lee"
+    ]
+  },
+  "logan|2017": {
+    "qid": "Q24053263",
+    "directors": [
+      "James Mangold"
+    ],
+    "cast": [
+      "Hugh Jackman",
+      "Patrick Stewart",
+      "Dafne Keen",
+      "Boyd Holbrook",
+      "Stephen Merchant",
+      "Elizabeth Rodriguez",
+      "Richard E. Grant",
+      "Eriq La Salle"
+    ]
+  },
+  "the lord of the rings: the two towers|2002": {
+    "qid": "Q164963",
+    "directors": [
+      "Peter Jackson"
+    ],
+    "cast": [
+      "Ian McKellen",
+      "Sean Astin",
+      "Viggo Mortensen",
+      "Andy Serkis",
+      "Liv Tyler",
+      "Cate Blanchett",
+      "John Rhys-Davies",
+      "Orlando Bloom"
+    ]
+  },
+  "shang-chi and the legend of the ten rings|2021": {
+    "qid": "Q65768589",
+    "directors": [
+      "Destin Daniel Cretton"
+    ],
+    "cast": [
+      "Simu Liu",
+      "Tony Leung",
+      "Awkwafina",
+      "Fala Chen",
+      "Florian Munteanu",
+      "Ben Kingsley",
+      "Benedict Wong"
+    ]
+  },
+  "captain america: the first avenger|2011": {
+    "qid": "Q275120",
+    "directors": [
+      "Joe Johnston"
+    ],
+    "cast": [
+      "Tommy Lee Jones",
+      "Hayley Atwell",
+      "Stanley Tucci",
+      "Chris Evans",
+      "Hugo Weaving",
+      "Sebastian Stan",
+      "Dominic Cooper",
+      "Neal McDonough"
+    ]
+  },
+  "monsters, inc.|2001": {
+    "qid": "Q187726",
+    "directors": [
+      "Pete Docter",
+      "Lee Unkrich",
+      "David Silverman"
+    ],
+    "cast": []
+  },
+  "the lion king|1994": {
+    "qid": "Q36479",
+    "directors": [
+      "Roger Allers",
+      "Rob Minkoff"
+    ],
+    "cast": []
+  },
+  "jaws|1975": {
+    "qid": "Q189505",
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "Roy Scheider",
+      "Robert Shaw",
+      "Richard Dreyfuss",
+      "Lorraine Gary",
+      "Murray Hamilton",
+      "Carl Gottlieb",
+      "Steven Spielberg",
+      "Craig Kingsbury"
+    ]
+  },
+  "10 things i hate about you|1999": {
+    "qid": "Q169082",
+    "directors": [
+      "Gil Junger"
+    ],
+    "cast": [
+      "Julia Stiles",
+      "Heath Ledger",
+      "Joseph Gordon-Levitt",
+      "Larisa Oleynik",
+      "Larry Miller",
+      "Andrew Keegan",
+      "Gabrielle Union",
+      "David Krumholtz"
+    ]
+  },
+  "a star is born|2018": {
+    "qid": "Q3286391",
+    "directors": [
+      "Bradley Cooper"
+    ],
+    "cast": [
+      "Bradley Cooper",
+      "Sam Elliott",
+      "Andrew Dice Clay",
+      "Lady Gaga",
+      "Rafi Gavron",
+      "Anthony Ramos",
+      "Alec Baldwin",
+      "Dave Chappelle"
+    ]
+  },
+  "the french dispatch of the liberty, kansas evening sun|2021": {
+    "qid": "Q59551547",
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cast": [
+      "Saoirse Ronan",
+      "Timoth\u00e9e Chalamet",
+      "Benicio del Toro",
+      "L\u00e9a Seydoux",
+      "Frances McDormand",
+      "Owen Wilson",
+      "Bill Murray",
+      "Jeffrey Wright"
+    ]
+  },
+  "luca|2021": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "birds of prey (and the fantabulous emancipation of one harley quinn)|2020": {
+    "qid": "Q57177410",
+    "directors": [
+      "Cathy Yan"
+    ],
+    "cast": [
+      "Margot Robbie",
+      "Rosie Perez",
+      "Mary Elizabeth Winstead",
+      "Ewan McGregor",
+      "Chris Messina",
+      "Charlene Amoia",
+      "Steven Williams"
+    ]
+  },
+  "thor|2011": {
+    "qid": "Q217020",
+    "directors": [
+      "Kenneth Branagh"
+    ],
+    "cast": [
+      "Kat Dennings",
+      "Chris Hemsworth",
+      "Natalie Portman",
+      "Tom Hiddleston",
+      "Stellan Skarsg\u00e5rd",
+      "Colm Feore",
+      "Ray Stevenson",
+      "Idris Elba"
+    ]
+  },
+  "zootopia|2016": {
+    "qid": "Q15270647",
+    "directors": [
+      "Byron Howard",
+      "Rich Moore",
+      "Jared Bush"
+    ],
+    "cast": []
+  },
+  "the godfather part ii|1974": {
+    "qid": "Q184768",
+    "directors": [
+      "Francis Ford Coppola"
+    ],
+    "cast": [
+      "Al Pacino",
+      "Robert Duvall",
+      "Diane Keaton",
+      "Robert De Niro",
+      "Talia Shire",
+      "Morgana King",
+      "John Cazale",
+      "Marianna Hill"
+    ]
+  },
+  "raiders of the lost ark|1981": {
+    "qid": "Q174284",
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "John Rhys-Davies",
+      "Harrison Ford",
+      "Karen Allen",
+      "Denholm Elliott",
+      "Paul Freeman",
+      "Ronald Lacey",
+      "William Hootkins",
+      "Alfred Molina"
+    ]
+  },
+  "toy story 2|1999": {
+    "qid": "Q187266",
+    "directors": [
+      "John Lasseter",
+      "Lee Unkrich",
+      "Ash Brannon"
+    ],
+    "cast": []
+  },
+  "thor: the dark world|2013": {
+    "qid": "Q1201853",
+    "directors": [
+      "Alan Taylor"
+    ],
+    "cast": [
+      "Kat Dennings",
+      "Chris Hemsworth",
+      "Natalie Portman",
+      "Tom Hiddleston",
+      "Stellan Skarsg\u00e5rd",
+      "Idris Elba",
+      "Christopher Eccleston",
+      "Adewale Akinnuoye-Agbaje"
+    ]
+  },
+  "it chapter two|2019": {
+    "qid": "Q42726338",
+    "directors": [
+      "Andy Muschietti"
+    ],
+    "cast": [
+      "Bill Skarsg\u00e5rd",
+      "James McAvoy",
+      "Jaeden Martell",
+      "Bill Hader",
+      "Finn Wolfhard",
+      "Jessica Chastain",
+      "Sophia Lillis",
+      "James Ransone"
+    ]
+  },
+  "last night in soho|2021": {
+    "qid": "Q63969255",
+    "directors": [
+      "Edgar Wright"
+    ],
+    "cast": [
+      "Thomasin McKenzie",
+      "Anya Taylor-Joy",
+      "Matt Smith",
+      "Terence Stamp",
+      "Diana Rigg",
+      "Rita Tushingham",
+      "Jessie Mei Li",
+      "Synn\u00f8ve Karlsen"
+    ]
+  },
+  "v for vendetta|2005": {
+    "qid": "Q5890",
+    "directors": [
+      "James McTeigue"
+    ],
+    "cast": [
+      "Hugo Weaving",
+      "Natalie Portman",
+      "Stephen Rea",
+      "John Hurt",
+      "Stephen Fry",
+      "Rupert Graves",
+      "Roger Allam",
+      "Ben Miles"
+    ]
+  },
+  "the cabin in the woods|2011": {
+    "qid": "Q45394",
+    "directors": [
+      "Drew Goddard"
+    ],
+    "cast": [
+      "Kristen Connolly",
+      "Chris Hemsworth",
+      "Anna Hutchison",
+      "Fran Kranz",
+      "Jesse Williams",
+      "Richard Jenkins",
+      "Bradley Whitford",
+      "Brian J. White"
+    ]
+  },
+  "squid game|2021": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "terminator 2: judgment day|1991": {
+    "qid": "Q170564",
+    "directors": [
+      "James Cameron"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Edward Furlong",
+      "Linda Hamilton",
+      "Robert Patrick",
+      "Earl Boen",
+      "Joe Morton",
+      "S. Epatha Merkerson"
+    ]
+  },
+  "mamma mia!|2008": {
+    "qid": "Q188850",
+    "directors": [
+      "Phyllida Lloyd"
+    ],
+    "cast": [
+      "Amanda Seyfried",
+      "Pierce Brosnan",
+      "Colin Firth",
+      "Stellan Skarsg\u00e5rd",
+      "Julie Walters",
+      "Christine Baranski",
+      "Dominic Cooper"
+    ]
+  },
+  "mulan|1998": {
+    "qid": "Q537407",
+    "directors": [
+      "Barry Cook",
+      "Tony Bancroft"
+    ],
+    "cast": []
+  },
+  "eternals|2021": {
+    "qid": "Q23894629",
+    "directors": [
+      "Chlo\u00e9 Zhao"
+    ],
+    "cast": [
+      "Angelina Jolie",
+      "Richard Madden",
+      "Salma Hayek",
+      "Kumail Nanjiani",
+      "Lauren Ridloff",
+      "Brian Tyree Henry",
+      "Ma Dong-seok",
+      "Lia McHugh"
+    ]
+  },
+  "tick, tick... boom!|2021": {
+    "qid": "Q85323361",
+    "directors": [
+      "Lin-Manuel Miranda"
+    ],
+    "cast": [
+      "Andrew Garfield",
+      "Vanessa Hudgens",
+      "Alexandra Shipp",
+      "Robin de Jes\u00fas",
+      "Joshua Henry",
+      "Judith Light",
+      "Bradley Whitford",
+      "Joanna Adler"
+    ]
+  },
+  "love actually|2003": {
+    "qid": "Q190588",
+    "directors": [
+      "Richard Curtis"
+    ],
+    "cast": [
+      "Hugh Grant",
+      "Liam Neeson",
+      "Colin Firth",
+      "Laura Linney",
+      "Emma Thompson",
+      "Alan Rickman",
+      "Keira Knightley",
+      "Martine McCutcheon"
+    ]
+  },
+  "venom: let there be carnage|2021": {
+    "qid": "Q60498064",
+    "directors": [
+      "Andy Serkis"
+    ],
+    "cast": [
+      "Tom Hardy",
+      "Michelle Williams",
+      "Woody Harrelson",
+      "Naomie Harris",
+      "Reid Scott",
+      "Stephen Graham"
+    ]
+  },
+  "pok\u00e9mon detective pikachu|2019": {
+    "qid": "Q47492499",
+    "directors": [
+      "Rob Letterman"
+    ],
+    "cast": [
+      "Justice Smith",
+      "Ryan Reynolds",
+      "Kathryn Newton",
+      "Ken Watanabe",
+      "Bill Nighy",
+      "Suki Waterhouse",
+      "Chris Geere"
+    ]
+  },
+  "doctor sleep|2019": {
+    "qid": "Q56881169",
+    "directors": [
+      "Mike Flanagan"
+    ],
+    "cast": [
+      "Ewan McGregor",
+      "Rebecca Ferguson",
+      "Alex Essoe",
+      "Carl Lumbly",
+      "Zahn McClarnon",
+      "Kyliegh Curran",
+      "Bruce Greenwood",
+      "Emily Alyn Lind"
+    ]
+  },
+  "indiana jones and the temple of doom|1984": {
+    "qid": "Q179215",
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "Harrison Ford",
+      "Kate Capshaw",
+      "Ke Huy Quan",
+      "Amrish Puri",
+      "Roshan Seth",
+      "Philip Stone",
+      "Roy Chiao",
+      "D. R. Nanayakkara"
+    ]
+  },
+  "lilo & stitch|2002": {
+    "qid": "Q36092",
+    "directors": [
+      "Chris Sanders",
+      "Dean DeBlois"
+    ],
+    "cast": []
+  },
+  "raya and the last dragon|2021": {
+    "qid": "Q66738105",
+    "directors": [
+      "Don Hall",
+      "Carlos L\u00f3pez Estrada"
+    ],
+    "cast": []
+  },
+  "hamilton|2020": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "el camino: a breaking bad movie|2019": {
+    "qid": "Q61741521",
+    "directors": [
+      "Vince Gilligan"
+    ],
+    "cast": [
+      "Aaron Paul",
+      "Charles Baker",
+      "Matt Jones",
+      "Bryan Cranston",
+      "Jonathan Banks",
+      "Larry Hankin",
+      "Jesse Plemons",
+      "Robert Forster"
+    ]
+  },
+  "paddington 2|2017": {
+    "qid": "Q27590871",
+    "directors": [
+      "Paul King"
+    ],
+    "cast": [
+      "Hugh Grant",
+      "Brendan Gleeson",
+      "Hugh Bonneville",
+      "Sally Hawkins",
+      "Julie Walters",
+      "Jim Broadbent",
+      "Peter Capaldi",
+      "Madeleine Harris"
+    ]
+  },
+  "paddington|2014": {
+    "qid": "Q15055478",
+    "directors": [
+      "Paul King"
+    ],
+    "cast": [
+      "Hugh Bonneville",
+      "Ben Whishaw",
+      "Sally Hawkins",
+      "Madeleine Harris",
+      "Samuel Joslin",
+      "Julie Walters",
+      "Nicole Kidman",
+      "Jim Broadbent"
+    ]
+  },
+  "in the heights|2021": {
+    "qid": "Q63698573",
+    "directors": [
+      "Jon M. Chu"
+    ],
+    "cast": [
+      "Anthony Ramos",
+      "Corey Hawkins",
+      "Melissa Barrera",
+      "Leslie Grace",
+      "Jimmy Smits",
+      "Olga Merediz",
+      "Gregory Diaz IV",
+      "Daphne Rubin-Vega"
+    ]
+  },
+  "encanto|2021": {
+    "qid": "Q103372692",
+    "directors": [
+      "Jared Bush",
+      "Byron Howard",
+      "Charise Castro Smith"
+    ],
+    "cast": []
+  },
+  "the godfather part iii|1990": {
+    "qid": "Q202326",
+    "directors": [
+      "Francis Ford Coppola"
+    ],
+    "cast": [
+      "Al Pacino",
+      "Andy Garcia",
+      "Diane Keaton",
+      "Eli Wallach",
+      "Talia Shire",
+      "Sofia Coppola",
+      "Joe Mantegna",
+      "Richard Bright"
+    ]
+  },
+  "a silent voice: the movie|2016": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "words bubble up like soda pop|2020": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "indiana jones and the last crusade|1989": {
+    "qid": "Q185658",
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "Sean Connery",
+      "John Rhys-Davies",
+      "Harrison Ford",
+      "River Phoenix",
+      "Michael Byrne",
+      "Alison Doody",
+      "Denholm Elliott",
+      "Julian Glover"
+    ]
+  },
+  "demon slayer -kimetsu no yaiba- the movie: mugen train|2020": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "black widow|2021": {
+    "qid": "Q23894626",
+    "directors": [
+      "Cate Shortland"
+    ],
+    "cast": [
+      "Scarlett Johansson",
+      "David Harbour",
+      "Rachel Weisz",
+      "O. T. Fagbenle",
+      "Florence Pugh",
+      "Ray Winstone",
+      "William Damaged",
+      "Ahmed Bakare"
+    ]
+  },
+  "soul|2020": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "the devil all the time|2020": {
+    "qid": "Q61927376",
+    "directors": [
+      "Ant\u00f3nio Campos"
+    ],
+    "cast": [
+      "Tom Holland",
+      "Bill Skarsg\u00e5rd",
+      "Robert Pattinson",
+      "Sebastian Stan",
+      "Riley Keough",
+      "Jason Clarke",
+      "Eliza Scanlen",
+      "Haley Bennett"
+    ]
+  },
+  "onward|2020": {
+    "qid": "Q59690895",
+    "directors": [
+      "Dan Scanlon"
+    ],
+    "cast": []
+  },
+  "star wars: the rise of skywalker|2019": {
+    "qid": "Q20977110",
+    "directors": [
+      "J. J. Abrams"
+    ],
+    "cast": [
+      "Daisy Ridley",
+      "Adam Driver",
+      "John Boyega",
+      "Oscar Isaac",
+      "Mark Hamill",
+      "Carrie Fisher",
+      "Billy Dee Williams",
+      "Kelly Marie Tran"
+    ]
+  },
+  "bombshell|2019": {
+    "qid": "Q58814589",
+    "directors": [
+      "Jay Roach"
+    ],
+    "cast": [
+      "Charlize Theron",
+      "Nicole Kidman",
+      "Margot Robbie",
+      "Kate McKinnon",
+      "Allison Janney",
+      "Alice Eve",
+      "Malcolm McDowell",
+      "John Lithgow"
+    ]
+  },
+  "frozen ii|2019": {
+    "qid": "Q24733929",
+    "directors": [
+      "Jennifer Lee",
+      "Chris Buck"
+    ],
+    "cast": []
+  },
+  "knives out|2019": {
+    "qid": "Q57982486",
+    "directors": [
+      "Rian Johnson"
+    ],
+    "cast": [
+      "Daniel Craig",
+      "Michael Shannon",
+      "Chris Evans",
+      "LaKeith Stanfield",
+      "Don Johnson",
+      "Christopher Plummer",
+      "Ana de Armas",
+      "Jamie Lee Curtis"
+    ]
+  },
+  "joker|2019": {
+    "qid": "Q42759035",
+    "directors": [
+      "Todd Phillips"
+    ],
+    "cast": [
+      "Joaquin Phoenix",
+      "Zazie Beetz",
+      "Robert De Niro",
+      "Frances Conroy",
+      "Bryan Callen",
+      "Marc Maron",
+      "Bill Camp",
+      "Brett Cullen"
+    ]
+  },
+  "spider-man: far from home|2019": {
+    "qid": "Q27985819",
+    "directors": [
+      "Jon Watts"
+    ],
+    "cast": [
+      "Tom Holland",
+      "Samuel L. Jackson",
+      "Jake Gyllenhaal",
+      "Marisa Tomei",
+      "Jon Favreau",
+      "Zendaya",
+      "Jacob Batalon",
+      "Tony Revolori"
+    ]
+  },
+  "midsommar|2019": {
+    "qid": "Q55907451",
+    "directors": [],
+    "cast": [
+      "Jack Reynor",
+      "Florence Pugh",
+      "Will Poulter",
+      "William Jackson Harper",
+      "Vilhelm Blomgren",
+      "Archie Madekwe",
+      "Henrik Norl\u00e9n",
+      "Gunnel Fred"
+    ]
+  },
+  "toy story 4|2019": {
+    "qid": "Q18517638",
+    "directors": [
+      "Josh Cooley",
+      "John Lasseter"
+    ],
+    "cast": []
+  },
+  "rocketman|2019": {
+    "qid": "Q55934795",
+    "directors": [
+      "Dexter Fletcher"
+    ],
+    "cast": [
+      "Taron Egerton",
+      "Jamie Bell",
+      "Richard Madden",
+      "Bryce Dallas Howard",
+      "Steven Mackintosh",
+      "Gemma Jones",
+      "Stephen Graham",
+      "Harriet Walter"
+    ]
+  },
+  "aladdin|2019": {
+    "qid": "Q27188178",
+    "directors": [
+      "Guy Ritchie"
+    ],
+    "cast": [
+      "Mena Massoud",
+      "Naomi Scott",
+      "Will Smith",
+      "Marwan Kenzari",
+      "Navid Negahban",
+      "Nasim Pedrad",
+      "Billy Magnussen",
+      "Numan Acar"
+    ]
+  },
+  "avengers: endgame|2019": {
+    "qid": "Q23781155",
+    "directors": [
+      "Anthony Russo",
+      "Joe Russo"
+    ],
+    "cast": [
+      "Chris Hemsworth",
+      "Mark Ruffalo",
+      "Chris Evans",
+      "Josh Brolin",
+      "Tom Hiddleston",
+      "Robert Downey Jr.",
+      "Samuel L. Jackson",
+      "Chris Pratt"
+    ]
+  },
+  "the peanut butter falcon|2019": {
+    "qid": "Q39047194",
+    "directors": [
+      "Tyler Nilson",
+      "Michael Schwartz"
+    ],
+    "cast": [
+      "Shia LaBeouf",
+      "Dakota Johnson",
+      "Zack Gottsagen",
+      "John Hawkes",
+      "Bruce Dern",
+      "Jon Bernthal",
+      "Thomas Haden Church"
+    ]
+  },
+  "extremely wicked, shockingly evil and vile|2019": {
+    "qid": "Q48671183",
+    "directors": [
+      "Joe Berlinger"
+    ],
+    "cast": [
+      "Zac Efron",
+      "Lily Collins",
+      "John Malkovich",
+      "Jim Parsons",
+      "Angela Sarafyan",
+      "Jeffrey Donovan",
+      "Grace Victoria Cox",
+      "Kaya Scodelario"
+    ]
+  },
+  "ralph breaks the internet|2018": {
+    "qid": "Q25167044",
+    "directors": [
+      "Rich Moore",
+      "Phil Johnston"
+    ],
+    "cast": []
+  },
+  "venom|2018": {
+    "qid": "Q23006268",
+    "directors": [
+      "Ruben Fleischer"
+    ],
+    "cast": [
+      "Tom Hardy",
+      "Michelle Williams",
+      "Jenny Slate",
+      "Woody Harrelson",
+      "Riz Ahmed",
+      "Reid Scott",
+      "Stan Lee",
+      "Scott Haze"
+    ]
+  },
+  "crazy rich asians|2018": {
+    "qid": "Q29588623",
+    "directors": [
+      "Jon M. Chu"
+    ],
+    "cast": [
+      "Constance Wu",
+      "Henry Golding",
+      "Michelle Yeoh",
+      "Gemma Chan",
+      "Lisa Lu",
+      "Awkwafina",
+      "Harry Shum",
+      "Ken Jeong"
+    ]
+  },
+  "incredibles 2|2018": {
+    "qid": "Q24832112",
+    "directors": [
+      "Brad Bird"
+    ],
+    "cast": []
+  },
+  "star wars: the last jedi|2017": {
+    "qid": "Q18486021",
+    "directors": [
+      "Rian Johnson"
+    ],
+    "cast": [
+      "Daisy Ridley",
+      "John Boyega",
+      "Oscar Isaac",
+      "Adam Driver",
+      "Mark Hamill",
+      "Carrie Fisher",
+      "Domhnall Gleeson",
+      "Gwendoline Christie"
+    ]
+  },
+  "the greatest showman|2017": {
+    "qid": "Q27942936",
+    "directors": [
+      "Michael Gracey"
+    ],
+    "cast": [
+      "Zac Efron",
+      "Hugh Jackman",
+      "Michelle Williams",
+      "Rebecca Ferguson",
+      "Zendaya",
+      "Keala Settle",
+      "Sam Humphrey",
+      "Yahya Abdul-Mateen II"
+    ]
+  },
+  "jumanji: welcome to the jungle|2017": {
+    "qid": "Q20762680",
+    "directors": [
+      "Jake Kasdan"
+    ],
+    "cast": [
+      "Dwayne Johnson",
+      "Kevin Hart",
+      "Jack Black",
+      "Karen Gillan",
+      "Nick Jonas",
+      "Rhys Darby",
+      "Bobby Cannavale",
+      "Missi Pyle"
+    ]
+  },
+  "coco|2017": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "thor: ragnarok|2017": {
+    "qid": "Q22665878",
+    "directors": [
+      "Taika Waititi"
+    ],
+    "cast": [
+      "Chris Hemsworth",
+      "Tom Hiddleston",
+      "Mark Ruffalo",
+      "Cate Blanchett",
+      "Tessa Thompson",
+      "Jeff Goldblum",
+      "Karl Urban",
+      "Idris Elba"
+    ]
+  },
+  "spider-man: homecoming|2017": {
+    "qid": "Q23010088",
+    "directors": [
+      "Jon Watts"
+    ],
+    "cast": [
+      "Tom Holland",
+      "Marisa Tomei",
+      "Zendaya",
+      "Tony Revolori",
+      "Laura Harrier",
+      "Robert Downey Jr.",
+      "Michael Keaton",
+      "Donald Glover"
+    ]
+  },
+  "wonder woman|2017": {
+    "qid": "Q20502242",
+    "directors": [
+      "Patty Jenkins"
+    ],
+    "cast": [
+      "Gal Gadot",
+      "Chris Pine",
+      "Connie Nielsen",
+      "Lucy Davis",
+      "Robin Wright",
+      "Danny Huston",
+      "David Thewlis",
+      "Elena Anaya"
+    ]
+  },
+  "big hero 6|2014": {
+    "qid": "Q13091172",
+    "directors": [
+      "Chris Williams",
+      "Don Hall"
+    ],
+    "cast": []
+  },
+  "guardians of the galaxy|2014": {
+    "qid": "Q5887360",
+    "directors": [
+      "James Gunn"
+    ],
+    "cast": [
+      "Chris Pratt",
+      "Dave Bautista",
+      "Zoe Sandalia",
+      "Michael Rooker",
+      "Lee Pace",
+      "Ophelia Lovibond",
+      "Karen Gillan",
+      "Djimon Hounsou"
+    ]
+  },
+  "captain america: the winter soldier|2014": {
+    "qid": "Q1765358",
+    "directors": [
+      "Anthony Russo",
+      "Joe Russo"
+    ],
+    "cast": [
+      "Robert Redford",
+      "Chris Evans",
+      "Scarlett Johansson",
+      "Sebastian Stan",
+      "Anthony Mackie",
+      "Cobie Smulders",
+      "Frank Grillo",
+      "Georges St-Pierre"
+    ]
+  },
+  "the wolf of wall street|2013": {
+    "qid": "Q1392744",
+    "directors": [
+      "Martin Scorsese"
+    ],
+    "cast": [
+      "Leonardo DiCaprio",
+      "Jonah Hill",
+      "Margot Robbie",
+      "Matthew McConaughey",
+      "Jon Favreau",
+      "Kyle Chandler",
+      "Rob Reiner",
+      "Jean Dujardin"
+    ]
+  },
+  "the hunger games: catching fire|2013": {
+    "qid": "Q574583",
+    "directors": [
+      "Francis Lawrence"
+    ],
+    "cast": [
+      "Josh Hutcherson",
+      "Elizabeth Banks",
+      "Alan Ritchson",
+      "Liam Hemsworth",
+      "Sam Claflin",
+      "Jena Malone",
+      "Stanley Tucci",
+      "Woody Harrelson"
+    ]
+  },
+  "the wolverine|2013": {
+    "qid": "Q197491",
+    "directors": [
+      "James Mangold"
+    ],
+    "cast": [
+      "Hugh Jackman",
+      "Tao Okamoto",
+      "Rila Fukushima",
+      "Hiroyuki Sanada",
+      "Will Yun Lee",
+      "Svetlana Khodchenkova",
+      "Famke Janssen",
+      "Haruhiko Yamanouchi"
+    ]
+  },
+  "the avengers|2012": {
+    "qid": "Q182218",
+    "directors": [
+      "Joss Whedon"
+    ],
+    "cast": [
+      "Don Cheadle",
+      "Jillian Morgese",
+      "Robert Downey Jr.",
+      "Chris Evans",
+      "Mark Ruffalo",
+      "Chris Hemsworth",
+      "Scarlett Johansson",
+      "Jeremy Renner"
+    ]
+  },
+  "inception|2010": {
+    "qid": "Q25188",
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cast": [
+      "Leonardo DiCaprio",
+      "Ken Watanabe",
+      "Joseph Gordon-Levitt",
+      "Marion Cotillard",
+      "Elliot Page",
+      "Tom Hardy",
+      "Cillian Murphy",
+      "Tom Berenger"
+    ]
+  },
+  "enchanted|2007": {
+    "qid": "Q490464",
+    "directors": [
+      "Kevin Lima"
+    ],
+    "cast": [
+      "Amy Adams",
+      "Patrick Dempsey",
+      "James Marsden",
+      "Timothy Spall",
+      "Rachel Covey",
+      "Susan Sarandon",
+      "Idina Menzel",
+      "Jodi Benson"
+    ]
+  },
+  "finding nemo|2003": {
+    "qid": "Q132863",
+    "directors": [
+      "Andrew Stanton",
+      "Lee Unkrich"
+    ],
+    "cast": []
+  },
+  "the grand budapest hotel|2014": {
+    "qid": "Q3521099",
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cast": [
+      "Ralph Fiennes",
+      "Tony Revolori",
+      "Saoirse Ronan",
+      "Edward Norton",
+      "Jude Law",
+      "Owen Wilson",
+      "Tilda Swinton",
+      "Willem Dafoe"
+    ]
+  },
+  "the mitchells vs. the machines|2021": {
+    "qid": "Q54021143",
+    "directors": [
+      "Mike Rianda",
+      "Jeff Rowe"
+    ],
+    "cast": []
+  },
+  "licorice pizza|2021": {
+    "qid": "Q102036245",
+    "directors": [
+      "Paul Thomas Anderson"
+    ],
+    "cast": [
+      "Cooper Hoffman",
+      "Sean Penn",
+      "Tom Waits",
+      "Bradley Cooper",
+      "Maya Rudolph",
+      "Skyler Gisondo",
+      "Mary Elizabeth Ellis",
+      "Joseph Cross"
+    ]
+  },
+  "free guy|2021": {
+    "qid": "Q38685497",
+    "directors": [
+      "Shawn Levy"
+    ],
+    "cast": [
+      "Ryan Reynolds",
+      "Taika Waititi",
+      "Lil Rel Howery",
+      "Joe Keery",
+      "Camille Kostek",
+      "Jodie Comer",
+      "Utkarsh Ambudkar",
+      "Channing Tatum"
+    ]
+  },
+  "belfast|2021": {
+    "qid": "Q100736066",
+    "directors": [
+      "Kenneth Branagh"
+    ],
+    "cast": [
+      "Judi Dench",
+      "Ciar\u00e1n Hinds",
+      "Jamie Dornan",
+      "Caitr\u00edona Balfe",
+      "Lara McDonnell",
+      "Colin Morgan",
+      "Gerard Horan",
+      "Conor MacNeill"
+    ]
+  },
+  "the hating game|2021": {
+    "qid": "Q103955657",
+    "directors": [
+      "Peter Hutchings"
+    ],
+    "cast": [
+      "Lucy Hale",
+      "Austin Stowell",
+      "Damon Daunno",
+      "Sakina Jaffrey",
+      "Corbin Bernsen"
+    ]
+  },
+  "rent|2005": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "uncharted|2022": {
+    "qid": "Q67171881",
+    "directors": [
+      "Ruben Fleischer"
+    ],
+    "cast": [
+      "Tom Holland",
+      "Mark Wahlberg",
+      "Sophia Ali",
+      "Antonio Banderas",
+      "Tati Gabrielle",
+      "Patricia Meeden",
+      "Steven Waddington",
+      "Rudy Pankow"
+    ]
+  },
+  "the batman|2022": {
+    "qid": "Q61117344",
+    "directors": [
+      "Matt Reeves"
+    ],
+    "cast": [
+      "Robert Pattinson",
+      "Zo\u00eb Kravitz",
+      "Jeffrey Wright",
+      "Andy Serkis",
+      "Colin Farrell",
+      "Paul Dano",
+      "Peter Sarsgaard",
+      "John Turturro"
+    ]
+  },
+  "turning red|2022": {
+    "qid": "Q104845027",
+    "directors": [
+      "Domee Shi"
+    ],
+    "cast": []
+  },
+  "yesterday|2019": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "who framed roger rabbit|1988": {
+    "qid": "Q379873",
+    "directors": [
+      "Robert Zemeckis"
+    ],
+    "cast": [
+      "Bob Hoskins",
+      "Christopher Lloyd",
+      "Stubby Kaye",
+      "Joanna Cassidy",
+      "Alan Tilvern",
+      "Richard LeParmentier",
+      "Joel Silver",
+      "Richard Ridings"
+    ]
+  },
+  "fresh|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "spree|2020": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "the village|2004": {
+    "qid": "Q135695335",
+    "directors": [],
+    "cast": []
+  },
+  "where the crawdads sing|2022": {
+    "qid": "Q106311043",
+    "directors": [
+      "Olivia Newman"
+    ],
+    "cast": [
+      "Daisy Edgar-Jones",
+      "Taylor John Smith",
+      "Harris Dickinson",
+      "David Strathairn",
+      "Jayson Warner Smith",
+      "Garret Dillahunt",
+      "Michael Hyatt",
+      "Ahna O'Reilly"
+    ]
+  },
+  "thor: love and thunder|2022": {
+    "qid": "Q65768604",
+    "directors": [
+      "Taika Waititi"
+    ],
+    "cast": [
+      "Chris Hemsworth",
+      "Tessa Thompson",
+      "Natalie Portman",
+      "Taika Waititi",
+      "Christian Bale",
+      "Chris Pratt",
+      "Jaimie Alexander",
+      "Pom Klementieff"
+    ]
+  },
+  "do revenge|2022": {
+    "qid": "Q113258929",
+    "directors": [
+      "Jennifer Kaytin Robinson"
+    ],
+    "cast": [
+      "Maya Hawke",
+      "Camila Mendes",
+      "Talia Ryder",
+      "Rish Shah",
+      "Paris Berelc",
+      "Sophie Turner",
+      "Austin Abrams",
+      "Eliza Bennett"
+    ]
+  },
+  "don't worry darling|2022": {
+    "qid": "Q100801718",
+    "directors": [
+      "Olivia Wilde"
+    ],
+    "cast": [
+      "Florence Pugh",
+      "Harry Styles",
+      "Chris Pine",
+      "Gemma Chan",
+      "Kiki Layne",
+      "Nick Kroll",
+      "Douglas Smith",
+      "Kate Berlant"
+    ]
+  },
+  "see how they run|2022": {
+    "qid": "Q105319897",
+    "directors": [
+      "Tom George"
+    ],
+    "cast": [
+      "Sam Rockwell",
+      "Saoirse Ronan",
+      "David Oyelowo",
+      "Adrien Brody",
+      "Ruth Wilson",
+      "Harris Dickinson",
+      "Charlie Cooper"
+    ]
+  },
+  "everything everywhere all at once|2022": {
+    "qid": "Q83808444",
+    "directors": [
+      "Dan Kwan",
+      "Daniel Scheinert"
+    ],
+    "cast": [
+      "Michelle Yeoh",
+      "Stephanie Hsu",
+      "James Hong",
+      "Ke Huy Quan",
+      "Jamie Lee Curtis",
+      "Jenny Slate",
+      "Harry Shum",
+      "Andy Le"
+    ]
+  },
+  "bones and all|2022": {
+    "qid": "Q107027721",
+    "directors": [
+      "Luca Guadagnino"
+    ],
+    "cast": [
+      "Taylor Russell",
+      "Timoth\u00e9e Chalamet",
+      "Mark Rylance",
+      "Michael Stuhlbarg",
+      "Andr\u00e9 Holland",
+      "Jessica Harper",
+      "Chlo\u00eb Sevigny",
+      "David Gordon Green"
+    ]
+  },
+  "aftersun|2022": {
+    "qid": "Q111668106",
+    "directors": [
+      "Charlotte Wells"
+    ],
+    "cast": [
+      "Paul Mescal",
+      "Celia Rowlson-Hall",
+      "Frankie Corio",
+      "Brooklyn Toulson"
+    ]
+  },
+  "guns akimbo|2019": {
+    "qid": "Q55080292",
+    "directors": [
+      "Jason Lei Howden"
+    ],
+    "cast": [
+      "Daniel Radcliffe",
+      "Natasha Liu Bordizzo",
+      "Samara Weaving"
+    ]
+  },
+  "klaus|2019": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "the twilight saga: new moon|2009": {
+    "qid": "Q116928",
+    "directors": [
+      "Chris Weitz"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Billy Burke",
+      "Anna Kendrick",
+      "Michael Welch",
+      "Justin Chon",
+      "Christian Serratos",
+      "Taylor Lautner"
+    ]
+  },
+  "the twilight saga: eclipse|2010": {
+    "qid": "Q217010",
+    "directors": [
+      "David Slade"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Taylor Lautner",
+      "Ashley Greene",
+      "Jackson Rathbone",
+      "Nikki Reed",
+      "Kellan Lutz",
+      "Peter Facinelli"
+    ]
+  },
+  "the twilight saga: breaking dawn \u2013 part 1|2011": {
+    "qid": "Q60506",
+    "directors": [
+      "Bill Condon"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Taylor Lautner",
+      "Ashley Greene",
+      "Jackson Rathbone",
+      "Nikki Reed",
+      "Kellan Lutz",
+      "Peter Facinelli"
+    ]
+  },
+  "the twilight saga: breaking dawn \u2013 part 2|2012": {
+    "qid": "Q60487",
+    "directors": [
+      "Bill Condon"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Taylor Lautner",
+      "Peter Facinelli",
+      "Elizabeth Reaser",
+      "Ashley Greene",
+      "Jackson Rathbone",
+      "Kellan Lutz"
+    ]
+  },
+  "a castle for christmas|2021": {
+    "qid": "Q109726842",
+    "directors": [
+      "Mary Lambert"
+    ],
+    "cast": []
+  },
+  "glass onion|2022": {
+    "qid": "Q84712797",
+    "directors": [
+      "Rian Johnson"
+    ],
+    "cast": [
+      "Daniel Craig",
+      "Edward Norton",
+      "Janelle Mon\u00e1e",
+      "Kathryn Hahn",
+      "Leslie Odom Jr.",
+      "Jessica Henwick",
+      "Madelyn Cline",
+      "Kate Hudson"
+    ]
+  },
+  "strange world|2022": {
+    "qid": "Q107473453",
+    "directors": [
+      "Don Hall"
+    ],
+    "cast": []
+  },
+  "white noise|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "top gun: maverick|2022": {
+    "qid": "Q31202708",
+    "directors": [
+      "Joseph Kosinski"
+    ],
+    "cast": [
+      "Tom Cruise",
+      "Val Kilmer",
+      "Jennifer Connelly",
+      "Miles Teller",
+      "Jon Hamm",
+      "Ed Harris",
+      "Glen Powell",
+      "Manny Jacinto"
+    ]
+  },
+  "empire of light|2022": {
+    "qid": "Q110876878",
+    "directors": [
+      "Sam Mendes"
+    ],
+    "cast": [
+      "Olivia Colman",
+      "Colin Firth",
+      "Toby Jones",
+      "Micheal Ward",
+      "Tom Brooke",
+      "Tanya Moodie",
+      "Crystal Clarke",
+      "Monica Dolan"
+    ]
+  },
+  "the menu|2022": {
+    "qid": "Q108444804",
+    "directors": [
+      "Mark Mylod"
+    ],
+    "cast": [
+      "Anya Taylor-Joy",
+      "Nicholas Hoult",
+      "Ralph Fiennes",
+      "Hong Chau",
+      "Janet McTeer",
+      "Judith Light",
+      "John Leguizamo",
+      "Reed Birney"
+    ]
+  },
+  "the sea beast|2022": {
+    "qid": "Q111433290",
+    "directors": [
+      "Chris Williams"
+    ],
+    "cast": []
+  },
+  "till|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "meet cute|2022": {
+    "qid": "Q108293175",
+    "directors": [],
+    "cast": [
+      "Kaley Cuoco",
+      "Pete Davidson"
+    ]
+  },
+  "scream|1996": {
+    "qid": "Q27411",
+    "directors": [
+      "Wes Craven"
+    ],
+    "cast": [
+      "Neve Campbell",
+      "Skeet Ulrich",
+      "Rose McGowan",
+      "Matthew Lillard",
+      "Jamie Kennedy",
+      "David Arquette",
+      "Courteney Cox",
+      "W. Earl Brown"
+    ]
+  },
+  "puss in boots: the last wish|2022": {
+    "qid": "Q31271384",
+    "directors": [
+      "Joel Crawford"
+    ],
+    "cast": []
+  },
+  "zoolander 2|2016": {
+    "qid": "Q19842552",
+    "directors": [
+      "Ben Stiller"
+    ],
+    "cast": [
+      "Ben Stiller",
+      "Owen Wilson",
+      "Will Ferrell",
+      "Pen\u00e9lope Cruz",
+      "Kristen Wiig",
+      "Fred Armisen",
+      "Kyle Mooney",
+      "Milla Jovovich"
+    ]
+  },
+  "broker|2022": {
+    "qid": "Q23994919",
+    "directors": [
+      "Hirokazu Koreeda"
+    ],
+    "cast": [
+      "Song Kang-ho",
+      "Bae Doona",
+      "Gang Dong-won",
+      "IU",
+      "Lee Joo-young"
+    ]
+  },
+  "elvis|2022": {
+    "qid": "Q84362533",
+    "directors": [
+      "Baz Luhrmann"
+    ],
+    "cast": [
+      "Austin Butler",
+      "Tom Hanks",
+      "Olivia DeJonge",
+      "Yola",
+      "Luke Bracey",
+      "Kelvin Harrison Jr.",
+      "Dacre Montgomery",
+      "Helen Thomson"
+    ]
+  },
+  "scream vi|2023": {
+    "qid": "Q112183099",
+    "directors": [
+      "Matt Bettinelli-Olpin",
+      "Tyler Gillett"
+    ],
+    "cast": [
+      "Melissa Barrera",
+      "Jenna Ortega",
+      "Jasmin Savoy Brown",
+      "Mason Gooding",
+      "Courteney Cox",
+      "Hayden Panettiere",
+      "Jack Champion",
+      "Dermot Mulroney"
+    ]
+  },
+  "heathers|1989": {
+    "qid": "Q1551916",
+    "directors": [
+      "Michael Lehmann"
+    ],
+    "cast": [
+      "Winona Ryder",
+      "Christian Slater",
+      "Shannen Doherty",
+      "Kim Walker",
+      "Lisanne Falk",
+      "Patrick Labyorteaux",
+      "Jennifer Rhodes",
+      "Glenn Shadix"
+    ]
+  },
+  "minari|2020": {
+    "qid": "Q65679599",
+    "directors": [
+      "Lee Isaac Chung"
+    ],
+    "cast": [
+      "Steven Yeun",
+      "Han Ye-ri",
+      "Youn Yuh-jung",
+      "Will Patton",
+      "Alan S. Kim"
+    ]
+  },
+  "a good person|2023": {
+    "qid": "Q109284181",
+    "directors": [
+      "Zach Braff"
+    ],
+    "cast": [
+      "Florence Pugh",
+      "Morgan Freeman",
+      "Molly Shannon",
+      "Celeste O'Connor",
+      "Zoe Lister-Jones",
+      "Chinaza Uche"
+    ]
+  },
+  "god's creatures|2022": {
+    "qid": "Q106982237",
+    "directors": [
+      "Anna Rose Holmer",
+      "Genevi\u00e8ve Lefebvre"
+    ],
+    "cast": [
+      "Emily Watson",
+      "Paul Mescal",
+      "Aisling Franciosi"
+    ]
+  },
+  "suzume|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "guardians of the galaxy vol. 3|2023": {
+    "qid": "Q29226331",
+    "directors": [
+      "James Gunn"
+    ],
+    "cast": [
+      "Chris Pratt",
+      "Zoe Sandalia",
+      "Dave Bautista",
+      "Karen Gillan",
+      "Pom Klementieff",
+      "Vin Diesel",
+      "Bradley Cooper",
+      "Will Poulter"
+    ]
+  },
+  "scrooge: a christmas carol|2022": {
+    "qid": "Q115091011",
+    "directors": [],
+    "cast": []
+  },
+  "asteroid city|2023": {
+    "qid": "Q108086029",
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cast": [
+      "Bryan Cranston",
+      "Jason Schwartzman",
+      "Scarlett Johansson",
+      "Rupert Friend",
+      "Hope Davis",
+      "Liev Schreiber",
+      "Tom Hanks",
+      "Tilda Swinton"
+    ]
+  },
+  "spirited away|2001": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "elemental|2023": {
+    "qid": "Q112801489",
+    "directors": [
+      "Peter Sohn"
+    ],
+    "cast": []
+  },
+  "nimona|2023": {
+    "qid": "Q111165179",
+    "directors": [
+      "Nick Bruno",
+      "Troy Quane"
+    ],
+    "cast": []
+  },
+  "oppenheimer|2023": {
+    "qid": "Q108839994",
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "cast": [
+      "Cillian Murphy",
+      "Robert Downey Jr.",
+      "Matt Damon",
+      "Emily Blunt",
+      "Florence Pugh",
+      "Rami Malek",
+      "Benny Safdie",
+      "Josh Hartnett"
+    ]
+  },
+  "the darjeeling limited|2007": {
+    "qid": "Q658944",
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cast": [
+      "Owen Wilson",
+      "Adrien Brody",
+      "Anjelica Huston",
+      "Jason Schwartzman",
+      "Natalie Portman",
+      "Waris Ahluwalia",
+      "Irrfan Khan",
+      "Barbet Schroeder"
+    ]
+  },
+  "(500) days of summer|2009": {
+    "qid": "Q154935",
+    "directors": [
+      "Marc Webb"
+    ],
+    "cast": [
+      "Joseph Gordon-Levitt",
+      "Geoffrey Arend",
+      "Chlo\u00eb Grace Moretz",
+      "Matthew Gray Gubler",
+      "Clark Gregg",
+      "Patricia Belcher",
+      "Minka Kelly"
+    ]
+  },
+  "taylor swift: the eras tour|2023": {
+    "qid": "Q122160859",
+    "directors": [
+      "Sam Wrench"
+    ],
+    "cast": []
+  },
+  "halloween|1978": {
+    "qid": "Q221103",
+    "directors": [
+      "John Carpenter"
+    ],
+    "cast": [
+      "Donald Pleasence",
+      "Jamie Lee Curtis",
+      "P. J. Soles",
+      "Nancy Kyes",
+      "Nick Castle",
+      "Charles Cyphers",
+      "Arthur Malet",
+      "Tony Moran"
+    ]
+  },
+  "five nights at freddy's|2023": {
+    "qid": "Q21512706",
+    "directors": [
+      "Emma Tammi"
+    ],
+    "cast": [
+      "Josh Hutcherson",
+      "Elizabeth Lail",
+      "Mary Stuart Masterson",
+      "Matthew Lillard",
+      "Piper Rubio",
+      "MatPat",
+      "CoryxKenshin",
+      "Theodus Crane"
+    ]
+  },
+  "the fabelmans|2022": {
+    "qid": "Q107710009",
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "Michelle Williams",
+      "Seth Rogen",
+      "Paul Dano",
+      "Julia Butters",
+      "Oakes Fegley",
+      "Jeannie Berlin",
+      "Judd Hirsch",
+      "Robin Bartlett"
+    ]
+  },
+  "saltburn|2023": {
+    "qid": "Q113135527",
+    "directors": [
+      "Emerald Fennell"
+    ],
+    "cast": [
+      "Barry Keoghan",
+      "Jacob Elordi",
+      "Rosamund Pike",
+      "Richard E. Grant",
+      "Carey Mulligan",
+      "Ewan Mitchell",
+      "Alison Oliver",
+      "Archie Madekwe"
+    ]
+  },
+  "1917|2019": {
+    "qid": "Q62721520",
+    "directors": [
+      "Sam Mendes"
+    ],
+    "cast": [
+      "George MacKay",
+      "Dean-Charles Chapman",
+      "Benedict Cumberbatch",
+      "Colin Firth",
+      "Mark Strong",
+      "Richard Madden",
+      "Andrew Scott",
+      "Adrian Scarborough"
+    ]
+  },
+  "wonka|2023": {
+    "qid": "Q108456719",
+    "directors": [
+      "Paul King"
+    ],
+    "cast": [
+      "Timoth\u00e9e Chalamet",
+      "Gustave Die",
+      "Murray McArthur",
+      "Paul G. Raymond",
+      "Bertie Caplan",
+      "Isy Suttie",
+      "Kobna Holdbrook-Smith",
+      "Tom Davis"
+    ]
+  },
+  "the muppet christmas carol|1992": {
+    "qid": "Q714721",
+    "directors": [
+      "Brian Henson"
+    ],
+    "cast": [
+      "Michael Caine",
+      "Steven Mackintosh",
+      "Dave Goelz",
+      "Jerry Nelson",
+      "Frank Oz",
+      "David Rudman",
+      "Steve Whitmire",
+      "Ed Sanders"
+    ]
+  },
+  "planes, trains and automobiles|1987": {
+    "qid": "Q736788",
+    "directors": [
+      "John Hughes"
+    ],
+    "cast": [
+      "Steve Martin",
+      "John Candy",
+      "Laila Robins",
+      "Michael McKean",
+      "Kevin Bacon",
+      "Dylan Baker",
+      "Larry Hankin",
+      "Richard Herd"
+    ]
+  },
+  "the boy and the heron|2023": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "scott pilgrim vs. the world|2010": {
+    "qid": "Q753899",
+    "directors": [
+      "Edgar Wright"
+    ],
+    "cast": [
+      "Michael Cera",
+      "Mary Elizabeth Winstead",
+      "Kieran Culkin",
+      "Chris Evans",
+      "Anna Kendrick",
+      "Alison Pill",
+      "Brandon Routh",
+      "Jason Schwartzman"
+    ]
+  },
+  "m3gan|2022": {
+    "qid": "Q110661062",
+    "directors": [
+      "Gerard Johnstone"
+    ],
+    "cast": [
+      "Allison Williams",
+      "Brian Jordan Alvarez",
+      "Lori Dungey",
+      "Amie Donald",
+      "Violet McGraw"
+    ]
+  },
+  "all of us strangers|2023": {
+    "qid": "Q113516747",
+    "directors": [
+      "Andrew Haigh"
+    ],
+    "cast": [
+      "Andrew Scott",
+      "Paul Mescal",
+      "Claire Foy",
+      "Jamie Bell"
+    ]
+  },
+  "upgraded|2024": {
+    "qid": "Q117336418",
+    "directors": [
+      "Carlson Young"
+    ],
+    "cast": [
+      "Camila Mendes",
+      "Archie Renaux",
+      "Lena Olin",
+      "Marisa Tomei",
+      "Anthony Head",
+      "Thomas Kretschmann",
+      "Gr\u00e9gory Montel",
+      "Rachel Matthews"
+    ]
+  },
+  "man up|2015": {
+    "qid": "Q16997268",
+    "directors": [
+      "Ben Palmer"
+    ],
+    "cast": [
+      "Simon Pegg",
+      "Lake Bell",
+      "Olivia Williams",
+      "Rory Kinnear",
+      "Ophelia Lovibond",
+      "Harriet Walter",
+      "Sharon Horgan",
+      "Ken Stott"
+    ]
+  },
+  "orion and the dark|2024": {
+    "qid": "Q119455303",
+    "directors": [
+      "Sean Charmatz"
+    ],
+    "cast": []
+  },
+  "monkeybone|2001": {
+    "qid": "Q1191928",
+    "directors": [
+      "Henry Selick"
+    ],
+    "cast": [
+      "Brendan Fraser",
+      "Bridget Fonda",
+      "Chris Kattan",
+      "Whoopi Goldberg",
+      "Rose McGowan",
+      "Giancarlo Esposito",
+      "John Turturro",
+      "Thomas Haden Church"
+    ]
+  },
+  "the zone of interest|2023": {
+    "qid": "Q115993222",
+    "directors": [
+      "Jonathan Glazer"
+    ],
+    "cast": [
+      "Sandra H\u00fcller",
+      "Christian Friedel",
+      "Ralph Herforth",
+      "Daniel Holzberg",
+      "Sascha Maaz",
+      "Freya Kreutzkam",
+      "Imogen Kogge",
+      "Lilli Falk"
+    ]
+  },
+  "dune|2021": {
+    "qid": "Q60834962",
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cast": [
+      "Timoth\u00e9e Chalamet",
+      "Rebecca Ferguson",
+      "Josh Brolin",
+      "Oscar Isaac",
+      "Jason Momoa",
+      "Javier Bardem",
+      "Dave Bautista",
+      "Zendaya"
+    ]
+  },
+  "dune: part two|2024": {
+    "qid": "Q109228991",
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "cast": [
+      "Timoth\u00e9e Chalamet",
+      "Zendaya",
+      "Rebecca Ferguson",
+      "Javier Bardem",
+      "Stellan Skarsg\u00e5rd",
+      "Florence Pugh",
+      "Christopher Walken",
+      "Josh Brolin"
+    ]
+  },
+  "talk to me|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "the hunger games: the ballad of songbirds & snakes|2023": {
+    "qid": "Q96377121",
+    "directors": [
+      "Francis Lawrence"
+    ],
+    "cast": [
+      "Tom Blyth",
+      "Rachel Zegler",
+      "Hunter Schafer",
+      "Jason Schwartzman",
+      "Peter Dinklage",
+      "Viola Davis",
+      "Burn Gorman",
+      "Fionnula Flanagan"
+    ]
+  },
+  "pearl|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "jingle all the way|1996": {
+    "qid": "Q1064530",
+    "directors": [
+      "Brian Levant"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Sinbad",
+      "Phil Hartman",
+      "Rita Wilson",
+      "Jake Lloyd",
+      "Jim Belushi",
+      "Robert Conrad",
+      "Paul Wight"
+    ]
+  },
+  "godzilla vs. kong|2021": {
+    "qid": "Q56307503",
+    "directors": [
+      "Adam Wingard"
+    ],
+    "cast": [
+      "Alexander Skarsg\u00e5rd",
+      "Millie Bobby Brown",
+      "Eiza Gonzalez",
+      "Rebecca Hall",
+      "Brian Tyree Henry",
+      "Shun Oguri",
+      "Julian Dennison",
+      "Kyle Chandler"
+    ]
+  },
+  "eurovision song contest: the story of fire saga|2020": {
+    "qid": "Q67456281",
+    "directors": [
+      "David Dobkin"
+    ],
+    "cast": [
+      "Will Ferrell",
+      "Rachel McAdams",
+      "Pierce Brosnan",
+      "Dan Stevens",
+      "Demi Lovato",
+      "Melissanthi Mahut",
+      "Mikael Persbrandt",
+      "\u00d3lafur Darri \u00d3lafsson"
+    ]
+  },
+  "immaculate|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "godzilla \u00d7 kong: the new empire|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "wish|2023": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "fifty shades of grey|2015": {
+    "qid": "Q14566553",
+    "directors": [
+      "Sam Taylor-Johnson"
+    ],
+    "cast": [
+      "Dakota Johnson",
+      "Eloise Mumford",
+      "Luke Grimes",
+      "Max Martini",
+      "Dylan Neal",
+      "Marcia Gay Harden",
+      "Rita Ora",
+      "Jennifer Ehle"
+    ]
+  },
+  "get out|2017": {
+    "qid": "Q25136235",
+    "directors": [
+      "Jordan Peele"
+    ],
+    "cast": [
+      "Daniel Kaluuya",
+      "Allison Williams",
+      "Catherine Keener",
+      "Bradley Whitford",
+      "Caleb Landry Jones",
+      "Betty Gabriel",
+      "Stephen Root",
+      "Lil Rel Howery"
+    ]
+  },
+  "the cat in the hat|2003": {
+    "qid": "Q1286387",
+    "directors": [
+      "Bo Welch"
+    ],
+    "cast": [
+      "Mike Myers",
+      "Alec Baldwin",
+      "Kelly Preston",
+      "Dakota Fanning",
+      "Spencer Breslin",
+      "Amy Hill",
+      "Sean Hayes",
+      "Clint Howard"
+    ]
+  },
+  "civil war|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "the first omen|2024": {
+    "qid": "Q117842576",
+    "directors": [
+      "Arkasha Stevenson"
+    ],
+    "cast": [
+      "Nell Tiger Free",
+      "S\u00f4nia Braga",
+      "Ralph Ineson",
+      "Bill Nighy",
+      "Tawfeek Barhom"
+    ]
+  },
+  "fifty shades darker|2017": {
+    "qid": "Q22662385",
+    "directors": [
+      "James Foley"
+    ],
+    "cast": [
+      "Jamie Dornan",
+      "Dakota Johnson"
+    ]
+  },
+  "se7en|1995": {
+    "qid": "Q190908",
+    "directors": [
+      "David Fincher"
+    ],
+    "cast": [
+      "Brad Pitt",
+      "Morgan Freeman",
+      "Gwyneth Paltrow",
+      "Kevin Spacey",
+      "R. Lee Ermey",
+      "John C. McGinley",
+      "Richard Roundtree",
+      "Richard Schiff"
+    ]
+  },
+  "past lives|2023": {
+    "qid": "Q116025865",
+    "directors": [
+      "Celine Song"
+    ],
+    "cast": [
+      "Greta Lee",
+      "Yoo Teo",
+      "John Magaro",
+      "Choi Won-young",
+      "Jonica T. Gibbs"
+    ]
+  },
+  "challengers|2024": {
+    "qid": "Q111458251",
+    "directors": [
+      "Luca Guadagnino"
+    ],
+    "cast": [
+      "Zendaya",
+      "Mike Faist",
+      "Josh O'Connor",
+      "Nada Despotovich",
+      "A.J. Lister",
+      "Hailey Gates"
+    ]
+  },
+  "tenacious d in the pick of destiny|2006": {
+    "qid": "Q667799",
+    "directors": [
+      "Liam Lynch"
+    ],
+    "cast": [
+      "Jack Black",
+      "Kyle Gass",
+      "Tim Robbins",
+      "Ben Stiller",
+      "Colin Hanks",
+      "Amy Poehler",
+      "John C. Reilly",
+      "Dave Grohl"
+    ]
+  },
+  "aliens|1986": {
+    "qid": "Q104814",
+    "directors": [
+      "James Cameron"
+    ],
+    "cast": [
+      "William Hope",
+      "Paul Reiser",
+      "Bill Paxton",
+      "Jenette Goldstein",
+      "Al Matthews",
+      "Mark Rolston",
+      "Ricco Ross",
+      "Colette Hiller"
+    ]
+  },
+  "alien|1979": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "zoolander|2001": {
+    "qid": "Q220192",
+    "directors": [
+      "Ben Stiller"
+    ],
+    "cast": [
+      "Owen Wilson",
+      "Will Ferrell",
+      "Christine Taylor",
+      "Milla Jovovich",
+      "Jerry Stiller",
+      "David Duchovny",
+      "Jon Voight",
+      "Ben Stiller"
+    ]
+  },
+  "spider-man: across the spider-verse|2023": {
+    "qid": "Q76448600",
+    "directors": [
+      "Joaquim Dos Santos",
+      "Kemp Powers",
+      "Justin K. Thompson"
+    ],
+    "cast": []
+  },
+  "the super mario bros. movie|2023": {
+    "qid": "Q108671102",
+    "directors": [
+      "Aaron Horvath",
+      "Michael Jelenic"
+    ],
+    "cast": []
+  },
+  "high school musical|2006": {
+    "qid": "Q53110",
+    "directors": [
+      "Kenny Ortega"
+    ],
+    "cast": [
+      "Corbin Bleu",
+      "Zac Efron",
+      "Vanessa Hudgens",
+      "Ashley Tisdale",
+      "Lucas Grabeel",
+      "Alyson Reed",
+      "Monique Coleman",
+      "Olesya Rulin"
+    ]
+  },
+  "high school musical 2|2007": {
+    "qid": "Q53113",
+    "directors": [
+      "Kenny Ortega"
+    ],
+    "cast": [
+      "Corbin Bleu",
+      "Zac Efron",
+      "Vanessa Hudgens",
+      "Ashley Tisdale",
+      "Lucas Grabeel",
+      "Monique Coleman",
+      "Mark L. Taylor",
+      "Bart Johnson"
+    ]
+  },
+  "predator|1987": {
+    "qid": "Q200804",
+    "directors": [
+      "John McTiernan"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Carl Weathers",
+      "Bill Duke",
+      "Kevin Peter Hall",
+      "Sonny Landham",
+      "Jesse Ventura",
+      "Shane Black",
+      "Elpidia Carrillo"
+    ]
+  },
+  "the phantom of the opera|2004": {
+    "qid": "Q276407",
+    "directors": [],
+    "cast": [
+      "Gerard Butler",
+      "Emmy Rossum",
+      "Patrick Wilson",
+      "Miranda Richardson",
+      "Minnie Driver",
+      "Ciar\u00e1n Hinds",
+      "Simon Callow",
+      "Murray Melvin"
+    ]
+  },
+  "mad max: fury road|2015": {
+    "qid": "Q1757288",
+    "directors": [
+      "George Miller"
+    ],
+    "cast": [
+      "Tom Hardy",
+      "Charlize Theron",
+      "Nicholas Hoult",
+      "Josh Helman",
+      "Nathan Jones",
+      "Zo\u00eb Kravitz",
+      "Rosie Huntington-Whiteley",
+      "Riley Keough"
+    ]
+  },
+  "furiosa: a mad max saga|2024": {
+    "qid": "Q100361125",
+    "directors": [
+      "George Miller"
+    ],
+    "cast": [
+      "Anya Taylor-Joy",
+      "Chris Hemsworth",
+      "Tom Burke",
+      "Nathan Jones",
+      "Angus Sampson",
+      "Daniel Webber",
+      "Lachy Hulme",
+      "John Howard"
+    ]
+  },
+  "barbie|2023": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "the fall guy|2024": {
+    "qid": "Q113671585",
+    "directors": [
+      "David Leitch"
+    ],
+    "cast": [
+      "Ryan Gosling",
+      "Emily Blunt",
+      "Aaron Taylor-Johnson",
+      "Stephanie Hsu",
+      "Winston Duke",
+      "Hannah Waddingham",
+      "Teresa Palmer",
+      "Adam Dunn"
+    ]
+  },
+  "haikyu!! the dumpster battle|2024": {
+    "qid": "Q123354229",
+    "directors": [
+      "Susumu Mitsunaka"
+    ],
+    "cast": []
+  },
+  "godzilla minus one|2023": {
+    "qid": "Q115053037",
+    "directors": [
+      "Takashi Yamazaki"
+    ],
+    "cast": [
+      "Ry\u016bnosuke Kamiki",
+      "Minami Hamabe",
+      "Yuki Yamada",
+      "Munetaka Aoki",
+      "Hidetaka Yoshioka",
+      "Sakura And\u014d",
+      "Kuranosuke Sasaki"
+    ]
+  },
+  "hit man|2023": {
+    "qid": "Q114437078",
+    "directors": [
+      "Richard Linklater"
+    ],
+    "cast": [
+      "Glen Powell",
+      "Adria Arjona",
+      "Austin Amelio",
+      "Retta",
+      "Molly Bernard"
+    ]
+  },
+  "the black phone|2021": {
+    "qid": "Q105584511",
+    "directors": [
+      "Scott Derrickson"
+    ],
+    "cast": [
+      "Ethan Hawke",
+      "Jeremy Davies",
+      "James Ransone",
+      "E. Roger Mitchell",
+      "Mason Thames",
+      "Madeleine McGraw",
+      "Troy Rudeseal",
+      "Miguel Cazarez Mora"
+    ]
+  },
+  "forrest gump|1994": {
+    "qid": "Q134773",
+    "directors": [
+      "Robert Zemeckis"
+    ],
+    "cast": [
+      "Tom Hanks",
+      "Gary Sinise",
+      "Sally Field",
+      "Robin Wright",
+      "Mykelti Williamson",
+      "Haley Joel Osment",
+      "Hanna R. Hall",
+      "Mary Ellen Trainor"
+    ]
+  },
+  "it|2017": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "a quiet place|2018": {
+    "qid": "Q39070473",
+    "directors": [
+      "John Krasinski"
+    ],
+    "cast": [
+      "Emily Blunt",
+      "John Krasinski",
+      "Millicent Simmonds",
+      "Noah Jupe",
+      "Leon Russom"
+    ]
+  },
+  "a quiet place: day one|2024": {
+    "qid": "Q112183404",
+    "directors": [
+      "Michael Sarnoski"
+    ],
+    "cast": [
+      "Lupita Nyong'o",
+      "Joseph Quinn",
+      "Alex Wolff",
+      "Djimon Hounsou",
+      "Eliane Umuhire"
+    ]
+  },
+  "longlegs|2024": {
+    "qid": "Q116470610",
+    "directors": [
+      "Oz Perkins"
+    ],
+    "cast": [
+      "Maika Monroe",
+      "Nicolas Cage",
+      "Alicia Witt",
+      "Blair Underwood",
+      "Dakota Daulby",
+      "Kiernan Shipka",
+      "Jason Day",
+      "Peter James Bryant"
+    ]
+  },
+  "maxxxine|2024": {
+    "qid": "Q116032682",
+    "directors": [
+      "Ti West"
+    ],
+    "cast": [
+      "Mia Goth"
+    ]
+  },
+  "twisters|2024": {
+    "qid": "Q115932556",
+    "directors": [
+      "Lee Isaac Chung"
+    ],
+    "cast": [
+      "Daisy Edgar-Jones",
+      "Glen Powell",
+      "Anthony Ramos",
+      "Maura Tierney",
+      "Brandon Perea",
+      "Daryl McCormack",
+      "Sasha Lane",
+      "Kiernan Shipka"
+    ]
+  },
+  "high school musical 3: senior year|2008": {
+    "qid": "Q53115",
+    "directors": [
+      "Kenny Ortega"
+    ],
+    "cast": [
+      "Zac Efron",
+      "Vanessa Hudgens",
+      "Ashley Tisdale",
+      "Lucas Grabeel",
+      "Corbin Bleu",
+      "Monique Coleman",
+      "Alyson Reed",
+      "Bart Johnson"
+    ]
+  },
+  "avp: alien vs. predator|2004": {
+    "qid": "Q155163",
+    "directors": [
+      "Paul W. S. Anderson"
+    ],
+    "cast": [
+      "Sanaa Lathan",
+      "Lance Henriksen",
+      "Raoul Bova",
+      "Ewen Bremner",
+      "Colin Salmon",
+      "Tommy Flanagan",
+      "Agathe de La Boulaye",
+      "Carsten Norgaard"
+    ]
+  },
+  "alien\u00b3|1992": {
+    "qid": "Q108543",
+    "directors": [
+      "David Fincher"
+    ],
+    "cast": [
+      "Sigourney Weaver",
+      "Charles S. Dutton",
+      "Charles Dance",
+      "Brian Glover",
+      "Ralph Brown",
+      "Paul McGann",
+      "Danny Webb",
+      "Pete Postlethwaite"
+    ]
+  },
+  "sleep|2023": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "anyone but you|2023": {
+    "qid": "Q118405167",
+    "directors": [],
+    "cast": [
+      "Sydney Sweeney",
+      "Glen Powell",
+      "Alexandra Shipp",
+      "Michelle Hurd",
+      "Bryan Brown",
+      "Darren Barnet",
+      "Hadley Robinson",
+      "Dermot Mulroney"
+    ]
+  },
+  "about time|2013": {
+    "qid": "Q4668586",
+    "directors": [
+      "Richard Curtis"
+    ],
+    "cast": [
+      "Domhnall Gleeson",
+      "Ben Benson",
+      "Bill Nighy",
+      "Lindsay Duncan",
+      "Lisa Eichhorn",
+      "Margot Robbie",
+      "Philip Voss"
+    ]
+  },
+  "howl's moving castle|2004": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "teenage mutant ninja turtles: mutant mayhem|2023": {
+    "qid": "Q110271518",
+    "directors": [
+      "Jeff Rowe"
+    ],
+    "cast": []
+  },
+  "the proposal|2009": {
+    "qid": "Q108586",
+    "directors": [
+      "Anne Fletcher"
+    ],
+    "cast": [
+      "Sandra Bullock",
+      "Ryan Reynolds",
+      "Betty White",
+      "Mary Steenburgen",
+      "Craig T. Nelson",
+      "Aasif Mandvi",
+      "Denis O'Hare",
+      "Malin Akerman"
+    ]
+  },
+  "deadpool & wolverine|2024": {
+    "qid": "Q102180106",
+    "directors": [
+      "Shawn Levy"
+    ],
+    "cast": [
+      "Ryan Reynolds",
+      "Hugh Jackman",
+      "Morena Baccarin",
+      "Jennifer Garner",
+      "Peggy",
+      "Matthew Macfadyen",
+      "Emma Corrin",
+      "Rob Delaney"
+    ]
+  },
+  "alien resurrection|1997": {
+    "qid": "Q458314",
+    "directors": [
+      "Jean-Pierre Jeunet"
+    ],
+    "cast": [
+      "Sigourney Weaver",
+      "Winona Ryder",
+      "Ron Perlman",
+      "Dominique Pinon",
+      "Gary Dourdan",
+      "Michael Wincott",
+      "Brad Dourif",
+      "Leland Orser"
+    ]
+  },
+  "i saw the tv glow|2024": {
+    "qid": "Q113903713",
+    "directors": [
+      "Jane Schoenbrun"
+    ],
+    "cast": [
+      "Justice Smith",
+      "Jack Haven",
+      "Ian Foreman",
+      "Helena Howard",
+      "Danielle Deadwyler",
+      "Amber Benson",
+      "Mike Maronna",
+      "Conner O'Malley"
+    ]
+  },
+  "prometheus|2012": {
+    "qid": "Q192686",
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cast": [
+      "Noomi Rapace",
+      "Michael Fassbender",
+      "Guy Pearce",
+      "Idris Elba",
+      "Logan Marshall-Green",
+      "Charlize Theron",
+      "Rafe Spall",
+      "Patrick Wilson"
+    ]
+  },
+  "alien: covenant|2017": {
+    "qid": "Q20430699",
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cast": [
+      "Michael Fassbender",
+      "Katherine Waterston",
+      "Danny McBride",
+      "Billy Crudup",
+      "Demi\u00e1n Bichir",
+      "Carmen Ejogo",
+      "Amy Seimetz",
+      "Jussie Smollett"
+    ]
+  },
+  "alien: romulus|2024": {
+    "qid": "Q115932544",
+    "directors": [
+      "Fede \u00c1lvarez"
+    ],
+    "cast": [
+      "Cailee Spaeny",
+      "Isabela Merced",
+      "David Jonsson",
+      "Archie Renaux",
+      "Spike Fearn",
+      "Aileen Wu"
+    ]
+  },
+  "point break|1991": {
+    "qid": "Q1146552",
+    "directors": [
+      "Kathryn Bigelow"
+    ],
+    "cast": [
+      "Patrick Swayze",
+      "Keanu Reeves",
+      "Gary Busey",
+      "Lori Petty",
+      "John C. McGinley",
+      "James LeGros",
+      "Tom Sizemore",
+      "Anthony Kiedis"
+    ]
+  },
+  "the help|2011": {
+    "qid": "Q204374",
+    "directors": [
+      "Tate Taylor"
+    ],
+    "cast": [
+      "Viola Davis",
+      "Bryce Dallas Howard",
+      "Octavia Spencer",
+      "Jessica Chastain",
+      "Ahna O'Reilly",
+      "Chris Lowell",
+      "Sissy Spacek",
+      "Mike Vogel"
+    ]
+  },
+  "guillermo del toro's pinocchio|2022": {
+    "qid": "Q73895818",
+    "directors": [
+      "Guillermo del Toro",
+      "Mark Gustafson"
+    ],
+    "cast": []
+  },
+  "prey|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "my neighbor totoro|1988": {
+    "qid": "Q39571",
+    "directors": [
+      "Hayao Miyazaki"
+    ],
+    "cast": []
+  },
+  "shanghai knights|2003": {
+    "qid": "Q595595",
+    "directors": [
+      "David Dobkin"
+    ],
+    "cast": [
+      "Jackie Chan",
+      "Owen Wilson",
+      "Donnie Yen",
+      "Fann Wong",
+      "Aidan Gillen",
+      "Aaron Taylor-Johnson",
+      "Gemma Jones",
+      "Tom Fisher"
+    ]
+  },
+  "cuckoo|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "smile|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "frozen|2013": {
+    "qid": "Q246283",
+    "directors": [
+      "Chris Buck",
+      "Jennifer Lee"
+    ],
+    "cast": []
+  },
+  "lisa frankenstein|2024": {
+    "qid": "Q113677881",
+    "directors": [
+      "Zelda Williams"
+    ],
+    "cast": [
+      "Kathryn Newton",
+      "Cole Sprouse",
+      "Carla Gugino",
+      "Liza Soberano",
+      "Joe Chrest",
+      "Henry Eikenberry",
+      "Paola Andino",
+      "Jenna Davis"
+    ]
+  },
+  "abigail|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "teen titans go! to the movies|2018": {
+    "qid": "Q46392313",
+    "directors": [
+      "Aaron Horvath"
+    ],
+    "cast": []
+  },
+  "migration|2023": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "terrifier|2016": {
+    "qid": "Q131358991",
+    "directors": [
+      "Damien Leone"
+    ],
+    "cast": [
+      "Lauren LaVera",
+      "David Howard Thornton",
+      "Elliott Fullam"
+    ]
+  },
+  "good boy|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "terrifier 2|2022": {
+    "qid": "Q101002778",
+    "directors": [
+      "Damien Leone"
+    ],
+    "cast": [
+      "David Howard Thornton",
+      "Lauren LaVera"
+    ]
+  },
+  "speak no evil|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "woman of the hour|2023": {
+    "qid": "Q116257424",
+    "directors": [
+      "Anna Kendrick"
+    ],
+    "cast": [
+      "Anna Kendrick",
+      "Daniel Zovatto",
+      "Nicolette Robinson",
+      "Kathryn Gallagher",
+      "Kelley Jakle",
+      "Tony Hale",
+      "Pete Holmes",
+      "Jedidiah Goodacre"
+    ]
+  },
+  "smile 2|2024": {
+    "qid": "Q123472063",
+    "directors": [
+      "Parker Finn"
+    ],
+    "cast": [
+      "Kyle Gallner",
+      "Naomi Scott",
+      "Lukas Gage",
+      "Rosemarie DeWitt",
+      "Dylan Gelula",
+      "Ra\u00fal Castillo",
+      "Ray Nicholson"
+    ]
+  },
+  "ready or not|2019": {
+    "qid": "Q58815115",
+    "directors": [
+      "Matt Bettinelli-Olpin",
+      "Tyler Gillett"
+    ],
+    "cast": [
+      "Samara Weaving",
+      "Andie MacDowell",
+      "Adam Brody",
+      "Mark O'Brien",
+      "Henry Czerny",
+      "Elyse Levesque",
+      "Ethan Tavares"
+    ]
+  },
+  "it's what's inside|2024": {
+    "qid": "Q124093311",
+    "directors": [],
+    "cast": [
+      "Brittany O'Grady",
+      "James Morosini",
+      "Alycia Debnam-Carey",
+      "Devon Terrell",
+      "Gavin Leatherwood",
+      "Nina Bloomgarden",
+      "David W. Thompson",
+      "Madison Davenport"
+    ]
+  },
+  "the exorcist|1973": {
+    "qid": "Q274167",
+    "directors": [
+      "William Friedkin"
+    ],
+    "cast": [
+      "Ellen Burstyn",
+      "Max von Sydow",
+      "Lee J. Cobb",
+      "Kitty Winn",
+      "Jack MacGowran",
+      "Linda Blair",
+      "William O'Malley",
+      "Peter Masterson"
+    ]
+  },
+  "the wild robot|2024": {
+    "qid": "Q124378349",
+    "directors": [
+      "Chris Sanders"
+    ],
+    "cast": []
+  },
+  "the substance|2024": {
+    "qid": "Q113380226",
+    "directors": [
+      "Coralie Fargeat"
+    ],
+    "cast": [
+      "Demi Moore",
+      "Margaret Qualley",
+      "Dennis Quaid",
+      "Hugo Diego Garcia",
+      "Joseph Balderrama",
+      "Christian Erickson",
+      "Oscar Lesage",
+      "Vincent Colombe"
+    ]
+  },
+  "heretic|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "paddington in peru|2024": {
+    "qid": "Q121076570",
+    "directors": [
+      "Dougal Wilson"
+    ],
+    "cast": [
+      "Hugh Bonneville",
+      "Emily Mortimer",
+      "Julie Walters",
+      "Jim Broadbent",
+      "Madeleine Harris",
+      "Samuel Joslin",
+      "Olivia Colman",
+      "Antonio Banderas"
+    ]
+  },
+  "inside out 2|2024": {
+    "qid": "Q113877606",
+    "directors": [
+      "Kelsey Mann"
+    ],
+    "cast": []
+  },
+  "gladiator|2000": {
+    "qid": "Q128518",
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cast": [
+      "Russell Crowe",
+      "Joaquin Phoenix",
+      "Connie Nielsen",
+      "Richard Harris",
+      "Oliver Reed",
+      "Djimon Hounsou",
+      "Derek Jacobi",
+      "Tomas Arana"
+    ]
+  },
+  "wicked|2024": {
+    "qid": "Q24797403",
+    "directors": [
+      "Jon M. Chu"
+    ],
+    "cast": [
+      "Ariana Grande",
+      "Cynthia Erivo",
+      "Jonathan Bailey",
+      "Ethan Slater",
+      "Jeff Goldblum",
+      "Michelle Yeoh",
+      "Bowen Yang",
+      "Bronwyn James"
+    ]
+  },
+  "we live in time|2024": {
+    "qid": "Q117425181",
+    "directors": [
+      "John Crowley"
+    ],
+    "cast": [
+      "Florence Pugh",
+      "Andrew Garfield"
+    ]
+  },
+  "how the grinch stole christmas|2000": {
+    "qid": "Q131864",
+    "directors": [
+      "Ron Howard"
+    ],
+    "cast": [
+      "Jim Carrey",
+      "Taylor Momsen",
+      "Jeffrey Tambor",
+      "Christine Baranski",
+      "Bill Irwin",
+      "Molly Shannon",
+      "Clint Howard",
+      "Josh Ryan Evans"
+    ]
+  },
+  "that christmas|2024": {
+    "qid": "Q112726939",
+    "directors": [
+      "Simon Otto"
+    ],
+    "cast": []
+  },
+  "the holdovers|2023": {
+    "qid": "Q112114745",
+    "directors": [
+      "Alexander Payne"
+    ],
+    "cast": [
+      "Paul Giamatti",
+      "Da'Vine Joy Randolph",
+      "Carrie Preston",
+      "Dominic Sessa"
+    ]
+  },
+  "wallace & gromit: vengeance most fowl|2024": {
+    "qid": "Q126390903",
+    "directors": [
+      "Nick Park",
+      "Merlin Crossingham"
+    ],
+    "cast": []
+  },
+  "conclave|2024": {
+    "qid": "Q116701124",
+    "directors": [
+      "Edward Berger"
+    ],
+    "cast": [
+      "Ralph Fiennes",
+      "John Lithgow",
+      "Stanley Tucci",
+      "Isabella Rossellini",
+      "Lucian Msamati",
+      "Br\u00edan F. O'Byrne",
+      "Sergio Castellitto",
+      "Carlos Diehz"
+    ]
+  },
+  "28 weeks later|2007": {
+    "qid": "Q221102",
+    "directors": [
+      "Juan Carlos Fresnadillo",
+      "Andrew Macdonald",
+      "Danny Boyle"
+    ],
+    "cast": [
+      "Robert Carlyle",
+      "Jeremy Renner",
+      "Catherine McCormack",
+      "Idris Elba",
+      "Rose Byrne",
+      "Harold Perrineau",
+      "Imogen Poots",
+      "Phil Scott"
+    ]
+  },
+  "total recall|1990": {
+    "qid": "Q222018",
+    "directors": [
+      "Paul Verhoeven"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Ronny Cox",
+      "Sharon Stone",
+      "Rachel Ticotin",
+      "Michael Ironside",
+      "Dean Norris",
+      "Marshall Bell",
+      "Debbie Lee Carrington"
+    ]
+  },
+  "thanksgiving|2023": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "nosferatu|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "babygirl|2024": {
+    "qid": "Q123861757",
+    "directors": [
+      "Halina Reijn"
+    ],
+    "cast": [
+      "Nicole Kidman",
+      "Harris Dickinson",
+      "Sophie Wilde",
+      "Antonio Banderas",
+      "Esther McGregor",
+      "John Cenatiempo",
+      "Leslie Silva",
+      "Anoop Desai"
+    ]
+  },
+  "wolf man|2025": {
+    "qid": "Q111464581",
+    "directors": [
+      "Leigh Whannell"
+    ],
+    "cast": [
+      "Christopher Abbott",
+      "Julia Garner",
+      "Matilda Firth",
+      "Sam Jaeger",
+      "Ben Prendergast",
+      "Benedict Hardie",
+      "Milo Cawthorne"
+    ]
+  },
+  "the witch|2015": {
+    "qid": "Q19057481",
+    "directors": [
+      "Robert Eggers"
+    ],
+    "cast": [
+      "Ralph Ineson",
+      "Kate Dickie",
+      "Julian Richings",
+      "Anya Taylor-Joy",
+      "Charlie"
+    ]
+  },
+  "the lighthouse|2019": {
+    "qid": "Q55402791",
+    "directors": [
+      "Robert Eggers"
+    ],
+    "cast": [
+      "Robert Pattinson",
+      "Willem Dafoe"
+    ]
+  },
+  "a real pain|2024": {
+    "qid": "Q123690368",
+    "directors": [
+      "Jesse Eisenberg"
+    ],
+    "cast": [
+      "Jesse Eisenberg",
+      "Kieran Culkin",
+      "Will Sharpe",
+      "Jennifer Grey",
+      "Liza Sadovy",
+      "Kurt Egyiawan",
+      "Daniel Oreskes",
+      "Ellora Torchia"
+    ]
+  },
+  "good time|2017": {
+    "qid": "Q22350752",
+    "directors": [
+      "Benny Safdie",
+      "Josh Safdie"
+    ],
+    "cast": [
+      "Robert Pattinson",
+      "Jennifer Jason Leigh",
+      "Barkhad Abdi",
+      "Soul\u00e9ymane Sy Savan\u00e9",
+      "Rose Gregorio",
+      "Necro",
+      "Benny Safdie"
+    ]
+  },
+  "a complete unknown|2024": {
+    "qid": "Q118175825",
+    "directors": [
+      "James Mangold"
+    ],
+    "cast": [
+      "Timoth\u00e9e Chalamet",
+      "Edward Norton",
+      "Elle Fanning",
+      "Monica Barbaro",
+      "Boyd Holbrook",
+      "Dan Fogler",
+      "Joe Tippett",
+      "Eriko Hatsune"
+    ]
+  },
+  "presence|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "late night with the devil|2023": {
+    "qid": "Q119718080",
+    "directors": [
+      "Cameron Cairnes",
+      "Colin Cairnes"
+    ],
+    "cast": [
+      "David Dastmalchian",
+      "Laura Gordon",
+      "Ian Bliss",
+      "Fayssal Bazzi",
+      "Ingrid Torelli",
+      "Rhys Auteri",
+      "Georgina Haig",
+      "Josh Quong Tart"
+    ]
+  },
+  "companion|2025": {
+    "qid": "Q125933907",
+    "directors": [
+      "Drew Hancock"
+    ],
+    "cast": [
+      "Sophie Thatcher",
+      "Jack Quaid",
+      "Lukas Gage",
+      "Megan Suri",
+      "Harvey Guill\u00e9n",
+      "Rupert Friend",
+      "Jaboukie Young-White",
+      "Matt McCarthy"
+    ]
+  },
+  "bring them down|2024": {
+    "qid": "Q120170496",
+    "directors": [],
+    "cast": [
+      "Christopher Abbott",
+      "Barry Keoghan",
+      "Colm Meaney",
+      "Nora-Jane Noone",
+      "Paul Ready",
+      "Susan Lynch",
+      "Aaron Heffernan"
+    ]
+  },
+  "the monkey|2025": {
+    "qid": "Q124841936",
+    "directors": [
+      "Oz Perkins"
+    ],
+    "cast": [
+      "Theo James",
+      "Christian Convery",
+      "Tatiana Maslany",
+      "Elijah Wood",
+      "Colin O'Brien",
+      "Rohan Campbell",
+      "Sarah Levy",
+      "Adam Scott"
+    ]
+  },
+  "the gorge|2025": {
+    "qid": "Q116971304",
+    "directors": [
+      "Scott Derrickson"
+    ],
+    "cast": [
+      "Miles Teller",
+      "Anya Taylor-Joy",
+      "Sigourney Weaver",
+      "Sope Dirisu",
+      "William Houston",
+      "Kobna Holdbrook-Smith",
+      "James Marlowe",
+      "Julianna Kurokawa"
+    ]
+  },
+  "barbarian|2022": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "anora|2024": {
+    "qid": "Q123185887",
+    "directors": [
+      "Sean Baker"
+    ],
+    "cast": [
+      "Mikey Madison",
+      "Mark Eydelshteyn",
+      "Yura Borisov",
+      "Darya Ekamasova",
+      "Aleksei Serebryakov",
+      "Ivy Wolk",
+      "Luna Sof\u00eda Miranda",
+      "Karren Karagulian"
+    ]
+  },
+  "mickey 17|2025": {
+    "qid": "Q112977213",
+    "directors": [
+      "Bong Joon-ho"
+    ],
+    "cast": [
+      "Robert Pattinson",
+      "Steven Yeun",
+      "Naomi Ackie",
+      "Toni Collette",
+      "Mark Ruffalo",
+      "Holliday Grainger",
+      "Cameron Britton",
+      "Anamaria Vartolomei"
+    ]
+  },
+  "black swan|2010": {
+    "qid": "Q180214",
+    "directors": [
+      "Darren Aronofsky"
+    ],
+    "cast": [
+      "Natalie Portman",
+      "Vincent Cassel",
+      "Barbara Hershey",
+      "Winona Ryder",
+      "Ksenia Solo",
+      "Kristina Anapau",
+      "Benjamin Millepied"
+    ]
+  },
+  "opus|2025": {
+    "qid": "Q123754013",
+    "directors": [
+      "Mark Anthony Green"
+    ],
+    "cast": [
+      "Ayo Edebiri",
+      "John Malkovich",
+      "Juliette Lewis",
+      "Amber Midthunder",
+      "Murray Bartlett",
+      "Young Mazino",
+      "Tatanka Means",
+      "Tony Hale"
+    ]
+  },
+  "final destination|2000": {
+    "qid": "Q7561043",
+    "directors": [
+      "James Wong"
+    ],
+    "cast": [
+      "Devon Sawa",
+      "Ali Larter",
+      "Kerr Smith",
+      "Tony Todd",
+      "Seann William Scott",
+      "Daniel Roebuck",
+      "Roger Guenveur Smith",
+      "Amanda Detmer"
+    ]
+  },
+  "whiplash|2014": {
+    "qid": "Q15648198",
+    "directors": [
+      "Damien Chazelle"
+    ],
+    "cast": [
+      "Austin Stowell",
+      "J. K. Simmons",
+      "Jayson Blair",
+      "Melissa Benoist",
+      "Miles Teller",
+      "Paul Reiser",
+      "Chris Mulkey",
+      "Kofi Siriboe"
+    ]
+  },
+  "flow|2024": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "adolescence|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "ne zha|2019": {
+    "qid": "Q65972529",
+    "directors": [
+      "Jiaozi"
+    ],
+    "cast": []
+  },
+  "ne zha 2|2025": {
+    "qid": "Q131937861",
+    "directors": [
+      "Jiaozi"
+    ],
+    "cast": []
+  },
+  "the northman|2022": {
+    "qid": "Q87126244",
+    "directors": [
+      "Robert Eggers"
+    ],
+    "cast": [
+      "Alexander Skarsg\u00e5rd",
+      "Nicole Kidman",
+      "Willem Dafoe",
+      "Anya Taylor-Joy",
+      "Ethan Hawke",
+      "Bj\u00f6rk",
+      "Kate Dickie"
+    ]
+  },
+  "forgetting sarah marshall|2008": {
+    "qid": "Q201379",
+    "directors": [
+      "Nicholas Stoller"
+    ],
+    "cast": [
+      "Jason Segel",
+      "Kristen Bell",
+      "Bill Hader",
+      "Maria Thayer",
+      "Jack McBrayer",
+      "Steve Landesberg"
+    ]
+  },
+  "sinners|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "six: the musical live!|2025": {
+    "qid": "Q140428462",
+    "directors": [],
+    "cast": []
+  },
+  "let the right one in|2008": {
+    "qid": "Q144756",
+    "directors": [
+      "Tomas Alfredson"
+    ],
+    "cast": [
+      "K\u00e5re Hedebrant",
+      "Lina Leandersson",
+      "Henrik Dahl",
+      "Per Ragnar",
+      "Elif Ceylan",
+      "Peter Carlberg",
+      "Ika Nord",
+      "Mikael Rahm"
+    ]
+  },
+  "until dawn|2025": {
+    "qid": "Q128602012",
+    "directors": [
+      "David F. Sandberg"
+    ],
+    "cast": [
+      "Peter Stormare",
+      "Ella Rubin",
+      "Michael Cimino",
+      "Ji-young Yoo",
+      "Odessa A'zion",
+      "Maia Mitchell",
+      "Belmont Cameli"
+    ]
+  },
+  "thunderbolts*|2025": {
+    "qid": "Q112322474",
+    "directors": [
+      "Jake Schreier"
+    ],
+    "cast": [
+      "Julia Louis-Dreyfus",
+      "Olga Kurylenko",
+      "Wyatt Russell",
+      "David Harbour",
+      "Hannah John-Kamen",
+      "Sebastian Stan",
+      "Florence Pugh",
+      "Lewis Pullman"
+    ]
+  },
+  "lilo & stitch|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "mission: impossible \u2013 the final reckoning|2025": {
+    "qid": "Q61876374",
+    "directors": [
+      "Christopher McQuarrie"
+    ],
+    "cast": [
+      "Tom Cruise",
+      "Simon Pegg",
+      "Hayley Atwell",
+      "Ving Rhames",
+      "Esai Morales",
+      "Pom Klementieff",
+      "Mariela Garriga",
+      "Henry Czerny"
+    ]
+  },
+  "the phoenician scheme|2025": {
+    "qid": "Q124758337",
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cast": [
+      "Benicio del Toro",
+      "Michael Cera",
+      "Bill Murray",
+      "Scarlett Johansson",
+      "Mia Threapleton",
+      "Tom Hanks",
+      "Bryan Cranston",
+      "Riz Ahmed"
+    ]
+  },
+  "lilo & stitch 2: stitch has a glitch|2005": {
+    "qid": "Q1122127",
+    "directors": [
+      "Tony Leondis",
+      "Michael LaBash"
+    ],
+    "cast": []
+  },
+  "final destination bloodlines|2025": {
+    "qid": "Q118212751",
+    "directors": [
+      "Zach Lipovsky",
+      "Adam Stein"
+    ],
+    "cast": [
+      "Kaitlyn Santa Juana",
+      "Teo Briones",
+      "Richard Harmon",
+      "Owen Joyner",
+      "Rya Kihlstedt",
+      "Brec Bassinger",
+      "Tony Todd",
+      "Anna Lore"
+    ]
+  },
+  "karate kid: legends|2025": {
+    "qid": "Q124246470",
+    "directors": [
+      "Jonathan Entwistle"
+    ],
+    "cast": [
+      "Jackie Chan",
+      "Ralph Macchio",
+      "Sadie Stanley",
+      "Ming-Na Wen",
+      "Joshua Jackson",
+      "Ben Wang",
+      "Aramis Knight",
+      "Wyatt Oleff"
+    ]
+  },
+  "terminator: dark fate|2019": {
+    "qid": "Q39072454",
+    "directors": [
+      "Tim Miller"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Linda Hamilton",
+      "Mackenzie Davis",
+      "Natalia Reyes",
+      "Gabriel Luna",
+      "Tom Hopper",
+      "Brett Azar"
+    ]
+  },
+  "how to train your dragon|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "camp rock|2008": {
+    "qid": "Q217250",
+    "directors": [
+      "Matthew Diamond"
+    ],
+    "cast": [
+      "Demi Lovato",
+      "Joe Jonas",
+      "Meaghan Jette Martin",
+      "Maria Canals-Barrera",
+      "Alyson Stoner",
+      "Daniel Fathers",
+      "Jordan Francis",
+      "Roshon Fegan"
+    ]
+  },
+  "28 days later|2002": {
+    "qid": "Q221075",
+    "directors": [
+      "Danny Boyle"
+    ],
+    "cast": [
+      "Cillian Murphy",
+      "Naomie Harris",
+      "Christopher Eccleston",
+      "Megan Burns",
+      "Brendan Gleeson",
+      "Bindu De Stoppani",
+      "David Schneider",
+      "Leo Bill"
+    ]
+  },
+  "clown in a cornfield|2025": {
+    "qid": "Q127619022",
+    "directors": [
+      "Eli Craig"
+    ],
+    "cast": [
+      "Katie Douglas",
+      "Aaron Abrams",
+      "Carson MacCormac",
+      "Kevin Durand",
+      "Will Sasso"
+    ]
+  },
+  "predator: killer of killers|2025": {
+    "qid": "Q130639284",
+    "directors": [
+      "Dan Trachtenberg",
+      "Joshua Wassung"
+    ],
+    "cast": []
+  },
+  "warfare|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "28 years later|2025": {
+    "qid": "Q125392328",
+    "directors": [
+      "Danny Boyle"
+    ],
+    "cast": [
+      "Alfie Williams",
+      "Jodie Comer",
+      "Aaron Taylor-Johnson",
+      "Ralph Fiennes",
+      "Jack O'Connell",
+      "Erin Kellyman",
+      "Edvin Ryding",
+      "Emma Laird"
+    ]
+  },
+  "f1|2025": {
+    "qid": "Q114246242",
+    "directors": [
+      "Joseph Kosinski"
+    ],
+    "cast": [
+      "Brad Pitt",
+      "Damson Idris",
+      "Kerry Condon",
+      "Javier Bardem",
+      "Samson Kayo",
+      "Joseph Balderrama"
+    ]
+  },
+  "kpop demon hunters|2025": {
+    "qid": "Q130268157",
+    "directors": [
+      "Chris Appelhans",
+      "Maggie Kang"
+    ],
+    "cast": []
+  },
+  "jurassic world rebirth|2025": {
+    "qid": "Q124380480",
+    "directors": [
+      "Gareth Edwards"
+    ],
+    "cast": [
+      "Jonathan Bailey",
+      "Scarlett Johansson",
+      "Manuel Garcia-Rulfo",
+      "Mahershala Ali",
+      "Rupert Friend",
+      "Luna Blaise",
+      "David Iacono",
+      "Ed Skrein"
+    ]
+  },
+  "m3gan 2.0|2025": {
+    "qid": "Q116258185",
+    "directors": [
+      "Gerard Johnstone"
+    ],
+    "cast": [
+      "Allison Williams",
+      "Violet McGraw",
+      "Amie Donald",
+      "Brian Jordan Alvarez",
+      "Ivanna Sakhno",
+      "Timm Sharp",
+      "Aristotle Athari",
+      "Jemaine Clement"
+    ]
+  },
+  "superman|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "parasite|2019": {
+    "qid": "Q61448040",
+    "directors": [
+      "Bong Joon-ho"
+    ],
+    "cast": [
+      "Song Kang-ho",
+      "Lee Sun-kyun",
+      "Cho Yeo-jeong",
+      "Jang Hye-jin",
+      "Choi Woo-shik",
+      "Park So-dam",
+      "Jung Ziso",
+      "Lee Jung-eun"
+    ]
+  },
+  "fantastic mr. fox|2009": {
+    "qid": "Q465275",
+    "directors": [
+      "Wes Anderson"
+    ],
+    "cast": []
+  },
+  "the hunger games|2012": {
+    "qid": "Q212965",
+    "directors": [
+      "Gary Ross"
+    ],
+    "cast": [
+      "Josh Hutcherson",
+      "Liam Hemsworth",
+      "Woody Harrelson",
+      "Lenny Kravitz",
+      "Stanley Tucci",
+      "Willow Shields",
+      "Isabelle Fuhrman",
+      "Amandla Stenberg"
+    ]
+  },
+  "your name.|2016": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "blackkklansman|2018": {
+    "qid": "Q43370948",
+    "directors": [
+      "Spike Lee"
+    ],
+    "cast": [
+      "John David Washington",
+      "Adam Driver",
+      "Laura Harrier",
+      "Topher Grace",
+      "Corey Hawkins",
+      "Jasper P\u00e4\u00e4kk\u00f6nen",
+      "Paul Walter Hauser",
+      "Ryan Eggold"
+    ]
+  },
+  "beauty and the beast|1991": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "gladiator ii|2024": {
+    "qid": "Q115789958",
+    "directors": [
+      "Ridley Scott"
+    ],
+    "cast": [
+      "Paul Mescal",
+      "Connie Nielsen",
+      "Derek Jacobi",
+      "Denzel Washington",
+      "Joseph Quinn",
+      "Pedro Pascal",
+      "Lior Raz",
+      "Peter Mensah"
+    ]
+  },
+  "bram stoker's dracula|1992": {
+    "qid": "Q107325",
+    "directors": [
+      "Francis Ford Coppola"
+    ],
+    "cast": [
+      "Gary Oldman",
+      "Winona Ryder",
+      "Anthony Hopkins",
+      "Keanu Reeves",
+      "Richard E. Grant",
+      "Cary Elwes",
+      "Billy Campbell",
+      "Sadie Frost"
+    ]
+  },
+  "bring her back|2025": {
+    "qid": "Q127602379",
+    "directors": [
+      "Danny Philippou",
+      "Michael Philippou"
+    ],
+    "cast": [
+      "Sally Hawkins",
+      "Billy Barratt",
+      "Sally-Anne Upton",
+      "Sora Wong"
+    ]
+  },
+  "freaky friday|2003": {
+    "qid": "Q118713",
+    "directors": [
+      "Mark Waters"
+    ],
+    "cast": [
+      "Jamie Lee Curtis",
+      "Lindsay Lohan",
+      "Mark Harmon",
+      "Harold Gould",
+      "Chad Michael Murray",
+      "Stephen Tobolowsky",
+      "Christina Vidal",
+      "Ryan Malgarini"
+    ]
+  },
+  "john tucker must die|2006": {
+    "qid": "Q771023",
+    "directors": [
+      "Betty Thomas"
+    ],
+    "cast": [
+      "Jesse Metcalfe",
+      "Brittany Snow",
+      "Ashanti",
+      "Sophia Bush",
+      "Arielle Kebbel",
+      "Jenny McCarthy",
+      "Penn Badgley",
+      "Taylor Kitsch"
+    ]
+  },
+  "weapons|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "materialists|2025": {
+    "qid": "Q125726790",
+    "directors": [
+      "Celine Song"
+    ],
+    "cast": [
+      "Dakota Johnson",
+      "Chris Evans",
+      "Pedro Pascal",
+      "Marin Ireland",
+      "Dasha Nekrasova",
+      "Louisa Jacobson",
+      "Zo\u00eb Winters",
+      "Eddie Cahill"
+    ]
+  },
+  "together|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "never been kissed|1999": {
+    "qid": "Q463765",
+    "directors": [
+      "Raja Gosnell"
+    ],
+    "cast": [
+      "Drew Barrymore",
+      "David Arquette",
+      "Michael Vartan",
+      "Leelee Sobieski",
+      "Jeremy Jordan",
+      "Molly Shannon",
+      "Garry Marshall",
+      "John C. Reilly"
+    ]
+  },
+  "rush hour|1998": {
+    "qid": "Q255342",
+    "directors": [
+      "Brett Ratner"
+    ],
+    "cast": [
+      "Jackie Chan",
+      "Chris Tucker",
+      "Ken Leung",
+      "Tom Wilkinson",
+      "Elizabeth Pe\u00f1a",
+      "Mark Rolston",
+      "Clifton Powell",
+      "John Hawkes"
+    ]
+  },
+  "minority report|2002": {
+    "qid": "Q244604",
+    "directors": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "Tom Cruise",
+      "Colin Farrell",
+      "Samantha Morton",
+      "Max von Sydow",
+      "Patrick Kilpatrick",
+      "Lois Smith",
+      "Peter Stormare",
+      "Tim Blake Nelson"
+    ]
+  },
+  "freakier friday|2025": {
+    "qid": "Q126897811",
+    "directors": [
+      "Nisha Ganatra"
+    ],
+    "cast": [
+      "Jamie Lee Curtis",
+      "Lindsay Lohan",
+      "Mark Harmon",
+      "Chad Michael Murray",
+      "Christina Vidal",
+      "Haley Hudson",
+      "Ryan Malgarini",
+      "Lucille Soong"
+    ]
+  },
+  "mean girls|2004": {
+    "qid": "Q631103",
+    "directors": [
+      "Mark Waters"
+    ],
+    "cast": [
+      "Lindsay Lohan",
+      "Rachel McAdams",
+      "Lizzy Caplan",
+      "Lacey Chabert",
+      "Amanda Seyfried",
+      "Tina Fey",
+      "Jonathan Bennett",
+      "Tim Meadows"
+    ]
+  },
+  "the roses|2025": {
+    "qid": "Q126810973",
+    "directors": [
+      "Jay Roach"
+    ],
+    "cast": [
+      "Benedict Cumberbatch",
+      "Olivia Colman",
+      "Andy Samberg",
+      "Allison Janney",
+      "Belinda Bromilow",
+      "Sunita Mani",
+      "Ncuti Gatwa",
+      "Jamie Demetriou"
+    ]
+  },
+  "white chicks|2004": {
+    "qid": "Q575848",
+    "directors": [
+      "Keenen Ivory Wayans"
+    ],
+    "cast": [
+      "Shawn Wayans",
+      "Marlon Wayans",
+      "Jaime King",
+      "Frankie Faison",
+      "Lochlyn Munro",
+      "Busy Philipps",
+      "Terry Crews",
+      "John Heard"
+    ]
+  },
+  "spin the bottle|2024": {
+    "qid": "Q131198878",
+    "directors": [
+      "Gavin Wiesen"
+    ],
+    "cast": [
+      "Tanner Stine",
+      "Kaylee Marie Kaneshiro",
+      "Justin Long",
+      "Ali Larter",
+      "Ryan Newman",
+      "Hal Cumpston",
+      "Tony Amendola"
+    ]
+  },
+  "the long walk|2025": {
+    "qid": "Q126511469",
+    "directors": [
+      "Francis Lawrence"
+    ],
+    "cast": [
+      "Cooper Hoffman",
+      "David Jonsson",
+      "Mark Hamill",
+      "Garrett Wareing",
+      "Joshua Odjick",
+      "Charlie Plummer",
+      "Ben Wang",
+      "Roman Griffin Davis"
+    ]
+  },
+  "demon slayer: kimetsu no yaiba infinity castle|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "elio|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "heart eyes|2025": {
+    "qid": "Q127163221",
+    "directors": [
+      "Josh Ruben"
+    ],
+    "cast": [
+      "Olivia Holt",
+      "Mason Gooding",
+      "Jordana Brewster",
+      "Devon Sawa",
+      "Gigi Zumbado",
+      "Michaela Watkins",
+      "Latham Gaines",
+      "Yoson An"
+    ]
+  },
+  "one battle after another|2025": {
+    "qid": "Q117085614",
+    "directors": [
+      "Paul Thomas Anderson"
+    ],
+    "cast": [
+      "Leonardo DiCaprio",
+      "Sean Penn",
+      "Regina Hall",
+      "Alana Haim",
+      "Teyana Taylor",
+      "Wood Harris",
+      "Junglepussy",
+      "Benicio del Toro"
+    ]
+  },
+  "jeepers creepers|2001": {
+    "qid": "Q673902",
+    "directors": [
+      "Victor Salva"
+    ],
+    "cast": [
+      "Gina Philips",
+      "Justin Long",
+      "Jonathan Breck",
+      "Patricia Belcher",
+      "Eileen Brennan",
+      "Brandon Smith"
+    ]
+  },
+  "saw|2004": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "black phone 2|2025": {
+    "qid": "Q124435493",
+    "directors": [
+      "Scott Derrickson"
+    ],
+    "cast": [
+      "Mason Thames",
+      "Madeleine McGraw",
+      "Ethan Hawke",
+      "Jeremy Davies",
+      "Demi\u00e1n Bichir",
+      "Miguel Cazarez Mora",
+      "Arianna Rivas",
+      "Anna Lore"
+    ]
+  },
+  "saw ii|2005": {
+    "qid": "Q270410",
+    "directors": [
+      "Darren Lynn Bouseman"
+    ],
+    "cast": [
+      "Donnie Wahlberg",
+      "Franky G",
+      "Beverley Mitchell",
+      "Dina Meyer",
+      "Emmanuelle Vaugier",
+      "Erik Knudsen",
+      "Shawnee Smith",
+      "Tobin Bell"
+    ]
+  },
+  "saw iii|2006": {
+    "qid": "Q276392",
+    "directors": [
+      "Darren Lynn Bouseman"
+    ],
+    "cast": [
+      "Tobin Bell",
+      "Shawnee Smith",
+      "Angus Macfadyen",
+      "Bahar Soomekh",
+      "Dina Meyer",
+      "Donnie Wahlberg",
+      "Leigh Whannell",
+      "Costas Mandylor"
+    ]
+  },
+  "drag me to hell|2009": {
+    "qid": "Q632737",
+    "directors": [
+      "Sam Raimi"
+    ],
+    "cast": [
+      "Alison Lohman",
+      "Justin Long",
+      "Lorna Raver",
+      "Dileep Rao",
+      "David Paymer",
+      "Adriana Barraza",
+      "Reggie Lee",
+      "Bojana Novakovi\u0107"
+    ]
+  },
+  "friday the 13th|1980": {
+    "qid": "Q1243029",
+    "directors": [
+      "Sean S. Cunningham"
+    ],
+    "cast": [
+      "Betsy Palmer",
+      "Adrienne King",
+      "Kevin Bacon",
+      "Rex Everhart",
+      "Harry Crosby",
+      "Laurie Bartram",
+      "Ari Lehman",
+      "Jeannine Taylor"
+    ]
+  },
+  "scream 2|1997": {
+    "qid": "Q270599",
+    "directors": [
+      "Wes Craven"
+    ],
+    "cast": [
+      "Neve Campbell",
+      "David Arquette",
+      "Courteney Cox",
+      "Jamie Kennedy",
+      "Timothy Olyphant",
+      "Jerry O'Connell",
+      "Liev Schreiber",
+      "Elise Neal"
+    ]
+  },
+  "predator: badlands|2025": {
+    "qid": "Q126396314",
+    "directors": [
+      "Dan Trachtenberg"
+    ],
+    "cast": [
+      "Elle Fanning"
+    ]
+  },
+  "keeper|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "wicked: for good|2025": {
+    "qid": "Q114817050",
+    "directors": [
+      "Jon M. Chu"
+    ],
+    "cast": [
+      "Ariana Grande",
+      "Cynthia Erivo",
+      "Jonathan Bailey",
+      "Ethan Slater",
+      "Jeff Goldblum",
+      "Michelle Yeoh",
+      "Marissa Bode",
+      "Bowen Yang"
+    ]
+  },
+  "robin robin|2021": {
+    "qid": "Q109255839",
+    "directors": [
+      "Michael Please",
+      "Daniel Ojari"
+    ],
+    "cast": []
+  },
+  "the running man|1987": {
+    "qid": "Q1058512",
+    "directors": [
+      "Paul Michael Glaser"
+    ],
+    "cast": [
+      "Arnold Schwarzenegger",
+      "Mar\u00eda Conchita Alonso",
+      "Yaphet Kotto",
+      "Jim Brown",
+      "Jesse Ventura",
+      "Charles Kalani",
+      "Dweezil Zappa",
+      "Richard Dawson"
+    ]
+  },
+  "kill bill: the whole bloody affair|2004": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "zootopia 2|2025": {
+    "qid": "Q116764712",
+    "directors": [
+      "Jared Bush",
+      "Byron Howard"
+    ],
+    "cast": []
+  },
+  "frankenstein|2025": {
+    "qid": "Q124393045",
+    "directors": [
+      "Guillermo del Toro"
+    ],
+    "cast": [
+      "Oscar Isaac",
+      "Jacob Elordi",
+      "Mia Goth",
+      "Christoph Waltz",
+      "Charles Dance",
+      "David Bradley",
+      "Christian Convery"
+    ]
+  },
+  "taylor swift | the eras tour | the final show|2025": {
+    "qid": "Q137452931",
+    "directors": [],
+    "cast": []
+  },
+  "silent night, deadly night|2025": {
+    "qid": "Q134386480",
+    "directors": [],
+    "cast": [
+      "Rohan Campbell",
+      "Ruby Modine",
+      "Mark Acheson"
+    ]
+  },
+  "wake up dead man|2025": {
+    "qid": "Q115931717",
+    "directors": [
+      "Rian Johnson"
+    ],
+    "cast": [
+      "Daniel Craig",
+      "Josh O'Connor",
+      "Glenn Close",
+      "Josh Brolin",
+      "Jeremy Renner",
+      "Kerry Washington",
+      "Andrew Scott"
+    ]
+  },
+  "the shining|1980": {
+    "qid": "Q186341",
+    "directors": [
+      "Stanley Kubrick"
+    ],
+    "cast": [
+      "Jack Nicholson",
+      "Shelley Duvall",
+      "Danny Lloyd",
+      "Scatman Crothers",
+      "Barry Nelson",
+      "Philip Stone",
+      "Joe Turkel",
+      "Tony Burton"
+    ]
+  },
+  "falling for christmas|2022": {
+    "qid": "Q111165344",
+    "directors": [
+      "Janeen Damian"
+    ],
+    "cast": [
+      "Lindsay Lohan",
+      "Chord Overstreet",
+      "George Young",
+      "Jack Wagner",
+      "Ali Lohan"
+    ]
+  },
+  "a very jonas christmas movie|2025": {
+    "qid": "Q133502685",
+    "directors": [
+      "Jessica Yu"
+    ],
+    "cast": [
+      "Kevin Jonas",
+      "Joe Jonas",
+      "Nick Jonas",
+      "Priyanka Chopra",
+      "Danielle Jonas",
+      "Chloe Bennet",
+      "Billie Lourd",
+      "Laverne Cox"
+    ]
+  },
+  "stranger things 5: the finale|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "marty supreme|2025": {
+    "qid": "Q130118681",
+    "directors": [
+      "Josh Safdie"
+    ],
+    "cast": [
+      "Timoth\u00e9e Chalamet",
+      "Gwyneth Paltrow",
+      "Tyler, the Creator",
+      "Odessa A'zion",
+      "Penn Jillette",
+      "Kevin O'Leary",
+      "Abel Ferrara",
+      "Fran Drescher"
+    ]
+  },
+  "100 meters|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "mission: impossible|1996": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "sentimental value|2025": {
+    "qid": "Q130284179",
+    "directors": [
+      "Joachim Trier"
+    ],
+    "cast": [
+      "Renate Reinsve",
+      "Stellan Skarsg\u00e5rd",
+      "Elle Fanning",
+      "Inga Ibsdotter Lilleaas",
+      "Cory Michael Smith",
+      "Catherine Cohen",
+      "Anders Danielsen Lie"
+    ]
+  },
+  "hamnet|2025": {
+    "qid": "Q122741016",
+    "directors": [
+      "Chlo\u00e9 Zhao"
+    ],
+    "cast": [
+      "Jessie Buckley",
+      "Paul Mescal",
+      "Joe Alwyn",
+      "Justine Mitchell"
+    ]
+  },
+  "28 years later: the bone temple|2026": {
+    "qid": "Q129423731",
+    "directors": [
+      "Nia DaCosta"
+    ],
+    "cast": [
+      "Alfie Williams",
+      "Aaron Taylor-Johnson",
+      "Jack O'Connell",
+      "Emma Laird",
+      "Erin Kellyman",
+      "Ralph Fiennes",
+      "Cillian Murphy"
+    ]
+  },
+  "rental family|2025": {
+    "qid": "Q124947229",
+    "directors": [
+      "Hikari"
+    ],
+    "cast": [
+      "Brendan Fraser",
+      "Takehiro Hira",
+      "Mari Yamamoto",
+      "Akira Emoto",
+      "Nanami Kawakami"
+    ]
+  },
+  "shin godzilla|2016": {
+    "qid": "Q20899737",
+    "directors": [
+      "Hideaki Anno"
+    ],
+    "cast": [
+      "Hiroki Hasegawa",
+      "Yutaka Takenouchi",
+      "Satomi Ishihara"
+    ]
+  },
+  "no other choice|2025": {
+    "qid": "Q129906152",
+    "directors": [
+      "Park Chan-wook"
+    ],
+    "cast": [
+      "Lee Byung-hun",
+      "Son Ye-jin",
+      "Park Hee-soon",
+      "Lee Sung-min",
+      "Yeom Hye-ran",
+      "Cha Seung-won",
+      "Yoo Yeon-seok"
+    ]
+  },
+  "train dreams|2025": {
+    "qid": "Q126086662",
+    "directors": [
+      "Clint Bentley"
+    ],
+    "cast": [
+      "Joel Edgerton",
+      "Felicity Jones",
+      "Clifton Collins",
+      "Kerry Condon",
+      "William H. Macy",
+      "Paul Schneider",
+      "John Diehl",
+      "Alfred Hsing"
+    ]
+  },
+  "the housemaid|2025": {
+    "qid": "Q131630491",
+    "directors": [
+      "Paul Feig"
+    ],
+    "cast": [
+      "Sydney Sweeney",
+      "Amanda Seyfried",
+      "Brandon Sklenar",
+      "Michele Morrone Algoes",
+      "Elizabeth Perkins",
+      "Megan Ferguson",
+      "Ellen Tamaki"
+    ]
+  },
+  "people we meet on vacation|2026": {
+    "qid": "Q130581843",
+    "directors": [
+      "Brett Haley"
+    ],
+    "cast": [
+      "Emily Bader",
+      "Tom Blyth",
+      "Sarah Catherine Hook",
+      "Jameela Jamil",
+      "Lukas Gage",
+      "Miles Heizer",
+      "Alice Lee"
+    ]
+  },
+  "twilight|2008": {
+    "qid": "Q160071",
+    "directors": [
+      "Catherine Hardwicke"
+    ],
+    "cast": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Peter Facinelli",
+      "Elizabeth Reaser",
+      "Ashley Greene",
+      "Billy Burke",
+      "Taylor Lautner",
+      "Jackson Rathbone"
+    ]
+  },
+  "wuthering heights|2026": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "inglourious basterds|2009": {
+    "qid": "Q153723",
+    "directors": [
+      "Quentin Tarantino"
+    ],
+    "cast": [
+      "Brad Pitt",
+      "Christoph Waltz",
+      "Eli Roth",
+      "Michael Fassbender",
+      "Diane Kruger",
+      "Daniel Br\u00fchl",
+      "Til Schweiger",
+      "M\u00e9lanie Laurent"
+    ]
+  },
+  "whistle|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "king kong|2005": {
+    "qid": "Q160215",
+    "directors": [
+      "Peter Jackson"
+    ],
+    "cast": [
+      "Naomi Watts",
+      "Jack Black",
+      "Adrien Brody",
+      "Thomas Kretschmann",
+      "Colin Hanks",
+      "Jamie Bell",
+      "Kyle Chandler",
+      "Evan Parke"
+    ]
+  },
+  "goat|2026": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "scream 7|2026": {
+    "qid": "Q124758309",
+    "directors": [
+      "Kevin Williamson"
+    ],
+    "cast": [
+      "Neve Campbell",
+      "Isabel May",
+      "Joel McHale",
+      "Courteney Cox",
+      "Jasmin Savoy Brown",
+      "Mason Gooding",
+      "Anna Camp",
+      "Sam Rechner"
+    ]
+  },
+  "if i had legs i'd kick you|2025": {
+    "qid": "Q124450734",
+    "directors": [
+      "Mary Bronstein"
+    ],
+    "cast": [
+      "Rose Byrne",
+      "ASAP Rocky",
+      "Helen Hong",
+      "Conan O'Brien",
+      "Danielle Macdonald",
+      "Ivy Wolk",
+      "Daniel Zolghadri",
+      "Josh Pais"
+    ]
+  },
+  "hoppers|2026": {
+    "qid": "Q128798957",
+    "directors": [
+      "Daniel Chong"
+    ],
+    "cast": []
+  },
+  "cold storage|2026": {
+    "qid": "Q117805784",
+    "directors": [
+      "Jonny Campbell"
+    ],
+    "cast": [
+      "Liam Neeson",
+      "Joe Keery",
+      "Georgina Campbell",
+      "Sosie Bacon",
+      "Lesley Manville",
+      "Darrell D'Silva",
+      "Daniel Rigby",
+      "Rob Collins"
+    ]
+  },
+  "wasteman|2025": {
+    "qid": "Q130979735",
+    "directors": [],
+    "cast": [
+      "Tom Blyth",
+      "David Jonsson",
+      "Alex Hassell",
+      "Neil Linpow"
+    ]
+  },
+  "dolly|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "bugonia|2025": {
+    "qid": "Q125971387",
+    "directors": [
+      "Yorgos Lanthimos"
+    ],
+    "cast": [
+      "Emma Stone",
+      "Jesse Plemons",
+      "Alicia Silverstone",
+      "Aidan Delbis",
+      "Stavros Halkias"
+    ]
+  },
+  "the bride!|2026": {
+    "qid": "Q124735657",
+    "directors": [
+      "Maggie Gyllenhaal"
+    ],
+    "cast": [
+      "Pen\u00e9lope Cruz",
+      "Christian Bale",
+      "Jessie Buckley",
+      "Annette Bening",
+      "Julianne Hough",
+      "Peter Sarsgaard",
+      "John Magaro",
+      "Jeannie Berlin"
+    ]
+  },
+  "project hail mary|2026": {
+    "qid": "Q107105860",
+    "directors": [
+      "Phil Lord",
+      "Christopher Miller"
+    ],
+    "cast": [
+      "Ryan Gosling",
+      "Sandra H\u00fcller",
+      "Milana Vayntrub",
+      "Lionel Boyce",
+      "Ken Leung",
+      "Liz Kingsman",
+      "Orion Lee",
+      "James Ortiz"
+    ]
+  },
+  "ready or not 2: here i come|2026": {
+    "qid": "Q134054683",
+    "directors": [
+      "Matt Bettinelli-Olpin",
+      "Tyler Gillett"
+    ],
+    "cast": [
+      "Samara Weaving",
+      "Kathryn Newton",
+      "Sarah Michelle Gellar",
+      "Kevin Durand",
+      "David Cronenberg",
+      "Elijah Wood",
+      "Shawn Hatosy",
+      "Nestor Carbonell"
+    ]
+  },
+  "the super mario galaxy movie|2026": {
+    "qid": "Q124806421",
+    "directors": [
+      "Aaron Horvath",
+      "Michael Jelenic"
+    ],
+    "cast": []
+  },
+  "the drama|2026": {
+    "qid": "Q130590402",
+    "directors": [
+      "Kristoffer Borgli"
+    ],
+    "cast": [
+      "Robert Pattinson",
+      "Zendaya",
+      "Mamoudou Athie",
+      "Alana Haim",
+      "Hailey Gates"
+    ]
+  },
+  "oldboy|2003": {
+    "qid": "Q475693",
+    "directors": [
+      "Park Chan-wook"
+    ],
+    "cast": [
+      "Choi Min-sik",
+      "Yu Ji-tae",
+      "Kang Hye-jung",
+      "Ji Dae-han",
+      "Oh Tae-kyung",
+      "Yoon Jin-seo",
+      "Oh Dal-su",
+      "Kim Byeong-ok"
+    ]
+  },
+  "lee cronin's the mummy|2026": {
+    "qid": "Q133505340",
+    "directors": [
+      "Lee Cronin"
+    ],
+    "cast": [
+      "Jack Reynor",
+      "Laia Costa",
+      "Veronica Falc\u00f3n",
+      "May Calamawy",
+      "Hayat Kamille"
+    ]
+  },
+  "the devil wears prada|2006": {
+    "qid": "Q223316",
+    "directors": [
+      "David Frankel"
+    ],
+    "cast": [
+      "Emily Blunt",
+      "Stanley Tucci",
+      "Simon Baker",
+      "Adrian Grenier",
+      "Tracie Thoms",
+      "Daniel Sunjata"
+    ]
+  },
+  "resident evil|2002": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "exit 8|2025": {
+    "qid": "Q134480207",
+    "directors": [
+      "Genki Kawamura"
+    ],
+    "cast": [
+      "Kazunari Ninomiya",
+      "Yamato Kouchi",
+      "Nana Komatsu"
+    ]
+  },
+  "mother mary|2026": {
+    "qid": "Q120735817",
+    "directors": [
+      "David Lowery"
+    ],
+    "cast": [
+      "Michaela Coel",
+      "Hunter Schafer",
+      "Kaia Gerber",
+      "Jessica Brown Findlay",
+      "Sian Clifford",
+      "FKA twigs",
+      "Alba Baptista"
+    ]
+  },
+  "regretting you|2025": {
+    "qid": "Q132816896",
+    "directors": [
+      "Josh Boone"
+    ],
+    "cast": [
+      "Allison Williams",
+      "Mckenna Grace",
+      "Dave Franco",
+      "Mason Thames",
+      "Willa Fitzgerald",
+      "Scott Eastwood",
+      "Clancy Brown",
+      "Sam Morelos"
+    ]
+  },
+  "hokum|2026": {
+    "qid": "Q133397105",
+    "directors": [],
+    "cast": [
+      "Adam Scott",
+      "Peter Coonan",
+      "David Wilmot",
+      "Austin Amelio"
+    ]
+  },
+  "the devil wears prada 2|2026": {
+    "qid": "Q134611972",
+    "directors": [
+      "David Frankel"
+    ],
+    "cast": [
+      "Emily Blunt",
+      "Stanley Tucci",
+      "Tracie Thoms",
+      "Tibor Feldman",
+      "Kenneth Branagh",
+      "Simone Ashley"
+    ]
+  },
+  "the sheep detectives|2026": {
+    "qid": "Q126405648",
+    "directors": [
+      "Kyle Balda"
+    ],
+    "cast": [
+      "Hugh Jackman",
+      "Emma Thompson",
+      "Nicholas Braun",
+      "Nicholas Galitzine",
+      "Molly Gordon",
+      "Hong Chau",
+      "Tosin Cole",
+      "Kobna Holdbrook-Smith"
+    ]
+  },
+  "send help|2026": {
+    "qid": "Q132200341",
+    "directors": [
+      "Sam Raimi"
+    ],
+    "cast": [
+      "Rachel McAdams",
+      "Chris Pang",
+      "Dylan O'Brien",
+      "Dennis Haysbert",
+      "Xavier Samuel",
+      "Thaneth Warakulnukroh"
+    ]
+  },
+  "obsession|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "remarkably bright creatures|2026": {
+    "qid": "Q137203795",
+    "directors": [
+      "Olivia Newman"
+    ],
+    "cast": [
+      "Sally Field",
+      "Meghan Heffern",
+      "Lewis Pullman",
+      "Colm Meaney",
+      "Joan Chen",
+      "Kathy Baker",
+      "Beth Grant",
+      "Sofia Black-D'Elia"
+    ]
+  },
+  "[rec]|2007": {
+    "qid": "Q754474",
+    "directors": [
+      "Jaume Balaguer\u00f3",
+      "Paco Plaza"
+    ],
+    "cast": [
+      "Manuela Velasco",
+      "Javier Botet",
+      "Pablo Rosso",
+      "Carlos Lasarte",
+      "Vicente Gil"
+    ]
+  },
+  "backrooms|2026": {
+    "qid": "Q125131076",
+    "directors": [
+      "Kane Parsons"
+    ],
+    "cast": [
+      "Renate Reinsve",
+      "Mark Duplass",
+      "Avan Jogia",
+      "Finn Bennett",
+      "Lukita Maxwell",
+      "Chiwetel Ejiofor",
+      "Robert Bobroczkyi",
+      "Krista Kosonen"
+    ]
+  },
+  "tuner|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "eternity|2025": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "toy story 5|2026": {
+    "qid": "Q113641997",
+    "directors": [
+      "Andrew Stanton"
+    ],
+    "cast": []
+  },
+  "supergirl|2026": {
+    "qid": "Q116921951",
+    "directors": [
+      "Craig Gillespie"
+    ],
+    "cast": [
+      "Milly Alcock",
+      "Matthias Schoenaerts",
+      "Eve Ridley",
+      "David Krumholtz",
+      "Emily Beecham",
+      "Jason Momoa",
+      "Ferdinand Kingsley",
+      "Diarmaid Murtagh"
+    ]
+  },
+  "the silence of the lambs|1991": {
+    "qid": "Q133654",
+    "directors": [
+      "Jonathan Demme"
+    ],
+    "cast": [
+      "Jodie Foster",
+      "Scott Glenn",
+      "Ted Levine",
+      "Charles Napier",
+      "Kasi Lemmons",
+      "Brooke Smith",
+      "Dan Butler",
+      "Diane Baker"
+    ]
+  },
+  "scary movie|2000": {
+    "qid": "Q219424",
+    "directors": [
+      "Keenen Ivory Wayans"
+    ],
+    "cast": [
+      "Anna Faris",
+      "Regina Hall",
+      "Shannon Elizabeth",
+      "Jon Abrahams",
+      "Kurt Fuller",
+      "Carmen Electra",
+      "Lochlyn Munro",
+      "Cheri Oteri"
+    ]
+  },
+  "the invite|2026": {
+    "qid": "Q134083296",
+    "directors": [
+      "Olivia Wilde"
+    ],
+    "cast": [
+      "Seth Rogen",
+      "Pen\u00e9lope Cruz",
+      "Edward Norton",
+      "Olivia Wilde"
+    ]
+  },
+  "evil dead burn|2026": {
+    "qid": "Q132731331",
+    "directors": [
+      "S\u00e9bastien Vani\u010dek"
+    ],
+    "cast": [
+      "Souheila Yacoub",
+      "Hunter Doohan",
+      "Luciane Buchanan",
+      "Tandi Wright",
+      "George Pullar"
+    ]
+  },
+  "the odyssey|2026": {
+    "qid": null,
+    "directors": [],
+    "cast": []
+  },
+  "pulp fiction|1994": {
+    "qid": "Q104123",
+    "directors": [
+      "Quentin Tarantino"
+    ],
+    "cast": [
+      "John Travolta",
+      "Rosanna Arquette",
+      "Uma Thurman",
+      "Samuel L. Jackson",
+      "Christopher Walken",
+      "Harvey Keitel",
+      "Tim Roth"
+    ]
+  },
+  "star wars|1977": {
+    "qid": "Q17738",
+    "directors": [
+      "George Lucas"
+    ],
+    "cast": [
+      "Harrison Ford",
+      "Alec Guinness",
+      "Carrie Fisher",
+      "Mark Hamill",
+      "Peter Cushing",
+      "Peter Mayhew",
+      "David Prowse",
+      "Anthony Daniels"
+    ]
+  },
+  "spider-man: brand new day|2026": {
+    "qid": "Q113244935",
+    "directors": [
+      "Destin Daniel Cretton"
+    ],
+    "cast": [
+      "Tom Holland",
+      "Zendaya",
+      "Jacob Batalon",
+      "Sadie Sink",
+      "Liza Col\u00f3n-Zayas",
+      "Jon Bernthal",
+      "Mark Ruffalo",
+      "Michael Mando"
+    ]
+  }
+}
