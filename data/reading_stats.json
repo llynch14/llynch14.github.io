@@ -26,12 +26,12 @@
     },
     {
       "year": 2026,
-      "count": 23
+      "count": 24
     }
   ],
   "fun": {
-    "total_books": 186,
-    "total_pages": 81547,
+    "total_books": 187,
+    "total_pages": 81913,
     "avg_pages": 438,
     "shortest": {
       "title": "This Winter",
@@ -1036,6 +1036,13 @@
       "pages": 688,
       "read_at": "2026-07-24",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1240256182l/1268479.jpg"
+    },
+    {
+      "title": "People in Love",
+      "author": "Claire Daverley",
+      "pages": 366,
+      "read_at": "2026-08-11",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1779961489l/214936982._SY475_.jpg"
     }
   ]
 }
