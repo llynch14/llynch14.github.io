@@ -14,12 +14,12 @@
     },
     {
       "year": 2026,
-      "count": 57
+      "count": 58
     }
   ],
   "fun": {
-    "total_films": 594,
-    "avg_rating": 3.31,
+    "total_films": 595,
+    "avg_rating": 3.3,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
@@ -3042,6 +3042,13 @@
       "rating": 2.5,
       "watched_at": "2026-08-02",
       "poster": "https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-600-0-900-crop.jpg?v=ebe6beb4fc"
+    },
+    {
+      "title": "Primate",
+      "year": 2025,
+      "rating": 2.0,
+      "watched_at": "2026-08-15",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/0/8/6/1196086-primate-2025-0-600-0-900-crop.jpg?v=a12c6e9ce8"
     }
   ]
 }

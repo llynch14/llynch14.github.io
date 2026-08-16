@@ -4,9 +4,18 @@
     "platinum": 22,
     "gold": 175,
     "silver": 460,
-    "bronze": 2117
+    "bronze": 2122
   },
   "recent": [
+    {
+      "name": "Halo: Campaign Evolved",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR49518_00/b10db9e9-a4a8-4921-80f1-627c3d31c075.png",
+      "earned": 5,
+      "total": 58,
+      "progress": 7,
+      "last_played": "2026-08-15"
+    },
     {
       "name": "LEGO\u00ae Batman\u2122: Legacy of the Dark Knight",
       "platform": "PS5",
@@ -42,15 +51,6 @@
       "total": 27,
       "progress": 100,
       "last_played": "2026-05-16"
-    },
-    {
-      "name": "RESIDENT EVIL 6",
-      "platform": "PS4",
-      "icon": "https://image.api.playstation.com/trophy/np/NPWR10102_00_00793EB25E96D7CA5D14FFE7C74945C73EE481B445/9D80FC549EE275E52D227574A6258C4F8586EBA2.PNG",
-      "earned": 0,
-      "total": 71,
-      "progress": 0,
-      "last_played": "2026-03-28"
     }
   ]
 }

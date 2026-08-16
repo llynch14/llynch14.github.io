@@ -1,5 +1,13 @@
 [
   {
+    "title": "Primate",
+    "year": 2025,
+    "rating": 2.0,
+    "watched_at": "2026-08-15",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/0/8/6/1196086-primate-2025-0-600-0-900-crop.jpg?v=a12c6e9ce8",
+    "url": "https://letterboxd.com/whiteth0rn/film/primate-2025/"
+  },
+  {
     "title": "Spider-Man: Brand New Day",
     "year": 2026,
     "rating": 2.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-07-26",
     "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/9/4/1255394-the-odyssey-2026-0-600-0-900-crop.jpg?v=1eed046d0c",
     "url": "https://letterboxd.com/whiteth0rn/film/the-odyssey-2026/"
-  },
-  {
-    "title": "Evil Dead Burn",
-    "year": 2026,
-    "rating": 1.5,
-    "watched_at": "2026-07-18",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/9/7/0/2/2/1097022-evil-dead-burn-0-600-0-900-crop.jpg?v=398ff82d46",
-    "url": "https://letterboxd.com/whiteth0rn/film/evil-dead-burn/"
   }
 ]
