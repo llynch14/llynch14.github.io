@@ -14,11 +14,11 @@
     },
     {
       "year": 2026,
-      "count": 58
+      "count": 59
     }
   ],
   "fun": {
-    "total_films": 595,
+    "total_films": 596,
     "avg_rating": 3.3,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
@@ -3049,6 +3049,13 @@
       "rating": 2.0,
       "watched_at": "2026-08-15",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/6/0/8/6/1196086-primate-2025-0-600-0-900-crop.jpg?v=a12c6e9ce8"
+    },
+    {
+      "title": "Creep",
+      "year": 2014,
+      "rating": 2.5,
+      "watched_at": "2026-08-15",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/7/4/9/2/8/174928-creep-0-600-0-900-crop.jpg?v=d01c2ba3a8"
     }
   ]
 }
