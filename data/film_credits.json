@@ -5483,5 +5483,36 @@
       "Patrick Brice",
       "Mark Duplass"
     ]
+  },
+  "the end of oak street|2026": {
+    "qid": "Q124804916",
+    "directors": [
+      "David Robert Mitchell"
+    ],
+    "cast": [
+      "Ewan McGregor",
+      "Maisy Stella",
+      "Christian Convery",
+      "Jordan Alexa Davis",
+      "P.J. Byrne",
+      "Hudson Meek",
+      "Anne Gee Byrd"
+    ]
+  },
+  "sunny dancer|2026": {
+    "qid": "Q134540620",
+    "directors": [
+      "George Jaques"
+    ],
+    "cast": [
+      "Bella Ramsey",
+      "Daniel Quinn-Toye",
+      "Ruby Stokes",
+      "Earl Cave",
+      "Conrad Khan",
+      "Jessica Gunning",
+      "James Norton",
+      "Neil Patrick Harris"
+    ]
   }
 }
