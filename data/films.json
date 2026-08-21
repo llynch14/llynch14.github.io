@@ -1,5 +1,13 @@
 [
   {
+    "title": "Camp Rock 3",
+    "year": 2026,
+    "rating": 1.0,
+    "watched_at": "2026-08-19",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/3/7/0/1/1/9/1370119-camp-rock-3-0-600-0-900-crop.jpg?v=96a72cdb63",
+    "url": "https://letterboxd.com/whiteth0rn/film/camp-rock-3/"
+  },
+  {
     "title": "Sunny Dancer",
     "year": 2026,
     "rating": 3.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-08-15",
     "poster": "https://a.ltrbxd.com/resized/film-poster/1/7/4/9/2/8/174928-creep-0-600-0-900-crop.jpg?v=d01c2ba3a8",
     "url": "https://letterboxd.com/whiteth0rn/film/creep-2014/"
-  },
-  {
-    "title": "Spider-Man: Brand New Day",
-    "year": 2026,
-    "rating": 2.5,
-    "watched_at": "2026-08-02",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-600-0-900-crop.jpg?v=ebe6beb4fc",
-    "url": "https://letterboxd.com/whiteth0rn/film/spider-man-brand-new-day/"
   }
 ]
