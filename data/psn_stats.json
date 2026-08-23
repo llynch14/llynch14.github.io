@@ -3,10 +3,19 @@
   "trophies": {
     "platinum": 22,
     "gold": 175,
-    "silver": 460,
-    "bronze": 2130
+    "silver": 463,
+    "bronze": 2133
   },
   "recent": [
+    {
+      "name": "Life is Strange: Double Exposure",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR40463_00/f97491d4-e611-4b1c-bd03-05da0dfa1fcc.png",
+      "earned": 6,
+      "total": 35,
+      "progress": 12,
+      "last_played": "2026-08-22"
+    },
     {
       "name": "Halo: Campaign Evolved",
       "platform": "PS5",
@@ -42,15 +51,6 @@
       "total": 29,
       "progress": 5,
       "last_played": "2026-06-07"
-    },
-    {
-      "name": "Mixtape",
-      "platform": "PS5",
-      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51144_00/e6524e58-009d-4eba-97e5-6df02130b953.png",
-      "earned": 27,
-      "total": 27,
-      "progress": 100,
-      "last_played": "2026-05-16"
     }
   ]
 }

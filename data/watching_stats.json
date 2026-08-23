@@ -14,11 +14,11 @@
     },
     {
       "year": 2026,
-      "count": 62
+      "count": 63
     }
   ],
   "fun": {
-    "total_films": 599,
+    "total_films": 600,
     "avg_rating": 3.29,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
@@ -3077,6 +3077,13 @@
       "rating": 1.0,
       "watched_at": "2026-08-19",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/3/7/0/1/1/9/1370119-camp-rock-3-0-600-0-900-crop.jpg?v=96a72cdb63"
+    },
+    {
+      "title": "The Dink",
+      "year": 2026,
+      "rating": 2.5,
+      "watched_at": "2026-08-20",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/4/9/4/7/5/1249475-the-dink-0-600-0-900-crop.jpg?v=0f00f70cf0"
     }
   ]
 }
