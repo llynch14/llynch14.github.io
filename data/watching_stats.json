@@ -14,12 +14,12 @@
     },
     {
       "year": 2026,
-      "count": 64
+      "count": 65
     }
   ],
   "fun": {
-    "total_films": 601,
-    "avg_rating": 3.29,
+    "total_films": 602,
+    "avg_rating": 3.3,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
@@ -3091,6 +3091,13 @@
       "rating": 4.0,
       "watched_at": "2026-08-23",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/2/3/8/6/7/1123867-teenage-sex-and-death-at-camp-miasma-0-600-0-900-crop.jpg?v=f6059120f8"
+    },
+    {
+      "title": "Tony",
+      "year": 2026,
+      "rating": 4.0,
+      "watched_at": "2026-08-24",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/0/9/0/0/1/1209001-tony-2026-0-600-0-900-crop.jpg?v=63ce7b9234"
     }
   ]
 }
