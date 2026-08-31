@@ -14,11 +14,11 @@
     },
     {
       "year": 2026,
-      "count": 65
+      "count": 67
     }
   ],
   "fun": {
-    "total_films": 602,
+    "total_films": 604,
     "avg_rating": 3.3,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
@@ -3098,6 +3098,20 @@
       "rating": 4.0,
       "watched_at": "2026-08-24",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/0/9/0/0/1/1209001-tony-2026-0-600-0-900-crop.jpg?v=63ce7b9234"
+    },
+    {
+      "title": "Mystery Men",
+      "year": 1999,
+      "rating": 2.5,
+      "watched_at": "2026-08-27",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/6/7/9/0/46790-mystery-men-0-600-0-900-crop.jpg?v=c140c7ee89"
+    },
+    {
+      "title": "Coyote vs. Acme",
+      "year": 2026,
+      "rating": 4.5,
+      "watched_at": "2026-08-30",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/8/9/0/8/8/1089088-coyote-vs-acme-0-600-0-900-crop.jpg?v=735eb10cc7"
     }
   ]
 }

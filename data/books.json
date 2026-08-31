@@ -1,5 +1,13 @@
 [
   {
+    "title": "Elantris",
+    "author": "Brandon Sanderson",
+    "rating": 3,
+    "pages": 638,
+    "read_at": "2026-08-31",
+    "url": "https://www.goodreads.com/book/show/68427"
+  },
+  {
     "title": "People in Love",
     "author": "Claire Daverley",
     "rating": 4,
@@ -70,13 +78,5 @@
     "pages": 345,
     "read_at": "2026-05-14",
     "url": "https://www.goodreads.com/book/show/96177629"
-  },
-  {
-    "title": "Hooked",
-    "author": "Asako Yuzuki",
-    "rating": 3,
-    "pages": 400,
-    "read_at": "2026-05-14",
-    "url": "https://www.goodreads.com/book/show/238969853"
   }
 ]
