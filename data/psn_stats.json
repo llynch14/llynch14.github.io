@@ -8,6 +8,15 @@
   },
   "recent": [
     {
+      "name": "Castle Crashers Trophies",
+      "platform": "PS4",
+      "icon": "https://image.api.playstation.com/trophy/np/NPWR16964_00_002DAD745D835119B5C9F84A5341338F204C466C01/871476D797AC6324C98856DE20C57E0970B16B9B.PNG",
+      "earned": 0,
+      "total": 13,
+      "progress": 0,
+      "last_played": "2026-09-01"
+    },
+    {
       "name": "Gears of War: Reloaded",
       "platform": "PS5",
       "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR39773_00/872ed465-3ae4-42fc-b63e-ded6af3e5e60.png",
@@ -42,15 +51,6 @@
       "total": 31,
       "progress": 17,
       "last_played": "2026-08-29"
-    },
-    {
-      "name": "Halo: Campaign Evolved",
-      "platform": "PS5",
-      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR49518_00/b10db9e9-a4a8-4921-80f1-627c3d31c075.png",
-      "earned": 16,
-      "total": 58,
-      "progress": 22,
-      "last_played": "2026-08-27"
     }
   ]
 }

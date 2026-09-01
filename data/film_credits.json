@@ -5563,5 +5563,36 @@
     "qid": null,
     "directors": [],
     "cast": []
+  },
+  "mystery men|1999": {
+    "qid": "Q1084074",
+    "directors": [
+      "Kinka Usher"
+    ],
+    "cast": [
+      "Hank Azaria",
+      "Claire Forlani",
+      "Janeane Garofalo",
+      "Ben Stiller",
+      "Greg Kinnear",
+      "William H. Macy",
+      "Kel Mitchell"
+    ]
+  },
+  "coyote vs. acme|2026": {
+    "qid": "Q106392679",
+    "directors": [
+      "Dave Green"
+    ],
+    "cast": [
+      "John Cena",
+      "Lana Condor",
+      "Will Forte",
+      "P.J. Byrne",
+      "Tone Bell",
+      "Martha Kelly",
+      "Luis G\u00f3mez",
+      "John Early"
+    ]
   }
 }
