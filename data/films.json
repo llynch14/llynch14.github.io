@@ -1,5 +1,13 @@
 [
   {
+    "title": "Leviticus",
+    "year": 2026,
+    "rating": 4.0,
+    "watched_at": "2026-09-03",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/3/7/6/2/2/1437622-leviticus-2026-0-600-0-900-crop.jpg?v=87cb79b6d2",
+    "url": "https://letterboxd.com/whiteth0rn/film/leviticus-2026/"
+  },
+  {
     "title": "One Night Only",
     "year": 2026,
     "rating": 3.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-08-24",
     "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/0/9/0/0/1/1209001-tony-2026-0-600-0-900-crop.jpg?v=63ce7b9234",
     "url": "https://letterboxd.com/whiteth0rn/film/tony-2026/"
-  },
-  {
-    "title": "Teenage Sex and Death at Camp Miasma",
-    "year": 2026,
-    "rating": 4.0,
-    "watched_at": "2026-08-23",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/2/3/8/6/7/1123867-teenage-sex-and-death-at-camp-miasma-0-600-0-900-crop.jpg?v=f6059120f8",
-    "url": "https://letterboxd.com/whiteth0rn/film/teenage-sex-and-death-at-camp-miasma/"
   }
 ]

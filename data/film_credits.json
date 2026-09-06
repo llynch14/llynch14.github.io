@@ -5599,5 +5599,20 @@
     "qid": null,
     "directors": [],
     "cast": []
+  },
+  "leviticus|2026": {
+    "qid": "Q137557964",
+    "directors": [
+      "Adrian Chiarella"
+    ],
+    "cast": [
+      "Mia Wasikowska",
+      "Ewen Leslie",
+      "Nicholas Hope",
+      "Zahra Newman",
+      "Stacy Clausen",
+      "Shannon Berry",
+      "Tyallah Bullock"
+    ]
   }
 }
