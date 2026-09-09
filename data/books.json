@@ -1,5 +1,13 @@
 [
   {
+    "title": "Thirst Trap",
+    "author": "Gr\u00e1inne O'Hare",
+    "rating": 2,
+    "pages": 288,
+    "read_at": "2026-09-08",
+    "url": "https://www.goodreads.com/book/show/221188099"
+  },
+  {
     "title": "Elantris",
     "author": "Brandon Sanderson",
     "rating": 3,
@@ -70,13 +78,5 @@
     "pages": 592,
     "read_at": "2026-05-15",
     "url": "https://www.goodreads.com/book/show/52331179"
-  },
-  {
-    "title": "Good Material",
-    "author": "Dolly Alderton",
-    "rating": 5,
-    "pages": 345,
-    "read_at": "2026-05-14",
-    "url": "https://www.goodreads.com/book/show/96177629"
   }
 ]

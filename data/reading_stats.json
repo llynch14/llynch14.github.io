@@ -26,13 +26,13 @@
     },
     {
       "year": 2026,
-      "count": 25
+      "count": 26
     }
   ],
   "fun": {
-    "total_books": 188,
-    "total_pages": 82543,
-    "avg_pages": 439,
+    "total_books": 189,
+    "total_pages": 82831,
+    "avg_pages": 438,
     "shortest": {
       "title": "This Winter",
       "pages": 120
@@ -1050,6 +1050,13 @@
       "pages": 638,
       "read_at": "2026-08-31",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475740953l/68427._SY475_.jpg"
+    },
+    {
+      "title": "Thirst Trap",
+      "author": "Gr\u00e1inne O'Hare",
+      "pages": 288,
+      "read_at": "2026-09-08",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1762686530l/221188099._SY475_.jpg"
     }
   ]
 }

@@ -1,5 +1,13 @@
 [
   {
+    "title": "Mystic River",
+    "year": 2003,
+    "rating": 2.5,
+    "watched_at": "2026-09-07",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/7/3/7/51737-mystic-river-0-600-0-900-crop.jpg?v=7c4cbb89ba",
+    "url": "https://letterboxd.com/whiteth0rn/film/mystic-river/"
+  },
+  {
     "title": "Leviticus",
     "year": 2026,
     "rating": 4.0,
@@ -30,13 +38,5 @@
     "watched_at": "2026-08-27",
     "poster": "https://a.ltrbxd.com/resized/film-poster/4/6/7/9/0/46790-mystery-men-0-600-0-900-crop.jpg?v=c140c7ee89",
     "url": "https://letterboxd.com/whiteth0rn/film/mystery-men/"
-  },
-  {
-    "title": "Tony",
-    "year": 2026,
-    "rating": 4.0,
-    "watched_at": "2026-08-24",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/0/9/0/0/1/1209001-tony-2026-0-600-0-900-crop.jpg?v=63ce7b9234",
-    "url": "https://letterboxd.com/whiteth0rn/film/tony-2026/"
   }
 ]

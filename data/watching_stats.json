@@ -14,11 +14,11 @@
     },
     {
       "year": 2026,
-      "count": 69
+      "count": 70
     }
   ],
   "fun": {
-    "total_films": 606,
+    "total_films": 607,
     "avg_rating": 3.3,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
@@ -3126,6 +3126,13 @@
       "rating": 4.0,
       "watched_at": "2026-09-03",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/3/7/6/2/2/1437622-leviticus-2026-0-600-0-900-crop.jpg?v=87cb79b6d2"
+    },
+    {
+      "title": "Mystic River",
+      "year": 2003,
+      "rating": 2.5,
+      "watched_at": "2026-09-07",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/7/3/7/51737-mystic-river-0-600-0-900-crop.jpg?v=7c4cbb89ba"
     }
   ]
 }
