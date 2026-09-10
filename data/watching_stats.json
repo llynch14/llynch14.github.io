@@ -14,11 +14,11 @@
     },
     {
       "year": 2026,
-      "count": 70
+      "count": 71
     }
   ],
   "fun": {
-    "total_films": 607,
+    "total_films": 608,
     "avg_rating": 3.3,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
@@ -3133,6 +3133,13 @@
       "rating": 2.5,
       "watched_at": "2026-09-07",
       "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/7/3/7/51737-mystic-river-0-600-0-900-crop.jpg?v=7c4cbb89ba"
+    },
+    {
+      "title": "Pressure",
+      "year": 2026,
+      "rating": 4.0,
+      "watched_at": "2026-09-09",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/8/9/7/2/1198972-pressure-2026-0-600-0-900-crop.jpg?v=38a01c694d"
     }
   ]
 }
