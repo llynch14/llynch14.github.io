@@ -2,11 +2,20 @@
   "level": 310,
   "trophies": {
     "platinum": 22,
-    "gold": 178,
+    "gold": 179,
     "silver": 482,
     "bronze": 2171
   },
   "recent": [
+    {
+      "name": "Castle Crashers Trophies",
+      "platform": "PS4",
+      "icon": "https://image.api.playstation.com/trophy/np/NPWR16964_00_002DAD745D835119B5C9F84A5341338F204C466C01/871476D797AC6324C98856DE20C57E0970B16B9B.PNG",
+      "earned": 2,
+      "total": 13,
+      "progress": 18,
+      "last_played": "2026-09-11"
+    },
     {
       "name": "Gears of War: Reloaded",
       "platform": "PS5",
@@ -15,15 +24,6 @@
       "total": 57,
       "progress": 31,
       "last_played": "2026-09-08"
-    },
-    {
-      "name": "Castle Crashers Trophies",
-      "platform": "PS4",
-      "icon": "https://image.api.playstation.com/trophy/np/NPWR16964_00_002DAD745D835119B5C9F84A5341338F204C466C01/871476D797AC6324C98856DE20C57E0970B16B9B.PNG",
-      "earned": 1,
-      "total": 13,
-      "progress": 9,
-      "last_played": "2026-09-01"
     },
     {
       "name": "Aliens: Dark Descent",
