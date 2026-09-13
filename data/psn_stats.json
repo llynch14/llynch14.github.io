@@ -1,12 +1,30 @@
 {
-  "level": 310,
+  "level": 311,
   "trophies": {
     "platinum": 22,
     "gold": 179,
-    "silver": 482,
-    "bronze": 2171
+    "silver": 484,
+    "bronze": 2180
   },
   "recent": [
+    {
+      "name": "REANIMAL",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR44742_00/35248b95-b5d8-40e3-b913-b51b3ba02f80.png",
+      "earned": 1,
+      "total": 42,
+      "progress": 2,
+      "last_played": "2026-09-12"
+    },
+    {
+      "name": "Gears of War: Reloaded",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR39773_00/872ed465-3ae4-42fc-b63e-ded6af3e5e60.png",
+      "earned": 32,
+      "total": 57,
+      "progress": 47,
+      "last_played": "2026-09-12"
+    },
     {
       "name": "Castle Crashers Trophies",
       "platform": "PS4",
@@ -15,15 +33,6 @@
       "total": 13,
       "progress": 18,
       "last_played": "2026-09-11"
-    },
-    {
-      "name": "Gears of War: Reloaded",
-      "platform": "PS5",
-      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR39773_00/872ed465-3ae4-42fc-b63e-ded6af3e5e60.png",
-      "earned": 22,
-      "total": 57,
-      "progress": 31,
-      "last_played": "2026-09-08"
     },
     {
       "name": "Aliens: Dark Descent",
@@ -41,15 +50,6 @@
       "earned": 15,
       "total": 33,
       "progress": 25,
-      "last_played": "2026-08-29"
-    },
-    {
-      "name": "The Dark Pictures Anthology: The Devil in Me",
-      "platform": "PS5",
-      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27632_00/46fd048e-4b92-4fbb-94b3-b0277a9a9d38.png",
-      "earned": 7,
-      "total": 31,
-      "progress": 17,
       "last_played": "2026-08-29"
     }
   ]
