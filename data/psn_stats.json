@@ -3,7 +3,7 @@
   "trophies": {
     "platinum": 22,
     "gold": 179,
-    "silver": 484,
+    "silver": 487,
     "bronze": 2180
   },
   "recent": [
@@ -11,10 +11,10 @@
       "name": "REANIMAL",
       "platform": "PS5",
       "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR44742_00/35248b95-b5d8-40e3-b913-b51b3ba02f80.png",
-      "earned": 1,
+      "earned": 4,
       "total": 42,
-      "progress": 2,
-      "last_played": "2026-09-12"
+      "progress": 10,
+      "last_played": "2026-09-13"
     },
     {
       "name": "Gears of War: Reloaded",
