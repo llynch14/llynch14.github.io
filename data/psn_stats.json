@@ -3,10 +3,19 @@
   "trophies": {
     "platinum": 22,
     "gold": 179,
-    "silver": 487,
-    "bronze": 2180
+    "silver": 488,
+    "bronze": 2184
   },
   "recent": [
+    {
+      "name": "Marvel's Wolverine",
+      "platform": "PS5",
+      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR57054_00/128ceb3a-3c51-4547-84f7-8569651067db.png",
+      "earned": 5,
+      "total": 42,
+      "progress": 8,
+      "last_played": "2026-09-15"
+    },
     {
       "name": "REANIMAL",
       "platform": "PS5",
@@ -42,15 +51,6 @@
       "total": 46,
       "progress": 0,
       "last_played": "2026-08-30"
-    },
-    {
-      "name": "\u592a\u9f13\u306e\u9054\u4eba\u30c9\u30f3\u30c0\u30d5\u30eb\u30d5\u30a7\u30b9\u30c6\u30a3\u30d0\u30eb",
-      "platform": "PS5",
-      "icon": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR38143_00/be914131-7642-4ac3-a298-0ab57f68b176.png",
-      "earned": 15,
-      "total": 33,
-      "progress": 25,
-      "last_played": "2026-08-29"
     }
   ]
 }
