@@ -14,12 +14,12 @@
     },
     {
       "year": 2026,
-      "count": 71
+      "count": 74
     }
   ],
   "fun": {
-    "total_films": 608,
-    "avg_rating": 3.3,
+    "total_films": 611,
+    "avg_rating": 3.29,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
@@ -3128,6 +3128,13 @@
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/3/7/6/2/2/1437622-leviticus-2026-0-600-0-900-crop.jpg?v=87cb79b6d2"
     },
     {
+      "title": "Practical Magic",
+      "year": 1998,
+      "rating": 2.5,
+      "watched_at": "2026-09-05",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/8/3/2/2/48322-practical-magic-0-600-0-900-crop.jpg?v=5994b961f2"
+    },
+    {
       "title": "Mystic River",
       "year": 2003,
       "rating": 2.5,
@@ -3140,6 +3147,20 @@
       "rating": 4.0,
       "watched_at": "2026-09-09",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/8/9/7/2/1198972-pressure-2026-0-600-0-900-crop.jpg?v=38a01c694d"
+    },
+    {
+      "title": "Aliens vs Predator: Requiem",
+      "year": 2007,
+      "rating": 1.0,
+      "watched_at": "2026-09-12",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/6/5/5/51655-avpr-aliens-vs-predator-requiem-0-600-0-900-crop.jpg?v=66f95f9f36"
+    },
+    {
+      "title": "Hungry",
+      "year": 2026,
+      "rating": 1.0,
+      "watched_at": "2026-09-12",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/2/6/9/1268269-hungry-2026-1-0-600-0-900-crop.jpg?v=88f08a1e19"
     }
   ]
 }

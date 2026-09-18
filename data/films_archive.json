@@ -702,6 +702,15 @@
     "url": "https://letterboxd.com/whiteth0rn/film/leviticus-2026/"
   },
   {
+    "guid": "letterboxd-watch-1499412292",
+    "title": "Practical Magic",
+    "year": 1998,
+    "rating": 2.5,
+    "watched_at": "2026-09-05",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/4/8/3/2/2/48322-practical-magic-0-600-0-900-crop.jpg?v=5994b961f2",
+    "url": "https://letterboxd.com/whiteth0rn/film/practical-magic/"
+  },
+  {
     "guid": "letterboxd-review-1488523927",
     "title": "Mystic River",
     "year": 2003,
@@ -718,5 +727,23 @@
     "watched_at": "2026-09-09",
     "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/8/9/7/2/1198972-pressure-2026-0-600-0-900-crop.jpg?v=38a01c694d",
     "url": "https://letterboxd.com/whiteth0rn/film/pressure-2026/"
+  },
+  {
+    "guid": "letterboxd-review-1499415638",
+    "title": "Aliens vs Predator: Requiem",
+    "year": 2007,
+    "rating": 1.0,
+    "watched_at": "2026-09-12",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/6/5/5/51655-avpr-aliens-vs-predator-requiem-0-600-0-900-crop.jpg?v=66f95f9f36",
+    "url": "https://letterboxd.com/whiteth0rn/film/aliens-vs-predator-requiem/"
+  },
+  {
+    "guid": "letterboxd-review-1499413407",
+    "title": "Hungry",
+    "year": 2026,
+    "rating": 1.0,
+    "watched_at": "2026-09-12",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/2/6/9/1268269-hungry-2026-1-0-600-0-900-crop.jpg?v=88f08a1e19",
+    "url": "https://letterboxd.com/whiteth0rn/film/hungry-2026-1/"
   }
 ]

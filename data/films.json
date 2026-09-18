@@ -1,5 +1,21 @@
 [
   {
+    "title": "Aliens vs Predator: Requiem",
+    "year": 2007,
+    "rating": 1.0,
+    "watched_at": "2026-09-12",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/6/5/5/51655-avpr-aliens-vs-predator-requiem-0-600-0-900-crop.jpg?v=66f95f9f36",
+    "url": "https://letterboxd.com/whiteth0rn/film/aliens-vs-predator-requiem/"
+  },
+  {
+    "title": "Hungry",
+    "year": 2026,
+    "rating": 1.0,
+    "watched_at": "2026-09-12",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/2/6/9/1268269-hungry-2026-1-0-600-0-900-crop.jpg?v=88f08a1e19",
+    "url": "https://letterboxd.com/whiteth0rn/film/hungry-2026-1/"
+  },
+  {
     "title": "Pressure",
     "year": 2026,
     "rating": 4.0,
@@ -16,27 +32,11 @@
     "url": "https://letterboxd.com/whiteth0rn/film/mystic-river/"
   },
   {
-    "title": "Leviticus",
-    "year": 2026,
-    "rating": 4.0,
-    "watched_at": "2026-09-03",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/4/3/7/6/2/2/1437622-leviticus-2026-0-600-0-900-crop.jpg?v=87cb79b6d2",
-    "url": "https://letterboxd.com/whiteth0rn/film/leviticus-2026/"
-  },
-  {
-    "title": "One Night Only",
-    "year": 2026,
-    "rating": 3.5,
-    "watched_at": "2026-09-01",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/3/1/1/6/7/7/1311677-one-night-only-2026-0-600-0-900-crop.jpg?v=9e18b23e11",
-    "url": "https://letterboxd.com/whiteth0rn/film/one-night-only-2026/"
-  },
-  {
-    "title": "Coyote vs. Acme",
-    "year": 2026,
-    "rating": 4.5,
-    "watched_at": "2026-08-30",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/8/9/0/8/8/1089088-coyote-vs-acme-0-600-0-900-crop.jpg?v=735eb10cc7",
-    "url": "https://letterboxd.com/whiteth0rn/film/coyote-vs-acme/"
+    "title": "Practical Magic",
+    "year": 1998,
+    "rating": 2.5,
+    "watched_at": "2026-09-05",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/4/8/3/2/2/48322-practical-magic-0-600-0-900-crop.jpg?v=5994b961f2",
+    "url": "https://letterboxd.com/whiteth0rn/film/practical-magic/"
   }
 ]
