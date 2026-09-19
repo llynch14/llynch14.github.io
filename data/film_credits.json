@@ -5635,5 +5635,43 @@
     "qid": null,
     "directors": [],
     "cast": []
+  },
+  "practical magic|1998": {
+    "qid": "Q148429",
+    "directors": [
+      "Griffin Dunne"
+    ],
+    "cast": [
+      "Sandra Bullock",
+      "Nicole Kidman",
+      "Stockard Channing",
+      "Dianne Wiest",
+      "Aidan Quinn",
+      "Goran Vi\u0161nji\u0107",
+      "Evan Rachel Wood",
+      "Mark Feuerstein"
+    ]
+  },
+  "aliens vs predator: requiem|2007": {
+    "qid": "Q650076",
+    "directors": [
+      "Colin Strause",
+      "Greg Strause"
+    ],
+    "cast": [
+      "Steven Pasquale",
+      "Reiko Aylesworth",
+      "John Ortiz",
+      "Johnny Lewis",
+      "Ariel Gade",
+      "Sam Trammell",
+      "Robert Joy",
+      "David Paetkau"
+    ]
+  },
+  "hungry|2026": {
+    "qid": null,
+    "directors": [],
+    "cast": []
   }
 }
