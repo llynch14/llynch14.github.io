@@ -14,12 +14,12 @@
     },
     {
       "year": 2026,
-      "count": 74
+      "count": 76
     }
   ],
   "fun": {
-    "total_films": 611,
-    "avg_rating": 3.29,
+    "total_films": 612,
+    "avg_rating": 3.28,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
@@ -3161,6 +3161,20 @@
       "rating": 1.0,
       "watched_at": "2026-09-12",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/2/6/9/1268269-hungry-2026-1-0-600-0-900-crop.jpg?v=88f08a1e19"
+    },
+    {
+      "title": "X-Men",
+      "year": 2000,
+      "rating": 4.0,
+      "watched_at": "2026-09-19",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/2/7/7/2/3/27723-x-men-0-600-0-900-crop.jpg?v=fce66dceb6"
+    },
+    {
+      "title": "Resident Evil",
+      "year": 2026,
+      "rating": 1.5,
+      "watched_at": "2026-09-19",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/3/0/2/7/1/7/1302717-untitled-resident-evil-reboot-0-600-0-900-crop.jpg?v=a688bf1bc7"
     }
   ]
 }
