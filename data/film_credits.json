@@ -5673,5 +5673,26 @@
     "qid": null,
     "directors": [],
     "cast": []
+  },
+  "x-men|2000": {
+    "qid": "Q106182",
+    "directors": [
+      "Bryan Singer"
+    ],
+    "cast": [
+      "Patrick Stewart",
+      "Ian McKellen",
+      "Halle Berry",
+      "James Marsden",
+      "Bruce Davison",
+      "Rebecca Romijn",
+      "Ray Park",
+      "Anna Paquin"
+    ]
+  },
+  "resident evil|2026": {
+    "qid": null,
+    "directors": [],
+    "cast": []
   }
 }
