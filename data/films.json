@@ -1,5 +1,13 @@
 [
   {
+    "title": "Bad Apples",
+    "year": 2025,
+    "rating": 3.5,
+    "watched_at": "2026-09-25",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/8/3/3/3/1/1083331-bad-apples-0-600-0-900-crop.jpg?v=9ca0220221",
+    "url": "https://letterboxd.com/whiteth0rn/film/bad-apples-2025/"
+  },
+  {
     "title": "X-Men",
     "year": 2000,
     "rating": 4.0,
@@ -30,13 +38,5 @@
     "watched_at": "2026-09-12",
     "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/8/2/6/9/1268269-hungry-2026-1-0-600-0-900-crop.jpg?v=88f08a1e19",
     "url": "https://letterboxd.com/whiteth0rn/film/hungry-2026-1/"
-  },
-  {
-    "title": "Pressure",
-    "year": 2026,
-    "rating": 4.0,
-    "watched_at": "2026-09-09",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/9/8/9/7/2/1198972-pressure-2026-0-600-0-900-crop.jpg?v=38a01c694d",
-    "url": "https://letterboxd.com/whiteth0rn/film/pressure-2026/"
   }
 ]
