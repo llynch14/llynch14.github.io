@@ -5709,5 +5709,23 @@
       "Kerry Howard",
       "Jaye Jacobs"
     ]
+  },
+  "the love hypothesis|2026": {
+    "qid": "Q136540069",
+    "directors": [
+      "Claire Scanlon"
+    ],
+    "cast": [
+      "Lili Reinhart",
+      "Tom Bateman",
+      "Rachel Marsh",
+      "Jaboukie Young-White",
+      "Arty Froushan"
+    ]
+  },
+  "hope|2026": {
+    "qid": null,
+    "directors": [],
+    "cast": []
   }
 }
