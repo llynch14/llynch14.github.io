@@ -1,5 +1,13 @@
 [
   {
+    "title": "Ghosts",
+    "author": "Dolly Alderton",
+    "rating": 4,
+    "pages": 320,
+    "read_at": "2026-09-30",
+    "url": "https://www.goodreads.com/book/show/221200339"
+  },
+  {
     "title": "Thirst Trap",
     "author": "Gr\u00e1inne O'Hare",
     "rating": 2,
@@ -70,13 +78,5 @@
     "pages": 336,
     "read_at": "2026-05-19",
     "url": "https://www.goodreads.com/book/show/60701439"
-  },
-  {
-    "title": "Seasons of War",
-    "author": "Derek Landy",
-    "rating": 4,
-    "pages": 592,
-    "read_at": "2026-05-15",
-    "url": "https://www.goodreads.com/book/show/52331179"
   }
 ]

@@ -5727,5 +5727,20 @@
     "qid": null,
     "directors": [],
     "cast": []
+  },
+  "bad apples|2026": {
+    "qid": "Q125029885",
+    "directors": [
+      "Jonatan Etzler"
+    ],
+    "cast": [
+      "Saoirse Ronan",
+      "Jacob Anderson",
+      "Rakie Ayola",
+      "Robert Emms",
+      "Sean Gilder",
+      "Kerry Howard",
+      "Jaye Jacobs"
+    ]
   }
 }
