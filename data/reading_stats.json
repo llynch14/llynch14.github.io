@@ -31,7 +31,7 @@
   ],
   "fun": {
     "total_books": 190,
-    "total_pages": 83166,
+    "total_pages": 83179,
     "avg_pages": 437,
     "shortest": {
       "title": "This Winter",
@@ -494,7 +494,7 @@
     {
       "title": "Empire of the Vampire",
       "author": "Jay Kristoff",
-      "pages": 739,
+      "pages": 752,
       "read_at": "2021-11-11",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1612450626l/56269205.jpg"
     },
