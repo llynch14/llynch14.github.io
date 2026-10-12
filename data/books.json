@@ -1,5 +1,13 @@
 [
   {
+    "title": "Dungeon Crawler Carl",
+    "author": "Matt Dinniman",
+    "rating": 4,
+    "pages": 450,
+    "read_at": "2026-10-12",
+    "url": "https://www.goodreads.com/book/show/211721806"
+  },
+  {
     "title": "Ghosts",
     "author": "Dolly Alderton",
     "rating": 4,
@@ -70,13 +78,5 @@
     "pages": 572,
     "read_at": "2026-06-08",
     "url": "https://www.goodreads.com/book/show/2767793"
-  },
-  {
-    "title": "Big Swiss",
-    "author": "Jen Beagin",
-    "rating": 2,
-    "pages": 336,
-    "read_at": "2026-05-19",
-    "url": "https://www.goodreads.com/book/show/60701439"
   }
 ]
