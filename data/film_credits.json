@@ -5742,5 +5742,34 @@
       "Kerry Howard",
       "Jaye Jacobs"
     ]
+  },
+  "other mommy|2026": {
+    "qid": "Q134588273",
+    "directors": [
+      "Rob Savage"
+    ],
+    "cast": [
+      "Jessica Chastain",
+      "Jay Duplass",
+      "Dichen Lachman",
+      "Karen Allen",
+      "Sean Kaufman"
+    ]
+  },
+  "hellraiser|1987": {
+    "qid": "Q1162728",
+    "directors": [
+      "Clive Barker"
+    ],
+    "cast": [
+      "Ashley Laurence",
+      "Andrew Robinson",
+      "Sean Chapman",
+      "Doug Bradley",
+      "Grace Kirby",
+      "Oliver Smith",
+      "Simon Bamford",
+      "Clare Higgins"
+    ]
   }
 }
