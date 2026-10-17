@@ -1,5 +1,13 @@
 [
   {
+    "title": "A Beast Slinks Towards Beijing",
+    "author": "Alice Evelyn Yang",
+    "rating": 4,
+    "pages": 360,
+    "read_at": "2026-10-16",
+    "url": "https://www.goodreads.com/book/show/232241619"
+  },
+  {
     "title": "Dungeon Crawler Carl",
     "author": "Matt Dinniman",
     "rating": 4,
@@ -70,13 +78,5 @@
     "pages": 288,
     "read_at": "2026-06-14",
     "url": "https://www.goodreads.com/book/show/240424526"
-  },
-  {
-    "title": "The Hero of Ages",
-    "author": "Brandon Sanderson",
-    "rating": 5,
-    "pages": 572,
-    "read_at": "2026-06-08",
-    "url": "https://www.goodreads.com/book/show/2767793"
   }
 ]

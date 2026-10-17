@@ -26,12 +26,12 @@
     },
     {
       "year": 2026,
-      "count": 28
+      "count": 29
     }
   ],
   "fun": {
-    "total_books": 191,
-    "total_pages": 83618,
+    "total_books": 192,
+    "total_pages": 83978,
     "avg_pages": 437,
     "shortest": {
       "title": "This Winter",
@@ -1071,6 +1071,13 @@
       "pages": 450,
       "read_at": "2026-10-12",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715780755l/211721806._SY475_.jpg"
+    },
+    {
+      "title": "A Beast Slinks Towards Beijing",
+      "author": "Alice Evelyn Yang",
+      "pages": 360,
+      "read_at": "2026-10-16",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1750363943l/232241619._SY475_.jpg"
     }
   ]
 }
