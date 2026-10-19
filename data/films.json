@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Texas Chain Saw Massacre",
+    "year": 1974,
+    "rating": 2.5,
+    "watched_at": "2026-10-18",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/3/1/9/8/5/31985-the-texas-chain-saw-massacre-0-600-0-900-crop.jpg?v=c63b3f1958",
+    "url": "https://letterboxd.com/whiteth0rn/film/the-texas-chain-saw-massacre/"
+  },
+  {
     "title": "Hellraiser",
     "year": 1987,
     "rating": 3.0,
@@ -30,13 +38,5 @@
     "watched_at": "2026-09-26",
     "poster": "https://a.ltrbxd.com/resized/film-poster/9/3/1/1/8/1/931181-the-love-hypothesis-0-600-0-900-crop.jpg?v=af3d1729f2",
     "url": "https://letterboxd.com/whiteth0rn/film/the-love-hypothesis/"
-  },
-  {
-    "title": "Bad Apples",
-    "year": 2025,
-    "rating": 3.5,
-    "watched_at": "2026-09-25",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/1/0/8/3/3/3/1/1083331-bad-apples-0-600-0-900-crop.jpg?v=9ca0220221",
-    "url": "https://letterboxd.com/whiteth0rn/film/bad-apples-2025/"
   }
 ]
