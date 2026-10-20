@@ -26,12 +26,12 @@
     },
     {
       "year": 2026,
-      "count": 29
+      "count": 30
     }
   ],
   "fun": {
-    "total_books": 192,
-    "total_pages": 83978,
+    "total_books": 193,
+    "total_pages": 84349,
     "avg_pages": 437,
     "shortest": {
       "title": "This Winter",
@@ -1078,6 +1078,13 @@
       "pages": 360,
       "read_at": "2026-10-16",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1750363943l/232241619._SY475_.jpg"
+    },
+    {
+      "title": "Carl's Doomsday Scenario",
+      "author": "Matt Dinniman",
+      "pages": 371,
+      "read_at": "2026-10-19",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1719949673l/212393364._SY475_.jpg"
     }
   ]
 }

@@ -1,5 +1,13 @@
 [
   {
+    "title": "Carl's Doomsday Scenario",
+    "author": "Matt Dinniman",
+    "rating": 4,
+    "pages": 371,
+    "read_at": "2026-10-19",
+    "url": "https://www.goodreads.com/book/show/212393364"
+  },
+  {
     "title": "A Beast Slinks Towards Beijing",
     "author": "Alice Evelyn Yang",
     "rating": 4,
@@ -70,13 +78,5 @@
     "pages": 352,
     "read_at": "2026-07-16",
     "url": "https://www.goodreads.com/book/show/220160134"
-  },
-  {
-    "title": "Half His Age",
-    "author": "Jennette McCurdy",
-    "rating": 2,
-    "pages": 288,
-    "read_at": "2026-06-14",
-    "url": "https://www.goodreads.com/book/show/240424526"
   }
 ]
