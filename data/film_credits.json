@@ -5787,5 +5787,53 @@
       "William Vail",
       "Teri McMinn"
     ]
+  },
+  "halloweentown high|2004": {
+    "qid": "Q369986",
+    "directors": [
+      "Mark A.Z. Dipp\u00e9"
+    ],
+    "cast": [
+      "Debbie Reynolds",
+      "Kimberly J. Brown",
+      "Judith Hoag",
+      "Joey Zimmerman",
+      "Emily Roeske",
+      "Finn Wittrock",
+      "Clifton Davis",
+      "Eliana Reyes"
+    ]
+  },
+  "halloweentown ii: kalabar's revenge|2001": {
+    "qid": "Q259357",
+    "directors": [
+      "Mary Lambert"
+    ],
+    "cast": [
+      "Kimberly J. Brown",
+      "Debbie Reynolds",
+      "Judith Hoag",
+      "Joey Zimmerman",
+      "Emily Roeske",
+      "Phillip Van Dyke",
+      "Daniel Kountz",
+      "Peter Wingfield"
+    ]
+  },
+  "halloweentown|1998": {
+    "qid": "Q1571849",
+    "directors": [
+      "Duwayne Dunham"
+    ],
+    "cast": [
+      "Debbie Reynolds",
+      "Judith Hoag",
+      "Kimberly J. Brown",
+      "Joey Zimmerman",
+      "Phillip Van Dyke",
+      "Emily Roeske",
+      "Robin Thomas",
+      "Shannon Day"
+    ]
   }
 }

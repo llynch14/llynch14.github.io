@@ -26,12 +26,12 @@
     },
     {
       "year": 2026,
-      "count": 30
+      "count": 31
     }
   ],
   "fun": {
-    "total_books": 193,
-    "total_pages": 84349,
+    "total_books": 194,
+    "total_pages": 84881,
     "avg_pages": 437,
     "shortest": {
       "title": "This Winter",
@@ -1085,6 +1085,13 @@
       "pages": 371,
       "read_at": "2026-10-19",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1719949673l/212393364._SY475_.jpg"
+    },
+    {
+      "title": "The Dungeon Anarchist's Cookbook",
+      "author": "Matt Dinniman",
+      "pages": 532,
+      "read_at": "2026-10-25",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1719949594l/211721809._SY475_.jpg"
     }
   ]
 }

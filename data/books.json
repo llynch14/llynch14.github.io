@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Dungeon Anarchist's Cookbook",
+    "author": "Matt Dinniman",
+    "rating": 4,
+    "pages": 532,
+    "read_at": "2026-10-25",
+    "url": "https://www.goodreads.com/book/show/211721809"
+  },
+  {
     "title": "Carl's Doomsday Scenario",
     "author": "Matt Dinniman",
     "rating": 4,
@@ -70,13 +78,5 @@
     "pages": 155,
     "read_at": "2026-07-17",
     "url": "https://www.goodreads.com/book/show/28698036"
-  },
-  {
-    "title": "One Yellow Eye",
-    "author": "Leigh  Radford",
-    "rating": 3,
-    "pages": 352,
-    "read_at": "2026-07-16",
-    "url": "https://www.goodreads.com/book/show/220160134"
   }
 ]
