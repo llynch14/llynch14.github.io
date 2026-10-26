@@ -1,5 +1,13 @@
 [
   {
+    "title": "Clayface",
+    "year": 2026,
+    "rating": 3.5,
+    "watched_at": "2026-10-25",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/8/4/6/3/6/1284636-clayface-0-600-0-900-crop.jpg?v=eb305849d5",
+    "url": "https://letterboxd.com/whiteth0rn/film/clayface/"
+  },
+  {
     "title": "Halloweentown High",
     "year": 2004,
     "rating": 0.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-10-18",
     "poster": "https://a.ltrbxd.com/resized/film-poster/3/1/9/8/5/31985-the-texas-chain-saw-massacre-0-600-0-900-crop.jpg?v=c63b3f1958",
     "url": "https://letterboxd.com/whiteth0rn/film/the-texas-chain-saw-massacre/"
-  },
-  {
-    "title": "Hellraiser",
-    "year": 1987,
-    "rating": 3.0,
-    "watched_at": "2026-10-11",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/4/3/8/47438-hellraiser-0-600-0-900-crop.jpg?v=c927113564",
-    "url": "https://letterboxd.com/whiteth0rn/film/hellraiser/"
   }
 ]

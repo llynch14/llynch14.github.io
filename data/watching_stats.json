@@ -14,12 +14,12 @@
     },
     {
       "year": 2026,
-      "count": 85
+      "count": 86
     }
   ],
   "fun": {
-    "total_films": 621,
-    "avg_rating": 3.25,
+    "total_films": 622,
+    "avg_rating": 3.26,
     "highest_rated": {
       "title": "Spider-Man: Into the Spider-Verse",
       "rating": 5.0
@@ -3238,6 +3238,13 @@
       "rating": 1.0,
       "watched_at": "2026-10-24",
       "poster": "https://a.ltrbxd.com/resized/film-poster/3/4/1/4/6/34146-halloweentown-0-600-0-900-crop.jpg?v=33867b48ea"
+    },
+    {
+      "title": "Clayface",
+      "year": 2026,
+      "rating": 3.5,
+      "watched_at": "2026-10-25",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/8/4/6/3/6/1284636-clayface-0-600-0-900-crop.jpg?v=eb305849d5"
     }
   ]
 }
