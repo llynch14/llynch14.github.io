@@ -1,5 +1,13 @@
 [
   {
+    "title": "Wildwood",
+    "year": 2026,
+    "rating": 5.0,
+    "watched_at": "2026-10-26",
+    "poster": "https://a.ltrbxd.com/resized/film-poster/7/0/9/4/6/0/709460-wildwood-2026-0-600-0-900-crop.jpg?v=e0b4be5769",
+    "url": "https://letterboxd.com/whiteth0rn/film/wildwood-2026/"
+  },
+  {
     "title": "Clayface",
     "year": 2026,
     "rating": 3.5,
@@ -30,13 +38,5 @@
     "watched_at": "2026-10-24",
     "poster": "https://a.ltrbxd.com/resized/film-poster/3/4/1/4/6/34146-halloweentown-0-600-0-900-crop.jpg?v=33867b48ea",
     "url": "https://letterboxd.com/whiteth0rn/film/halloweentown/"
-  },
-  {
-    "title": "The Texas Chain Saw Massacre",
-    "year": 1974,
-    "rating": 2.5,
-    "watched_at": "2026-10-18",
-    "poster": "https://a.ltrbxd.com/resized/film-poster/3/1/9/8/5/31985-the-texas-chain-saw-massacre-0-600-0-900-crop.jpg?v=c63b3f1958",
-    "url": "https://letterboxd.com/whiteth0rn/film/the-texas-chain-saw-massacre/"
   }
 ]
